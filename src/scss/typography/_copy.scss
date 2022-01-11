@@ -1,0 +1,27 @@
+.copy {
+    &.extended {
+        > * + * {
+            margin-top: 2rem;
+        }
+    }
+
+    &.copy-1 {
+        font-size: $type-size-300;
+        line-height: 1.675em;
+    }
+
+    &.copy-2 {
+        font-size: $type-size-200;
+        line-height: 1.5em;
+    }
+
+    &.copy-3 {
+        font-size: $type-size-100;
+        line-height: 1.5em;
+    }
+
+    a {
+        color: $blue;
+        text-decoration: underline;
+    }    
+}

@@ -1,0 +1,31 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: $lato;
+	color: $slate;
+}
+
+::-moz-selection {
+	background: $blue;
+	color: $white;
+	text-shadow: none;
+}
+
+::selection {
+	background: $blue;
+	color: $white;
+	text-shadow: none;
+}
+
+a {
+	color: $slate;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+@import "headings";
+
+@import "copy";

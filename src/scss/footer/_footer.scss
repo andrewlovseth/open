@@ -1,0 +1,100 @@
+.site-footer {
+    background: $blue-muted;
+    align-items: start;
+    padding: clamp(3rem, 10vh, 5rem) 0;
+    color: $white;
+
+    a {
+        color: $white;
+    }
+
+    .footer-grid {
+        display: grid;
+        gap: 4rem;
+
+        @include tablet-small {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include desktop-small {
+            gap: 2rem 4rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .footer-col {
+        .copy {
+            max-width: 18rem;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0 0 0 1.125rem;
+
+                line-height: 1.25em;
+
+                li + li {
+                    padding-top: 0.75rem;
+                }
+
+
+            }
+        }
+    }
+
+    .footer-headline {
+        font-size: $type-size-300;
+        padding-bottom: 0.5rem;
+
+        &:after {
+            display: block;
+            content: '';
+            width: 1rem;
+            height: 0.125rem;
+            background: $white;
+            margin-top: 0.25rem;
+        }
+    }
+
+    .site-logo {
+        grid-column: 1 / -1;
+
+        a {
+            display: block;
+            max-width: 18rem;
+            transform: translateX(-0.75rem);
+        }
+    }
+
+    .contact {
+        .detail {
+            padding-top: 1.25rem;
+
+            p {
+                display: flex;
+
+                svg {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    object-fit: contain;
+                    margin-right: 0.75rem;
+                    margin-top: 0.125rem;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 2rem;
+        border-top: 1px solid rgba($white, 0.25);
+        padding-top: 0.75rem;
+        grid-column: 1 / -1;
+    }
+}

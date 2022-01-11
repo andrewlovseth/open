@@ -1,0 +1,29 @@
+.page-title {
+    font-family: $merriweather;
+    font-weight: 400;
+    font-size: $type-size-700;
+    color: $green-muted;
+    line-height: 1.125em;
+
+    @include desktop-small {
+        font-size: $type-size-800;
+    }
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: $type-size-400;
+    color: $blue-muted;
+    line-height: 1.125em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &:after {
+        display: block;
+        content: '';
+        width: 1.5rem;
+        height: 0.25rem;
+        background: $blue-muted;
+        margin-top: 0.5rem;
+    }
+}

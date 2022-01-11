@@ -1,0 +1,9 @@
+.page-header {
+    padding: clamp(3rem, 7vh, 4rem) 0;
+
+    h1 {
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+    }
+}
