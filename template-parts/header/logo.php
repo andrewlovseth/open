@@ -1,7 +1,12 @@
-<?php $logo = get_field('logo', 'options'); if( $logo ): ?>
+<?php
+$header = get_field('header', 'options');
+$logo = $header['logo'];
+if( $logo ): ?>
+
     <div class="site-logo">
         <a href="<?php echo site_url(); ?>">
-            <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
+            <?php get_template_part('src/svg/logo'); ?>
         </a>
     </div>
+
 <?php endif; ?>

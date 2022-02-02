@@ -4,28 +4,28 @@ input,
 select,
 optgroup,
 textarea {
-	font-family: $lato;
-	color: $slate;
+    font-family: $circular;
+    color: $black;
 }
 
 ::-moz-selection {
-	background: $blue;
-	color: $white;
-	text-shadow: none;
+    background: $blue;
+    color: $white;
+    text-shadow: none;
 }
 
 ::selection {
-	background: $blue;
-	color: $white;
-	text-shadow: none;
+    background: $blue;
+    color: $white;
+    text-shadow: none;
 }
 
 a {
-	color: $slate;
-	text-decoration: none;
-	transition: all 0.2s ease;
+    color: $black;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-@import "headings";
+@import 'headings';
 
-@import "copy";
+@import 'copy';

@@ -1,0 +1,10 @@
+.cta {
+    display: none;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        background: $white;
+        padding-left: 2rem;
+    }
+}

@@ -124,3 +124,15 @@ function bearsmith_change_post_object() {
     $wp_post_types['post']->menu_icon = 'dashicons-rss';
 } 
 add_action( 'init', 'bearsmith_change_post_object' );
+
+
+
+function wpdocs_my_search_form( $form ) {
+    $form = '<form role="search" method="get" id="search-form" class="search-form" action="' . home_url( '/' ) . '" >
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" class="search-input" placeholder="What are you searching for?" />
+    <input type="submit" id="search-submit" class="search-submit" value="'. esc_attr__( 'Search' ) .'" />
+    </form>';
+ 
+    return $form;
+}
+add_filter( 'get_search_form', 'wpdocs_my_search_form' );

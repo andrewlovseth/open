@@ -1,41 +1,37 @@
 .hamburger {
-    grid-column: 5 / span 1;
-    position: relative;
+    display: flex;
+    align-items: center;
+    background: $white;
+    padding: 0 1.5rem;
 
-    @include tablet-small {
-        grid-column: 6 / span 4;
-    }
-
-    @include desktop-small {
-        display: none;
+    @include tablet {
+        padding: 0 2rem;
     }
 
     a {
+        display: block;
         width: 2rem;
         height: 22px;
-        display: flex;
-        align-items: center;
-        margin-left: auto;
         position: relative;
 
         .patty {
             width: 2rem;
             height: 2px;
-            background: $blue;
-            border-radius: 2px;
+            background: $black;
             margin-left: auto;
             transition: all 0.2s;
             position: relative;
+            transform: translateY(10px);
 
-            &:after, &:before {
+            &:after,
+            &:before {
                 content: '';
                 display: block;
                 width: 2rem;
                 height: 2px;
-                background: $blue;
+                background: $black;
                 position: absolute;
                 z-index: 1;
-                border-radius: 2px;
                 transition: all 0.2s;
             }
 

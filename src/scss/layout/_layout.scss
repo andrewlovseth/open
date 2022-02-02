@@ -1,6 +1,5 @@
 .site-content {
-    min-height: clamp(20rem, 90vh, 50rem);
-
+    min-height: 150vh;
 }
 
-@import "grid";
+@import 'grid';

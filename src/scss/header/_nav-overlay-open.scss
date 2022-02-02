@@ -1,31 +1,67 @@
 body.nav-overlay-open {
-    .site-content,
-    .site-footer {
-        opacity: 0.25;
+    overflow: hidden;
+
+    .site-header {
+        .desktop-nav,
+        .search-container,
+        .cta,
+        .hamburger {
+            background-color: $black;
+            transition: background-color 500ms ease 50ms;
+        }
+
+        .site-logo {
+            @include logo-background;
+
+            &:before {
+                opacity: 1;
+            }
+
+            svg {
+                #background {
+                    fill: $black;
+                }
+            }
+        }
+
+        .desktop-nav {
+            &__list {
+                opacity: 0;
+            }
+            &__link {
+                color: $white;
+            }
+        }
+
+        .search-toggle {
+            svg {
+                fill: $white;
+            }
+        }
+
+        .hamburger {
+            .bun {
+                .patty {
+                    background: none;
+
+                    &:after {
+                        top: 0;
+                        transform: rotate(45deg);
+                        background: $white;
+                    }
+
+                    &:before {
+                        top: 0;
+                        transform: rotate(-45deg);
+                        background: $white;
+                    }
+                }
+            }
+        }
     }
 
-	.hamburger {
-        z-index: 100;
-
-		a {
-			.patty {
-                background: none;
-
-                &:after {
-                    top: 0;
-                    transform: rotate(45deg);
-                }
-
-                &:before {
-                    top: 0;
-                    transform: rotate(-45deg);
-                }
-			}
-		}
-	}
-
-    .mobile-nav {
-        left: 0;
+    .nav-content {
         opacity: 1;
+        transition: all 400ms ease 1000ms;
     }
 }

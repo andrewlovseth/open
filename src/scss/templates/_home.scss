@@ -1,3 +1,12 @@
 body.page-template-home {
-    
+    .hero {
+        .photo {
+            grid-column: 1 / -1;
+            @include cover-fill-image;
+        }
+    }
+
+    .test-two {
+        height: 100vh;
+    }
 }

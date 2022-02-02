@@ -1,103 +1,52 @@
-nav.desktop-nav {
-    display: none;
+.desktop-nav {
+    padding-left: 2rem;
+    background: $white;
+    flex: 1;
 
-    @include desktop-small {
-        display: block;
-        grid-column: 5 / span 9;
-        margin-left: auto;
-    }
+    &__list {
+        display: none;
 
-    .main-nav {
-        display: flex;
-        align-items: center;
-    }
-
-    .first-level {
-        padding: 1rem 0;
-        & + .first-level {
-            margin-left: max(1.25rem, 3vw);
-        }
-
-        .main-link {
-            font-size: $type-size-100;
+        @include desktop-small {
             display: flex;
             align-items: center;
-            color: $blue;
-            white-space: nowrap;
-
-            @include desktop-medium {
-                font-size: $type-size-150;
-            }
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .header-link {
-            &:after {
-                content: '';
-                display: block;
-                background: url(../src/images/down-arrow.svg) no-repeat 0 0;
-                background-size: contain;
-                width: 0.75rem;
-                height: 0.5rem;
-                margin-left: 0.25rem;
-                transform: translateY(1px);
-
-                @include desktop-medium {
-                    margin-left: 0.5rem;
-                    transform: translateY(2px);
-                }
-            }
+            height: 100%;
+            transition: opacity 225ms ease 50ms;
         }
     }
 
-    .dropdown {
+    &__list-item {
+        &:not(:first-of-type) {
+            padding-left: 2rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-transform: uppercase;
+        font-size: $type-size-100;
+        font-family: $rubik;
+        letter-spacing: 0.05em;
         position: relative;
 
-        &:hover {
-            .dropdown-menu {
-                opacity: 1;
-                height: auto;
-                overflow: visible;
-                transform: translateY(0);
-                pointer-events: auto;
-            }
-        }
-    }
-
-    .dropdown-menu {
-        position: absolute;
-        top: 3rem;
-        left: 0;
-        z-index: 5;
-        background: $white;
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        border-radius: 3px;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
-        width: 16rem;
-        height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transform: translateY(-1rem);
-        transition: all 0.3s ease-in-out;
-        pointer-events: none;
-
-        .second-level {
-            & + .second-level {
-                border-top: 1px solid rgba(0, 0, 0, 0.03);
-            }
+        @include desktop-medium {
+            font-size: $type-size-150;
         }
 
-        .sub-link {
+        &:after {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
             display: block;
-            font-size: clamp(0.75rem, 1vw, 0.875rem);
-            padding: 1rem 1rem;
+            content: '';
+            width: 0;
+            height: 2px;
+            transition: all 325ms ease 75ms;
+            @include purple-blue-gradient;
+        }
 
-            &:hover {
-                color: $blue;
-                background: rgba(45, 92, 136, 0.02);
+        &:hover {
+            &:after {
+                width: 100%;
             }
         }
     }
