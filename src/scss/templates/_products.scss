@@ -1,3 +1,9 @@
 body.page-template-products {
-    
+    @import 'products/hero';
+
+    @import 'products/overview';
+
+    @import 'products/ecosystem';
+
+    @import 'products/features';
 }

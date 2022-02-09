@@ -1,0 +1,48 @@
+.hero {
+    .info {
+        grid-row: 1;
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: $white;
+        max-height: 90vh;
+
+        .headline {
+            h1 {
+                font-size: $type-size-1000;
+                font-weight: 900;
+
+                @include desktop-small {
+                    font-size: $type-size-2000;
+                }
+            }
+        }
+
+        .deck {
+            p {
+                font-size: $type-size-400;
+                font-weight: 300;
+                font-family: $rubik;
+            }
+        }
+    }
+
+    .photo {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        z-index: 5;
+        @include cover-fill-image;
+
+        img {
+            max-height: 90vh;
+            aspect-ratio: 4 / 3;
+
+            @include desktop-small {
+                aspect-ratio: 16 / 9;
+            }
+        }
+    }
+}

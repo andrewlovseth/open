@@ -14,6 +14,11 @@
             color: $white;
         }
 
+        &.purple-gradient {
+            @include purple-blue-gradient;
+            color: $white;
+        }
+
         &.white-outline {
             background: transparent;
             color: $white;

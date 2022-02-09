@@ -1,0 +1,23 @@
+.overview {
+    @include section-spacing;
+    gap: 1rem 2rem;
+
+    & > * {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+    }
+
+    .headline {
+        @include desktop-small {
+            grid-column: 2 / span 4;
+            padding-right: 2rem;
+        }
+    }
+
+    .deck {
+        @include desktop-small {
+            grid-column: 6 / span 8;
+        }
+    }
+}
