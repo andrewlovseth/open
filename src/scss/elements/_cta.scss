@@ -30,4 +30,25 @@
             }
         }
     }
+
+    .underline {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0 0 0.125rem 0;
+        font-size: $type-size-100;
+        font-weight: bold;
+        font-family: $rubik;
+        letter-spacing: 0.1em;
+        transition: all 400ms ease;
+
+        &.white {
+            color: $white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        &.blue {
+            color: $black;
+            border-bottom: 3px solid $blue;
+        }
+    }
 }

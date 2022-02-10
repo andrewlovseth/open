@@ -53,7 +53,7 @@ if(have_rows('ecosystem')): while(have_rows('ecosystem')): the_row(); ?>
                     </div>
                     
                     <div class="cta">
-                        <a class="btn purple-gradient" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                        <a class="underline blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                     </div>
                 </div>
             </div>
