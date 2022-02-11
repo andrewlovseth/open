@@ -34,6 +34,14 @@ function transitionOut() {
         hamburger.classList.remove('active');
 
         document.body.classList.remove('nav-overlay-open');
+
+        const initialTab = document.querySelector('[data-tab-panel="initial"]');
+        const tabClone = initialTab.cloneNode(true);
+        const activeTab = document.querySelector(
+            '.site-navigation .nav-content .tab-panel'
+        );
+
+        activeTab.replaceWith(tabClone);
     }, 1225);
 }
 
@@ -75,7 +83,9 @@ const Header = {
                 rootMargin: '-108px 0px 0px 0px',
             }
         );
-        observer.observe(fold);
+        if (fold) {
+            observer.observe(fold);
+        }
     },
 
     searchToggle() {
@@ -110,11 +120,66 @@ const Header = {
         });
     },
 
+    navTabs() {
+        const tabLinks = document.querySelectorAll(
+            '.site-navigation a.type-tab'
+        );
+
+        tabLinks.forEach((tabLink) => {
+            tabLink.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                tabLinks.forEach((tabAnchor) => {
+                    tabAnchor.classList.remove('active');
+                });
+
+                tabLink.classList.add('active');
+
+                const tabTarget = tabLink.dataset.tab;
+                const tab = document.querySelector(
+                    `[data-tab-panel="${tabTarget}"]`
+                );
+                const tabClone = tab.cloneNode(true);
+                const activeTab = document.querySelector(
+                    '.site-navigation .nav-content .tab-panel'
+                );
+
+                activeTab.replaceWith(tabClone);
+
+                console.log(tab);
+            });
+        });
+
+        const mutationObserver = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type === 'childList') {
+                    const activeTab = document.querySelector(
+                        '.site-navigation .nav-content .tab-panel'
+                    );
+                    setTimeout(() => {
+                        activeTab.classList.add('show');
+                    }, 200);
+
+                    console.log(mutation);
+                }
+            });
+        });
+
+        const navContent = document.querySelector(
+            '.site-navigation .nav-content'
+        );
+
+        mutationObserver.observe(navContent, {
+            childList: true,
+        });
+    },
+
     init: function () {
         this.hamburger();
         this.esc();
         this.logoBackground();
         this.searchToggle();
+        this.navTabs();
     },
 };
 

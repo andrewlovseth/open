@@ -24,6 +24,8 @@
         }
 
         .sub-header {
+            padding-bottom: 0.25rem;
+
             h3 {
                 font-family: $rubik;
                 text-transform: uppercase;
@@ -35,8 +37,10 @@
         .header {
             h2 {
                 text-transform: uppercase;
-                font-weight: 900;
+                font-weight: 400;
                 line-height: 1em;
+                font-family: $anton;
+                letter-spacing: 0.025em;
 
                 font-size: $type-size-1000;
 

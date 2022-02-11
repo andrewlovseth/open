@@ -1,0 +1,90 @@
+.tab-initial {
+    .tab-header {
+        .logo {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .content-columns {
+        padding-top: 3rem;
+        display: grid;
+        gap: 3rem 6rem;
+        grid-template-columns: 1fr 1.25fr 0.75fr;
+    }
+
+    .header {
+        padding-bottom: 1rem;
+
+        h4 {
+            color: #7f7f7f;
+            font-size: $type-size-200;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-family: $rubik;
+        }
+    }
+
+    .social {
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        li + li {
+            margin-left: 1.5rem;
+        }
+
+        &-link {
+            display: flex;
+            width: 1.25rem;
+            height: 1.5rem;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                fill: #fff;
+                transition: all 200ms ease;
+
+                &:hover {
+                    fill: $blue;
+                }
+            }
+        }
+
+        p {
+            padding-top: 2rem;
+            font-family: $rubik;
+            font-weight: 400;
+            font-size: $type-size-200;
+
+            span,
+            a {
+                display: block;
+                padding-bottom: 0.25rem;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .client-logos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .client {
+            width: 7rem;
+            height: 4rem;
+            padding: 0 1rem 2rem 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
