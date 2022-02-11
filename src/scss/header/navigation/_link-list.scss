@@ -3,10 +3,10 @@
     align-items: center;
 
     @include desktop-small {
-        width: 37.5vw;
+        width: 33.33vw;
         background-color: rgba(255, 255, 255, 0.02);
         border-right: 1px solid rgba(255, 255, 255, 0.07);
-        right: -37.5vw;
+        right: -33.33vw;
         top: 0;
 
         &.slide-in {
@@ -15,12 +15,12 @@
         }
 
         &.slide-out {
-            right: -37.5vw;
+            right: -33.33vw;
             transition: right 800ms ease 375ms;
         }
     }
 
-    @include desktop-large {
+    @include desktop-x-large {
         width: 36rem;
         right: -36rem;
 
@@ -30,8 +30,12 @@
     }
 
     ul {
-        padding: 0 clamp(4rem, 10vw, 8rem);
+        padding: 0 clamp(2rem, 5vw, 3rem);
         margin: 0;
+
+        @include desktop-x-large {
+            padding: 0 clamp(4rem, 10vw, 8rem);
+        }
 
         a {
             padding: 1rem 0;

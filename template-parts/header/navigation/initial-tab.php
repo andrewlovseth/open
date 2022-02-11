@@ -16,7 +16,7 @@
     </div>
 
     <div class="content-columns">
-        <div class="column copy copy-2">
+        <div class="column copy copy-2 about">
             <div class="header">
                 <h4>What We Do</h4>
             </div>
@@ -25,7 +25,7 @@
 allow you to do more with your data.</p>
         </div>
 
-        <div class="column copy copy-2">
+        <div class="column clients">
             <div class="header">
                 <h4>Who We Work With</h4>
             </div>
@@ -42,7 +42,7 @@ allow you to do more with your data.</p>
         </div>
 
 
-        <div class="column">
+        <div class="column connect">
             <div class="header">
                 <h4>Let's Work Together</h4>
             </div>

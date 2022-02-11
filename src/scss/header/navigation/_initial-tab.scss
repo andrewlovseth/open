@@ -6,10 +6,40 @@
     }
 
     .content-columns {
-        padding-top: 3rem;
+        padding-top: 1rem;
         display: grid;
-        gap: 3rem 6rem;
-        grid-template-columns: 1fr 1.25fr 0.75fr;
+        gap: 2rem;
+
+        @include desktop-medium {
+            gap: 3rem;
+            grid-template-columns: repeat(6, 1fr);
+
+            .about {
+                grid-column: 1 / span 2;
+            }
+
+            .clients {
+                grid-column: 3 / span 4;
+            }
+
+            .connect {
+                grid-column: 1 / span 6;
+            }
+        }
+
+        @include desktop-large {
+            .clients {
+                grid-column: 3 / span 3;
+            }
+
+            .connect {
+                grid-column: 6 / span 1;
+            }
+        }
+
+        @include desktop-x-large {
+            gap: 3rem 6rem;
+        }
     }
 
     .header {
@@ -25,6 +55,20 @@
     }
 
     .social {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 0 3rem;
+
+        @include desktop-medium {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @include desktop-large {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+        }
+
         ul {
             display: flex;
             align-items: center;
@@ -53,10 +97,13 @@
         }
 
         p {
-            padding-top: 2rem;
             font-family: $rubik;
             font-weight: 400;
             font-size: $type-size-200;
+
+            @include desktop-large {
+                padding-top: 2rem;
+            }
 
             span,
             a {
