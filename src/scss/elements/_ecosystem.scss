@@ -1,0 +1,100 @@
+$bottom-spacer: clamp(5rem, 15vh, 7.5rem);
+$bottom-spacer-desktop: clamp(10rem, 30vh, 15rem);
+
+section.ecosystem {
+    @include tablet-small {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        @include section-spacing;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+
+        .info {
+            max-width: 20rem;
+        }
+
+        .logo {
+            width: 100%;
+            height: 5.25rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: left center;
+            }
+        }
+
+        .deck {
+            padding: 2rem 0;
+        }
+    }
+    .product:nth-child(1),
+    .product:nth-child(3) {
+        @include tablet {
+            flex: 1;
+        }
+    }
+
+    .product:nth-child(1) {
+        @include tablet-small {
+            width: 50%;
+        }
+        @include tablet {
+            width: unset;
+
+            .info {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .product:nth-child(2) {
+        @include tablet-small {
+            width: 50%;
+        }
+
+        @include tablet {
+            width: unset;
+            flex: 1;
+        }
+
+        @include desktop-small {
+            max-width: 26rem;
+        }
+    }
+
+    .product:nth-child(3) {
+        margin-bottom: calc($bottom-spacer * -1);
+        padding-bottom: calc($bottom-spacer * 1.5);
+
+        @include tablet-small {
+            width: 100%;
+        }
+
+        @include tablet {
+            max-width: unset;
+        }
+
+        @include desktop-small {
+            margin-bottom: calc($bottom-spacer-desktop * -1);
+            padding-bottom: $bottom-spacer-desktop;
+        }
+    }
+
+    .product:nth-child(1),
+    .product:nth-child(2) {
+        @include tablet {
+            margin-bottom: calc($bottom-spacer * -1);
+            padding-bottom: calc($bottom-spacer * 1.5);
+        }
+
+        @include desktop-small {
+            margin-bottom: calc($bottom-spacer-desktop * -1);
+            padding-bottom: $bottom-spacer-desktop;
+        }
+    }
+}

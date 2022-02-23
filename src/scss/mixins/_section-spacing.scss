@@ -26,3 +26,32 @@ $spacer-desktop: clamp(5rem, 15vh, 7.5rem);
         #{$prop}-bottom: $spacer-desktop;
     }
 }
+
+$small-spacer: clamp(1.25rem, 5vh, 2.5rem);
+$small-spacer-desktop: clamp(2.5rem, 7.5vh, 3.75rem);
+
+@mixin small-section-spacing($prop: padding) {
+    #{$prop}-top: $small-spacer;
+    #{$prop}-bottom: $small-spacer;
+
+    @include desktop-small {
+        #{$prop}-top: $small-spacer-desktop;
+        #{$prop}-bottom: $small-spacer-desktop;
+    }
+}
+
+@mixin small-section-spacing-top($prop: padding) {
+    #{$prop}-top: $small-spacer;
+
+    @include desktop-small {
+        #{$prop}-top: $small-spacer-desktop;
+    }
+}
+
+@mixin small-section-spacing-bottom($prop: padding) {
+    #{$prop}-bottom: $small-spacer;
+
+    @include desktop-small {
+        #{$prop}-bottom: $small-spacer-desktop;
+    }
+}

@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6202e3e30ccf0",
+            "key": "field_6215543c09886",
             "label": "Hero",
             "name": "hero",
             "type": "group",
@@ -34,7 +34,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6202e3ed0ccf2",
+                    "key": "field_6215543c09887",
                     "label": "Headline",
                     "name": "headline",
                     "type": "text",
@@ -53,7 +53,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6202e3f30ccf3",
+                    "key": "field_6215543c09888",
                     "label": "Deck",
                     "name": "deck",
                     "type": "textarea",
@@ -72,7 +72,7 @@
                     "new_lines": "br"
                 },
                 {
-                    "key": "field_6202e3e70ccf1",
+                    "key": "field_6215543c09889",
                     "label": "Photo",
                     "name": "photo",
                     "type": "image",
@@ -546,5 +546,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644427428
+    "modified": 1645565058
 }

@@ -1,19 +1,28 @@
 .grid {
-	display: grid;
-	gap: 0 2rem;
-    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto,  1fr)) minmax(0, auto);
-    
-	@include tablet-small {
-		grid-template-columns: minmax(0, auto) repeat(8, minmax(auto,  1fr)) minmax(0, auto);
-	}
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(
+            0,
+            auto
+        );
 
-	@include desktop-small {
-		grid-template-columns: minmax(0, auto) repeat(12, minmax(0,  4.5rem)) minmax(0, auto);
+    @include tablet-small {
+        grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(
+                0,
+                auto
+            );
     }
-    
-	& > * {
+
+    @include desktop-small {
+        grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(
+                0,
+                auto
+            );
+    }
+
+    & > * {
         grid-column: 2 / span 4;
-        
+
         @include tablet-small {
             grid-column: 2 / span 8;
         }
@@ -21,5 +30,32 @@
         @include desktop-small {
             grid-column: 2 / span 12;
         }
-	}
+    }
+}
+
+.three-col-grid {
+    display: grid;
+    gap: 4rem 2rem;
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item {
+        &.center {
+            text-align: center;
+
+            .icon,
+            .photo {
+                display: flex;
+                justify-content: center;
+            }
+
+            .headline,
+            .copy {
+                max-width: 18rem;
+                margin: 0 auto;
+            }
+        }
+    }
 }

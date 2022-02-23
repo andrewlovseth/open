@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-	<?php get_template_part('templates/products/hero'); ?>
+	<?php get_template_part('template-parts/global/hero'); ?>
 	
 	<?php get_template_part('templates/products/overview'); ?>
 	

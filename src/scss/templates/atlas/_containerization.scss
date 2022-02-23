@@ -1,0 +1,29 @@
+section.containerization {
+    @include section-spacing;
+    background: linear-gradient(331.22deg, #140931 13.72%, #004368 72.05%);
+    color: $white;
+
+    .section-header {
+        text-align: center;
+
+        .copy {
+            padding-top: 2rem;
+        }
+    }
+
+    .three-col-grid {
+        @include small-section-spacing;
+
+        .headline {
+            padding: clamp(1rem, 1vh, 2rem) 0;
+
+            h3 {
+                font-size: $type-size-600;
+            }
+        }
+    }
+
+    .cta {
+        @include small-section-spacing-top;
+    }
+}

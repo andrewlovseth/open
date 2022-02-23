@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital@0;1&display=swap");
 *,
@@ -288,6 +289,32 @@ body {
   }
 }
 
+.three-col-grid {
+  display: grid;
+  gap: 4rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .three-col-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.three-col-grid .item.center {
+  text-align: center;
+}
+.three-col-grid .item.center .icon,
+.three-col-grid .item.center .photo {
+  display: flex;
+  justify-content: center;
+}
+.three-col-grid .item.center .headline,
+.three-col-grid .item.center .copy {
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
+.cta.center {
+  text-align: center;
+}
 .cta .btn {
   text-transform: uppercase;
   display: inline-block;
@@ -333,6 +360,228 @@ body {
   color: #000;
   border-bottom: 3px solid #2d77f8;
 }
+.cta .underline.arrow::after {
+  content: " →";
+}
+
+.rich-cta {
+  max-width: 28rem;
+}
+.rich-cta a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 40px 60px -8px, rgba(0, 0, 0, 0.12) 0px 18px 36px -18px;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(-90deg, #a510f8 0%, #00a3ff 100%);
+  transition: all 1000ms ease;
+}
+.rich-cta a:hover .text {
+  background: rgba(255, 255, 255, 0.95);
+}
+.rich-cta .photo {
+  aspect-ratio: 1/1;
+  width: 7.5rem;
+}
+.rich-cta .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rich-cta .photo img {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.rich-cta .text {
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: all 1000ms ease;
+  font-family: "Rubik", sans-serif;
+}
+@media screen and (min-width: 480px) {
+  .rich-cta.half .photo {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rich-cta.half .photo {
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) {
+  .rich-cta.half .text {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rich-cta.half .text {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+}
+
+.hero .info {
+  grid-row: 1;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  max-height: 90vh;
+}
+.hero .info .headline {
+  text-align: center;
+}
+.hero .info .headline h1 {
+  font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+}
+.hero .info .deck {
+  text-align: center;
+}
+.hero .info .deck p {
+  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+}
+.hero .photo {
+  grid-column: 1/-1;
+  grid-row: 1;
+  z-index: 5;
+}
+.hero .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .photo img {
+  max-height: 90vh;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 768px) {
+  .hero .photo img {
+    aspect-ratio: 16/9;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  section.ecosystem {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+section.ecosystem .product {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+@media screen and (min-width: 992px) {
+  section.ecosystem .product {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+section.ecosystem .product .info {
+  max-width: 20rem;
+}
+section.ecosystem .product .logo {
+  width: 100%;
+  height: 5.25rem;
+}
+section.ecosystem .product .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left center;
+     object-position: left center;
+}
+section.ecosystem .product .deck {
+  padding: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  section.ecosystem .product:nth-child(1),
+section.ecosystem .product:nth-child(3) {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 480px) {
+  section.ecosystem .product:nth-child(1) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.ecosystem .product:nth-child(1) {
+    width: unset;
+  }
+  section.ecosystem .product:nth-child(1) .info {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  section.ecosystem .product:nth-child(2) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.ecosystem .product:nth-child(2) {
+    width: unset;
+    flex: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.ecosystem .product:nth-child(2) {
+    max-width: 26rem;
+  }
+}
+section.ecosystem .product:nth-child(3) {
+  margin-bottom: calc(clamp(5rem, 15vh, 7.5rem) * -1);
+  padding-bottom: calc(clamp(5rem, 15vh, 7.5rem) * 1.5);
+}
+@media screen and (min-width: 480px) {
+  section.ecosystem .product:nth-child(3) {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.ecosystem .product:nth-child(3) {
+    max-width: unset;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.ecosystem .product:nth-child(3) {
+    margin-bottom: calc(clamp(10rem, 30vh, 15rem) * -1);
+    padding-bottom: clamp(10rem, 30vh, 15rem);
+  }
+}
+@media screen and (min-width: 768px) {
+  section.ecosystem .product:nth-child(1),
+section.ecosystem .product:nth-child(2) {
+    margin-bottom: calc(clamp(5rem, 15vh, 7.5rem) * -1);
+    padding-bottom: calc(clamp(5rem, 15vh, 7.5rem) * 1.5);
+  }
+}
+@media screen and (min-width: 992px) {
+  section.ecosystem .product:nth-child(1),
+section.ecosystem .product:nth-child(2) {
+    margin-bottom: calc(clamp(10rem, 30vh, 15rem) * -1);
+    padding-bottom: clamp(10rem, 30vh, 15rem);
+  }
+}
 
 .site-header {
   display: flex;
@@ -350,10 +599,6 @@ body {
   aspect-ratio: 218/106;
 }
 .site-header .site-logo:before {
-  transition: all 500ms ease 50ms;
-  opacity: 0;
-}
-.site-header .site-logo.scrolled:before {
   content: "";
   display: block;
   width: 100%;
@@ -361,6 +606,13 @@ body {
   position: absolute;
   inset: 0;
   z-index: 10;
+  transition: all 500ms ease 50ms;
+  opacity: 0;
+}
+.site-header .site-logo.scrolled {
+  transition: all 500ms ease 50ms;
+}
+.site-header .site-logo.scrolled:before {
   background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
 }
 .site-header .site-logo.scrolled:before {
@@ -602,7 +854,7 @@ body {
   }
 }
 .site-header .cta .btn {
-  background-size: 500% 100%;
+  background-size: 600% 100%;
   background-image: linear-gradient(90deg, #a510f8, #00a3ff, #a510f8, #00a3ff, #a510f8, #00a3ff);
 }
 .site-header .cta .btn:hover {
@@ -1227,13 +1479,6 @@ body.nav-overlay-open .site-header .hamburger {
   transition: background-color 500ms ease 50ms;
 }
 body.nav-overlay-open .site-header .site-logo:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: 10;
   background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
 }
 body.nav-overlay-open .site-header .site-logo:before {
@@ -1487,7 +1732,7 @@ body.page-template-products .hero .info {
   max-height: 90vh;
 }
 body.page-template-products .hero .info .headline h1 {
-  font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.04rem);
+  font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
   font-weight: 400;
   font-family: "Anton", sans-serif;
 }
@@ -1596,7 +1841,7 @@ body.page-template-products .ecosystem .section-header .header h2 {
   line-height: 1em;
   font-family: "Anton", sans-serif;
   letter-spacing: 0.025em;
-  font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.04rem);
+  font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
 }
 @media screen and (min-width: 992px) {
   body.page-template-products .ecosystem .section-header .header h2 {
@@ -1741,4 +1986,203 @@ body.page-template-products .features .card .headline {
 }
 body.page-template-products .features .card .headline h3 {
   font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+}
+
+body.page-template-atlas .site-header .site-logo:not(.scrolled):before {
+  background: linear-gradient(335.76deg, #115e7b 28.91%, #102951 98.29%);
+  opacity: 1;
+}
+body.page-template-atlas section.overview {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.overview {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+body.page-template-atlas section.overview .info {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-atlas section.overview .info {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.overview .info {
+    padding-bottom: 0;
+    grid-column: 2/span 6;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body.page-template-atlas section.overview .info {
+    grid-column: 2/span 5;
+    padding-top: 3rem;
+  }
+}
+body.page-template-atlas section.overview .headline {
+  padding-bottom: 1rem;
+}
+body.page-template-atlas section.overview .cta {
+  padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-atlas section.overview .photo {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.overview .photo {
+    grid-column: 8/span 7;
+    max-height: 555px;
+  }
+}
+body.page-template-atlas section.overview .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body.page-template-atlas section.features {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  background: rgba(18, 132, 255, 0.06);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.features {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+body.page-template-atlas section.features:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../src/images/features-bg.svg) no-repeat 0 0;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+}
+body.page-template-atlas section.features .section-header {
+  padding-bottom: clamp(3rem, 7.5vh, 6rem);
+}
+body.page-template-atlas section.features .features-section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  color: #5c5c5c;
+}
+body.page-template-atlas section.features .feature {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas section.features .feature {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.features .feature {
+    grid-column: 3/span 10;
+  }
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas section.features .feature:nth-child(odd) .info {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body.page-template-atlas section.features .feature:nth-child(odd) .icon {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+body.page-template-atlas section.features .feature + .feature {
+  margin-top: clamp(4rem, 10vh, 6rem);
+}
+body.page-template-atlas section.features .feature .icon {
+  aspect-ratio: 1/1;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10.8113px 21.6226px rgba(0, 0, 0, 0.2);
+  max-width: 8rem;
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas section.features .feature .icon {
+    max-width: 24rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+body.page-template-atlas section.features .feature .icon img {
+  max-width: 60%;
+  width: 100%;
+}
+body.page-template-atlas section.features .feature .info .headline {
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas section.features .feature .info .section-title {
+    font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+  }
+}
+body.page-template-atlas section.features .feature .info .cta {
+  padding-top: 2rem;
+}
+body.page-template-atlas section.features .section-cta {
+  padding-top: clamp(3rem, 7.5vh, 6rem);
+  text-align: center;
+}
+body.page-template-atlas section.containerization {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  background: linear-gradient(331.22deg, #140931 13.72%, #004368 72.05%);
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.containerization {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+body.page-template-atlas section.containerization .section-header {
+  text-align: center;
+}
+body.page-template-atlas section.containerization .section-header .copy {
+  padding-top: 2rem;
+}
+body.page-template-atlas section.containerization .three-col-grid {
+  padding-top: clamp(1.25rem, 5vh, 2.5rem);
+  padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.containerization .three-col-grid {
+    padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+    padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+  }
+}
+body.page-template-atlas section.containerization .three-col-grid .headline {
+  padding: clamp(1rem, 1vh, 2rem) 0;
+}
+body.page-template-atlas section.containerization .three-col-grid .headline h3 {
+  font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+}
+body.page-template-atlas section.containerization .cta {
+  padding-top: clamp(1.25rem, 5vh, 2.5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas section.containerization .cta {
+    padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+  }
 }
