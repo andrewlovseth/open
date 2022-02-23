@@ -7,7 +7,7 @@
 
 if(have_rows('ecosystem')): while(have_rows('ecosystem')): the_row(); ?>
 
-    <section class="ecosystem grid">
+    <section class="products-ecosystem grid">
         <div class="section-header">
             <div class="sub-header">
                 <h3><?php echo $sub_header; ?></h3>

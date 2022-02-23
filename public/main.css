@@ -1793,7 +1793,7 @@ body.page-template-products .overview {
     grid-column: 6/span 8;
   }
 }
-body.page-template-products .ecosystem {
+body.page-template-products .products-ecosystem {
   padding-top: clamp(2.5rem, 10vh, 5rem);
   padding-bottom: clamp(2.5rem, 10vh, 5rem);
   gap: 8rem 2rem;
@@ -1803,39 +1803,39 @@ body.page-template-products .ecosystem {
   background-size: contain, cover;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-products .ecosystem {
+  body.page-template-products .products-ecosystem {
     padding-top: clamp(5rem, 15vh, 7.5rem);
     padding-bottom: clamp(5rem, 15vh, 7.5rem);
   }
 }
 @media screen and (min-width: 992px) {
-  body.page-template-products .ecosystem {
+  body.page-template-products .products-ecosystem {
     gap: 4rem 2rem;
   }
 }
-body.page-template-products .ecosystem .section-header {
+body.page-template-products .products-ecosystem .section-header {
   color: #fff;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-products .ecosystem .section-header {
+  body.page-template-products .products-ecosystem .section-header {
     grid-column: 3/span 10;
   }
 }
 @media screen and (min-width: 1280px) {
-  body.page-template-products .ecosystem .section-header {
+  body.page-template-products .products-ecosystem .section-header {
     grid-column: 2/span 7;
   }
 }
-body.page-template-products .ecosystem .section-header .sub-header {
+body.page-template-products .products-ecosystem .section-header .sub-header {
   padding-bottom: 0.25rem;
 }
-body.page-template-products .ecosystem .section-header .sub-header h3 {
+body.page-template-products .products-ecosystem .section-header .sub-header h3 {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 100;
 }
-body.page-template-products .ecosystem .section-header .header h2 {
+body.page-template-products .products-ecosystem .section-header .header h2 {
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1em;
@@ -1844,14 +1844,14 @@ body.page-template-products .ecosystem .section-header .header h2 {
   font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
 }
 @media screen and (min-width: 992px) {
-  body.page-template-products .ecosystem .section-header .header h2 {
+  body.page-template-products .products-ecosystem .section-header .header h2 {
     font-size: clamp(5rem, 6.5rem + 3.33vw, 7rem);
   }
 }
-body.page-template-products .ecosystem .section-header .deck {
+body.page-template-products .products-ecosystem .section-header .deck {
   padding-top: 1rem;
 }
-body.page-template-products .ecosystem .product {
+body.page-template-products .products-ecosystem .product {
   background-image: radial-gradient(circle at 50%, white 50%, rgba(255, 255, 255, 0.75) 100%);
   box-shadow: rgba(50, 50, 93, 0.4) 0px 40px 60px -12px, rgba(0, 0, 0, 0.25) 0px 18px 36px -18px;
   aspect-ratio: 1/1;
@@ -1864,59 +1864,59 @@ body.page-template-products .ecosystem .product {
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  body.page-template-products .ecosystem .product {
+  body.page-template-products .products-ecosystem .product {
     margin: 0 0 0 auto;
   }
-  body.page-template-products .ecosystem .product:nth-child(odd) {
+  body.page-template-products .products-ecosystem .product:nth-child(odd) {
     margin: 0 auto 0 0;
   }
 }
 @media screen and (min-width: 992px) {
-  body.page-template-products .ecosystem .product {
+  body.page-template-products .products-ecosystem .product {
     grid-column: 3/span 10;
   }
 }
 @media screen and (min-width: 1280px) {
-  body.page-template-products .ecosystem .product-1 {
+  body.page-template-products .products-ecosystem .product-1 {
     grid-column: 10/span 4;
     grid-row: 1;
     transform: translate3d(-5vw, 20vh, 0);
   }
 }
 @media screen and (min-width: 1280px) {
-  body.page-template-products .ecosystem .product-2 {
+  body.page-template-products .products-ecosystem .product-2 {
     grid-column: 2/span 4;
     grid-row: 2;
     transform: translate3d(5vw, 10vh, 0);
   }
 }
 @media screen and (min-width: 1280px) {
-  body.page-template-products .ecosystem .product-3 {
+  body.page-template-products .products-ecosystem .product-3 {
     grid-column: 10/span 4;
     grid-row: 3;
     transform: translate3d(-10vw, 0, 0);
   }
 }
-body.page-template-products .ecosystem .product .info {
+body.page-template-products .products-ecosystem .product .info {
   text-align: center;
   padding: 2rem;
   position: static;
 }
-body.page-template-products .ecosystem .product .info img {
+body.page-template-products .products-ecosystem .product .info img {
   margin: 0 auto;
 }
-body.page-template-products .ecosystem .product .icon {
+body.page-template-products .products-ecosystem .product .icon {
   position: absolute;
   right: 1rem;
   z-index: 10;
   top: -6rem;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-products .ecosystem .product .icon {
+  body.page-template-products .products-ecosystem .product .icon {
     top: -8rem;
   }
 }
-body.page-template-products .ecosystem .product .deck {
+body.page-template-products .products-ecosystem .product .deck {
   padding: 1rem 0;
 }
 body.page-template-products .features {
