@@ -1,5 +1,9 @@
 <?php
 
+global $has_hero;
+$has_hero = 'has-hero';
+
+
 /*
 	Template Name: Atlas
 */

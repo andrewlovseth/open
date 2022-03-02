@@ -1,3 +1,7 @@
+<?php
+	global $has_hero;
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -8,7 +12,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($has_hero); ?>>
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
