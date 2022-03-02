@@ -1,0 +1,103 @@
+.featured {
+    &-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-areas:
+            'a'
+            'b'
+            'c';
+
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 3 / span 10;
+            grid-template-columns: 1fr 1fr;
+
+            grid-template-areas:
+                'a a'
+                'b c';
+        }
+
+        @include desktop-medium {
+            grid-column: 2 / span 12;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                'a b'
+                'a c';
+        }
+    }
+
+    article {
+        background: $white;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
+            rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+
+        .photo {
+            aspect-ratio: 16 / 9;
+            @include cover-fill-image;
+            border-radius: 10px;
+            border: 1px solid #f5f5f5;
+
+            img {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+
+        .info {
+            padding: 1.5rem 2rem;
+
+            h4 {
+                display: inline-block;
+                color: $blue;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                font-weight: bold;
+                font-size: $type-size-050;
+                font-family: $rubik;
+
+                margin-bottom: 0.25rem;
+            }
+
+            h3 {
+                font-size: $type-size-400;
+                line-height: 1.125em;
+                margin: 0;
+            }
+        }
+
+        &:nth-child(1) {
+            grid-area: a;
+
+            .photo {
+                @include desktop-medium {
+                    aspect-ratio: 4 / 3;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            grid-area: b;
+        }
+
+        &:nth-child(3) {
+            grid-area: c;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            .info {
+                padding-top: 1rem;
+                h3 {
+                    @include desktop-medium {
+                        font-size: $type-size-300;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,10 @@
     @include desktop-small {
         font-size: $type-size-800;
     }
+
+    &.dark-blue {
+        color: $dark-blue;
+    }
 }
 
 .section-title {

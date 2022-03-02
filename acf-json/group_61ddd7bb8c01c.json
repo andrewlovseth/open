@@ -1,7 +1,50 @@
 {
     "key": "group_61ddd7bb8c01c",
     "title": "Options: News",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_621fa4a626fa4",
+            "label": "News",
+            "name": "news",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_621fa4a926fa5",
+                    "label": "Featured",
+                    "name": "featured",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "news"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "elements": "",
+                    "min": "",
+                    "max": "",
+                    "return_format": "object"
+                }
+            ]
+        }
+    ],
     "location": [
         [
             {
@@ -35,5 +78,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641928659
+    "modified": 1646245506
 }
