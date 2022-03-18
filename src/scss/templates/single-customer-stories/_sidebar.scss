@@ -1,11 +1,36 @@
-body.page-template-solutions {
+.article-sidebar {
+    .copy-3 {
+        line-height: 1.675em;
+        font-style: italic;
+        background: $white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
+            rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+
+        @include desktop-small {
+            padding: 2rem;
+        }
+    }
+
+    @include tablet {
+        grid-column: 3 / span 6;
+    }
+
+    @include desktop-small {
+        grid-column: 2 / span 4;
+        grid-row: 2;
+    }
+
     .in-use {
         padding-top: 4rem;
-        max-width: 30rem;
-        margin: 0 auto;
 
         .section-header {
-            display: none;
+            padding-bottom: 1rem;
+        }
+
+        .module-title {
+            color: $blue;
         }
 
         .item {

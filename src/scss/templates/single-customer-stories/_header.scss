@@ -1,0 +1,35 @@
+.article-header {
+    @include tablet {
+        grid-column: 3 / span 6;
+    }
+
+    @include desktop-small {
+        grid-column: 2 / span 12;
+    }
+
+    .back {
+        a {
+            font-size: $type-size-100;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: $blue;
+
+            &::before {
+                content: '← ';
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    h1 {
+        font-size: $type-size-900;
+        color: $dark-blue;
+
+        @include desktop-small {
+            font-size: $type-size-1000;
+        }
+    }
+}

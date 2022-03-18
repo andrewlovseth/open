@@ -1,18 +1,18 @@
-<?php if(have_rows('products')): ?>
+<?php if(have_rows('solutions')): ?>
 
-    <div class="products in-use">
+    <div class="solutions in-use">
 
         <div class="section-header">
-            <h3 class="module-title">Products In Use</h3>
+            <h3 class="module-title">Solutions In Use</h3>
         </div>
 
-        <?php while(have_rows('products')): the_row(); ?>
+        <?php while(have_rows('solutions')): the_row(); ?>
 
             <?php
 
-                $product = get_sub_field('product');
+                $solution = get_sub_field('solution');
                 $label_override = get_sub_field('label_override');
-                $search = get_field('search', $product->ID);
+                $search = get_field('search', $solution->ID);
                 $photo = $search['photo'];
                 $description = $search['description'];
                 $label = $search['label'];
@@ -22,13 +22,13 @@
                 } elseif($search['title']) {
                     $title = $search['title'];
                 } else {
-                    $title = get_the_title( $product->ID );
+                    $title = get_the_title( $solution->ID );
                 }     
 
             ?>
 
-            <div class="product item">
-                <a href="<?php echo get_permalink( $product->ID ); ?>">
+            <div class="solution item">
+                <a href="<?php echo get_permalink( $solution->ID ); ?>">
                     <div class="photo">
                         <?php echo wp_get_attachment_image($photo['ID'], 'medium'); ?>
                     </div>

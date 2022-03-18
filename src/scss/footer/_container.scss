@@ -1,0 +1,15 @@
+.footer-container {
+    padding: clamp(3rem, 12vh, 7.5rem) 0;
+
+    @include tablet-small {
+        grid-column: 3 / span 6;
+    }
+
+    @include tablet {
+        grid-column: 2 / span 8;
+    }
+
+    @include desktop-small {
+        grid-column: 2 / span 12;
+    }
+}

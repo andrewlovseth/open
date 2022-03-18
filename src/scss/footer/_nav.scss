@@ -1,0 +1,45 @@
+.footer-nav {
+    display: grid;
+    gap: 4rem 2rem;
+    padding-top: clamp(2rem, 5vh, 4rem);
+
+    @include tablet-small {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .header {
+        h4 {
+            color: #7f7f7f;
+            font-size: $type-size-200;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-family: $rubik;
+        }
+    }
+
+    ul {
+        padding-top: 0.5rem;
+
+        li {
+            padding-bottom: 0.25rem;
+
+            a {
+                font-family: $rubik;
+                font-weight: 400;
+                font-size: $type-size-200;
+            }
+        }
+    }
+}

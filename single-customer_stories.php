@@ -38,9 +38,14 @@
                 <?php endif; ?>
                 
                 <?php get_template_part('templates/single-customer-stories/products'); ?>
+
+                <?php get_template_part('templates/single-customer-stories/solutions'); ?>
+
             </aside>
 
             <section class="article-footer">
+                <?php get_template_part('templates/single-customer-stories/call-to-action'); ?>
+
                 <?php get_template_part('template-parts/global/related'); ?>
             </section>
         </article>
