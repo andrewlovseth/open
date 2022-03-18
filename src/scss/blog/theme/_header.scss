@@ -1,0 +1,17 @@
+.site-header {
+    .site-logo:before {
+        background-image: linear-gradient(90deg, #45826a 0%, #5ed1de 100%);
+        opacity: 1;
+    }
+
+    .desktop-nav__link:after {
+        background: $blue;
+    }
+
+    .cta {
+        .btn {
+            background: $blue;
+            border-radius: 0;
+        }
+    }
+}

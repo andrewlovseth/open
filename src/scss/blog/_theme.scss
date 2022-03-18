@@ -1,0 +1,23 @@
+body.blog {
+    background: $white;
+
+    ::-moz-selection {
+        background: #45826a;
+        color: $white;
+        text-shadow: none;
+    }
+
+    ::selection {
+        background: #45826a;
+        color: $white;
+        text-shadow: none;
+    }
+
+    @import 'theme/header';
+
+    .site-content {
+        min-height: 50vh;
+    }
+
+    @import 'theme/footer';
+}

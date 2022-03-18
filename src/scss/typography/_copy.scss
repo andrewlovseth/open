@@ -9,6 +9,16 @@
         li + li {
             margin-top: 1rem;
         }
+
+        figure {
+            width: 100% !important;
+
+            figcaption {
+                padding-top: 0.5rem;
+                font-size: $type-size-200;
+                font-style: italic;
+            }
+        }
     }
 
     &.copy-1 {

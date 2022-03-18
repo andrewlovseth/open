@@ -4,9 +4,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
-
 function style() {
-    return gulp.src('src/scss/main.scss')
+    return gulp
+        .src('src/scss/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write())
@@ -15,7 +15,8 @@ function style() {
 }
 
 function scripts() {
-    return gulp.src('src/js/main.js')
+    return gulp
+        .src('src/js/main.js')
         .pipe(sourcemaps.init())
         .pipe(gulp.dest('./public'))
         .pipe(browserSync.stream());
@@ -23,11 +24,11 @@ function scripts() {
 
 function watch() {
     browserSync.init({
-        proxy: "https://open.local"
+        proxy: 'https://open.local',
     });
 
     gulp.watch('./src/scss/**/*.scss', style);
-    gulp.watch('./src/js/**/*.js', scripts)
+    gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch('./**/*.php').on('change', browserSync.reload);
 }
 

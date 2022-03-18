@@ -1,0 +1,49 @@
+.site-footer {
+    background: #45826a;
+    color: $white;
+
+    .pre-footer {
+        border-radius: 0;
+        background: #e5e4d0;
+        color: #45826a;
+
+        ul li .checkmark svg path {
+            fill: #45826a;
+        }
+
+        .cta {
+            .btn {
+                border-radius: 0;
+                color: #45826a;
+                border-color: #45826a;
+
+                &:hover {
+                    background: #45826a;
+                    color: #e5e4d0;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer-logo {
+        svg {
+            g,
+            path {
+                fill: $white;
+            }
+        }
+    }
+
+    .footer-nav .header h4 {
+        color: #e5e4d0;
+    }
+
+    .social-link svg {
+        fill: #e5e4d0;
+    }
+
+    a {
+        color: $white;
+    }
+}

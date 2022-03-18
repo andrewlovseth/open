@@ -31,45 +31,6 @@
     }
 
     article {
-        background: $white;
-        border-radius: 10px;
-        box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
-            rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
-
-        .photo {
-            aspect-ratio: 16 / 9;
-            @include cover-fill-image;
-            border-radius: 10px;
-            border: 1px solid #f5f5f5;
-
-            img {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-            }
-        }
-
-        .info {
-            padding: 1.5rem 2rem;
-
-            h4 {
-                display: inline-block;
-                color: $blue;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                font-weight: bold;
-                font-size: $type-size-050;
-                font-family: $rubik;
-
-                margin-bottom: 0.25rem;
-            }
-
-            h3 {
-                font-size: $type-size-400;
-                line-height: 1.125em;
-                margin: 0;
-            }
-        }
-
         &:nth-child(1) {
             grid-area: a;
 
