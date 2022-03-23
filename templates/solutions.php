@@ -12,6 +12,6 @@ get_header(); ?>
 
 	<?php get_template_part('template-parts/global/hero'); ?>
 	
-	<?php get_template_part('templates/single-customer-stories/solutions'); ?>
+	<?php get_template_part('templates/solutions/solutions'); ?>
 
 <?php get_footer(); ?>

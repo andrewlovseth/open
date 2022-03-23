@@ -1,59 +1,68 @@
 body.page-template-solutions {
-    .in-use {
-        padding-top: 4rem;
-        max-width: 30rem;
-        margin: 0 auto;
+    section.solutions {
+        @include section-spacing;
 
-        .section-header {
-            display: none;
-        }
+        .solution {
+            display: grid;
+            gap: 2rem;
+            align-items: center;
 
-        .item {
-            & + .item {
-                margin-top: 2rem;
+            @include tablet-small {
+                grid-column: 3 / span 6;
             }
 
-            a {
-                display: grid;
-                grid-template-columns: 6rem 1fr;
-                align-items: center;
-                background: $white;
-                box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
-                    rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
-                border-radius: 10px;
+            @include desktop-small {
+                grid-template-columns: repeat(12, 1fr);
+                grid-column: 2 / span 12;
+            }
 
-                @include desktop-small {
-                    grid-template-columns: 4rem 1fr;
-                }
-
-                @include desktop-medium {
-                    grid-template-columns: 6rem 1fr;
-                }
+            & + .solution {
+                @include section-spacing-top;
             }
 
             .photo {
-                aspect-ratio: 1 / 1;
-                @include cover-fill-image;
+                @include desktop-small {
+                    grid-column: 1 / span 5;
+                    grid-row: 1;
+                }
 
                 img {
-                    border-top-left-radius: 10px;
-                    border-bottom-left-radius: 10px;
+                    width: 100%;
                 }
             }
 
             .info {
-                padding: 1rem;
+                @include desktop-small {
+                    grid-column: 7 / span 5;
+                    grid-row: 1;
+                }
 
-                h4 {
-                    font-size: $type-size-400;
-                    line-height: 1.125em;
+                .sub-headline.copy {
+                    padding: 0.5rem 0 0 0;
 
-                    @include desktop-small {
-                        font-size: $type-size-300;
+                    h4 {
+                        color: #5c5c5c;
                     }
+                }
 
-                    @include desktop-medium {
-                        font-size: $type-size-400;
+                .copy {
+                    padding: 1rem 0 2rem 0;
+                    max-width: 34rem;
+                }
+            }
+
+            &:nth-child(even) {
+                .photo {
+                    @include desktop-small {
+                        grid-column: 7 / span 5;
+                        grid-row: 1;
+                    }
+                }
+
+                .info {
+                    @include desktop-small {
+                        grid-column: 1 / span 6;
+                        grid-row: 1;
                     }
                 }
             }

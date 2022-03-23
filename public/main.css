@@ -462,6 +462,12 @@ body {
   flex-direction: column;
   color: #fff;
   max-height: 90vh;
+  padding-top: 78px;
+}
+@media screen and (min-width: 768px) {
+  .hero .info {
+    padding-top: 108px;
+  }
 }
 .hero .info .headline {
   text-align: center;
@@ -470,9 +476,11 @@ body {
   font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
   font-weight: 400;
   font-family: "Anton", sans-serif;
+  line-height: 1.125em;
 }
 .hero .info .deck {
   text-align: center;
+  padding-top: 1rem;
 }
 .hero .info .deck p {
   font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
@@ -3226,63 +3234,75 @@ body.page-template-ultra section.consumption-models .model.has-icon {
   gap: 0 1rem;
 }
 
-body.page-template-solutions .in-use {
-  padding-top: 4rem;
-  max-width: 30rem;
-  margin: 0 auto;
+body.page-template-solutions section.solutions {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
 }
-body.page-template-solutions .in-use .section-header {
-  display: none;
+@media screen and (min-width: 992px) {
+  body.page-template-solutions section.solutions {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
 }
-body.page-template-solutions .in-use .item + .item {
-  margin-top: 2rem;
-}
-body.page-template-solutions .in-use .item a {
+body.page-template-solutions section.solutions .solution {
   display: grid;
-  grid-template-columns: 6rem 1fr;
+  gap: 2rem;
   align-items: center;
-  background: #fff;
-  box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
-  border-radius: 10px;
+}
+@media screen and (min-width: 480px) {
+  body.page-template-solutions section.solutions .solution {
+    grid-column: 3/span 6;
+  }
 }
 @media screen and (min-width: 992px) {
-  body.page-template-solutions .in-use .item a {
-    grid-template-columns: 4rem 1fr;
+  body.page-template-solutions section.solutions .solution {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2/span 12;
   }
 }
-@media screen and (min-width: 1280px) {
-  body.page-template-solutions .in-use .item a {
-    grid-template-columns: 6rem 1fr;
+body.page-template-solutions section.solutions .solution + .solution {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-solutions section.solutions .solution + .solution {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
   }
 }
-body.page-template-solutions .in-use .item .photo {
-  aspect-ratio: 1/1;
+@media screen and (min-width: 992px) {
+  body.page-template-solutions section.solutions .solution .photo {
+    grid-column: 1/span 5;
+    grid-row: 1;
+  }
 }
-body.page-template-solutions .in-use .item .photo img {
+body.page-template-solutions section.solutions .solution .photo img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body.page-template-solutions .in-use .item .photo img {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-body.page-template-solutions .in-use .item .info {
-  padding: 1rem;
-}
-body.page-template-solutions .in-use .item .info h4 {
-  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
-  line-height: 1.125em;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-solutions .in-use .item .info h4 {
-    font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+  body.page-template-solutions section.solutions .solution .info {
+    grid-column: 7/span 5;
+    grid-row: 1;
   }
 }
-@media screen and (min-width: 1280px) {
-  body.page-template-solutions .in-use .item .info h4 {
-    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+body.page-template-solutions section.solutions .solution .info .sub-headline.copy {
+  padding: 0.5rem 0 0 0;
+}
+body.page-template-solutions section.solutions .solution .info .sub-headline.copy h4 {
+  color: #5c5c5c;
+}
+body.page-template-solutions section.solutions .solution .info .copy {
+  padding: 1rem 0 2rem 0;
+  max-width: 34rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-solutions section.solutions .solution:nth-child(even) .photo {
+    grid-column: 7/span 5;
+    grid-row: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-solutions section.solutions .solution:nth-child(even) .info {
+    grid-column: 1/span 6;
+    grid-row: 1;
   }
 }
 

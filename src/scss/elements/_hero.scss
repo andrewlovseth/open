@@ -9,6 +9,11 @@
         flex-direction: column;
         color: $white;
         max-height: 90vh;
+        padding-top: 78px;
+
+        @include tablet {
+            padding-top: 108px;
+        }
 
         .headline {
             text-align: center;
@@ -17,11 +22,13 @@
                 font-size: $type-size-1000;
                 font-weight: 400;
                 font-family: $anton;
+                line-height: 1.125em;
             }
         }
 
         .deck {
             text-align: center;
+            padding-top: 1rem;
 
             p {
                 font-size: $type-size-400;
