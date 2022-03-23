@@ -1,0 +1,38 @@
+section.consumption-models {
+    @include section-spacing-bottom;
+
+    .section-header {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .models {
+        display: grid;
+        gap: 2rem 4rem;
+
+        @include tablet-small {
+            grid-column: 3 / span 6;
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: 2 / span 8;
+        }
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    .model {
+        .headline {
+            padding-bottom: 0.5rem;
+        }
+
+        &.has-icon {
+            display: grid;
+            grid-template-columns: 3rem 1fr;
+            gap: 0 1rem;
+        }
+    }
+}

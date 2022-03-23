@@ -1,0 +1,43 @@
+section.overview {
+    @include section-spacing;
+
+    .info {
+        padding-bottom: 2rem;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            padding-bottom: 0;
+            grid-column: 8 / span 6;
+        }
+
+        @include desktop-medium {
+            grid-column: 8 / span 5;
+            padding-top: 3rem;
+        }
+    }
+
+    .headline {
+        padding-bottom: 1rem;
+    }
+
+    .cta {
+        padding-top: 2rem;
+    }
+
+    .photo {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 1 / span 7;
+            grid-row: 1;
+            max-height: 555px;
+        }
+
+        @include cover-fill-image;
+    }
+}
