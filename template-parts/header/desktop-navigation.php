@@ -13,11 +13,12 @@ if( $desktop_nav ): ?>
                     if( $link ): 
                     $link_url = $link['url'];
                     $link_title = $link['title'];
+                    $link_slug = sanitize_title_with_dashes($link_title);
                     $link_target = $link['target'] ? $link['target'] : '_self';
                 ?>
 
                     <li class="desktop-nav__list-item">
-                        <a class="desktop-nav__link" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                        <a class="desktop-nav__link desktop-nav__link-<?php echo $link_slug; ?>" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
                             <?php echo esc_html($link_title); ?>
                         </a>
                     </li>
@@ -30,3 +31,4 @@ if( $desktop_nav ): ?>
     </nav>
 
 <?php endif; ?>
+

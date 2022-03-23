@@ -23,6 +23,18 @@
     @import 'hamburger';
 }
 
+// ACTIVE UNDERLINES
+body.page-template-products .desktop-nav__link-products,
+body.parent-pageid-22 .desktop-nav__link-products,
+body.page-template-solutions .desktop-nav__link-solutions,
+body.parent-pageid-30 .desktop-nav__link-solutions,
+body.post-type-archive-customer_stories .desktop-nav__link-customer-stories,
+body.single-customer_stories .desktop-nav__link-customer-stories {
+    &::after {
+        width: 100%;
+    }
+}
+
 body.has-hero {
     .site-header {
         position: fixed;
