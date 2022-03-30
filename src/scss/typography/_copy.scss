@@ -1,6 +1,10 @@
 .copy {
     font-weight: 300;
 
+    &.secondary-color {
+        color: $charcoal;
+    }
+
     &.extended {
         > * + * {
             margin-top: 2rem;
@@ -44,5 +48,9 @@
     a {
         color: $blue;
         text-decoration: underline;
+    }
+
+    .btn {
+        text-decoration: none;
     }
 }

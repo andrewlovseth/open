@@ -74,7 +74,7 @@
                     "key": "field_624450e975239",
                     "label": "Headline",
                     "name": "headline",
-                    "type": "text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -85,9 +85,9 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "br"
                 },
                 {
                     "key": "field_624450e975245",
@@ -213,7 +213,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "+ Add Features",
             "min": "",
             "max": ""
         },
@@ -377,10 +377,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_624450e970784",
+            "key": "field_6244ca6c623d7",
             "label": "Related Headline",
             "name": "related_headline",
-            "type": "clone",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -389,19 +389,17 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_621fcfbacd804"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_624450e970788",
+            "key": "field_6244c90fc4d09",
             "label": "Related",
             "name": "related",
-            "type": "clone",
+            "type": "relationship",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -410,13 +408,22 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_621fcfcc6496a"
+            "post_type": [
+                "post",
+                "news",
+                "page",
+                "resources",
+                "customer_stories"
             ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 3,
+            "return_format": "object"
         }
     ],
     "location": [
@@ -450,5 +457,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648646645
+    "modified": 1648675597
 }

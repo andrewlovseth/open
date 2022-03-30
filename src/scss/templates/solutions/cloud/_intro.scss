@@ -1,0 +1,49 @@
+.cloud-intro {
+    background: $light-blue;
+
+    @include desktop-small {
+        align-items: center;
+    }
+
+    .photo {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-row: 1;
+            grid-column: 8 / span 6;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info {
+        @include white-shadow-card;
+        max-width: 90%;
+        transform: translate3d(-2.5%, -7.5%, 0);
+        z-index: 10;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+            transform: translate3d(-15%, -15%, 0);
+        }
+
+        @include desktop-small {
+            grid-row: 1;
+            transform: unset;
+            max-width: unset;
+            grid-column: 2 / span 7;
+        }
+
+        .headline {
+            padding-bottom: 1rem;
+
+            h2 {
+                font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+            }
+        }
+    }
+}

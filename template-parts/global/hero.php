@@ -1,6 +1,15 @@
 <?php
 
-    $hero = get_field('hero');
+    $hero_check = get_field('hero');
+
+    if($hero_check['headline'] === null) {
+        $hero_array = get_field('hero');
+        $hero = $hero_array['hero'];
+
+    } else {
+        $hero = get_field('hero');
+    }      
+
     $photo = $hero['photo'];
     $headline = $hero['headline'];
     $deck = $hero['deck'];
@@ -28,3 +37,5 @@
         </div>
     <?php endif; ?>
 </section>
+
+<?php get_template_part('templates/solutions/dev-nav'); ?>

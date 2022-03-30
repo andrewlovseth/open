@@ -12,7 +12,7 @@ get_header(); ?>
 
 	<?php get_template_part('template-parts/global/hero'); ?>
 
-	<?php get_template_part('templates/solutions/intro'); ?>
+	<?php get_template_part('templates/solutions/cloud/intro'); ?>
 
 	<?php get_template_part('templates/solutions/cloud/cloud-hybrid'); ?>
 

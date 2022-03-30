@@ -150,6 +150,21 @@
                     "toolbar": "full",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_62447e1a4dd80",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
                 }
             ]
         },
@@ -219,7 +234,7 @@
                     "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 1,
+                    "media_upload": 0,
                     "delay": 0
                 },
                 {
@@ -299,8 +314,8 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "+ Add Feature",
             "sub_fields": [
                 {
                     "key": "field_624456c370539",
@@ -462,10 +477,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_624450ea5ce3e",
+            "key": "field_6244c8dd60f24",
             "label": "Related Headline",
             "name": "related_headline",
-            "type": "clone",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -474,19 +489,17 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_621fcfbacd804"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_624450ea5ce4f",
+            "key": "field_6244c8c0de0aa",
             "label": "Related",
             "name": "related",
-            "type": "clone",
+            "type": "relationship",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -495,13 +508,22 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_621fcfcc6496a"
+            "post_type": [
+                "post",
+                "news",
+                "page",
+                "resources",
+                "customer_stories"
             ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 3,
+            "return_format": "object"
         }
     ],
     "location": [
@@ -535,5 +557,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648645898
+    "modified": 1648675075
 }

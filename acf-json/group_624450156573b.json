@@ -308,10 +308,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_6244501567c71",
+            "key": "field_6244cb1bb097a",
             "label": "Related Headline",
             "name": "related_headline",
-            "type": "clone",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -320,19 +320,17 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_621fcfbacd804"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_6244501567c75",
+            "key": "field_6244c912c4d0b",
             "label": "Related",
             "name": "related",
-            "type": "clone",
+            "type": "relationship",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -341,13 +339,22 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_621fcfcc6496a"
+            "post_type": [
+                "post",
+                "news",
+                "page",
+                "resources",
+                "customer_stories"
             ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 3,
+            "return_format": "object"
         }
     ],
     "location": [
@@ -381,5 +388,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648645523
+    "modified": 1648675631
 }

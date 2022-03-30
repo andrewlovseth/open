@@ -1,72 +1,11 @@
 body.page-template-solutions {
-    section.solutions {
-        @include section-spacing;
-
-        .solution {
-            display: grid;
-            gap: 2rem;
-            align-items: center;
-
-            @include tablet-small {
-                grid-column: 3 / span 6;
-            }
-
-            @include desktop-small {
-                grid-template-columns: repeat(12, 1fr);
-                grid-column: 2 / span 12;
-            }
-
-            & + .solution {
-                @include section-spacing-top;
-            }
-
-            .photo {
-                aspect-ratio: 16 / 9;
-
-                @include desktop-small {
-                    aspect-ratio: unset;
-                    grid-column: 1 / span 5;
-                    grid-row: 1;
-                }
-
-                @include cover-fill-image;
-            }
-
-            .info {
-                @include desktop-small {
-                    grid-column: 7 / span 5;
-                    grid-row: 1;
-                }
-
-                .sub-headline.copy {
-                    padding: 0.5rem 0 0 0;
-
-                    h4 {
-                        color: #5c5c5c;
-                    }
-                }
-
-                .copy {
-                    padding: 1rem 0 2rem 0;
-                    max-width: 34rem;
-                }
-            }
-
-            &:nth-child(even) {
-                .photo {
-                    @include desktop-small {
-                        grid-column: 7 / span 5;
-                        grid-row: 1;
-                    }
-                }
-
-                .info {
-                    @include desktop-small {
-                        grid-column: 1 / span 6;
-                        grid-row: 1;
-                    }
-                }
-            }
-        }
-    }
+    @import 'templates/solutions/index';
 }
+
+body.parent-pageid-30 {
+    @import 'templates/solutions/intro';
+
+    @import 'templates/solutions/related';
+}
+
+@import 'templates/solutions/cloud/cloud';
