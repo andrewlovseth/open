@@ -1,0 +1,14 @@
+.hero {
+    h1 {
+        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+    }
+
+    .deck {
+        max-width: 50rem;
+        margin: 0 auto;
+
+        p {
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+        }
+    }
+}

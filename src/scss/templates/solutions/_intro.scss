@@ -1,3 +1,15 @@
 section.solutions-intro {
     @include section-spacing;
+
+    .copy {
+        @include desktop-small {
+            line-height: 2rem;
+        }
+    }
+
+    .photo {
+        img {
+            width: 100%;
+        }
+    }
 }

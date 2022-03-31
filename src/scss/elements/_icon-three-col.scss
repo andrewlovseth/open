@@ -1,0 +1,43 @@
+.icon-three-col {
+    @include section-spacing;
+    color: $white;
+
+    .section-header {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .container {
+        display: grid;
+        gap: 4rem;
+
+        @include tablet-small {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem 6rem;
+        }
+    }
+
+    .item {
+        text-align: center;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+
+            img {
+                width: 100%;
+                height: 3.5rem;
+                object-fit: contain;
+            }
+        }
+
+        .headline {
+            padding-bottom: 1.5rem;
+        }
+    }
+}

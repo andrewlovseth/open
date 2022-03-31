@@ -61,6 +61,21 @@
             }
         }
     }
+
+    .basic {
+        color: $blue;
+        font-size: $type-size-200;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.arrow {
+            &::after {
+                content: ' →';
+            }
+        }
+    }
 }
 
 .rich-cta {
@@ -71,8 +86,7 @@
         width: 100%;
         display: flex;
         align-items: stretch;
-        box-shadow: rgba(50, 50, 93, 0.2) 0px 40px 60px -8px,
-            rgba(0, 0, 0, 0.12) 0px 18px 36px -18px;
+        box-shadow: rgba(50, 50, 93, 0.2) 0px 40px 60px -8px, rgba(0, 0, 0, 0.12) 0px 18px 36px -18px;
         border-radius: 8px;
         padding: 1px;
         background: linear-gradient(-90deg, #a510f8 0%, #00a3ff 100%);

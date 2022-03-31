@@ -1,0 +1,37 @@
+section.workflow {
+    @include section-spacing;
+    background: $light-blue;
+    gap: 1rem 2rem;
+
+    @include center-narrow;
+
+    .headline {
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+
+        @include desktop-medium {
+            grid-column: 2 / span 5;
+        }
+
+        br {
+            display: none;
+
+            @include desktop-small {
+                display: block;
+            }
+        }
+    }
+
+    .copy {
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+    }
+
+    .graphic {
+        @include desktop-small {
+            padding-top: 2rem;
+        }
+    }
+}

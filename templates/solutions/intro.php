@@ -31,7 +31,7 @@
         <?php endif; ?>
 
         <?php if($copy): ?>
-            <div class="copy copy-2 extended">
+            <div class="copy copy-2 extended color-secondary">
                 <?php echo $copy; ?>
             </div>
         <?php endif; ?>

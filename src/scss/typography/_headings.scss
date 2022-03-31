@@ -16,6 +16,10 @@
     font-weight: 900;
     font-size: $type-size-800;
     line-height: 1.125em;
+
+    &.small {
+        font-size: $type-size-600;
+    }
 }
 
 .module-title {

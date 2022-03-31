@@ -1,0 +1,27 @@
+section.simplifies {
+    @include section-spacing;
+    background: linear-gradient(344.58deg, #0e1f5a 19.43%, #850771 71.05%, #fe4292 111.03%);
+
+    .section-header {
+        padding-bottom: 2.5rem;
+    }
+
+    .section-title {
+        color: $white;
+    }
+
+    .card {
+        @include white-shadow-card;
+        text-align: center;
+        border-radius: 8px;
+
+        .headline {
+            padding-bottom: 0.5rem;
+            h4 {
+                font-weight: bold;
+                font-size: $type-size-300;
+                line-height: 1.5em;
+            }
+        }
+    }
+}

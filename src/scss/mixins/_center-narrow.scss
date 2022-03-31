@@ -1,0 +1,11 @@
+@mixin center-narrow {
+    & > * {
+        @include tablet-small {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+        }
+    }
+}

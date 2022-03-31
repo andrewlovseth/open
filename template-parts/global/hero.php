@@ -38,4 +38,4 @@
     <?php endif; ?>
 </section>
 
-<?php get_template_part('templates/solutions/dev-nav'); ?>
+<?php // get_template_part('templates/solutions/dev-nav'); ?>
