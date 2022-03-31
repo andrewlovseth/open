@@ -1,0 +1,8 @@
+section.partners {
+    background: $light-blue;
+    @include section-spacing;
+
+    .section-header {
+        padding-bottom: 2.5rem;
+    }
+}

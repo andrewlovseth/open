@@ -14,7 +14,7 @@ get_header(); ?>
 
 	<?php get_template_part('templates/solutions/intro'); ?>
 
-	<?php get_template_part('templates/solutions/nas/features'); ?>
+	<?php get_template_part('templates/solutions/containerization/features'); ?>
 
 	<?php get_template_part('templates/solutions/nas/workflow'); ?>
 

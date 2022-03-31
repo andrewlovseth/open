@@ -1,0 +1,28 @@
+section.intro {
+    background: $white;
+
+    @include center-narrow;
+
+    .info {
+        @include desktop-small {
+            display: grid;
+            gap: 0 2rem;
+            grid-template-columns: repeat(12, minmax(0, 4.5rem));
+        }
+    }
+
+    .headline {
+        padding-bottom: 2rem;
+
+        @include desktop-small {
+            grid-column: 1 / span 4;
+        }
+    }
+
+    .copy {
+        @include desktop-small {
+            grid-column: 5 / span 7;
+        }
+    }
+
+}

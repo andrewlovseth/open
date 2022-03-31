@@ -12,17 +12,35 @@
         gap: 4rem;
 
         @include tablet-small {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
 
         @include tablet {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             gap: 4rem 6rem;
+        }
+
+        &.items-5 {
+            .item-4 {
+                @include tablet {
+                    grid-column: 2 / span 2;
+                }
+            }
+
+            .item-5 {
+                @include tablet {
+                    grid-column: 4 / span 2;
+                }
+            }
         }
     }
 
     .item {
         text-align: center;
+        
+        @include tablet-small {
+            grid-column: span 2;
+        }
 
         .icon {
             display: flex;
