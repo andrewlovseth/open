@@ -1,3 +1,21 @@
-body.post-type-archive-resources {
+body.post-type-archive-resources,
+body.tax-resource_type {
+    @import 'archive-resources/page-header';
 
+    .resources-container {
+    }
+
+    @import 'archive-resources/sidebar';
+
+    @import 'archive-resources/list';
+
+    @import 'archive-resources/pagination';
+}
+
+body.tax-resource_type {
+    article.resource {
+        h4.types {
+            display: none;
+        }
+    }
 }

@@ -1,0 +1,36 @@
+.page-header {
+    padding: 3rem 0;
+
+    .sub-headline {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        font-size: $type-size-150;
+        color: $blue;
+    }
+
+    .headline {
+        padding-bottom: 1rem;
+    }
+
+    .copy {
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+    }
+
+    .resource-filters-toggle {
+        display: inline-block;
+        margin-top: 1rem;
+        color: $blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @include desktop-small {
+            display: none;
+        }
+    }
+}

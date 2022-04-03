@@ -7,3 +7,5 @@ require_once( plugin_dir_path( __FILE__ ) . '/functions/enqueue-styles-scripts.p
 require_once( plugin_dir_path( __FILE__ ) . '/functions/acf.php');
 
 require_once( plugin_dir_path( __FILE__ ) . '/functions/svg.php');
+
+require_once( plugin_dir_path( __FILE__ ) . '/functions/posts-per-page.php');

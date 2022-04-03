@@ -1,0 +1,15 @@
+.resources-list {
+    @include section-spacing-bottom;
+
+    @include desktop-small {
+        grid-column: 6 / span 8;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    @include desktop-medium {
+        grid-column: 5 / span 9;
+    }
+
+    @import 'resource';
+}

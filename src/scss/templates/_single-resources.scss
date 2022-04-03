@@ -1,3 +1,17 @@
 body.single-resources {
+    .resource-detail {
+        @include section-spacing;
 
+        @include desktop-small {
+            padding-bottom: 0;
+        }
+
+        .resource {
+            @include desktop-small {
+                grid-column: 3 / span 10;
+            }
+        }
+    }
+
+    @import 'archive-resources/resource';
 }

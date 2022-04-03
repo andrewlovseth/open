@@ -54,3 +54,13 @@
         }
     }
 }
+
+.hero-compact {
+    height: 6rem;
+
+    @include tablet {
+        height: 8rem;
+    }
+
+    @include cover-fill-image;
+}
