@@ -1,0 +1,54 @@
+section.overview {
+    @include section-spacing;
+    background: $white;
+    @include center-narrow;
+
+    .headline {
+        padding-bottom: 1rem;
+
+        @include desktop-small {
+            grid-column: 5 / span 9;
+            padding-bottom: 2rem;
+        }
+
+        br {
+            display: none;
+
+            @include desktop-small {
+                display: block;
+            }
+        }
+    }
+
+    .info {
+        @include desktop-small {
+            grid-column: 5 / span 9;
+            grid-row: 2;
+        }
+    }
+
+    .deck {
+        @include desktop-small {
+            columns: 2;
+            column-gap: 3rem;
+        }
+    }
+
+    .cta {
+        padding-top: 2rem;
+    }
+
+    .sidebar {
+        padding-top: 2rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 3;
+            grid-row: 2;
+            padding-top: 0;
+        }
+
+        .copy {
+            font-weight: 400;
+        }
+    }
+}

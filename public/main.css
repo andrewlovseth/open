@@ -3240,6 +3240,245 @@ body.page-template-atlas section.containerization .cta {
   }
 }
 
+body.page-template-atlas-cloud-plus section.overview {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  background: #fff;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas-cloud-plus section.overview > * {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview > * {
+    grid-column: 2/span 12;
+  }
+}
+body.page-template-atlas-cloud-plus section.overview .headline {
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview .headline {
+    grid-column: 5/span 9;
+    padding-bottom: 2rem;
+  }
+}
+body.page-template-atlas-cloud-plus section.overview .headline br {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview .headline br {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview .info {
+    grid-column: 5/span 9;
+    grid-row: 2;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview .deck {
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+}
+body.page-template-atlas-cloud-plus section.overview .cta {
+  padding-top: 2rem;
+}
+body.page-template-atlas-cloud-plus section.overview .sidebar {
+  padding-top: 2rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.overview .sidebar {
+    grid-column: 2/span 3;
+    grid-row: 2;
+    padding-top: 0;
+  }
+}
+body.page-template-atlas-cloud-plus section.overview .sidebar .copy {
+  font-weight: 400;
+}
+body.page-template-atlas-cloud-plus section.services {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  background: #f4f7f9;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.services {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas-cloud-plus section.services > * {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.services > * {
+    grid-column: 2/span 12;
+  }
+}
+body.page-template-atlas-cloud-plus section.services .section-header {
+  padding-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.services .section-header {
+    padding-bottom: 4rem;
+  }
+}
+body.page-template-atlas-cloud-plus section.services .section-header .headline {
+  padding-bottom: 1rem;
+}
+body.page-template-atlas-cloud-plus section.services .section-header .section-title {
+  line-height: 1;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus .services-mobile {
+    display: none;
+  }
+}
+body.page-template-atlas-cloud-plus .services-mobile .service {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+body.page-template-atlas-cloud-plus .services-mobile .service-1 {
+  padding-top: 0;
+}
+body.page-template-atlas-cloud-plus .services-mobile .service-5 {
+  padding-bottom: 1rem;
+}
+body.page-template-atlas-cloud-plus .services-mobile .service:before {
+  display: block;
+  content: "";
+  width: 0.25rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-atlas-cloud-plus .services-mobile .service:before {
+    left: 2rem;
+  }
+}
+body.page-template-atlas-cloud-plus .services-mobile .service .info {
+  display: grid;
+  gap: 0 2rem;
+  grid-template-columns: 4rem 1fr;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-atlas-cloud-plus .services-mobile .service .info {
+    grid-template-columns: 6rem 1fr;
+    gap: 0 1rem;
+  }
+}
+body.page-template-atlas-cloud-plus .services-mobile .service .headline {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+body.page-template-atlas-cloud-plus .services-mobile .service .headline h3 {
+  line-height: 1.125em;
+  font-family: "Circular Std", sans-serif;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-cloud-plus section.services .services-desktop {
+    display: block;
+    grid-column: 3/span 10;
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body.page-template-atlas-cloud-plus section.services .services-desktop {
+    grid-column: 4/span 8;
+  }
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service {
+  display: block;
+  position: absolute;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service .info {
+  text-align: center;
+  position: absolute;
+  bottom: -3.5rem;
+  width: 100%;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service .info .module-title {
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service .info .link-label {
+  display: inline-block;
+  padding-top: 0.5rem;
+  color: #2d77f8;
+  font-size: clamp(0.5rem, 0.42rem + 0.38vw, 0.675rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-1 {
+  bottom: 6rem;
+  left: -3rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-1 .info {
+  left: -1rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-2 {
+  bottom: 4rem;
+  left: 12rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-2 .info {
+  left: -0.75rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-3 {
+  bottom: 9rem;
+  left: 26rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-3 .info {
+  bottom: -2rem;
+  left: -0.5rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-4 {
+  bottom: 18rem;
+  left: 31rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-4 .info {
+  top: 0.5rem;
+  bottom: unset;
+  left: 9rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-5 {
+  top: 0;
+  left: 29rem;
+}
+body.page-template-atlas-cloud-plus section.services .services-desktop .service-5 .info {
+  top: 0.25rem;
+  bottom: unset;
+  left: 9rem;
+}
+body.page-template-atlas-cloud-plus .features {
+  background: linear-gradient(331.22deg, #140931 13.72%, #004368 72.05%);
+}
+body.page-template-atlas-cloud-plus .features .section-header {
+  padding-bottom: 3rem;
+}
+body.page-template-atlas-cloud-plus .features .section-header .headline {
+  padding-bottom: 1rem;
+}
+
 body.page-template-ultra section.overview {
   padding-top: clamp(2.5rem, 10vh, 5rem);
   padding-bottom: clamp(2.5rem, 10vh, 5rem);

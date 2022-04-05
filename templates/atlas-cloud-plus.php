@@ -1,5 +1,8 @@
 <?php
 
+global $has_hero;
+$has_hero = 'has-hero';
+
 /*
 	Template Name: Atlas Cloud Plus
 */
@@ -10,9 +13,7 @@ get_header(); ?>
 
     <?php get_template_part('templates/atlas-cloud-plus/overview'); ?>
 
-	<?php get_template_part('templates/atlas-cloud-plus/services-mobile'); ?>
-
-	<?php get_template_part('templates/atlas-cloud-plus/services-desktop'); ?>
+	<?php get_template_part('templates/atlas-cloud-plus/services'); ?>
 
     <?php get_template_part('templates/atlas-cloud-plus/features'); ?>
 
