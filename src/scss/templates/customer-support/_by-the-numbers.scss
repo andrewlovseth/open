@@ -45,14 +45,14 @@ section.by-the-numbers {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
 
         @include tablet {
             padding: 1rem 2rem;
         }
 
         .copy {
-            font-size: clamp(0.875rem, 1vw, 1rem);
+            font-size: clamp(1rem, 1.1vw, 1.125rem);
         }
 
         &-large,
@@ -112,7 +112,7 @@ section.by-the-numbers {
             align-items: stretch;
 
             .content-wrapper {
-                padding: 1.5rem 2rem;
+                padding: 2rem 2rem;
 
                 @include tablet {
                     padding: 2rem 2.5rem;
@@ -123,7 +123,9 @@ section.by-the-numbers {
 
     @for $i from 1 through 8 {
         .item-#{$i} {
-            grid-area: number#{$i};
+            @include desktop-small {
+                grid-area: number#{$i};
+            }
         }
     }
 }

@@ -6309,7 +6309,7 @@ body.page-template-customer-support section.by-the-numbers .number {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 @media screen and (min-width: 768px) {
   body.page-template-customer-support section.by-the-numbers .number {
@@ -6322,7 +6322,7 @@ body.page-template-customer-support section.by-the-numbers .number {
   }
 }
 body.page-template-customer-support section.by-the-numbers .number .copy {
-  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
 }
 @media screen and (min-width: 768px) {
   body.page-template-customer-support section.by-the-numbers .number-large, body.page-template-customer-support section.by-the-numbers .number-medium {
@@ -6367,36 +6367,52 @@ body.page-template-customer-support section.by-the-numbers .number.item-8 {
   align-items: stretch;
 }
 body.page-template-customer-support section.by-the-numbers .number.item-8 .content-wrapper {
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
 }
 @media screen and (min-width: 768px) {
   body.page-template-customer-support section.by-the-numbers .number.item-8 .content-wrapper {
     padding: 2rem 2.5rem;
   }
 }
-body.page-template-customer-support section.by-the-numbers .item-1 {
-  grid-area: number1;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-1 {
+    grid-area: number1;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-2 {
-  grid-area: number2;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-2 {
+    grid-area: number2;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-3 {
-  grid-area: number3;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-3 {
+    grid-area: number3;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-4 {
-  grid-area: number4;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-4 {
+    grid-area: number4;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-5 {
-  grid-area: number5;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-5 {
+    grid-area: number5;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-6 {
-  grid-area: number6;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-6 {
+    grid-area: number6;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-7 {
-  grid-area: number7;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-7 {
+    grid-area: number7;
+  }
 }
-body.page-template-customer-support section.by-the-numbers .item-8 {
-  grid-area: number8;
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .item-8 {
+    grid-area: number8;
+  }
 }
 
 body.blog {
