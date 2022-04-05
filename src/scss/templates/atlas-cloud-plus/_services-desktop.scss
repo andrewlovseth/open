@@ -89,4 +89,110 @@ section.services {
             }
         }
     }
+
+    .ac-plus-modal {
+        .modal__container {
+            max-width: 48rem;
+        }
+
+        .swiper-wrapper {
+            padding-bottom: 4rem;
+        }
+
+        .swiper-pagination {
+            bottom: 0;
+
+            &-bullet {
+                width: 1.25rem;
+                height: 1.25rem;
+                margin: 0 3rem;
+                opacity: 1;
+                position: relative;
+
+                &:before {
+                    display: block;
+                    content: '';
+                    width: 6rem;
+                    height: 0.25rem;
+                    background: $blue;
+                    position: absolute;
+                    right: 1.25rem;
+                    top: 0.5rem;
+                }
+
+                &-active {
+                    &:after {
+                        display: block;
+                        content: '';
+                        width: 0.75rem;
+                        height: 0.75rem;
+                        background: $white;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0.25rem;
+                        left: 0.25rem;
+                    }
+                }
+
+                &-active:nth-child(1),
+                &:nth-child(1) {
+                    background: #f72154;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &-active:nth-child(2),
+                &:nth-child(2) {
+                    background: #ff7b00;
+
+                    &:before {
+                        background: #ff7b00;
+                    }
+                }
+
+                &-active:nth-child(3),
+                &:nth-child(3) {
+                    background: #05b2dc;
+
+                    &:before {
+                        background: #05b2dc;
+                    }
+                }
+
+                &-active:nth-child(4),
+                &:nth-child(4) {
+                    background: #092d6b;
+
+                    &:before {
+                        background: #092d6b;
+                    }
+                }
+
+                &-active:nth-child(5),
+                &:nth-child(5) {
+                    background: #4a306d;
+
+                    &:before {
+                        background: #4a306d;
+                    }
+                }
+            }
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 8rem 1fr;
+            gap: 0 1rem;
+        }
+
+        .headline {
+            padding-bottom: 1.5rem;
+
+            .section-title {
+                line-height: 1em;
+            }
+        }
+    }
 }

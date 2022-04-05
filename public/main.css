@@ -3520,6 +3520,84 @@ body.page-template-atlas-cloud-plus section.services .services-desktop .service-
   bottom: unset;
   left: 9rem;
 }
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .modal__container {
+  max-width: 48rem;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-wrapper {
+  padding-bottom: 4rem;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination {
+  bottom: 0;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 3rem;
+  opacity: 1;
+  position: relative;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:before {
+  display: block;
+  content: "";
+  width: 6rem;
+  height: 0.25rem;
+  background: #2d77f8;
+  position: absolute;
+  right: 1.25rem;
+  top: 0.5rem;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:after {
+  display: block;
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(1), body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(1) {
+  background: #f72154;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(1):before, body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(1):before {
+  display: none;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(2), body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(2) {
+  background: #ff7b00;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(2):before, body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(2):before {
+  background: #ff7b00;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(3), body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(3) {
+  background: #05b2dc;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(3):before, body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(3):before {
+  background: #05b2dc;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(4), body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(4) {
+  background: #092d6b;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(4):before, body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(4):before {
+  background: #092d6b;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(5), body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(5) {
+  background: #4a306d;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet-active:nth-child(5):before, body.page-template-atlas-cloud-plus section.services .ac-plus-modal .swiper-pagination-bullet:nth-child(5):before {
+  background: #4a306d;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .content-wrapper {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0 1rem;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .headline {
+  padding-bottom: 1.5rem;
+}
+body.page-template-atlas-cloud-plus section.services .ac-plus-modal .headline .section-title {
+  line-height: 1em;
+}
 body.page-template-atlas-cloud-plus .features {
   background: linear-gradient(331.22deg, #140931 13.72%, #004368 72.05%);
 }

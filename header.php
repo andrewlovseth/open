@@ -8,10 +8,16 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 	
 	<?php wp_head(); ?>
+
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+	<?php 
+		// Atlas Cloud Plus
+		if(is_page(26)): ?>
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	<?php endif; ?>
 </head>
 
 <body <?php body_class($has_hero); ?>>

@@ -8,6 +8,6 @@ import Modals from './modals.js';
     Header.init();
     Animations.init();
     Utilities.init();
-    Content.init();
     Modals.init();
+    Content.init();
 })();

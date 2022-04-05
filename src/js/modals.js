@@ -1,3 +1,5 @@
+import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+
 const Modal = {
     modals: function () {
         MicroModal.init({
@@ -32,9 +34,38 @@ const Modal = {
         });
     },
 
+    acPlusModal: function () {
+        const acPlusLinks = document.querySelectorAll('.js-ac-plus-modal');
+
+        acPlusLinks.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                const slideIndex = link.dataset.slideIndex;
+                console.log(slideIndex);
+
+                const acPlusSwiper = new Swiper('.swiper', {
+                    autoplay: false,
+                    speed: 600,
+                    spaceBetween: 0,
+                    initialSlide: parseFloat(slideIndex),
+                    grabCursor: true,
+                    loop: true,
+                    navigation: false,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                });
+
+                e.preventDefault();
+            });
+        });
+    },
+
     init: function () {
         this.modals();
         this.videoModal();
+        this.acPlusModal();
     },
 };
 
