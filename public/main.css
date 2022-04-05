@@ -862,6 +862,57 @@ section.page-header {
   padding-bottom: 1.5rem;
 }
 
+.icon-four-col {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  .icon-four-col {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+.icon-four-col .section-header {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.icon-four-col .container {
+  display: grid;
+  gap: 4rem 2rem;
+}
+@media screen and (min-width: 480px) {
+  .icon-four-col .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .icon-four-col .container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+.icon-four-col .item {
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .icon-four-col .item {
+    grid-column: span 2;
+  }
+}
+.icon-four-col .item .icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+.icon-four-col .item .icon img {
+  width: 100%;
+  height: 3.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.icon-four-col .item .headline {
+  padding-bottom: 0.5rem;
+}
+
 .noscroll {
   overflow: hidden;
 }
@@ -6111,6 +6162,241 @@ body.single-customer_stories article.customer_stories section.call-to-action .ct
 }
 body.single-customer_stories article.customer_stories section.call-to-action .cta .btn:hover {
   color: #f3a041;
+}
+
+body.page-template-customer-support .site {
+  background: #fff5e6;
+}
+body.page-template-customer-support .hero h1 {
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+}
+body.page-template-customer-support .hero .deck {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+body.page-template-customer-support .hero .deck p {
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+}
+body.page-template-customer-support .hero .info .headline h1 {
+  font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support .hero .info .headline h1 {
+    font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+  }
+}
+body.page-template-customer-support section.intro {
+  background: #fff;
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.intro {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 480px) {
+  body.page-template-customer-support section.intro > * {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.intro > * {
+    grid-column: 2/span 12;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.intro .info {
+    grid-column: 2/span 6;
+  }
+}
+body.page-template-customer-support section.intro .info .headline {
+  padding-bottom: 1.5rem;
+}
+body.page-template-customer-support section.intro .info .headline h2 {
+  line-height: 1em;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.intro .photo {
+    grid-column: 9/span 5;
+  }
+}
+body.page-template-customer-support section.features {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body.page-template-customer-support section.features .feature {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.features .feature {
+    padding: 2rem 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.features .feature {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+body.page-template-customer-support section.features .feature .item-content {
+  transform: translateY(-2rem);
+}
+body.page-template-customer-support section.features .feature .icon {
+  width: 65%;
+  margin: 0 auto;
+}
+body.page-template-customer-support section.features .feature .icon svg {
+  width: 100%;
+}
+body.page-template-customer-support section.by-the-numbers {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  background-color: #fff5e6;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers {
+    padding-bottom: 0;
+  }
+}
+body.page-template-customer-support section.by-the-numbers .section-header {
+  padding-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .section-header {
+    grid-column: 3/span 10;
+  }
+}
+body.page-template-customer-support section.by-the-numbers .section-header .headline {
+  padding-bottom: 1rem;
+}
+body.page-template-customer-support section.by-the-numbers .fancy-grid {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.by-the-numbers .fancy-grid {
+    grid-column: 3/span 6;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .fancy-grid {
+    grid-column: 2/span 12;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas: "number1 number1 number2 number2" "number1 number1 number3 number4" "number5 number5 number8 number8" "number6 number7 number8 number8";
+  }
+}
+body.page-template-customer-support section.by-the-numbers .number {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.by-the-numbers .number {
+    padding: 2rem 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.by-the-numbers .number {
+    padding: 1rem 2rem;
+  }
+}
+body.page-template-customer-support section.by-the-numbers .number .copy {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.by-the-numbers .number-large, body.page-template-customer-support section.by-the-numbers .number-medium {
+    grid-column: span 2;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.by-the-numbers .number-large, body.page-template-customer-support section.by-the-numbers .number-medium {
+    grid-column: unset;
+  }
+}
+body.page-template-customer-support section.by-the-numbers .number-large .graphic {
+  display: flex;
+  justify-content: center;
+}
+body.page-template-customer-support section.by-the-numbers .number-large .copy {
+  padding-top: 1rem;
+  text-align: center;
+}
+body.page-template-customer-support section.by-the-numbers .number-medium .content-wrapper {
+  display: flex;
+}
+body.page-template-customer-support section.by-the-numbers .number-medium .content-wrapper .graphic {
+  width: 25%;
+}
+body.page-template-customer-support section.by-the-numbers .number-medium .content-wrapper .copy {
+  flex: 1;
+  padding-left: 2rem;
+}
+body.page-template-customer-support section.by-the-numbers .number-small .graphic {
+  display: flex;
+  justify-content: center;
+}
+body.page-template-customer-support section.by-the-numbers .number-small .copy {
+  padding-top: 1rem;
+  text-align: center;
+}
+body.page-template-customer-support section.by-the-numbers .number.item-8 {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  align-items: stretch;
+}
+body.page-template-customer-support section.by-the-numbers .number.item-8 .content-wrapper {
+  padding: 1.5rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-customer-support section.by-the-numbers .number.item-8 .content-wrapper {
+    padding: 2rem 2.5rem;
+  }
+}
+body.page-template-customer-support section.by-the-numbers .item-1 {
+  grid-area: number1;
+}
+body.page-template-customer-support section.by-the-numbers .item-2 {
+  grid-area: number2;
+}
+body.page-template-customer-support section.by-the-numbers .item-3 {
+  grid-area: number3;
+}
+body.page-template-customer-support section.by-the-numbers .item-4 {
+  grid-area: number4;
+}
+body.page-template-customer-support section.by-the-numbers .item-5 {
+  grid-area: number5;
+}
+body.page-template-customer-support section.by-the-numbers .item-6 {
+  grid-area: number6;
+}
+body.page-template-customer-support section.by-the-numbers .item-7 {
+  grid-area: number7;
+}
+body.page-template-customer-support section.by-the-numbers .item-8 {
+  grid-area: number8;
 }
 
 body.blog {

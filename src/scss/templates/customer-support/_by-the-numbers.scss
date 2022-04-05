@@ -1,0 +1,129 @@
+section.by-the-numbers {
+    @include section-spacing;
+    background-color: $cream;
+
+    @include desktop-small {
+        padding-bottom: 0;
+    }
+
+    .section-header {
+        padding-bottom: 3rem;
+
+        @include desktop-small {
+            grid-column: 3 / span 10;
+        }
+
+        .headline {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .fancy-grid {
+        display: grid;
+        gap: 2rem;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 1fr;
+            grid-template-areas:
+                'number1 number1 number2 number2'
+                'number1 number1 number3 number4'
+                'number5 number5 number8 number8'
+                'number6 number7 number8 number8';
+        }
+    }
+
+    .number {
+        @include white-shadow-card;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        @include tablet {
+            padding: 1rem 2rem;
+        }
+
+        .copy {
+            font-size: clamp(0.875rem, 1vw, 1rem);
+        }
+
+        &-large,
+        &-medium {
+            @include tablet {
+                grid-column: span 2;
+            }
+
+            @include desktop-small {
+                grid-column: unset;
+            }
+        }
+
+        &-large {
+            .graphic {
+                display: flex;
+                justify-content: center;
+            }
+
+            .copy {
+                padding-top: 1rem;
+                text-align: center;
+            }
+        }
+
+        &-medium {
+            .content-wrapper {
+                display: flex;
+
+                .graphic {
+                    width: 25%;
+                }
+
+                .copy {
+                    flex: 1;
+                    padding-left: 2rem;
+                }
+            }
+        }
+
+        &-small {
+            .graphic {
+                display: flex;
+                justify-content: center;
+            }
+
+            .copy {
+                padding-top: 1rem;
+                text-align: center;
+            }
+        }
+
+        &.item-8 {
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+            align-items: stretch;
+
+            .content-wrapper {
+                padding: 1.5rem 2rem;
+
+                @include tablet {
+                    padding: 2rem 2.5rem;
+                }
+            }
+        }
+    }
+
+    @for $i from 1 through 8 {
+        .item-#{$i} {
+            grid-area: number#{$i};
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.hero {
+    @include hero-shadows;
+
+    .info {
+        .headline {
+            h1 {
+                font-size: $type-size-800;
+
+                @include tablet {
+                    font-size: $type-size-1000;
+                }
+            }
+        }
+    }
+}

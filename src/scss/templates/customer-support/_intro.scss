@@ -1,0 +1,25 @@
+section.intro {
+    background: $white;
+    @include section-spacing;
+    @include center-narrow;
+
+    .info {
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+
+        .headline {
+            padding-bottom: 1.5rem;
+
+            h2 {
+                line-height: 1em;
+            }
+        }
+    }
+
+    .photo {
+        @include desktop-small {
+            grid-column: 9 / span 5;
+        }
+    }
+}

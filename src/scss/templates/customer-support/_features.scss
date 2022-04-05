@@ -1,0 +1,30 @@
+section.features {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .feature {
+        @include white-shadow-card;
+        border-radius: 8px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        @include tablet {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .item-content {
+            transform: translateY(-2rem);
+        }
+
+        .icon {
+            width: 65%;
+            margin: 0 auto;
+
+            svg {
+                width: 100%;
+            }
+        }
+    }
+}

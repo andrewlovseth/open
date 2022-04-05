@@ -1,0 +1,45 @@
+.icon-four-col {
+    @include section-spacing;
+
+    .section-header {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .container {
+        display: grid;
+        gap: 4rem 2rem;
+
+        @include tablet-small {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include desktop-small {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+
+    .item {
+        text-align: center;
+
+        @include tablet-small {
+            grid-column: span 2;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+
+            img {
+                width: 100%;
+                height: 3.5rem;
+                object-fit: contain;
+            }
+        }
+
+        .headline {
+            padding-bottom: 0.5rem;
+        }
+    }
+}
