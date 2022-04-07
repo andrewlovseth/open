@@ -28,7 +28,7 @@
             <ul class="queries__list">
                 <?php foreach($queries as $search): ?>
                     <li class="queries__list-item">
-                        <a class="queries__link" href="#"><?php echo $search['query']; ?></a>
+                        <a class="queries__link" href="<?php echo site_url('/?s=' . $search['query']); ?>"><?php echo $search['query']; ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
