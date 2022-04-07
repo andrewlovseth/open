@@ -1,0 +1,25 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    max-width: 24rem;
+    padding: 4rem;
+    left: 0;
+    height: 100vh;
+    background: $black;
+    z-index: 5555;
+    box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.25);
+
+    a {
+        color: $white;
+        font-size: $type-size-400;
+    }
+
+    &-section {
+        padding-bottom: 1rem;
+    }
+
+    &-body {
+        display: none;
+    }
+}
