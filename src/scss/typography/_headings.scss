@@ -18,8 +18,12 @@
 
 .section-title {
     font-weight: 900;
-    font-size: $type-size-800;
+    font-size: $type-size-700;
     line-height: 1.125em;
+
+    @include tablet {
+        font-size: $type-size-800;
+    }
 
     &.small {
         font-size: $type-size-600;

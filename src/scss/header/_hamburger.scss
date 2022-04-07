@@ -8,6 +8,20 @@
         padding: 0 2rem;
     }
 
+    &-mobile {
+        @include desktop-small {
+            display: none;
+        }
+    }
+
+    &-desktop {
+        display: none;
+
+        @include desktop-small {
+            display: flex;
+        }
+    }
+
     a {
         display: block;
         width: 2rem;

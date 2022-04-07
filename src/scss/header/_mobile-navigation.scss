@@ -2,17 +2,95 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    max-width: 24rem;
-    padding: 4rem;
-    left: 0;
+    left: -100vw;
     height: 100vh;
     background: $black;
     z-index: 5555;
     box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.25);
+    transition: all 200ms ease;
+    opacity: 0;
+
+    @include tablet {
+        width: 28rem;
+        left: -28rem;
+    }
+
+    &.open {
+        left: 0;
+        opacity: 1;
+    }
+
+    &-wrapper {
+        height: 100vh;
+        @include scroll-y;
+        padding: 3rem;
+
+        @include tablet-small {
+            padding: 4rem;
+        }
+    }
+
+    &-close {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+
+        svg,
+        rect {
+            fill: $white;
+        }
+    }
 
     a {
         color: $white;
-        font-size: $type-size-400;
+        font-size: $type-size-500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-logo {
+        padding-bottom: 1rem;
+
+        a {
+            display: block;
+
+            svg {
+                width: 8rem;
+            }
+        }
+    }
+
+    &-toggle {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 0.875rem;
+            height: 0.875rem;
+            margin-left: 0.75rem;
+            transition: all 200ms ease;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transform: translateY(-8px);
+            }
+
+            svg,
+            path {
+                fill: $white;
+            }
+        }
+
+        &.active {
+            .icon {
+                transform: rotate(-90deg);
+            }
+        }
     }
 
     &-section {
@@ -21,5 +99,23 @@
 
     &-body {
         display: none;
+        padding-top: 0.5rem;
+
+        &.active {
+            display: block;
+        }
+
+        .mobile-nav-link {
+            padding-left: 1rem;
+
+            & + .mobile-nav-link {
+                padding-top: 0.5rem;
+            }
+
+            a {
+                font-size: $type-size-400;
+                font-weight: 400;
+            }
+        }
     }
 }

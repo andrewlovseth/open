@@ -19,10 +19,14 @@
             text-align: center;
 
             h1 {
-                font-size: $type-size-1000;
+                font-size: $type-size-800;
                 font-weight: 400;
                 font-family: $anton;
                 line-height: 1.125em;
+
+                @include tablet {
+                    font-size: $type-size-1000;
+                }
             }
         }
 

@@ -231,8 +231,13 @@ a {
 
 .section-title {
   font-weight: 900;
-  font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+  font-size: clamp(1.8rem, 1.54rem + 1.29vw, 2.34rem);
   line-height: 1.125em;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+  }
 }
 .section-title.small {
   font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
@@ -507,10 +512,15 @@ body {
   text-align: center;
 }
 .hero .info .headline h1 {
-  font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+  font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
   font-weight: 400;
   font-family: "Anton", sans-serif;
   line-height: 1.125em;
+}
+@media screen and (min-width: 768px) {
+  .hero .info .headline h1 {
+    font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+  }
 }
 .hero .info .deck {
   text-align: center;
@@ -1381,6 +1391,19 @@ section.page-header {
     padding: 0 2rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .site-header .hamburger-mobile {
+    display: none;
+  }
+}
+.site-header .hamburger-desktop {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .site-header .hamburger-desktop {
+    display: flex;
+  }
+}
 .site-header .hamburger a {
   display: block;
   width: 2rem;
@@ -1417,23 +1440,109 @@ section.page-header {
   position: fixed;
   top: 0;
   width: 100vw;
-  max-width: 24rem;
-  padding: 4rem;
-  left: 0;
+  left: -100vw;
   height: 100vh;
   background: #000;
   z-index: 5555;
   box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.25);
+  transition: all 200ms ease;
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    width: 28rem;
+    left: -28rem;
+  }
+}
+.mobile-nav.open {
+  left: 0;
+  opacity: 1;
+}
+.mobile-nav-wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 3rem;
+}
+.mobile-nav-wrapper::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .mobile-nav-wrapper {
+    padding: 4rem;
+  }
+}
+.mobile-nav-close {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+.mobile-nav-close svg,
+.mobile-nav-close rect {
+  fill: #fff;
 }
 .mobile-nav a {
   color: #fff;
-  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+}
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+.mobile-nav-logo {
+  padding-bottom: 1rem;
+}
+.mobile-nav-logo a {
+  display: block;
+}
+.mobile-nav-logo a svg {
+  width: 8rem;
+}
+.mobile-nav-toggle {
+  display: flex;
+  align-items: center;
+}
+.mobile-nav-toggle .icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-left: 0.75rem;
+  transition: all 200ms ease;
+}
+.mobile-nav-toggle .icon svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translateY(-8px);
+}
+.mobile-nav-toggle .icon svg,
+.mobile-nav-toggle .icon path {
+  fill: #fff;
+}
+.mobile-nav-toggle.active .icon {
+  transform: rotate(-90deg);
 }
 .mobile-nav-section {
   padding-bottom: 1rem;
 }
 .mobile-nav-body {
   display: none;
+  padding-top: 0.5rem;
+}
+.mobile-nav-body.active {
+  display: block;
+}
+.mobile-nav-body .mobile-nav-link {
+  padding-left: 1rem;
+}
+.mobile-nav-body .mobile-nav-link + .mobile-nav-link {
+  padding-top: 0.5rem;
+}
+.mobile-nav-body .mobile-nav-link a {
+  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  font-weight: 400;
 }
 
 body.page-template-products .desktop-nav__link-products::after,
@@ -2095,6 +2204,7 @@ body.nav-overlay-open .nav-content {
 .site-footer .pre-footer .headline h3 {
   font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
   font-weight: 400;
+  line-height: 1em;
 }
 .site-footer .pre-footer ul {
   list-style-type: none;
