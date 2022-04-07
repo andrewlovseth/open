@@ -21,7 +21,7 @@
                 ?>
 
                 <?php if($section_toggle): ?>
-                    <div class="mobile-nav-section">
+                    <div class="mobile-nav-section dropdown">
                         <div class="mobile-nav-header">
                             <a href="#" class="js-mobile-nav-toggle mobile-nav-toggle" data-section-id="<?php echo $section_slug; ?>">
                                 <span class="label"><?php echo $section_toggle; ?></span>
@@ -52,7 +52,7 @@
 
                 <?php else: ?>
 
-                    <div class="mobile-nav-section">
+                    <div class="mobile-nav-section basic">
                         <?php if(have_rows('links')): while(have_rows('links')): the_row(); ?>                    
                             
                             <?php 

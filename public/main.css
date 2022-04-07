@@ -1454,6 +1454,11 @@ section.page-header {
     left: -28rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}
 .mobile-nav.open {
   left: 0;
   opacity: 1;
@@ -1488,9 +1493,6 @@ section.page-header {
   color: #fff;
   font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
 }
-.mobile-nav a:hover {
-  text-decoration: underline;
-}
 .mobile-nav-logo {
   padding-bottom: 1rem;
 }
@@ -1500,9 +1502,19 @@ section.page-header {
 .mobile-nav-logo a svg {
   width: 8rem;
 }
+@media screen and (min-width: 480px) {
+  .mobile-nav-logo a svg {
+    width: 10rem;
+  }
+}
 .mobile-nav-toggle {
   display: flex;
   align-items: center;
+}
+.mobile-nav-toggle .label {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .mobile-nav-toggle .icon {
   width: 0.875rem;
@@ -1515,7 +1527,7 @@ section.page-header {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 .mobile-nav-toggle .icon svg,
 .mobile-nav-toggle .icon path {
@@ -1526,6 +1538,11 @@ section.page-header {
 }
 .mobile-nav-section {
   padding-bottom: 1rem;
+}
+.mobile-nav-section.basic a {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .mobile-nav-body {
   display: none;
