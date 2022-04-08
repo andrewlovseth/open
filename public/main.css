@@ -5249,6 +5249,17 @@ body.page-template-solutions-analytics .features {
   background: linear-gradient(314.71deg, #650700 23.48%, #771C15 40.1%, #DE713E 88.47%);
 }
 
+body.page-template-tech-alliances .hero h1 {
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+}
+body.page-template-tech-alliances .hero .deck {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+body.page-template-tech-alliances .hero .deck p {
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+}
+
 body.post-type-archive-resources .page-header,
 body.tax-resource_type .page-header {
   padding: 3rem 0;

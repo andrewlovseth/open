@@ -36,6 +36,10 @@ function bearsmith_acf_styles() {
             .acf-relationship .list {
                 height: 400px;
             }
+
+            .select2-selection--multiple {
+                height: 200px;
+            }
         </style>
 
     <?php

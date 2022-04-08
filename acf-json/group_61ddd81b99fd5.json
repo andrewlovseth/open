@@ -1,13 +1,75 @@
 {
     "key": "group_61ddd81b99fd5",
     "title": "Post Type: Partners",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_6250c9c0f4fc0",
+            "label": "Category",
+            "name": "category",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "tech-partnerships": "Tech Partnerships",
+                "tech-application": "Tech Application",
+                "containerized-applications": "Containerized Applications",
+                "tech-suppliers": "Tech Suppliers"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_6250ca4aee9ac",
+            "label": "URL",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_624f508207628",
+            "label": "Short Description",
+            "name": "short_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br"
+        }
+    ],
     "location": [
         [
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "parnters"
+                "value": "partners"
             }
         ]
     ],
@@ -17,6 +79,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
+        "the_content",
         "excerpt",
         "discussion",
         "comments",
@@ -24,10 +87,12 @@
         "slug",
         "author",
         "format",
+        "categories",
+        "tags",
         "send-trackbacks"
     ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641928768
+    "modified": 1649461851
 }

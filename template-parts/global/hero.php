@@ -13,7 +13,6 @@
     $photo = $hero['photo'];
     $headline = $hero['headline'];
     $deck = $hero['deck'];
-
 ?>
 
 <section class="grid hero">
@@ -38,4 +37,4 @@
     <?php endif; ?>
 </section>
 
-<?php // get_template_part('templates/solutions/dev-nav'); ?>
+<?php //  get_template_part('templates/solutions/dev-nav'); ?>

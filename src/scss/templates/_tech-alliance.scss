@@ -1,3 +1,5 @@
-body.page-template-tech-alliance {
-    
+body.page-template-tech-alliances {
+    .hero {
+        @include hero-shadows;
+    }
 }
