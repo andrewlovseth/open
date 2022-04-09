@@ -1,3 +1,62 @@
 body.page-template-contact {
-    
+    .page-header {
+        padding: 3rem 0;
+
+        .headline {
+            padding-bottom: 1rem;
+        }
+
+        .copy {
+            @include desktop-small {
+                grid-column: 2 / span 8;
+            }
+        }
+    }
+
+    .contact-info {
+        padding-bottom: 6rem;
+
+        @include desktop-small {
+            padding-bottom: 0;
+        }
+
+        .header {
+            padding-bottom: 0.5rem;
+
+            h3 {
+                color: $blue;
+                font-size: $type-size-400;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                & + li {
+                    margin-top: 1rem;
+                }
+            }
+
+            .label {
+                display: block;
+                text-transform: uppercase;
+                font-size: $type-size-150;
+                letter-spacing: 0.05em;
+                color: $dark-blue;
+                font-family: $rubik;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }

@@ -1,3 +1,19 @@
 body.page-template-careers {
-    
+    .page-header {
+        padding: 3rem 0;
+
+        .headline {
+            padding-bottom: 1rem;
+        }
+
+        .copy {
+            @include desktop-small {
+                grid-column: 2 / span 8;
+            }
+        }
+    }
+
+    .embed {
+        @include white-shadow-card;
+    }
 }

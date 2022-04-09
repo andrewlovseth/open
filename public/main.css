@@ -3093,6 +3093,78 @@ body.single-post article.post .article-footer .related .section-title {
   color: #0a2d6b;
 }
 
+body.page-template-careers .page-header {
+  padding: 3rem 0;
+}
+body.page-template-careers .page-header .headline {
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-careers .page-header .copy {
+    grid-column: 2/span 8;
+  }
+}
+body.page-template-careers .embed {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-careers .embed {
+    padding: 2rem 2.5rem;
+  }
+}
+
+body.page-template-contact .page-header {
+  padding: 3rem 0;
+}
+body.page-template-contact .page-header .headline {
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-contact .page-header .copy {
+    grid-column: 2/span 8;
+  }
+}
+body.page-template-contact .contact-info {
+  padding-bottom: 6rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-contact .contact-info {
+    padding-bottom: 0;
+  }
+}
+body.page-template-contact .contact-info .header {
+  padding-bottom: 0.5rem;
+}
+body.page-template-contact .contact-info .header h3 {
+  color: #2d77f8;
+  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+}
+body.page-template-contact .contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+body.page-template-contact .contact-info ul li + li {
+  margin-top: 1rem;
+}
+body.page-template-contact .contact-info ul .label {
+  display: block;
+  text-transform: uppercase;
+  font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
+  letter-spacing: 0.05em;
+  color: #0a2d6b;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+body.page-template-contact .contact-info a {
+  color: #000;
+  text-decoration: none;
+}
+body.page-template-contact .contact-info a:hover {
+  text-decoration: underline;
+}
+
 body.page-template-products .hero .info {
   grid-row: 1;
   z-index: 10;
