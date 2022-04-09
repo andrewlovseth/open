@@ -1,7 +1,7 @@
 <section class="article-header">
     <div class="container">
         <div class="date">
-            <h4><?php the_time('l, F j, Y'); ?></h4>
+            <h4><?php $date = get_the_time('l, F j, Y'); echo strtolower($date); ?></h4>
         </div>
 
         <div class="post-title">

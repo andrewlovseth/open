@@ -1,0 +1,36 @@
+@mixin blog-photo {
+    .photo-wrapper {
+        background-color: $blog-tan;
+        display: flex;
+        flex: 1 1 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            filter: grayscale(100%) contrast(1) blur(0);
+            flex: 1 0 100%;
+            height: 100%;
+            max-width: 100%;
+            mix-blend-mode: multiply;
+            object-fit: cover;
+            opacity: 0.71;
+            position: relative;
+            width: 100%;
+        }
+
+        &::before {
+            background-color: $blog-green;
+            bottom: 0;
+            content: '';
+            height: 100%;
+            left: 0;
+            mix-blend-mode: overlay;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+}

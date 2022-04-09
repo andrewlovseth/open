@@ -10,6 +10,7 @@
 
     .featured-image {
         padding-bottom: 2rem;
+        @include blog-photo;
     }
 
     .copy-2 {
@@ -70,15 +71,15 @@
     }
 
     h1 {
-        font-size: $type-size-700;
+        font-size: $type-size-1000;
     }
 
     h2 {
-        font-size: $type-size-600;
+        font-size: $type-size-800;
     }
 
     h3 {
-        font-size: $type-size-500;
+        font-size: $type-size-600;
     }
 
     h4,

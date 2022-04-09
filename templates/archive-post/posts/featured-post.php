@@ -6,17 +6,33 @@
         $count = $args['count']; 
     }
 
+    $search = get_field('search', $blog->ID);
+    $excerpt = $search['description'];
+
 ?>
 
 <article class="teaser blog blog-<?php echo $count; ?>">
     <a href="<?php echo get_permalink( $blog->ID ); ?>">
         <div class="photo">
-            <?php echo get_the_post_thumbnail($blog->ID ); ?>
+            <div class="photo-wrapper">
+                <?php echo get_the_post_thumbnail($blog->ID ); ?>
+            </div>
         </div>
 
         <div class="info">
-            <h4><?php the_time('m/d/Y'); ?></h4>
-            <h3><?php echo get_the_title( $blog->ID ); ?></h3>
+            <div class="date">
+                <h4><?php $date = get_the_time('l, F j, Y', $blog->ID); echo strtolower($date); ?></h4>
+            </div>
+
+            <div class="post-title">
+                <h3><?php echo get_the_title( $blog->ID ); ?></h3>
+            </div>
+
+            <?php if($count === 1): ?>
+                <div class="copy copy-3">
+                    <p><?php echo $excerpt; ?></p>
+                </div>
+            <?php endif; ?>
         </div>
     </a>
 </article>

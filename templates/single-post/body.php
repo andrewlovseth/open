@@ -1,7 +1,9 @@
 <section class="article-body">                
     <?php if(get_the_post_thumbnail()): ?>
         <div class="featured-image">
-            <?php the_post_thumbnail(); ?>
+            <div class="photo-wrapper">
+                <?php the_post_thumbnail(); ?>
+            </div>
         </div>
     <?php endif; ?>
 
