@@ -19,7 +19,7 @@
                 ?>
 
                 <div class="leader">
-                    <a href="#" class="leader-teaser" data-micromodal-trigger="leader-<?php echo $slug; ?>">
+                    <a href="#" class="js-leader-modal leader-teaser" data-micromodal-trigger="leader-<?php echo $slug; ?>">
                         <div class="photo">
                             <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
                         </div>

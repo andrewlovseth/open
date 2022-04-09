@@ -62,10 +62,21 @@ const Modal = {
         });
     },
 
+    leadershipModal: function () {
+        const leadershipLinks = document.querySelectorAll('.js-leader-modal');
+
+        leadershipLinks.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+            });
+        });
+    },
+
     init: function () {
         this.modals();
         this.videoModal();
         this.acPlusModal();
+        this.leadershipModal();
     },
 };
 
