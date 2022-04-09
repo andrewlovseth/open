@@ -2375,6 +2375,125 @@ body.page-template-home .test-two {
   height: 100vh;
 }
 
+body.page-template-leadership .hero h1 {
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+}
+body.page-template-leadership .hero .deck {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+body.page-template-leadership .hero .deck p {
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 768px) {
+  body.page-template-leadership .hero .photo img {
+    height: clamp(28rem, 60vh, 44rem);
+  }
+}
+body.page-template-leadership .leadership {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-leadership .leadership {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 768px) {
+  body.page-template-leadership .leadership .three-col-grid {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-leadership .leadership .three-col-grid {
+    grid-column: 3/span 10;
+  }
+}
+body.page-template-leadership .leader-teaser a {
+  display: block;
+  transition: all 400ms ease;
+}
+body.page-template-leadership .leader-teaser a:hover .photo {
+  background: #0a2d6b;
+}
+body.page-template-leadership .leader-teaser a:hover .info {
+  background: #0a2d6b;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+body.page-template-leadership .leader-teaser a:hover .info .name h3,
+body.page-template-leadership .leader-teaser a:hover .info .position h4 {
+  color: #fff;
+}
+body.page-template-leadership .leader-teaser .photo {
+  aspect-ratio: 3/4;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 400ms ease;
+}
+body.page-template-leadership .leader-teaser .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body.page-template-leadership .leader-teaser .info {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding: 1.5rem 2rem;
+  transition: all 400ms ease;
+  transform: translateY(-2px);
+  margin-bottom: -2px;
+}
+body.page-template-leadership .leader-teaser .info .name h3 {
+  transition: all 400ms ease;
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+  color: #2d77f8;
+}
+body.page-template-leadership .leader-teaser .info .position h4 {
+  transition: all 400ms ease;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  line-height: 1.125em;
+  color: #0a2d6b;
+  font-family: "Rubik", sans-serif;
+}
+body.page-template-leadership .leader-modal .modal__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+body.page-template-leadership .leader-modal .modal__content .photo {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-leadership .leader-modal .modal__content .photo {
+    width: 20rem;
+  }
+}
+body.page-template-leadership .leader-modal .modal__content .info {
+  flex: 1;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-leadership .leader-modal .modal__content .info {
+    padding-top: 0;
+    padding-left: 2rem;
+  }
+}
+body.page-template-leadership .leader-modal .modal__content .info .name h3 {
+  transition: all 400ms ease;
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+  color: #2d77f8;
+}
+body.page-template-leadership .leader-modal .modal__content .info .position {
+  padding-bottom: 2rem;
+}
+body.page-template-leadership .leader-modal .modal__content .info .position h4 {
+  transition: all 400ms ease;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  line-height: 1.125em;
+  color: #0a2d6b;
+  font-family: "Rubik", sans-serif;
+}
+
 @media screen and (min-width: 768px) {
   body.post-type-archive-news .page-header h1 {
     grid-column: 3/span 6;

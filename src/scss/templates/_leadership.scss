@@ -1,3 +1,125 @@
 body.page-template-leadership {
-    
+    .hero {
+        @include hero-shadows;
+
+        @include tablet {
+            .photo img {
+                height: clamp(28rem, 60vh, 44rem);
+            }
+        }
+    }
+
+    .leadership {
+        @include section-spacing;
+
+        .three-col-grid {
+            @include tablet {
+                grid-column: 3 / span 6;
+            }
+
+            @include desktop-small {
+                grid-column: 3 / span 10;
+            }
+        }
+    }
+
+    .leader-teaser {
+        a {
+            display: block;
+            transition: all 400ms ease;
+
+            &:hover {
+                .photo {
+                    background: $dark-blue;
+                }
+                .info {
+                    background: $dark-blue;
+                    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+                    .name h3,
+                    .position h4 {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .photo {
+            aspect-ratio: 3 / 4;
+            @include cover-fill-image;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 400ms ease;
+        }
+
+        .info {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            background: $white;
+            padding: 1.5rem 2rem;
+            transition: all 400ms ease;
+            transform: translateY(-2px);
+            margin-bottom: -2px;
+
+            .name {
+                h3 {
+                    transition: all 400ms ease;
+                    font-size: $type-size-500;
+                    color: $blue;
+                }
+            }
+
+            .position {
+                h4 {
+                    transition: all 400ms ease;
+                    font-size: $type-size-200;
+                    line-height: 1.125em;
+                    color: $dark-blue;
+                    font-family: $rubik;
+                }
+            }
+        }
+    }
+
+    .leader-modal {
+        .modal__content {
+            display: flex;
+            flex-wrap: wrap;
+
+            .photo {
+                width: 100%;
+
+                @include tablet {
+                    width: 20rem;
+                }
+            }
+
+            .info {
+                flex: 1;
+                padding-top: 1rem;
+
+                @include tablet {
+                    padding-top: 0;
+                    padding-left: 2rem;
+                }
+
+                .name {
+                    h3 {
+                        transition: all 400ms ease;
+                        font-size: $type-size-500;
+                        color: $blue;
+                    }
+                }
+
+                .position {
+                    padding-bottom: 2rem;
+                    h4 {
+                        transition: all 400ms ease;
+                        font-size: $type-size-200;
+                        line-height: 1.125em;
+                        color: $dark-blue;
+                        font-family: $rubik;
+                    }
+                }
+            }
+        }
+    }
 }
