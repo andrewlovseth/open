@@ -6962,7 +6962,7 @@ body.search-results .pagination span.current {
 }
 
 body.blog {
-  background: #fff;
+  background: rgba(229, 228, 208, 0.5);
 }
 body.blog ::-moz-selection {
   background: #45826a;
@@ -6974,15 +6974,27 @@ body.blog ::selection {
   color: #fff;
   text-shadow: none;
 }
+body.blog .site-header {
+  box-shadow: unset;
+}
+body.blog .site-header .site-logo a svg #background {
+  fill: #e5e4d0;
+}
 body.blog .site-header .site-logo:before {
-  background-image: linear-gradient(90deg, #45826a 0%, #5ed1de 100%);
+  background: #45826a;
   opacity: 1;
 }
+body.blog .site-header .desktop-nav,
+body.blog .site-header .search-container,
+body.blog .site-header .hamburger,
+body.blog .site-header .cta {
+  background: #e5e4d0;
+}
 body.blog .site-header .desktop-nav__link:after {
-  background: #2d77f8;
+  background: #45826a;
 }
 body.blog .site-header .cta .btn {
-  background: #2d77f8;
+  background: #45826a;
   border-radius: 0;
 }
 body.blog .site-content {
@@ -7034,18 +7046,33 @@ body.blog .blog-header {
     padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
   }
 }
+@media screen and (min-width: 992px) {
+  body.blog .blog-header-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 body.blog .blog-header .page-title {
   font-family: "Oooh Baby", cursive;
   font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
 }
+@media screen and (min-width: 992px) {
+  body.blog .blog-header .page-title {
+    font-size: clamp(5rem, 6.5rem + 3.33vw, 7rem);
+  }
+}
 body.blog .blog-header .tag {
   display: flex;
   align-items: center;
-  padding-top: 0rem;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  body.blog .blog-header .tag {
+    padding-left: 2rem;
+  }
 }
 body.blog .blog-header .tag p {
-  padding-right: 0.5rem;
+  padding-right: 1rem;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
@@ -7053,7 +7080,12 @@ body.blog .blog-header .tag p {
   transform: translateY(-5px);
 }
 body.blog .blog-header .tag .logo {
-  width: 5rem;
+  width: 4rem;
+}
+@media screen and (min-width: 992px) {
+  body.blog .blog-header .tag .logo {
+    width: 6rem;
+  }
 }
 body.blog .blog-header .tag .logo svg {
   width: 100%;
