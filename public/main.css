@@ -3108,10 +3108,16 @@ body.page-template-careers .embed {
   background: #fff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   padding: 1.5rem 2rem;
+  margin-bottom: 6rem;
 }
 @media screen and (min-width: 768px) {
   body.page-template-careers .embed {
     padding: 2rem 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-careers .embed {
+    margin-bottom: 0;
   }
 }
 

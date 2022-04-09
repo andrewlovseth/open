@@ -15,5 +15,10 @@ body.page-template-careers {
 
     .embed {
         @include white-shadow-card;
+        margin-bottom: 6rem;
+
+        @include desktop-small {
+            margin-bottom: 0;
+        }
     }
 }
