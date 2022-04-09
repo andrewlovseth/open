@@ -9,8 +9,8 @@
         <?php while(have_rows('solutions')): the_row(); ?>
 
             <?php
-
                 $solution = get_sub_field('solution');
+                $photo_override = get_sub_field('photo_override');
                 $label_override = get_sub_field('label_override');
                 $search = get_field('search', $solution->ID);
                 $photo = $search['photo'];
@@ -23,8 +23,13 @@
                     $title = $search['title'];
                 } else {
                     $title = get_the_title( $solution->ID );
-                }     
-
+                }    
+                
+                if($photo_override) {
+                    $photo = $photo_override;
+                } else {
+                    $photo = $search['photo'];
+                }
             ?>
 
             <div class="solution item">

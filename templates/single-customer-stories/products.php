@@ -11,6 +11,7 @@
             <?php
 
                 $product = get_sub_field('product');
+                $photo_override = get_sub_field('photo_override');
                 $label_override = get_sub_field('label_override');
                 $search = get_field('search', $product->ID);
                 $photo = $search['photo'];
@@ -25,6 +26,11 @@
                     $title = get_the_title( $product->ID );
                 }     
 
+                if($photo_override) {
+                    $photo = $photo_override;
+                } else {
+                    $photo = $search['photo'];
+                }
             ?>
 
             <div class="product item">
