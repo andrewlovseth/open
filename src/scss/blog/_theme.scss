@@ -1,17 +1,8 @@
-body.blog {
+body.blog,
+body.single-post {
     background: rgba($blog-tan, 0.5);
 
-    ::-moz-selection {
-        background: #45826a;
-        color: $white;
-        text-shadow: none;
-    }
-
-    ::selection {
-        background: #45826a;
-        color: $white;
-        text-shadow: none;
-    }
+    @import 'theme/typography';
 
     @import 'theme/header';
 
@@ -21,3 +12,5 @@ body.blog {
 
     @import 'theme/footer';
 }
+
+@import 'theme/overlay';

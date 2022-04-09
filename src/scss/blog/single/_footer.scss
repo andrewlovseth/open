@@ -1,0 +1,55 @@
+.article-footer {
+    padding-top: 2rem;
+    border-top: 2px solid $blog-tan;
+
+    @include tablet {
+        grid-column: 3 / span 6;
+    }
+
+    @include desktop-small {
+        grid-column: 2 / span 12;
+        padding-top: 4rem;
+    }
+
+    .products-and-solutions.mobile {
+        display: block;
+        padding-bottom: 4rem;
+
+        @include desktop-small {
+            display: none;
+        }
+    }
+
+    .in-use {
+        padding-top: 0;
+
+        & + .in-use {
+            padding-top: 4rem;
+        }
+
+        .module-title {
+            color: $blog-green;
+        }
+    }
+
+    .related {
+        @include section-spacing-bottom;
+
+        @include desktop-small {
+            padding-bottom: 0;
+        }
+
+        .section-header {
+            padding-bottom: 1rem;
+
+            @include desktop-small {
+                padding-bottom: 2rem;
+            }
+        }
+
+        .section-title,
+        .item .info h4 {
+            color: $blog-green;
+        }
+    }
+}

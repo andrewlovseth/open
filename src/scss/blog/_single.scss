@@ -1,0 +1,14 @@
+body.single-post {
+    @import 'single/back';
+
+    article.post {
+        align-items: start;
+        gap: 2rem;
+
+        @import 'single/header';
+
+        @import 'single/body';
+
+        @import 'single/footer';
+    }
+}

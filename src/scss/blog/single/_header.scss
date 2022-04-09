@@ -1,0 +1,142 @@
+.article-header {
+    @include tablet {
+        grid-column: 3 / span 6;
+    }
+
+    @include desktop-small {
+        grid-column: 2 / span 4;
+    }
+
+    .container {
+        background: $blog-tan;
+        padding: 2rem;
+
+        @include desktop-medium {
+            padding: 3rem;
+        }
+    }
+
+    .date {
+        h4 {
+            display: inline-block;
+            background: $blog-green;
+            padding: 0.6125rem 0.5rem 0.25rem 0.5rem;
+            color: $white;
+            font-family: $benne;
+            font-weight: normal;
+            letter-spacing: 0.025em;
+            font-size: $type-size-200;
+            line-height: 1em;
+        }
+    }
+
+    .post-title {
+        padding: 1.5rem 0 2rem 0;
+
+        h1 {
+            font-size: $type-size-800;
+            font-family: $benne;
+            font-weight: normal;
+            color: $blog-green;
+            line-height: 1em;
+
+            @include desktop-small {
+                font-size: $type-size-700;
+            }
+
+            @include desktop-medium {
+                font-size: $type-size-800;
+            }
+        }
+    }
+
+    .share-links {
+        border-color: $blog-green;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+
+        h4 {
+            @include desktop-small {
+                width: 100%;
+                padding-bottom: 0.5rem;
+            }
+
+            @include desktop-medium {
+                width: auto;
+                padding-bottom: 0;
+            }
+        }
+
+        .share-link {
+            svg,
+            g,
+            path {
+                fill: $blog-green;
+            }
+
+            &:first-of-type {
+                @include desktop-small {
+                    margin-left: 0;
+                }
+
+                @include desktop-medium {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .authors {
+        padding-bottom: 2rem;
+
+        .author {
+            display: grid;
+            grid-template-columns: 5rem 1fr;
+            gap: 0 1rem;
+            align-items: center;
+
+            & + .author {
+                padding-top: 1rem;
+            }
+
+            .photo {
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .info {
+                .name {
+                    h3 {
+                        color: $blog-green;
+                        font-size: $type-size-400;
+                        line-height: 1.125em;
+                    }
+                }
+
+                .meta {
+                    h4 {
+                        font-family: $rubik;
+                        color: $charcoal;
+                        font-size: $type-size-150;
+                        line-height: 1.25em;
+                    }
+                }
+            }
+        }
+    }
+
+    .products-and-solutions.desktop {
+        display: none;
+
+        @include desktop-small {
+            display: block;
+        }
+    }
+
+    .in-use {
+        .module-title {
+            color: $blog-green;
+        }
+    }
+}
