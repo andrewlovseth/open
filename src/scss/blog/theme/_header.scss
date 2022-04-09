@@ -1,16 +1,28 @@
 .site-header {
+    box-shadow: unset;
+
+    .site-logo a svg #background {
+        fill: $blog-tan;
+    }
     .site-logo:before {
-        background-image: linear-gradient(90deg, #45826a 0%, #5ed1de 100%);
+        background: $blog-green;
         opacity: 1;
     }
 
+    .desktop-nav,
+    .search-container,
+    .hamburger,
+    .cta {
+        background: $blog-tan;
+    }
+
     .desktop-nav__link:after {
-        background: $blue;
+        background: $blog-green;
     }
 
     .cta {
         .btn {
-            background: $blue;
+            background: $blog-green;
             border-radius: 0;
         }
     }

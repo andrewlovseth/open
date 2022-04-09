@@ -2,19 +2,33 @@ body.blog {
     .blog-header {
         @include small-section-spacing;
 
+        &-wrapper {
+            @include desktop-small {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
         .page-title {
             font-family: $oooh-baby;
             font-size: $type-size-1000;
+
+            @include desktop-small {
+                font-size: $type-size-1500;
+            }
         }
 
         .tag {
             display: flex;
             align-items: center;
-            padding-top: 0rem;
-            padding-left: 1rem;
+            padding-left: 0.5rem;
+
+            @include desktop-small {
+                padding-left: 2rem;
+            }
 
             p {
-                padding-right: 0.5rem;
+                padding-right: 1rem;
                 font-family: $rubik;
                 text-transform: uppercase;
                 font-size: $type-size-150;
@@ -23,7 +37,11 @@ body.blog {
             }
 
             .logo {
-                width: 5rem;
+                width: 4rem;
+
+                @include desktop-small {
+                    width: 6rem;
+                }
 
                 svg {
                     width: 100%;
