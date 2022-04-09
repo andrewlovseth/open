@@ -1,0 +1,23 @@
+section.customers {
+    @include section-spacing;
+
+    @include desktop-small {
+        padding-bottom: 1rem;
+    }
+
+    .section-header {
+        padding-bottom: 3rem;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+
+        h3 {
+            line-height: 1.5em;
+        }
+    }
+}

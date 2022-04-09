@@ -1,6 +1,21 @@
 body.page-template-home {
     @import 'home/header';
 
+    &.nav-overlay-open {
+        .site-header {
+            .site-logo a svg #background {
+                fill: $black;
+            }
+
+            .desktop-nav,
+            .search-container,
+            .hamburger,
+            .cta {
+                background: $black;
+            }
+        }
+    }
+
     @import 'home/hero';
 
     @import 'home/intro';

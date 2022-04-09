@@ -1,0 +1,18 @@
+.intro {
+    @include section-spacing;
+    text-align: center;
+
+    .headline {
+        padding-bottom: 1.5rem;
+    }
+
+    .copy {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+}

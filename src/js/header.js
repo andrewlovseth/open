@@ -70,13 +70,16 @@ const Header = {
 
     logoBackground() {
         const logo = document.querySelector('.site-logo');
+        const header = document.querySelector('.site-header');
         const fold = document.querySelector('.site-content > *:nth-child(1)');
         let observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting) {
                     logo.classList.remove('scrolled');
+                    header.classList.remove('scrolled');
                 } else {
                     logo.classList.add('scrolled');
+                    header.classList.add('scrolled');
                 }
             },
             {

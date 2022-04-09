@@ -1,0 +1,14 @@
+.customer-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo {
+        padding: 1rem 2rem;
+
+        .image {
+            max-width: 12rem;
+        }
+    }
+}

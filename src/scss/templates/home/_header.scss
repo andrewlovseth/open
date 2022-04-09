@@ -1,0 +1,42 @@
+.site-header {
+    .site-logo a svg #background {
+        fill: rgba($black, 0.9);
+    }
+
+    .desktop-nav,
+    .search-container,
+    .hamburger,
+    .cta {
+        background: rgba($black, 0.9);
+    }
+
+    &.scrolled {
+        .site-logo a svg #background {
+            fill: rgba($black, 1);
+        }
+
+        .desktop-nav,
+        .search-container,
+        .hamburger,
+        .cta {
+            background: rgba($black, 1);
+        }
+    }
+
+    .desktop-nav__link {
+        color: $white;
+    }
+
+    .hamburger a .patty {
+        background: $white;
+
+        &:before,
+        &:after {
+            background: $white;
+        }
+    }
+
+    .search-toggle svg {
+        fill: $white;
+    }
+}
