@@ -245,7 +245,7 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": 4,
-                            "new_lines": ""
+                            "new_lines": "br"
                         },
                         {
                             "key": "field_62518d773c499",
@@ -295,7 +295,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "+ Add Feature",
             "min": "",
             "max": ""
         },
@@ -428,5 +428,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649511860
+    "modified": 1649535712
 }

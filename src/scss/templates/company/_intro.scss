@@ -1,0 +1,37 @@
+section.intro {
+    background: $white;
+    @include section-spacing;
+
+    .info {
+        padding-bottom: 3rem;
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            padding-bottom: 0;
+            grid-column: 2 / span 6;
+            padding-right: 2rem;
+        }
+
+        .headline {
+            padding-bottom: 0.5rem;
+
+            h2 {
+                font-weight: bold;
+                font-family: $circular;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    .photo {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+    }
+}

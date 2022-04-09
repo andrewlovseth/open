@@ -1,3 +1,13 @@
 body.page-template-company {
-    
+    .site {
+        background: $light-blue;
+    }
+
+    @import 'company/hero';
+
+    @import 'company/intro';
+
+    @import 'company/features';
+
+    @import 'company/customers';
 }

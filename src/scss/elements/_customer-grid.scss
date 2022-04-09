@@ -8,7 +8,16 @@
         padding: 1rem 2rem;
 
         .image {
-            max-width: 12rem;
+            max-width: 4rem;
+
+            @include tablet {
+                max-width: 8rem;
+            }
+
+            svg,
+            img {
+                width: 100%;
+            }
         }
     }
 }
