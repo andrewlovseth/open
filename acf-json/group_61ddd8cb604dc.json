@@ -114,6 +114,57 @@
             "endpoint": 0
         },
         {
+            "key": "field_62522d400473e",
+            "label": "Portal",
+            "name": "portal",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62522d460473f",
+                    "label": "Headline",
+                    "name": "headline",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62522d4c04740",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
             "key": "field_6250caae579b6",
             "label": "Intro",
             "name": "intro",
@@ -203,7 +254,7 @@
             "key": "field_6250cb39be224",
             "label": "Featured Partners",
             "name": "featured_partners",
-            "type": "post_object",
+            "type": "relationship",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -215,11 +266,17 @@
             "post_type": [
                 "partners"
             ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
+            "taxonomy": [
+                "partner_type:channel-partners"
+            ],
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
         },
         {
             "key": "field_6250cb14be220",
@@ -409,5 +466,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649512206
+    "modified": 1649553283
 }

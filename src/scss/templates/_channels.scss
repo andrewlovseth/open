@@ -1,3 +1,15 @@
 body.page-template-channels {
-    
+    .site {
+        background: $white;
+    }
+
+    @import 'channels/hero';
+
+    @import 'channels/intro';
+
+    @import 'channels/featured';
+
+    @import 'channels/why';
+
+    @import 'channels/partners';
 }

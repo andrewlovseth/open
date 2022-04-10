@@ -22,8 +22,43 @@ const Content = {
         }
     },
 
+    partnersFilter() {
+        const partnerFilterLinks = document.querySelectorAll('.js-partner-filter-link');
+        const partners = document.querySelectorAll('.partners-grid .partner');
+
+        partnerFilterLinks.forEach((filterLink) => {
+            filterLink.addEventListener('click', (e) => {
+                // ACTIVE TAB
+                partnerFilterLinks.forEach((otherLink) => {
+                    otherLink.classList.remove('active');
+                });
+
+                filterLink.classList.add('active');
+                const filter = filterLink.dataset.filter;
+                console.log(filter);
+
+                // SHOW ONLY FILTERED RESULTS
+                partners.forEach((partner) => {
+                    const isActive = partner.classList.contains(filter);
+                    if (filter !== 'all') {
+                        if (isActive) {
+                            partner.style.display = 'block';
+                        } else {
+                            partner.style.display = 'none';
+                        }
+                    } else {
+                        partner.style.display = 'block';
+                    }
+                });
+
+                e.preventDefault();
+            });
+        });
+    },
+
     init: function () {
         this.toggleResourcesSidebar();
+        this.partnersFilter();
     },
 };
 

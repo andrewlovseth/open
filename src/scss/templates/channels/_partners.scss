@@ -1,0 +1,47 @@
+section.partners {
+    background: $white;
+    @include section-spacing;
+
+    @include desktop-small {
+        padding-bottom: 0;
+    }
+
+    .section-header {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 3 / span 10;
+        }
+
+        .headline {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .partners-grid {
+        padding-top: 3rem;
+    }
+
+    .partner {
+        text-align: center;
+
+        .image {
+            width: 8rem;
+            height: 4rem;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        h4 {
+            color: $dark-blue;
+            font-family: $rubik;
+            font-size: $type-size-150;
+        }
+    }
+}

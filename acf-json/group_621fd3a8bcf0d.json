@@ -96,7 +96,7 @@
                     ],
                     "elements": "",
                     "min": "",
-                    "max": "",
+                    "max": 3,
                     "return_format": "object"
                 }
             ]
@@ -135,5 +135,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649549298
+    "modified": 1649550388
 }

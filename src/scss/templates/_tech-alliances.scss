@@ -1,0 +1,12 @@
+body.page-template-tech-alliances {
+    .site {
+        background: $white;
+    }
+    @import 'tech-alliances/hero';
+
+    @import 'tech-alliances/intro';
+
+    @import 'tech-alliances/why';
+
+    @import 'tech-alliances/partners';
+}

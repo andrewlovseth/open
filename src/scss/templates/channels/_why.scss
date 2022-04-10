@@ -1,0 +1,30 @@
+section.why {
+    @include section-spacing;
+    background: $light-blue;
+    gap: 2rem;
+    align-items: center;
+
+    .info {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 7;
+        }
+
+        .headline {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .cta {
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 10 / span 4;
+        }
+    }
+}

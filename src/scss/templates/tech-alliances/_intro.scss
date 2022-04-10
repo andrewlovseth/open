@@ -1,0 +1,44 @@
+section.intro {
+    @include section-spacing;
+    text-align: center;
+    background: $white;
+
+    .headline {
+        padding-bottom: 1.5rem;
+    }
+
+    .copy {
+        @include desktop-small {
+            grid-column: 3 / span 10;
+        }
+    }
+}
+
+section.portal-link {
+    background: $blue;
+    color: $white;
+    padding: 1.5rem 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .headline {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0.75rem;
+
+            @include desktop-small {
+                width: auto;
+                padding-bottom: 0;
+                padding-right: 1rem;
+            }
+
+            h4 {
+                font-size: $type-size-300;
+            }
+        }
+    }
+}

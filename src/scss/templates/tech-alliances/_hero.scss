@@ -1,0 +1,9 @@
+.hero {
+    @include hero-shadows;
+
+    @include tablet {
+        .photo img {
+            height: clamp(28rem, 60vh, 44rem);
+        }
+    }
+}
