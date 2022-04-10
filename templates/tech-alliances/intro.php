@@ -9,9 +9,10 @@
     $portal_headline = $portal['headline'];
     $portal_link = $portal['link'];
 
+
 ?>
 
-
+<!--
 <section class="portal-link grid">
     <div class="container">
         <div class="headline">
@@ -33,6 +34,8 @@
 
     </div>
 </section>
+            -->
+
 
 <section class="intro grid">
 

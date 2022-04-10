@@ -5578,6 +5578,9 @@ body.page-template-tech-alliances section.intro .headline {
     grid-column: 3/span 10;
   }
 }
+body.page-template-tech-alliances section.intro .cta {
+  padding-top: 2rem;
+}
 body.page-template-tech-alliances section.portal-link {
   background: #2d77f8;
   color: #fff;
