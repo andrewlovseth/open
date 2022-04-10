@@ -103,6 +103,7 @@
             .photo {
                 img {
                     border-radius: 50%;
+                    filter: saturate(0%);
                 }
             }
 

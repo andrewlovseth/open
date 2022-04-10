@@ -7145,6 +7145,19 @@ body.blog .blog-header .page-title {
     font-size: clamp(5rem, 6.5rem + 3.33vw, 7rem);
   }
 }
+body.blog .blog-header .copy {
+  padding: 1rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  body.blog .blog-header .copy {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.blog .blog-header .copy {
+    grid-column: 4/span 8;
+  }
+}
 body.blog .blog-header .tag {
   display: flex;
   justify-content: center;
@@ -7264,30 +7277,20 @@ body.blog .featured .blog .info {
 body.blog .featured .blog .info .date h4 {
   display: inline-block;
   background: #45826a;
-  padding: 0.6125rem 0.5rem 0.25rem 0.5rem;
   color: #fff;
   font-family: "Benne", serif;
   font-weight: normal;
-  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
   line-height: 1em;
   letter-spacing: 0.15em;
   font-variant: small-caps;
-}
-@media screen and (min-width: 992px) {
-  body.blog .featured .blog .info .date h4 {
-    font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
-  }
-}
-@media screen and (min-width: 1280px) {
-  body.blog .featured .blog .info .date h4 {
-    font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
-  }
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+  padding: 0.4125rem 0.375rem 0.125rem 0.375rem;
 }
 body.blog .featured .blog .info .post-title {
   padding-top: 1rem;
 }
 body.blog .featured .blog .info .post-title h3 {
-  font-size: clamp(1.8rem, 1.54rem + 1.29vw, 2.34rem);
+  font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
   line-height: 1.125em;
   color: #45826a;
   font-family: "Benne", serif;
@@ -7298,10 +7301,41 @@ body.blog .featured .blog .info .post-title h3 {
     font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
   }
 }
-@media screen and (min-width: 1280px) {
-  body.blog .featured .blog .info .post-title h3 {
-    font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
-  }
+body.blog .featured .blog .info .authors {
+  padding-top: 1rem;
+}
+body.blog .featured .blog .info .authors .author {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0 0.5rem;
+  align-items: center;
+}
+body.blog .featured .blog .info .authors .author-photo {
+  aspect-ratio: 1/1;
+}
+body.blog .featured .blog .info .authors .author-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body.blog .featured .blog .info .authors .author-photo img {
+  border-radius: 50%;
+  filter: saturate(0%);
+}
+body.blog .featured .blog .info .authors .author-info .name h4 {
+  color: #45826a;
+  font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+  line-height: 1.125em;
+}
+body.blog .featured .blog .info .authors .author-info .meta {
+  padding-top: 0.25rem;
+}
+body.blog .featured .blog .info .authors .author-info .meta h5 {
+  font-family: "Rubik", sans-serif;
+  color: #5c5c5c;
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+  line-height: 1.25em;
 }
 @media screen and (min-width: 992px) {
   body.blog .featured .blog-1 {
@@ -7349,6 +7383,11 @@ body.blog section.archive {
   body.blog section.archive {
     padding-top: clamp(5rem, 15vh, 7.5rem);
     padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.blog section.archive {
+    padding-bottom: 0;
   }
 }
 body.blog section.archive .blog .photo {
@@ -7402,20 +7441,20 @@ body.blog section.archive .blog .info {
 body.blog section.archive .blog .info .date h4 {
   display: inline-block;
   background: #45826a;
-  padding: 0.6125rem 0.5rem 0.25rem 0.5rem;
   color: #fff;
   font-family: "Benne", serif;
   font-weight: normal;
-  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+  padding: 0.4125rem 0.375rem 0.125rem 0.375rem;
   line-height: 1em;
   letter-spacing: 0.15em;
   font-variant: small-caps;
 }
 body.blog section.archive .blog .info .post-title {
-  padding-top: 1rem;
+  padding-top: 0.75rem;
 }
 body.blog section.archive .blog .info .post-title h3 {
-  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
   line-height: 1.125em;
   color: #45826a;
   font-family: "Benne", serif;
@@ -7549,6 +7588,7 @@ body.single-post article.post .article-header .authors .author + .author {
 }
 body.single-post article.post .article-header .authors .author .photo img {
   border-radius: 50%;
+  filter: saturate(0%);
 }
 body.single-post article.post .article-header .authors .author .info .name h3 {
   color: #45826a;

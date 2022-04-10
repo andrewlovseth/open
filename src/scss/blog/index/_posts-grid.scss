@@ -1,6 +1,10 @@
 section.archive {
     @include section-spacing;
 
+    @include desktop-small {
+        padding-bottom: 0;
+    }
+
     .blog {
         .photo {
             background: $blog-tan;
@@ -19,11 +23,11 @@ section.archive {
                 h4 {
                     display: inline-block;
                     background: $blog-green;
-                    padding: 0.6125rem 0.5rem 0.25rem 0.5rem;
                     color: $white;
                     font-family: $benne;
                     font-weight: normal;
-                    font-size: $type-size-200;
+                    font-size: $type-size-100;
+                    padding: 0.4125rem 0.375rem 0.125rem 0.375rem;
                     line-height: 1em;
                     letter-spacing: 0.15em;
                     font-variant: small-caps;
@@ -31,10 +35,10 @@ section.archive {
             }
 
             .post-title {
-                padding-top: 1rem;
+                padding-top: 0.75rem;
 
                 h3 {
-                    font-size: $type-size-400;
+                    font-size: $type-size-500;
                     line-height: 1.125em;
                     color: $blog-green;
                     font-family: $benne;
