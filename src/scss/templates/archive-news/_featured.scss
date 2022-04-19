@@ -6,6 +6,7 @@
             'a'
             'b'
             'c';
+        align-items: start;
 
         @include tablet {
             grid-column: 3 / span 6;

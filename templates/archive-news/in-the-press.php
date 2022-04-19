@@ -16,6 +16,8 @@
     $date = $in_the_press['date_of_publication'];
     $author = $in_the_press['author'];
 
+    $copy = get_field('search_description', $news->ID);
+
 ?>
 
 <article class="teaser <?php echo $news_type_slug; ?>">
@@ -32,6 +34,12 @@
             <div class="details">
                 <h4><?php echo $news_type; ?> | <?php echo $date; ?></h4>
                 <h3><?php echo get_the_title( $news->ID ); ?></h3>
+
+                <?php if($copy): ?>
+                    <div class="body copy copy-3">
+                        <?php echo $copy; ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </a>

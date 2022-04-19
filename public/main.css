@@ -2992,6 +2992,7 @@ body.post-type-archive-news .featured-container {
   display: grid;
   gap: 2rem;
   grid-template-areas: "a" "b" "c";
+  align-items: start;
 }
 @media screen and (min-width: 768px) {
   body.post-type-archive-news .featured-container {
@@ -3038,6 +3039,9 @@ body.post-type-archive-news .featured article:nth-child(2) .info, body.post-type
 body.post-type-archive-news .archive {
   padding-top: 2rem;
   gap: 2rem;
+}
+body.post-type-archive-news .teaser .copy {
+  padding-top: 0.5rem;
 }
 
 body.single-news article.news {
