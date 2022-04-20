@@ -37,10 +37,19 @@
         $query = new WP_Query( $args );
         if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
+        <?php
+            $url = get_field('url');
+        ?>
 
         <div class="partner logo">
             <div class="image">
-                <?php the_post_thumbnail(); ?>
+                <?php if($url): ?>                        
+                    <a href="<?php echo $url; ?>" target="window">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
+                <?php else: ?>
+                    <?php the_post_thumbnail(); ?>
+                <?php endif; ?>
             </div>
         </div>
 

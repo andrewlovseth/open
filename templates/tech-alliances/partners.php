@@ -55,6 +55,7 @@
 
             <?php
                 $categories = get_field('category');
+                $url = get_field('url');
 
                 $partner_class = "partner logo";
                 foreach($categories as $category) {
@@ -66,7 +67,13 @@
 
             <div class="<?php echo $partner_class; ?>">
                 <div class="image">
-                    <?php the_post_thumbnail(); ?>
+                    <?php if($url): ?>                        
+                        <a href="<?php echo $url; ?>" target="window">
+                            <?php the_post_thumbnail(); ?>
+                        </a>
+                    <?php else: ?>
+                       <?php the_post_thumbnail(); ?>
+                    <?php endif; ?>
                 </div>
             </div>
 
