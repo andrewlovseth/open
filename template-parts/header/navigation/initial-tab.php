@@ -2,7 +2,14 @@
 
     $logo = get_field('footer_logo', 'options');
     $social_header = get_field('footer_social_header', 'options');
-    $client_logos = get_field('header_initial_tab_logos', 'options');
+
+
+    $what_we_do = get_field('header_what_we_do', 'options');
+    $what_we_do_headline = $what_we_do['headline'];
+    $what_we_do_copy = $what_we_do['copy'];
+
+    $contact_headline = get_field('header_contact_headline', 'options');
+
 ?>
 
 <div class="tab-panel tab-initial" data-tab-panel="initial">
@@ -18,33 +25,58 @@
     <div class="content-columns">
         <div class="column copy copy-2 about">
             <div class="header">
-                <h4>What We Do</h4>
+                <h4><?php echo $what_we_do_headline; ?></h4>
             </div>
         
-            <p>OpenDrives is leading the industry with enterprise data management and storage solutions that
-allow you to do more with your data.</p>
+            <?php echo $what_we_do_copy; ?>
         </div>
 
-        <div class="column clients">
-            <div class="header">
-                <h4>Who We Work With</h4>
-            </div>
+        <?php if(have_rows('header_initial_tab', 'options')): while(have_rows('header_initial_tab', 'options')) : the_row(); ?>
 
-            <div class="client-logos">
-                <?php if( $client_logos ): ?>
-                    <?php foreach( $client_logos as $logo ): ?>
-                        <div class="client">
-                            <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
+            <?php if( get_row_layout() == 'promo' ): ?>
+
+                <?php
+                    $promo_headline = get_sub_field('headline');
+                    $promo_logo = get_sub_field('logo');
+                    $promo_copy = get_sub_field('details');
+                    $promo_link = get_sub_field('link');
+                ?>
+
+                <div class="column copy copy-3 promo">
+                    <?php if($promo_link): ?>
+                        <?php 
+                            $promo_link_url = $promo_link['url'];
+                            $promo_link_target = $promo_link['target'] ? $promo_link['target'] : '_self';
+                        ?>
+
+                        <a href="<?php echo $promo_link_url ?>" target="<?php echo $promo_link_target ?>">
+                    <?php endif; ?>
+
+                        <div class="header">
+                            <h4><?php echo $promo_headline; ?></h4>
                         </div>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-            </div>
-        </div>
+
+                        <div class="logo">
+                            <?php echo wp_get_attachment_image($promo_logo['ID'], 'full'); ?>
+                        </div>
+
+                        <?php echo $promo_copy; ?>  
+
+                    <?php if($promo_link): ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
+
+            <?php endif; ?>
+
+        <?php endwhile; endif; ?>
+
+
 
 
         <div class="column connect">
             <div class="header">
-                <h4>Let's Work Together</h4>
+                <h4><?php echo $contact_headline; ?></h4>
             </div>
 
             <div class="social">

@@ -18,7 +18,7 @@
                 grid-column: 1 / span 2;
             }
 
-            .clients {
+            .promo {
                 grid-column: 3 / span 4;
             }
 
@@ -28,17 +28,13 @@
         }
 
         @include desktop-large {
-            .clients {
-                grid-column: 3 / span 3;
+            .promo {
+                grid-column: 3 / span 2;
             }
 
             .connect {
-                grid-column: 6 / span 1;
+                grid-column: 5 / span 2;
             }
-        }
-
-        @include desktop-x-large {
-            gap: 3rem 6rem;
         }
     }
 
@@ -117,21 +113,13 @@
         }
     }
 
-    .client-logos {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-
-        .client {
-            width: 7rem;
-            height: 4rem;
-            padding: 0 1rem 2rem 1rem;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+    .promo {
+        a {
+            text-decoration: none;
+        }
+        .logo {
+            max-width: 12rem;
+            margin-bottom: 1rem;
         }
     }
 }
