@@ -364,6 +364,36 @@ body {
   margin: 0 auto;
 }
 
+nav.company-nav {
+  display: none;
+  background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
+}
+@media screen and (min-width: 992px) {
+  nav.company-nav {
+    display: block;
+  }
+}
+nav.company-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+nav.company-nav ul li {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 1280px) {
+  nav.company-nav ul li {
+    padding: 0 2rem;
+  }
+}
+nav.company-nav ul a {
+  color: #fff;
+}
+nav.company-nav ul a:hover {
+  text-decoration: underline;
+}
+
 .cta.center {
   text-align: center;
 }
@@ -7467,6 +7497,14 @@ body.blog .site-header .cta .btn,
 body.single-post .site-header .cta .btn {
   background: #45826a;
   border-radius: 0;
+}
+body.blog nav.company-nav,
+body.single-post nav.company-nav {
+  background: #45826a;
+}
+body.blog nav.company-nav ul a,
+body.single-post nav.company-nav ul a {
+  color: #fff;
 }
 body.blog .site-content,
 body.single-post .site-content {

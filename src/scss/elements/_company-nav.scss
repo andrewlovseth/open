@@ -1,0 +1,31 @@
+nav.company-nav {
+    display: none;
+    @include purple-blue-gradient;
+
+    @include desktop-small {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+
+        li {
+            padding: 0 1rem;
+
+            @include desktop-medium {
+                padding: 0 2rem;
+            }
+        }
+
+        a {
+            color: $white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

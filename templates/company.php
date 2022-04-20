@@ -10,6 +10,8 @@ $has_hero = 'has-hero';
 get_header(); ?>
 
 	<?php get_template_part('template-parts/global/hero'); ?>
+	
+	<?php get_template_part('templates/company/nav'); ?>
 
 	<?php get_template_part('templates/company/intro'); ?>
 

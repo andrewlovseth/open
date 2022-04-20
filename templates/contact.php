@@ -7,6 +7,8 @@
 get_header(); ?>
 
 	<?php get_template_part('templates/contact/hero'); ?>
+	
+	<?php get_template_part('templates/company/nav'); ?>
 
 	<?php get_template_part('templates/contact/page-header'); ?>
 
