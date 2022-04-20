@@ -8,6 +8,8 @@
 
 			<?php get_template_part('template-parts/footer/nav'); ?>
 		</div>
+
+		<?php get_template_part('template-parts/footer/legal'); ?>
 	</footer>
 
 	<?php get_template_part('template-parts/footer/contact-form'); ?>

@@ -1,0 +1,15 @@
+body.page-template-default {
+    .page-body {
+        padding-bottom: 6rem;
+
+        @include desktop-small {
+            padding-bottom: 0;
+        }
+
+        .copy {
+            @include desktop-small {
+                grid-column: 2 / span 8;
+            }
+        }
+    }
+}
