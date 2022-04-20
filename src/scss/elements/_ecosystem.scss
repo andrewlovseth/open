@@ -12,6 +12,12 @@ section.ecosystem {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
 
+        &.current {
+            .deck {
+                opacity: 0.33;
+            }
+        }
+
         .info {
             max-width: 20rem;
         }

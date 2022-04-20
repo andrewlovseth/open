@@ -874,6 +874,9 @@ section.ecosystem .product {
     padding-bottom: clamp(5rem, 15vh, 7.5rem);
   }
 }
+section.ecosystem .product.current .deck {
+  opacity: 0.33;
+}
 section.ecosystem .product .info {
   max-width: 20rem;
 }

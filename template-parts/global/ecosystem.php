@@ -6,10 +6,24 @@
             $logo = get_sub_field('logo');
             $deck = get_sub_field('deck');
             $link = get_sub_field('link');
-            $color = get_sub_field('background_color');
+            if($link) {
+                $link_url = $link['url'];
+                $link_id = url_to_postid($link_url);
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+            }
+
+            if( $link_id === $post->ID ) {
+                $hex = get_sub_field('background_color');
+                $rgb = hexToRgb($hex, 0.5);
+                $color = $rgb;
+            } else {
+                $color = get_sub_field('background_color');
+            }
+            
         ?>
 
-        <div class="product" style="background-color: <?php echo $color; ?>">
+        <div class="product<?php if( $link_id === $post->ID ): ?> current<?php endif; ?>" style="background-color: <?php echo $color; ?>">
 
             <div class="info">
                 <div class="logo">
@@ -17,15 +31,10 @@
                 </div>
 
                 <div class="deck copy copy-2">
-                    <?php echo $deck; ?>
+                   <?php echo $deck; ?>
                 </div>
 
-                <?php 
-                    if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                ?>
+                <?php if( $link_id !== $post->ID ): ?>
 
                     <div class="cta">
                         <a class="underline blue arrow" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>

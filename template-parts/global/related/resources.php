@@ -17,9 +17,12 @@
         $title = get_the_title( $item->ID );
     }
 
-    $terms = get_the_terms( $item->ID, 'resource_type');
-    $term = $terms[0]->name;
-    $term = preg_replace('/s$/', '', $term);
+    if($search['label']) {
+        $term = $search['label'];
+    } else {
+        $terms = get_the_terms( $item->ID, 'resource_type');
+        $term = $terms[0]->name;
+    }
 
 ?>
 

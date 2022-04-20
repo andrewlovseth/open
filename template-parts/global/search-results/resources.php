@@ -17,8 +17,12 @@
         $title = get_the_title( $item->ID );
     }
 
-    $terms = get_the_terms( $item->ID, 'resource_type');
-    $term = $terms[0]->name;
+    if($search['label']) {
+        $term = $search['label'];
+    } else {
+        $terms = get_the_terms( $item->ID, 'resource_type');
+        $term = $terms[0]->name;
+    }
 
     $class_list = "search-result resource";
     if($photo['url'] === NULL) {
