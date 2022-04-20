@@ -14,6 +14,7 @@
 
 	<?php get_template_part('template-parts/footer/demo-form'); ?>
 
+	<?php get_template_part('template-parts/footer/nab-overlay'); ?>
 
 <?php wp_footer(); ?>
 

@@ -82,12 +82,40 @@ const Modal = {
         });
     },
 
+    nabModal: function () {
+        const modal = document.querySelector('#nab');
+        const showModal = localStorage.getItem('showModal');
+
+        if (sessionStorage.pageCount) {
+            sessionStorage.pageCount = Number(sessionStorage.pageCount) + 1;
+        } else {
+            sessionStorage.pageCount = 1;
+        }
+
+        if (sessionStorage.pageCount == 1) {
+            if (showModal == null) {
+                localStorage.setItem('showModal', 1);
+                MicroModal.show('nab');
+            } else if (showModal >= 1 && showModal <= 2) {
+                var visit_count = parseInt(localStorage.getItem('showModal'));
+                visit_count++;
+                localStorage.setItem('showModal', visit_count);
+                MicroModal.show('nab');
+            } else {
+                var visit_count = parseInt(localStorage.getItem('showModal'));
+                visit_count++;
+                localStorage.setItem('showModal', visit_count);
+            }
+        }
+    },
+
     init: function () {
         this.modals();
         this.videoModal();
         this.acPlusModal();
         this.leadershipModal();
         this.formModals();
+        this.nabModal();
     },
 };
 

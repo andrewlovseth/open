@@ -1,0 +1,38 @@
+.nab-modal {
+    .modal__container,
+    .modal__header {
+        padding: 0;
+    }
+
+    .modal__overlay {
+        background: rgba($black, 0.85);
+    }
+
+    .modal__container {
+        max-width: 43.75rem;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .modal__close {
+        z-index: 10;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .modal__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        a {
+            display: block;
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+}

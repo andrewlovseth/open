@@ -1,5 +1,6 @@
 <?php
 	global $has_hero;
+	$nab_banner = get_field('nab_banner_show', 'options');
 ?>
 
 <!DOCTYPE html>
@@ -24,17 +25,21 @@
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
-	
-	<header class="site-header">
-		<?php get_template_part('template-parts/header/logo'); ?>
 
-		<?php get_template_part('template-parts/header/desktop-navigation'); ?>
+	<header class="site-header<?php if($nab_banner): ?> has-banner<?php endif; ?>">
+		<?php get_template_part('template-parts/header/nab-banner'); ?>
 
-		<?php get_template_part('template-parts/header/search'); ?>
+		<div class="site-header-wrapper">
+			<?php get_template_part('template-parts/header/logo'); ?>
 
-		<?php get_template_part('template-parts/header/cta'); ?>
+			<?php get_template_part('template-parts/header/desktop-navigation'); ?>
 
-		<?php get_template_part('template-parts/header/hamburger'); ?>
+			<?php get_template_part('template-parts/header/search'); ?>
+
+			<?php get_template_part('template-parts/header/cta'); ?>
+
+			<?php get_template_part('template-parts/header/hamburger'); ?>
+		</div>
 	</header>
 	
 	<?php get_template_part('template-parts/header/mobile-navigation'); ?>

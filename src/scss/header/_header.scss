@@ -1,14 +1,16 @@
 .site-header {
-    display: flex;
-    width: 100%;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 5555;
-    box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -12px, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px;
+    &-wrapper {
+        display: flex;
+        width: 100%;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 5555;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -12px, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px;
 
-    & > * {
-        transition: background-color 500ms ease 50ms;
+        & > * {
+            transition: background-color 500ms ease 50ms;
+        }
     }
 
     @import 'logo';
@@ -39,6 +41,17 @@ body.single-customer_stories .desktop-nav__link-customer-stories {
 body.has-hero {
     .site-header {
         position: fixed;
+        z-index: 5555;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transition: all 200ms ease;
+
+        &.scrolled.has-banner {
+            @include desktop-small {
+                transform: translateY(-74px);
+            }
+        }
     }
 }
 

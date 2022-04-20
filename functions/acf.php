@@ -16,6 +16,8 @@ if(function_exists('acf_add_options_page')) {
     acf_add_options_sub_page('Customer Stories');
     acf_add_options_sub_page('Partners');
     acf_add_options_sub_page('Resources');
+    acf_add_options_sub_page('Banner');
+    acf_add_options_sub_page('Modal');
 }
 
 
