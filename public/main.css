@@ -4924,6 +4924,9 @@ body.page-template-solutions-cloud section.cloud-hybrid .feature .icon img {
 body.page-template-solutions-cloud section.cloud-hybrid .feature .headline {
   flex: 1;
 }
+body.page-template-solutions-cloud section.cloud-hybrid .feature .cta {
+  padding-top: 2rem;
+}
 body.page-template-solutions-cloud section.opendrives-anywhere {
   background: #000;
   color: #fff;

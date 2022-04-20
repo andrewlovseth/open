@@ -22,6 +22,7 @@
                     $icon = get_sub_field('icon');
                     $copy = get_sub_field('copy');
                     $top_border = get_sub_field('top_border');
+                    $link = get_sub_field('link');
                 ?>
 
             
@@ -39,6 +40,19 @@
                     <div class="copy copy-3 extended secondary-color">
                         <?php echo $copy; ?>
                     </div>
+
+                    <?php 
+                        if( $link ): 
+                        $link_url = $link['url'];
+                        $link_title = $link['title'];
+                        $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+
+                        <div class="cta">
+                            <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                        </div>
+
+                    <?php endif; ?>
 
                     <?php if($top_border): ?>
                         <style>

@@ -19,7 +19,6 @@
 
     $terms = get_the_terms( $item->ID, 'resource_type');
     $term = $terms[0]->name;
-    $term = preg_replace('/s$/', '', $term);
 
     $class_list = "search-result resource";
     if($photo['url'] === NULL) {
