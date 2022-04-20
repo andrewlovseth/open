@@ -4362,6 +4362,17 @@ body.page-template-solutions section.solutions .solution + .solution {
     padding-top: clamp(5rem, 15vh, 7.5rem);
   }
 }
+body.page-template-solutions section.solutions .solution.center .info {
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-solutions section.solutions .solution.center .info {
+    grid-column: 2/span 10;
+  }
+}
+body.page-template-solutions section.solutions .solution.center .info .copy {
+  max-width: unset;
+}
 body.page-template-solutions section.solutions .solution .photo {
   aspect-ratio: 16/9;
 }

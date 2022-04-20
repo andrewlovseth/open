@@ -19,6 +19,19 @@ section.solutions {
             @include section-spacing-top;
         }
 
+        &.center {
+            .info {
+                text-align: center;
+                @include desktop-small {
+                    grid-column: 2 / span 10;
+                }
+
+                .copy {
+                    max-width: unset;
+                }
+            }
+        }
+
         .photo {
             aspect-ratio: 16 / 9;
 

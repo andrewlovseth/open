@@ -3,6 +3,7 @@
     <?php if(have_rows('solutions')): while(have_rows('solutions')): the_row(); ?>
     
         <?php
+            $layout = get_sub_field('layout');
             $headline = get_sub_field('headline');
             $sub_headline = get_sub_field('sub_headline');
             $copy = get_sub_field('copy');
@@ -10,10 +11,12 @@
             $link = get_sub_field('link');
         ?>
 
-        <div class="solution">
-            <div class="photo">
-                <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
-            </div>
+        <div class="solution <?php echo $layout; ?>">
+            <?php if($layout !== 'center'): ?>
+                <div class="photo">
+                    <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
+                </div>
+            <?php endif; ?>
 
             <div class="info">
                 <div class="headline">

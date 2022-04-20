@@ -133,6 +133,28 @@
             "button_label": "+ Add Solution",
             "sub_fields": [
                 {
+                    "key": "field_625f4f0802e39",
+                    "label": "Layout",
+                    "name": "layout",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "default": "Default",
+                        "center": "Center (No Photo)"
+                    },
+                    "allow_null": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
                     "key": "field_623a9ef7346e6",
                     "label": "Headline",
                     "name": "headline",
@@ -261,5 +283,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648673615
+    "modified": 1650413353
 }
