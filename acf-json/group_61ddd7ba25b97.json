@@ -350,6 +350,44 @@
                             "maxlength": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_625f5ee7ad3d9",
+                    "label": "Contact Form",
+                    "name": "contact_form",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_625f5eebad3da",
+                    "label": "Demo Form",
+                    "name": "demo_form",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -499,5 +537,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650413683
+    "modified": 1650468236
 }

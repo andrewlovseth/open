@@ -10,6 +10,11 @@
 		</div>
 	</footer>
 
+	<?php get_template_part('template-parts/footer/contact-form'); ?>
+
+	<?php get_template_part('template-parts/footer/demo-form'); ?>
+
+
 <?php wp_footer(); ?>
 
 </div> <!-- .site -->

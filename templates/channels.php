@@ -16,4 +16,6 @@ get_header(); ?>
 
 	<?php get_template_part('templates/channels/partners'); ?>
 
+	<?php get_template_part('templates/channels/form'); ?>
+
 <?php get_footer(); ?>

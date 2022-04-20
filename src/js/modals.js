@@ -72,11 +72,22 @@ const Modal = {
         });
     },
 
+    formModals: function () {
+        const formLinks = document.querySelectorAll('.js-form-trigger');
+
+        formLinks.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+            });
+        });
+    },
+
     init: function () {
         this.modals();
         this.videoModal();
         this.acPlusModal();
         this.leadershipModal();
+        this.formModals();
     },
 };
 

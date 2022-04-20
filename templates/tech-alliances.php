@@ -14,4 +14,6 @@ get_header(); ?>
 
 	<?php get_template_part('templates/tech-alliances/partners'); ?>
 
+	<?php get_template_part('templates/tech-alliances/form'); ?>
+
 <?php get_footer(); ?>

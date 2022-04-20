@@ -434,6 +434,41 @@
                     "delay": 0
                 }
             ]
+        },
+        {
+            "key": "field_6260239e4bbc4",
+            "label": "Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_626023a34bbc5",
+            "label": "Channel Partner Form",
+            "name": "channel_partner_form",
+            "type": "text",
+            "instructions": "Shortcode",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -466,5 +501,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649555070
+    "modified": 1650471112
 }

@@ -93,6 +93,18 @@
                 "operator": "==",
                 "value": "resource_type:white-papers"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resources"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "resource_type:case-studies"
+            }
         ]
     ],
     "menu_order": 0,
@@ -116,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646177698
+    "modified": 1650469618
 }

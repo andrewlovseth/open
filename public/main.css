@@ -543,6 +543,105 @@ nav.company-nav ul a:hover {
   width: 100%;
 }
 
+.opendrives-form .forminator-ui.forminator-design--default .forminator-label {
+  color: #000 !important;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem) !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-description,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-description p {
+  font-weight: normal !important;
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem) !important;
+  font-style: italic !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-input,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-textarea {
+  background: #fff !important;
+  border-radius: 0 !important;
+  border-color: #d5d5d5 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect:hover, .opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect:active, .opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect:focus,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-input:hover,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-input:active,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-input:focus,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-textarea:hover,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-textarea:active,
+.opendrives-form .forminator-ui.forminator-design--default .forminator-textarea:focus {
+  background: #fff !important;
+  border-color: #2d77f8 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect {
+  padding: 0 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect .forminator-option {
+  margin: 0 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect .forminator-option:hover {
+  background: #2d77f8 !important;
+  color: #fff !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-multiselect .forminator-option.forminator-is_checked {
+  background: #2d77f8 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select .selection .select2-selection--single[role=combobox] {
+  background: #fff !important;
+  border-radius: 0 !important;
+  border-color: #d5d5d5 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select .selection .select2-selection--single[role=combobox]:hover, .opendrives-form .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select .selection .select2-selection--single[role=combobox]:active, .opendrives-form .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select .selection .select2-selection--single[role=combobox]:focus {
+  background: #fff !important;
+  border-color: #2d77f8 !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-button-submit {
+  text-transform: uppercase !important;
+  display: inline-block !important;
+  padding: 0.75rem 1.75rem 0.625rem !important;
+  border-radius: 25px !important;
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem) !important;
+  font-family: "Rubik", sans-serif !important;
+  letter-spacing: 0.1em !important;
+  transition: all 400ms ease !important;
+  background: #2d77f8 !important;
+  color: #fff !important;
+}
+.opendrives-form .forminator-ui.forminator-design--default .forminator-button-submit:hover {
+  box-shadow: unset !important;
+  background: #2d77f8 !important;
+}
+.opendrives-form #name-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+}
+.opendrives-form #name-2 .forminator-row {
+  margin-bottom: 0;
+}
+
+.form-modal .section-title {
+  font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+}
+
+body .forminator-select-dropdown-container--open .forminator-dropdown--default {
+  background-color: #fff !important;
+}
+body .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select.select2-container--open .selection .select2-selection--single[role=combobox] {
+  background: #fff !important;
+}
+body .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select.select2-container--open .selection .select2-selection--single[role=combobox]:hover, body .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select.select2-container--open .selection .select2-selection--single[role=combobox]:active, body .forminator-ui.forminator-design--default .forminator-select2 + .forminator-select.select2-container--open .selection .select2-selection--single[role=combobox]:focus {
+  background: #fff !important;
+}
+body .forminator-select-dropdown-container--open .forminator-dropdown--default .select2-results .select2-results__options .select2-results__option.select2-results__option--selected {
+  background: #2d77f8 !important;
+}
+body .forminator-select-dropdown-container--open .forminator-dropdown--default .select2-results .select2-results__options .select2-results__option:not(.select2-results__option--selected).select2-results__option--highlighted {
+  background: #fff !important;
+}
+body .forminator-select-dropdown-container--open .forminator-dropdown--default .select2-results .select2-results__options .select2-results__option:not(.select2-results__option--selected).select2-results__option--highlighted:hover, body .forminator-select-dropdown-container--open .forminator-dropdown--default .select2-results .select2-results__options .select2-results__option:not(.select2-results__option--selected).select2-results__option--highlighted:active, body .forminator-select-dropdown-container--open .forminator-dropdown--default .select2-results .select2-results__options .select2-results__option:not(.select2-results__option--selected).select2-results__option--highlighted:focus {
+  background: #2d77f8 !important;
+  color: #fff !important;
+}
+
 .hero .info {
   grid-row: 1;
   z-index: 10;
@@ -940,7 +1039,7 @@ section.ecosystem .product:nth-child(2) {
   border-radius: 50%;
   border: 0;
   position: absolute;
-  top: 1.25rem;
+  top: 1.75rem;
   right: 1.25rem;
   width: 2rem;
   height: 2rem;
