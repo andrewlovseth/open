@@ -1,6 +1,7 @@
 <?php
 
     $social_header = get_field('footer_social_header', 'options');
+    $badges = get_field('footer_badges', 'options');
 
 ?>
 
@@ -88,6 +89,16 @@
 
                 <?php endwhile; endif; ?>
             </p>
+
+            <?php if( $badges ): ?>
+                <div class="badges">
+                    <?php foreach( $badges as $badge ): ?>
+                        <div class="badge">
+                            <?php echo wp_get_attachment_image($badge['ID'], 'full'); ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 

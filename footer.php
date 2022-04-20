@@ -7,14 +7,7 @@
 			<?php get_template_part('template-parts/footer/logo'); ?>
 
 			<?php get_template_part('template-parts/footer/nav'); ?>
-
-
-
-
 		</div>
-
-
-
 	</footer>
 
 <?php wp_footer(); ?>
