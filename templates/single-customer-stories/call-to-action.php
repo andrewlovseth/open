@@ -34,7 +34,7 @@
         ?>
 
             <div class="cta">
-                <a class="btn white-outline" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                <a class="btn white-outline" href="#" data-micromodal-trigger="contact"><?php echo esc_html($link_title); ?></a>
             </div>
 
         <?php endif; ?>
