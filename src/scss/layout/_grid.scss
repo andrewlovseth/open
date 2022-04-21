@@ -1,23 +1,14 @@
 .grid {
     display: grid;
     gap: 0 2rem;
-    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(
-            0,
-            auto
-        );
+    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
 
     @include tablet-small {
-        grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(
-                0,
-                auto
-            );
+        grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);
     }
 
     @include desktop-small {
-        grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(
-                0,
-                auto
-            );
+        grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(0, auto);
     }
 
     & > * {
@@ -38,7 +29,7 @@
     gap: 4rem 2rem;
 
     @include tablet-small {
-            grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @include desktop-small {
@@ -61,5 +52,42 @@
                 margin: 0 auto;
             }
         }
+    }
+}
+
+.four-col-grid {
+    display: grid;
+    gap: 4rem 2rem;
+    align-items: center;
+
+    @include tablet-small {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include desktop-small {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item {
+        &.center {
+            text-align: center;
+
+            .headline,
+            .copy {
+                max-width: 18rem;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .icon,
+    .photo,
+    .logo {
+        display: flex;
+        justify-content: center;
     }
 }

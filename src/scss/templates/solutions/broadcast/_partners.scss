@@ -5,4 +5,13 @@ section.partners {
     .section-header {
         padding-bottom: 2.5rem;
     }
+
+    .three-col-grid {
+        align-items: center;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }

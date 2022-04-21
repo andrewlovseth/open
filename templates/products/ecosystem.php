@@ -29,21 +29,19 @@ if(have_rows('ecosystem')): while(have_rows('ecosystem')): the_row(); ?>
                 $logo = get_sub_field('logo');
                 $product_deck = get_sub_field('deck');
                 $link = get_sub_field('link');
-                $link_url = $link['url'];
-                $link_title = $link['title'];
-                $link_target = $link['target'] ? $link['target'] : '_self';
+
             ?>
  
             <div class="product product-<?php echo $count; ?>">
                 <div class="info">
                     <div class="icon">
-                        <a class="btn" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
-                            <?php echo wp_get_attachment_image($icon['ID'], 'full'); ?>
+                        <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                            <?php echo print_svg($icon['url']); ?>
                         </a>
                     </div>
 
                     <div class="logo">
-                        <a class="btn" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                        <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
                             <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
                         </a>
                     </div>
@@ -51,10 +49,18 @@ if(have_rows('ecosystem')): while(have_rows('ecosystem')): the_row(); ?>
                     <div class="copy copy-3 deck">
                         <p><?php echo $product_deck; ?></p>
                     </div>
+
+                    <?php if($link): ?>
+                        <?php
+                            $link_url = $link['url'];
+                            $link_title = $link['title'];
+                            $link_target = $link['target'] ? $link['target'] : '_self';
+                        ?>
                     
-                    <div class="cta">
-                        <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-                    </div>
+                        <div class="cta">
+                            <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
 

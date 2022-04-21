@@ -12,7 +12,7 @@
     </div>
 
     <?php if( $logos ): ?>
-        <div class="logo-gallery three-col">
+        <div class="logo-gallery three-col-grid">
             <?php foreach( $logos as $logo ): ?>
                 <div class="logo">
                     <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
