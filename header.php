@@ -12,8 +12,6 @@
 	
 	<?php wp_head(); ?>
 
-	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-
 	<?php 
 		// Atlas Cloud Plus
 		if(is_page(26)): ?>
