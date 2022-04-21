@@ -20,6 +20,10 @@
 
 <?php wp_footer(); ?>
 
+<?php if(get_field('code_body_bottom', 'options')): ?>
+	<?php the_field('code_body_bottom', 'options'); ?>
+<?php endif; ?>
+
 </div> <!-- .site -->
 
 </body>

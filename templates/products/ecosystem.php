@@ -30,6 +30,11 @@ if(have_rows('ecosystem')): while(have_rows('ecosystem')): the_row(); ?>
                 $product_deck = get_sub_field('deck');
                 $link = get_sub_field('link');
 
+                if($link) {
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                }
             ?>
  
             <div class="product product-<?php echo $count; ?>">
@@ -50,13 +55,7 @@ if(have_rows('ecosystem')): while(have_rows('ecosystem')): the_row(); ?>
                         <p><?php echo $product_deck; ?></p>
                     </div>
 
-                    <?php if($link): ?>
-                        <?php
-                            $link_url = $link['url'];
-                            $link_title = $link['title'];
-                            $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                    
+                    <?php if($link): ?>                    
                         <div class="cta">
                             <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                         </div>

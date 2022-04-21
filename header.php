@@ -19,9 +19,17 @@
 		if(is_page(26)): ?>
 		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<?php endif; ?>
+
+	<?php if(get_field('code_head', 'options')): ?>
+		<?php the_field('code_head', 'options'); ?>
+	<?php endif; ?>
 </head>
 
 <body <?php body_class($has_hero); ?>>
+<?php if(get_field('code_body_top', 'options')): ?>
+	<?php the_field('code_body_top', 'options'); ?>
+<?php endif; ?>
+
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
