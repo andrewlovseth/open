@@ -34,7 +34,7 @@
         ?>
 
             <div class="cta">
-                <a class="btn white-outline" href="#" data-micromodal-trigger="contact"><?php echo esc_html($link_title); ?></a>
+                <a class="btn white-outline js-form-trigger" href="#" data-micromodal-trigger="contact"><?php echo esc_html($link_title); ?></a>
             </div>
 
         <?php endif; ?>
