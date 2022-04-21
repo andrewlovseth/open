@@ -45,7 +45,6 @@
                     <?php $count++; endwhile; endif; ?>
                 </div>
 
-
                 <?php 
                     if( $parent_link ): 
                     $link_url = $parent_link['url'];
@@ -59,56 +58,25 @@
 
                 <?php endif; ?>
 
-
-                <div class="latest">
-                    <div class="header">
-                        <h3>The Latest</h3>
-                    </div>
-
-                    <div class="posts">
-                        <div class="post">
-                            <div class="photo">
-                                <img src="<?php bloginfo('template_directory'); ?>/src/images/FPO-1.jpg" alt="" />
-                            </div>
-
-                            <div class="info">
-                                <div class="type">
-                                    <h5>News</h5>
-                                </div>
-
-                                <div class="headline">
-                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                </div>
-
-                                <div class="copy copy-4">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi ab sequi, fugiat officia eum.</p>
-                                </div>
-                            </div>
+                <?php $latest = get_sub_field('latest'); if( $latest ): ?>
+                    <div class="latest">
+                        <div class="header">
+                            <h3>The Latest</h3>
                         </div>
 
-                        <div class="post">
-                            <div class="photo">
-                                <img src="<?php bloginfo('template_directory'); ?>/src/images/FPO-2.jpg" alt="" />
-                            </div>
+                        <div class="posts">
+                            <?php foreach( $latest as $p ): ?>
 
-                            <div class="info">
-                                <div class="type">
-                                    <h5>Whitepaper</h5>
-                                </div>
-                                
-                                <div class="headline">
-                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                </div>
-
-                                <div class="copy copy-4">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi ab sequi, fugiat officia eum.</p>
-                                </div>
-                            </div>
+                                <?php
+                                    $post_type = get_post_type( $p->ID );
+                                    $args = ['item' => $p];
+                                    get_template_part('template-parts/header/navigation/latest/' . $post_type, null, $args);
+                                ?>
+  
+                            <?php endforeach; ?>
                         </div>
-
                     </div>
-
-                </div>
+                <?php endif; ?>
 
             </div>
 

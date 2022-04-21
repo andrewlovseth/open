@@ -2,8 +2,7 @@
     gap: 2rem;
 
     article {
-        box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
-            rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
 
         a {
             display: grid;
@@ -40,8 +39,12 @@
         .photo {
             grid-column: 1;
             grid-row: 1;
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 1 / 1;
             @include cover-fill-image;
+
+            @include tablet {
+                aspect-ratio: 16 / 9;
+            }
 
             img {
                 border-radius: 10px;
