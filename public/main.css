@@ -7726,6 +7726,222 @@ body.search-results .search-result .info h3 {
 body.search-results .search-result .info .copy {
   padding-top: 0.5rem;
 }
+body.search-results .search-result.resource {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  body.search-results .search-result.resource {
+    padding: 2rem 2.5rem;
+  }
+}
+body.search-results .search-result.resource .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.25rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  body.search-results .search-result.resource .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+body.search-results .search-result.resource .icon svg {
+  width: 100%;
+  height: 100%;
+}
+body.search-results .search-result.resource .icon svg g,
+body.search-results .search-result.resource .icon svg path {
+  fill: #2d77f8;
+}
+body.search-results .search-result.resource .info {
+  flex: 1;
+  padding: 0;
+}
+body.search-results .search-result.resource .thumbnail {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-left: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+  transition: all 350ms ease;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  body.search-results .search-result.resource .thumbnail {
+    width: 25%;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.search-results .search-result.resource .thumbnail {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  body.search-results .search-result.resource .thumbnail {
+    width: 25%;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body.search-results .search-result.resource .thumbnail {
+    width: 18rem;
+  }
+}
+body.search-results .search-result.resource .thumbnail:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+body.search-results .search-result.resource .thumbnail a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body.search-results .search-result.resource .thumbnail a:hover .play-btn {
+  opacity: 1;
+}
+body.search-results .search-result.resource .thumbnail .play-btn {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: all 350ms ease;
+}
+body.search-results .search-result.resource .thumbnail .play-btn-wrapper {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 768px) {
+  body.search-results .search-result.resource .thumbnail .play-btn-wrapper {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body.search-results .search-result.resource .thumbnail .play-btn-wrapper {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+body.search-results .search-result.resource .thumbnail .play-btn svg {
+  width: 100%;
+  height: 100%;
+}
+body.search-results .search-result.resource .thumbnail .play-btn svg path {
+  fill: #2d77f8;
+}
+body.search-results .search-result.resource .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body.search-results .search-result.resource + article.resource {
+  margin-top: 1rem;
+}
+body.search-results .search-result.resource h4.types {
+  padding-bottom: 0.75rem;
+}
+body.search-results .search-result.resource h4.types .type {
+  font-weight: 400;
+  display: inline-block;
+  background: rgba(45, 119, 248, 0.125);
+  border: 1px solid rgba(45, 119, 248, 0.4);
+  color: #2d77f8;
+  font-size: 0.6275rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+}
+body.search-results .search-result.resource h3.title {
+  font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+  line-height: 1em;
+}
+body.search-results .search-result.resource h3.title a {
+  display: inline-block;
+}
+body.search-results .search-result.resource h3.title a:hover {
+  color: #2d77f8;
+}
+body.search-results .search-result.resource .description {
+  padding-top: 0.5rem;
+}
+body.search-results .search-result.resource .cta {
+  padding-top: 1rem;
+}
+body.search-results .search-result.resource .cta .underline {
+  line-height: 1.25em;
+  display: inline-block;
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+  border-bottom: 3px solid #2d77f8;
+}
+body.search-results .search-result.resource .meta {
+  padding-top: 1.5rem;
+}
+body.search-results .search-result.resource .meta p {
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+}
+@media screen and (min-width: 768px) {
+  body.search-results .search-result.resource .meta p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+body.search-results .search-result.resource .meta p span {
+  display: flex;
+  align-items: center;
+}
+body.search-results .search-result.resource .meta p span strong {
+  display: block;
+}
+body.search-results .search-result.resource .meta p span em {
+  font-style: normal;
+  display: block;
+  margin-left: 0.25rem;
+  opacity: 0.5;
+}
+body.search-results .search-result.resource .meta p span + span {
+  margin-top: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  body.search-results .search-result.resource .meta p span + span {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
+}
+body.search-results .search-result.resource .meta p span.file-type em {
+  text-transform: uppercase;
+}
+body.search-results .search-result.resource .video-player .embed {
+  aspect-ratio: 16/9;
+}
+body.search-results .search-result.resource .video-player iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body.search-results .pagination {
   margin-top: 3rem;
   border-top: 2px solid #0a2d6b;

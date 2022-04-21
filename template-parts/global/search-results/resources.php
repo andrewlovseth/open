@@ -1,58 +1,25 @@
 <?php
-
     $args = wp_parse_args($args);
     if(!empty($args)) {
         $item = $args['item']; 
     }
 
-    $post_type = get_post_type( $item->ID );
-    $search = get_field('search', $item->ID);
-    $photo = $search['photo'];
-    $description = $search['description'];
+    $terms = get_the_terms( $item->ID, 'resource_type');
+    $resource_type_name = $terms[0]->name;
+    $resource_type_id = $terms[0]->term_id;
+    $taxonomy = $terms[0]->taxonomy;
 
+    $resource_type = get_field('singular_label', $taxonomy . '_' . $resource_type_id);
+    $icon = get_field('icon', $taxonomy . '_' . $resource_type_id);
 
-    if($search['title']) {
-        $title = $search['title'];
+    if($resource_type_name === "Videos") {
+        $args = ['type' => $resource_type, 'icon' => $icon];
+        get_template_part('template-parts/global/search-results/video', null, $args);
     } else {
-        $title = get_the_title( $item->ID );
-    }
+        $args = ['type' => $resource_type, 'icon' => $icon];
+        get_template_part('template-parts/global/search-results/pdf', null, $args);
 
-    if($search['label']) {
-        $term = $search['label'];
-    } else {
-        $terms = get_the_terms( $item->ID, 'resource_type');
-        $term = $terms[0]->name;
     }
-
-    $class_list = "search-result resource";
-    if($photo['url'] === NULL) {
-        $class_list .= " no-photo";
-    }
-
 ?>
 
-<div class="<?php echo $class_list; ?>">
-    <a href="<?php echo get_permalink( $item->ID ); ?>">
-        <?php if($photo): ?>
-            <div class="photo">
-                <?php echo wp_get_attachment_image($photo['ID'], 'medium'); ?>
-            </div>
-        <?php endif; ?>
 
-        <div class="info">
-            <?php if($term): ?>
-                <h4><?php echo $term; ?></h4>
-            <?php endif; ?>
-
-            <?php if($title): ?>
-                <h3><?php echo $title; ?></h3>
-            <?php endif; ?>
-
-            <?php if($description): ?>
-                <div class="copy copy-2">
-                    <p><?php echo $description; ?></p>
-                </div>
-            <?php endif; ?>
-        </div>        
-    </a>
-</div>

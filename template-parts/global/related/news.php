@@ -8,14 +8,19 @@
     $post_type = get_post_type( $item->ID );
     $search = get_field('search', $item->ID);
     $photo = $search['photo'];
-    $description = $search['description'];
-
 
     if($search['title']) {
         $title = $search['title'];
     } else {
         $title = get_the_title( $item->ID );
     }
+
+    if($search['description']) {
+        $description = $search['description'];
+    } else {
+        $description = wp_trim_words( get_the_content('', '', $item->ID), 24, '...' );
+    }
+
 
     $terms = get_the_terms( $item->ID, 'news_types');
     $term = $terms[0]->name;

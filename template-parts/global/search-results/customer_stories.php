@@ -7,7 +7,6 @@
 
     $post_type = get_post_type( $item->ID );
     $search = get_field('search', $item->ID);
-    $photo = $search['photo'];
     $description = $search['description'];
 
     if($search['title']) {
@@ -16,8 +15,14 @@
         $title = get_the_title( $item->ID );
     }
 
+    if($search['photo']) {
+        $photo = $search['photo']['ID'];
+    } else {
+        $photo = get_post_thumbnail_id($item->ID);
+    }
+
     $class_list = "search-result customer-story";
-    if($photo['url'] === NULL) {
+    if($photo === NULL) {
         $class_list .= " no-photo";
     }
 
@@ -27,7 +32,7 @@
     <a href="<?php echo get_permalink( $item->ID ); ?>">
         <?php if($photo): ?>
             <div class="photo">
-                <?php echo wp_get_attachment_image($photo['ID'], 'medium'); ?>
+                <?php echo wp_get_attachment_image($photo, 'medium'); ?>
             </div>
         <?php endif; ?>
 

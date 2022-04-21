@@ -10,6 +10,15 @@
     $photo = $search['photo'];
     $description = $search['description'];
 
+    if($search['photo']) {
+        $photo = $search['photo'];
+    } elseif(get_field('hero_photo', $item->ID)) {
+        $photo = get_field('hero_photo', $item->ID);
+    } else {
+
+    }
+
+
     if($search['label']) {
         $label = $search['label'];
     } else {
