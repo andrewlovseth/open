@@ -16,6 +16,28 @@ body.page-template-home {
         }
     }
 
+    &.has-hero {
+        .site-header {
+            position: static;
+
+            @include tablet {
+                position: fixed;
+            }
+
+            .site-logo {
+                &:before {
+                    background: $blue;
+                    opacity: 1;
+
+                    @include tablet {
+                        background: unset;
+                        opacity: unset;
+                    }
+                }
+            }
+        }
+    }
+
     @import 'home/hero';
 
     @import 'home/intro';
