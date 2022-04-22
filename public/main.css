@@ -8951,8 +8951,8 @@ body.single-post article.post .article-footer .related .item .info h4 {
 
 @supports (background: -webkit-named-image(i)) {
   .site-header .site-logo {
-    width: 160px;
-    height: 79px;
+    width: 161px;
+    height: 78px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo {
@@ -8962,8 +8962,8 @@ body.single-post article.post .article-footer .related .item .info h4 {
   }
   .site-header .site-logo a {
     max-width: unset;
-    width: 160px;
-    height: 79px;
+    width: 161px;
+    height: 78px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo a {
@@ -8974,8 +8974,8 @@ body.single-post article.post .article-footer .related .item .info h4 {
   .site-header .site-logo a svg {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 160px;
-    height: 79px;
+    width: 161px;
+    height: 78px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo a svg {
@@ -8984,8 +8984,8 @@ body.single-post article.post .article-footer .related .item .info h4 {
     }
   }
   .site-header .site-logo:before {
-    width: 160px;
-    height: 79px;
+    width: 161px;
+    height: 78px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo:before {
