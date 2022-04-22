@@ -1,7 +1,7 @@
 @supports (background: -webkit-named-image(i)) {
     .site-header {
         .site-logo {
-            width: 160.42px;
+            width: 161px;
             height: 78px;
 
             @include tablet-small {
@@ -11,7 +11,7 @@
 
             a {
                 max-width: unset;
-                width: 160.42px;
+                width: 161px;
                 height: 78px;
 
                 @include tablet-small {
@@ -21,7 +21,7 @@
 
                 svg {
                     object-fit: cover;
-                    width: 160.42px;
+                    width: 161px;
                     height: 78px;
 
                     @include tablet-small {
@@ -32,7 +32,7 @@
             }
 
             &:before {
-                width: 160.42px;
+                width: 160px;
                 height: 78px;
 
                 @include tablet-small {
