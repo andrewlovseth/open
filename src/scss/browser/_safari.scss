@@ -4,6 +4,17 @@
             width: 161px;
             height: 79px;
 
+            &::after {
+                display: block;
+                content: '';
+                width: 161px;
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: $white;
+            }
+
             @include tablet-small {
                 width: 218px;
                 height: 106px;
@@ -44,6 +55,14 @@
     }
 
     body.page-template-home {
+        .site-header {
+            .site-logo {
+                &::after {
+                    background: $black;
+                }
+            }
+        }
+
         .hero {
             .video-wrapper {
                 aspect-ratio: unset;
