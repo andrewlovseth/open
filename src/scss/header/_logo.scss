@@ -37,14 +37,6 @@
         svg {
             object-fit: cover;
 
-            @supports selector(:nth-child(1 of x)) {
-                height: 78px;
-
-                @include tablet {
-                    height: 110px;
-                }
-            }
-
             #background {
                 fill: $white;
                 transition: fill 500ms ease 50ms;
