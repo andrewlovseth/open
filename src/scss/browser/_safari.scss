@@ -1,0 +1,45 @@
+@supports (background: -webkit-named-image(i)) {
+    .site-header {
+        .site-logo {
+            width: 160px;
+            height: 78px;
+
+            @include tablet-small {
+                width: 218px;
+                height: 106px;
+            }
+
+            a {
+                max-width: unset;
+                width: 160px;
+                height: 78px;
+
+                @include tablet-small {
+                    width: 218px;
+                    height: 106px;
+                }
+
+                svg {
+                    object-fit: cover;
+                    width: 160px;
+                    height: 78px;
+
+                    @include tablet-small {
+                        width: 218px;
+                        height: 106px;
+                    }
+                }
+            }
+
+            &:before {
+                width: 160px;
+                height: 78px;
+
+                @include tablet-small {
+                    width: 218px;
+                    height: 106px;
+                }
+            }
+        }
+    }
+}

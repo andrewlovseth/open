@@ -1558,6 +1558,16 @@ section.page-header {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@supports selector(:nth-child(1 of x)) {
+  .site-header .site-logo a svg {
+    height: 78px;
+  }
+  @media screen and (min-width: 768px) {
+    .site-header .site-logo a svg {
+      height: 110px;
+    }
+  }
+}
 .site-header .site-logo a svg #background {
   fill: #fff;
   transition: fill 500ms ease 50ms;
@@ -8939,6 +8949,51 @@ body.single-post article.post .article-footer .related .item .info h4 {
   color: #45826a;
 }
 
+@supports (background: -webkit-named-image(i)) {
+  .site-header .site-logo {
+    width: 160px;
+    height: 78px;
+  }
+  @media screen and (min-width: 480px) {
+    .site-header .site-logo {
+      width: 218px;
+      height: 106px;
+    }
+  }
+  .site-header .site-logo a {
+    max-width: unset;
+    width: 160px;
+    height: 78px;
+  }
+  @media screen and (min-width: 480px) {
+    .site-header .site-logo a {
+      width: 218px;
+      height: 106px;
+    }
+  }
+  .site-header .site-logo a svg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 160px;
+    height: 78px;
+  }
+  @media screen and (min-width: 480px) {
+    .site-header .site-logo a svg {
+      width: 218px;
+      height: 106px;
+    }
+  }
+  .site-header .site-logo:before {
+    width: 160px;
+    height: 78px;
+  }
+  @media screen and (min-width: 480px) {
+    .site-header .site-logo:before {
+      width: 218px;
+      height: 106px;
+    }
+  }
+}
 .dev-nav {
   padding: 1rem 0;
   background: #000;
