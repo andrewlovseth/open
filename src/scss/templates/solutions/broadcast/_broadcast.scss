@@ -1,8 +1,16 @@
 body.page-template-solutions-broadcast {
-    .site-logo:before {
-        background: url(../src/images/broadcast-logo-bg.jpg) no-repeat 0 0;
-        background-size: cover;
-        opacity: 1;
+    .site-logo {
+        &:before {
+            background: url(../src/images/broadcast-logo-bg.jpg) no-repeat 0 0;
+            background-size: cover;
+            opacity: 1;
+        }
+
+        &.scrolled {
+            &:before {
+                background: $blue;
+            }
+        }
     }
 
     @import 'hero';

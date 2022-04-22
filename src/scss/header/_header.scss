@@ -32,6 +32,14 @@
     @import 'hamburger';
 }
 
+body.nav-overlay-open {
+    .site-header.has-banner {
+        @include desktop-small {
+            transform: translateY(-74px);
+        }
+    }
+}
+
 @import 'mobile-navigation';
 
 // ACTIVE UNDERLINES

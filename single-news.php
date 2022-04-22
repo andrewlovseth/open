@@ -66,7 +66,7 @@
 
                     <div class="read-more">
                         <div class="cta">
-                            <a href="<?php echo $link; ?>" class="btn blue">Read full story</a>
+                            <a href="<?php echo $link; ?>" class="btn blue" target="window">Read full story</a>
                         </div>
                     </div>
 

@@ -3,8 +3,17 @@ body.page-template-home {
 
     &.nav-overlay-open {
         .site-header {
-            .site-logo a svg #background {
-                fill: $black;
+            .site-logo {
+                a svg #background {
+                    fill: $black;
+                }
+
+                &:before {
+                    @include tablet {
+                        background: $blue;
+                        opacity: 1;
+                    }
+                }
             }
 
             .desktop-nav,
@@ -18,7 +27,7 @@ body.page-template-home {
 
     &.has-hero {
         .site-header {
-            position: static;
+            position: sticky;
 
             @include tablet {
                 position: fixed;
@@ -33,6 +42,26 @@ body.page-template-home {
                         background: unset;
                         opacity: unset;
                     }
+                }
+
+                &.scrolled {
+                    &:before {
+                        @include tablet {
+                            background: $blue;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.nav-overlay-open.has-hero {
+        .site-logo {
+            &:before {
+                @include tablet {
+                    background: $blue;
+                    opacity: 1;
                 }
             }
         }

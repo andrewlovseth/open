@@ -55,6 +55,10 @@
                 font-size: $type-size-500;
             }
 
+            @media screen and (max-height: 800px) {
+                padding: 0.5rem 0;
+            }
+
             &:before {
                 display: block;
                 content: '';
