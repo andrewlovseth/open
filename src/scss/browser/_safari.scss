@@ -42,4 +42,49 @@
             }
         }
     }
+
+    body.page-template-home {
+        .hero {
+            .video-wrapper {
+                aspect-ratio: unset;
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+
+                iframe {
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: unset;
+                }
+            }
+        }
+    }
+
+    body.post-type-archive-resources .resources-list article.resource,
+    body.tax-resource_type .resources-list article.resource {
+        .video-player {
+            .embed {
+                aspect-ratio: unset;
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+
+                iframe {
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: unset;
+                }
+            }
+        }
+    }
 }
