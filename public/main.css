@@ -8942,7 +8942,7 @@ body.single-post article.post .article-footer .related .item .info h4 {
 @supports (background: -webkit-named-image(i)) {
   .site-header .site-logo {
     width: 161px;
-    height: 78px;
+    height: 79px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo {
@@ -8953,7 +8953,7 @@ body.single-post article.post .article-footer .related .item .info h4 {
   .site-header .site-logo a {
     max-width: unset;
     width: 161px;
-    height: 78px;
+    height: 79px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo a {
@@ -8965,7 +8965,7 @@ body.single-post article.post .article-footer .related .item .info h4 {
     -o-object-fit: cover;
        object-fit: cover;
     width: 161px;
-    height: 78px;
+    height: 79px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo a svg {
@@ -8974,8 +8974,8 @@ body.single-post article.post .article-footer .related .item .info h4 {
     }
   }
   .site-header .site-logo:before {
-    width: 160px;
-    height: 78px;
+    width: 161px;
+    height: 77px;
   }
   @media screen and (min-width: 480px) {
     .site-header .site-logo:before {
