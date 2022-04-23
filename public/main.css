@@ -7605,6 +7605,32 @@ body.page-template-customer-support section.intro .info .headline h2 {
     grid-column: 9/span 5;
   }
 }
+body.page-template-customer-support section.portal-link {
+  background: #000;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+body.page-template-customer-support section.portal-link .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body.page-template-customer-support section.portal-link .container .headline {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.75rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-customer-support section.portal-link .container .headline {
+    width: auto;
+    padding-bottom: 0;
+    padding-right: 1rem;
+  }
+}
+body.page-template-customer-support section.portal-link .container .headline h4 {
+  font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+}
 body.page-template-customer-support section.features {
   background-repeat: no-repeat;
   background-position: center center;
