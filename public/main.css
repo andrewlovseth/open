@@ -8161,6 +8161,54 @@ body.page-template-default .page-body {
   }
 }
 
+body.page-template-api-docs .hero .info {
+  padding-top: 0;
+}
+body.page-template-api-docs .hero .photo {
+  height: 40vh;
+  overflow: hidden;
+}
+body.page-template-api-docs .intro {
+  padding-top: clamp(1.25rem, 5vh, 2.5rem);
+  padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-api-docs .intro {
+    padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+    padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-api-docs .intro .copy {
+    grid-column: 3/span 10;
+  }
+}
+body.page-template-api-docs .intro .ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.page-template-api-docs .intro .ctas .cta + .cta {
+  padding-left: 2rem;
+}
+body.page-template-api-docs .intro .ctas .btn {
+  line-height: 1.25em;
+}
+body.page-template-api-docs .site-content {
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-api-docs .site-content {
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-api-docs .site-content {
+    padding-bottom: 0;
+  }
+}
+
 body.blog,
 body.single-post {
   background: rgba(229, 228, 208, 0.5);
