@@ -30,7 +30,7 @@
     if($show):
 ?>
 	<aside class="<?php echo $className; ?>">
-        <a class="link-wrapper" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+        <a class="link-wrapper" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"<?php if($bg_image): ?> style="background-image: url(<?php echo $bg_image['url']; ?>);"<?php endif; ?>>
             <?php if($icon): ?>
                 <div class="icon">
                     <?php echo wp_get_attachment_image($icon['ID'], 'full'); ?>
