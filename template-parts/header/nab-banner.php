@@ -33,7 +33,7 @@
         <a class="link-wrapper" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
             <?php if($icon): ?>
                 <div class="icon">
-                    <img src="<?php echo $icon['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <?php echo wp_get_attachment_image($icon['ID'], 'full'); ?>
 
                     <div class="date-time">
                         <p><?php echo $date_time; ?></p>

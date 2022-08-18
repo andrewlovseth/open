@@ -118,6 +118,12 @@ aside.banner {
 
         img {
             max-width: 8rem;
+            max-height: 3rem;
+            margin-right: 1rem;
+            margin-left: auto;
+            width: auto;
+
+            object-fit: contain;
         }
 
         .date-time {
