@@ -10,6 +10,9 @@
 
     .featured-image {
         padding-bottom: 2rem;
+    }
+
+    .featured-image:not(.photo-color) {
         @include blog-photo;
     }
 

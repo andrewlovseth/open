@@ -18,13 +18,13 @@
 <section class="grid hero">
     <div class="info">
         <?php if($headline): ?>
-            <div class="headline">
+            <div class="headline" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
                 <h1><?php echo $headline; ?></h1>
             </div>
         <?php endif; ?>
 
         <?php if($deck): ?>
-            <div class="copy copy-1 deck">
+            <div class="copy copy-1 deck" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1600" data-aos-once="true">
                 <p><?php echo $deck; ?></p>
             </div>
         <?php endif; ?>

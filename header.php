@@ -18,6 +18,9 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<?php endif; ?>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 	<?php if(get_field('code_head', 'options')): ?>
 		<?php the_field('code_head', 'options'); ?>
 	<?php endif; ?>

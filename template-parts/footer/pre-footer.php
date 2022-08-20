@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="pre-footer">
+<div class="pre-footer" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
   
     <div class="info">
         <div class="headline">

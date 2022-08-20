@@ -9,7 +9,7 @@
     $search = get_field('search', $blog->ID);
     $excerpt = $search['description'];
 
-
+    $color_photo = get_field('color_photo', $blog->ID);
     $author_type = get_field('author_type', $blog->ID);
     $team_authors = get_field('team_author', $blog->ID);
     $guest_author = get_field('guest_author', $blog->ID);
@@ -18,7 +18,7 @@
 
 <article class="teaser blog blog-<?php echo $count; ?>">
     <a href="<?php echo get_permalink( $blog->ID ); ?>">
-        <div class="photo">
+        <div class="photo<?php if($color_photo == TRUE): ?> photo-color<?php endif; ?>">
             <div class="photo-wrapper">
                 <?php echo get_the_post_thumbnail($blog->ID ); ?>
             </div>

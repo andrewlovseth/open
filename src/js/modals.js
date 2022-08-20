@@ -1,9 +1,5 @@
 !(function (e, t) {
-    'object' == typeof exports && 'undefined' != typeof module
-        ? (module.exports = t())
-        : 'function' == typeof define && define.amd
-        ? define(t)
-        : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).MicroModal = t());
+    'object' == typeof exports && 'undefined' != typeof module ? (module.exports = t()) : 'function' == typeof define && define.amd ? define(t) : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).MicroModal = t());
 })(this, function () {
     'use strict';
     function e(e, t) {
@@ -44,19 +40,7 @@
         r,
         s,
         l =
-            ((n = [
-                'a[href]',
-                'area[href]',
-                'input:not([disabled]):not([type="hidden"]):not([aria-hidden])',
-                'select:not([disabled]):not([aria-hidden])',
-                'textarea:not([disabled]):not([aria-hidden])',
-                'button:not([disabled]):not([aria-hidden])',
-                'iframe',
-                'object',
-                'embed',
-                '[contenteditable]',
-                '[tabindex]:not([tabindex^="-"])',
-            ]),
+            ((n = ['a[href]', 'area[href]', 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', 'select:not([disabled]):not([aria-hidden])', 'textarea:not([disabled]):not([aria-hidden])', 'button:not([disabled]):not([aria-hidden])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])']),
             (i = (function () {
                 function o(e) {
                     var n = e.targetModal,
@@ -122,14 +106,7 @@
                             value: function () {
                                 var e = this,
                                     t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-                                if (
-                                    ((this.activeElement = document.activeElement),
-                                    this.modal.setAttribute('aria-hidden', 'false'),
-                                    this.modal.classList.add(this.config.openClass),
-                                    this.scrollBehaviour('disable'),
-                                    this.addEventListeners(),
-                                    this.config.awaitOpenAnimation)
-                                ) {
+                                if (((this.activeElement = document.activeElement), this.modal.setAttribute('aria-hidden', 'false'), this.modal.classList.add(this.config.openClass), this.scrollBehaviour('disable'), this.addEventListeners(), this.config.awaitOpenAnimation)) {
                                     var o = function t() {
                                         e.modal.removeEventListener('animationend', t, !1), e.setFocusToFirstNode();
                                     };
@@ -143,14 +120,7 @@
                             value: function () {
                                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
                                     t = this.modal;
-                                if (
-                                    (this.modal.setAttribute('aria-hidden', 'true'),
-                                    this.removeEventListeners(),
-                                    this.scrollBehaviour('enable'),
-                                    this.activeElement && this.activeElement.focus && this.activeElement.focus(),
-                                    this.config.onClose(this.modal, this.activeElement, e),
-                                    this.config.awaitCloseAnimation)
-                                ) {
+                                if ((this.modal.setAttribute('aria-hidden', 'true'), this.removeEventListeners(), this.scrollBehaviour('enable'), this.activeElement && this.activeElement.focus && this.activeElement.focus(), this.config.onClose(this.modal, this.activeElement, e), this.config.awaitCloseAnimation)) {
                                     var o = this.config.openClass;
                                     this.modal.addEventListener(
                                         'animationend',
@@ -192,16 +162,13 @@
                         {
                             key: 'removeEventListeners',
                             value: function () {
-                                this.modal.removeEventListener('touchstart', this.onClick),
-                                    this.modal.removeEventListener('click', this.onClick),
-                                    document.removeEventListener('keydown', this.onKeydown);
+                                this.modal.removeEventListener('touchstart', this.onClick), this.modal.removeEventListener('click', this.onClick), document.removeEventListener('keydown', this.onKeydown);
                             },
                         },
                         {
                             key: 'onClick',
                             value: function (e) {
-                                (e.target.hasAttribute(this.config.closeTrigger) || e.target.parentNode.hasAttribute(this.config.closeTrigger)) &&
-                                    (e.preventDefault(), e.stopPropagation(), this.closeModal(e));
+                                (e.target.hasAttribute(this.config.closeTrigger) || e.target.parentNode.hasAttribute(this.config.closeTrigger)) && (e.preventDefault(), e.stopPropagation(), this.closeModal(e));
                             },
                         },
                         {
@@ -255,23 +222,12 @@
             })()),
             (a = null),
             (r = function (e) {
-                if (!document.getElementById(e))
-                    return (
-                        console.warn(
-                            "MicroModal: ❗Seems like you have missed %c'".concat(e, "'"),
-                            'background-color: #f8f9fa;color: #50596c;font-weight: bold;',
-                            'ID somewhere in your code. Refer example below to resolve it.'
-                        ),
-                        console.warn('%cExample:', 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', '<div class="modal" id="'.concat(e, '"></div>')),
-                        !1
-                    );
+                if (!document.getElementById(e)) return console.warn("MicroModal: ❗Seems like you have missed %c'".concat(e, "'"), 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'ID somewhere in your code. Refer example below to resolve it.'), console.warn('%cExample:', 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', '<div class="modal" id="'.concat(e, '"></div>')), !1;
             }),
             (s = function (e, t) {
                 if (
                     ((function (e) {
-                        e.length <= 0 &&
-                            (console.warn("MicroModal: ❗Please specify at least one %c'micromodal-trigger'", 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'data attribute.'),
-                            console.warn('%cExample:', 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', '<a href="#" data-micromodal-trigger="my-modal"></a>'));
+                        e.length <= 0 && (console.warn("MicroModal: ❗Please specify at least one %c'micromodal-trigger'", 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'data attribute.'), console.warn('%cExample:', 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', '<a href="#" data-micromodal-trigger="my-modal"></a>'));
                     })(e),
                     !t)
                 )
@@ -408,7 +364,7 @@ const Modal = {
             if (showModal == null) {
                 localStorage.setItem('showModal', 1);
                 MicroModal.show('nab');
-            } else if (showModal >= 1 && showModal <= 2) {
+            } else if (showModal >= 1 && showModal <= 3) {
                 var visit_count = parseInt(localStorage.getItem('showModal'));
                 visit_count++;
                 localStorage.setItem('showModal', visit_count);

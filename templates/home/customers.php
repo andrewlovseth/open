@@ -4,20 +4,23 @@
 ?>
 
 <section class="customers grid">
-    <div class="section-header center">
+    <div class="section-header center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <h3 class="module-title"><?php echo $headline; ?></h3>
     </div>
     
     <?php if( $logos ): ?>
         <div class="customer-grid">
-            <?php foreach( $logos as $logo ): ?>
-                <div class="logo">
+            <?php $i = 1; foreach( $logos as $logo ): ?>
+                <?php
+                    $delay = 400 + (25 * $i);
+                ?>
 
+                <div class="logo" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>" data-aos-once="true">
                     <div class="image">
                         <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
                     </div>                    
                 </div>
-            <?php endforeach; ?>
+            <?php $i++; endforeach; ?>
         </div>
     <?php endif; ?>
 </section>

@@ -24,6 +24,11 @@
 	<?php the_field('code_body_bottom', 'options'); ?>
 <?php endif; ?>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
 </div> <!-- .site -->
 
 </body>

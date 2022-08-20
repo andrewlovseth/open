@@ -6,7 +6,7 @@
 
 ?>
 
-<section class="overview grid">
+<section class="overview grid" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1600" data-aos-once="true">
     <div class="headline">
         <h1 class="section-title"><?php echo $headline; ?></h1>
     </div>
