@@ -20,16 +20,13 @@
 
         .photo {
             aspect-ratio: 4 / 3;
+            background: $blog-tan;
+            @include blog-photo;
 
             @include desktop-small {
                 grid-column: 1 / span 6;
                 grid-row: 1;
             }
-        }
-
-        .photo:not(.photo-color) {
-            background: $blog-tan;
-            @include blog-photo;
         }
 
         .info {
