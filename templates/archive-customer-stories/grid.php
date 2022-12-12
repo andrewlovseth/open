@@ -19,12 +19,12 @@
             if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
             <?php
-                $search = get_field('search', $item->ID);
+                $search = get_field('search');
 
                 if($search['title']) {
                     $title = $search['title'];
                 } else {
-                    $title = get_the_title( $item->ID );
+                    $title = get_the_title();
                 }
 
                 $description = $search['description'];
