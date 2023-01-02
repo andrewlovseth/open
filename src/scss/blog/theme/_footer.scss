@@ -35,6 +35,44 @@
         }
     }
 
+    .newsletter-form {
+        border-radius: unset;
+        background-image: unset;
+
+        &-container {
+            background: rgba($black, 0.1);
+            border-radius: unset;
+        }
+
+        .email-input {
+            flex: 1 !important;
+            padding-right: 1rem;
+
+            input {
+                width: 100% !important;
+                border-radius: 0 !important;
+                height: 2.75rem !important;
+                font-family: $rubik !important;
+
+                &:focus,
+                &:active {
+                    outline: 1px solid #e5e4d0 !important;
+                }
+            }
+        }
+
+        .btn {
+            border-radius: 0;
+
+            &:hover {
+                background: #45826a;
+                color: #e5e4d0;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
     .footer-nav .header h4 {
         color: #e5e4d0;
     }

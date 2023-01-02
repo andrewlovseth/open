@@ -4,6 +4,7 @@
         $resources = get_field('resources', 'options');
         $page_header = $resources['page_header'];
         $headline = $page_header['headline'];
+        $sub_headline = NULL;
         $copy = $page_header['copy'];
     } elseif(is_tax('resource_type')) {
         $queried_object = get_queried_object();

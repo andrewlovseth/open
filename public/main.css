@@ -6606,9 +6606,6 @@ body.tax-resource_type .resources-sidebar .resources-sidebar-nav {
 body.tax-resource_type .resources-sidebar .resources-sidebar-nav {
     display: block !important;
     margin-bottom: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 140px;
   }
 }
 body.post-type-archive-resources .resources-sidebar li + li,
@@ -8371,6 +8368,44 @@ body.blog .site-footer .footer-logo svg path,
 body.single-post .site-footer .footer-logo svg g,
 body.single-post .site-footer .footer-logo svg path {
   fill: #fff;
+}
+body.blog .site-footer .newsletter-form,
+body.single-post .site-footer .newsletter-form {
+  border-radius: unset;
+  background-image: unset;
+}
+body.blog .site-footer .newsletter-form-container,
+body.single-post .site-footer .newsletter-form-container {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: unset;
+}
+body.blog .site-footer .newsletter-form .email-input,
+body.single-post .site-footer .newsletter-form .email-input {
+  flex: 1 !important;
+  padding-right: 1rem;
+}
+body.blog .site-footer .newsletter-form .email-input input,
+body.single-post .site-footer .newsletter-form .email-input input {
+  width: 100% !important;
+  border-radius: 0 !important;
+  height: 2.75rem !important;
+  font-family: "Rubik", sans-serif !important;
+}
+body.blog .site-footer .newsletter-form .email-input input:focus, body.blog .site-footer .newsletter-form .email-input input:active,
+body.single-post .site-footer .newsletter-form .email-input input:focus,
+body.single-post .site-footer .newsletter-form .email-input input:active {
+  outline: 1px solid #e5e4d0 !important;
+}
+body.blog .site-footer .newsletter-form .btn,
+body.single-post .site-footer .newsletter-form .btn {
+  border-radius: 0;
+}
+body.blog .site-footer .newsletter-form .btn:hover,
+body.single-post .site-footer .newsletter-form .btn:hover {
+  background: #45826a;
+  color: #e5e4d0;
+  text-decoration: none;
+  cursor: pointer;
 }
 body.blog .site-footer .footer-nav .header h4,
 body.single-post .site-footer .footer-nav .header h4 {
