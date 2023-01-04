@@ -9,15 +9,20 @@
 
     $description = get_field('description');
     $file = get_field('file');
+    $search = get_field('search');
+    $photo = $search['photo'];
+
 ?>
 
-<article class="search-result resource pdf">
+<div class="search-result resource pdf">
 
-    <?php if($icon): ?>
-        <div class="icon">
-            <?php echo print_svg($icon['url']); ?>
+    <?php if($photo): ?>
+        <div class="photo">
+            <?php echo wp_get_attachment_image($photo['ID'], 'medium'); ?>
         </div>
     <?php endif; ?>
+
+
 
     <div class="info">
         <?php if($type): ?>
@@ -27,7 +32,16 @@
         <?php endif; ?>
 
         <div class="headline">
-            <h3 class="title"><a href="<?php the_permalink(); ?>" target="window"><?php the_title(); ?></a></h3>
+            <h3 class="title">
+                <a href="<?php the_permalink(); ?>" target="window"<?php if($icon): ?> class="has-icon"<?php endif; ?>>
+                    <?php if($icon): ?>
+                        <span class="icon">
+                            <?php echo print_svg($icon['url']); ?>
+                        </span>
+                    <?php endif; ?>
+                    <span class="label"><?php the_title(); ?></span>
+                </a>
+            </h3>
         </div>
 
         <?php if($description): ?>
@@ -37,7 +51,7 @@
         <?php endif; ?>
 
         <div class="cta">
-            <a href="<?php the_permalink(); ?>" class="underline" target="window">Download <?php echo $types[0]; ?></a>
+            <a href="<?php the_permalink(); ?>" class="underline" target="window">Download <?php echo $type; ?></a>
         </div>
 
         <?php if($file): ?>
@@ -66,4 +80,4 @@
         <?php endif; ?>
     </div>
 
-</article>
+</div>

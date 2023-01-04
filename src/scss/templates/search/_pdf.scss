@@ -1,27 +1,23 @@
 .search-result.resource {
     background: rgba($white, 0.8);
-    padding: 1.5rem 2rem;
     border: 1px solid rgba($black, 0.1);
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
 
-    @include tablet {
-        padding: 2rem 2.5rem;
+    .info {
+        flex: 1;
+        padding: 1.5rem 2rem;
+        @include tablet {
+            padding: 2rem 2.5rem;
+        }
     }
 
     .icon {
-        width: 1rem;
-        height: 1rem;
-        margin-top: 0.25rem;
-        margin-right: 1rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.5rem;
         display: flex;
         align-items: flex-start;
-
-        @include tablet {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
 
         svg {
             width: 100%;
@@ -34,16 +30,10 @@
         }
     }
 
-    .info {
-        flex: 1;
-        padding: 0;
-    }
-
     .thumbnail {
         aspect-ratio: 16 / 9;
         width: 100%;
         border: 1px solid rgba($black, 0.05);
-        margin-left: 2rem;
         box-shadow: 0 0 1rem rgba($black, 0.05);
         transition: all 350ms ease;
         border-radius: 3px;
@@ -52,6 +42,7 @@
         @include tablet {
             width: 25%;
             margin-top: 0;
+            margin-left: 2rem;
         }
 
         @include desktop-small {
@@ -132,23 +123,6 @@
         margin-top: 1rem;
     }
 
-    h4.types {
-        padding-bottom: 0.75rem;
-
-        .type {
-            font-weight: 400;
-            display: inline-block;
-            background: rgba($blue, 0.125);
-            border: 1px solid rgba($blue, 0.4);
-            color: $blue;
-            font-size: 0.6275rem;
-            text-transform: uppercase;
-            letter-spacing: 0.125em;
-            padding: 0.25rem 0.75rem;
-            border-radius: 16px;
-        }
-    }
-
     h3.title {
         font-size: $type-size-600;
         line-height: 1em;
@@ -158,6 +132,11 @@
 
             &:hover {
                 color: $blue;
+            }
+
+            &.has-icon {
+                display: flex;
+                align-items: center;
             }
         }
     }
@@ -219,6 +198,24 @@
                         text-transform: uppercase;
                     }
                 }
+            }
+        }
+    }
+
+    &.video {
+        align-items: flex-start;
+
+        padding: 1.5rem 2rem;
+
+        @include tablet {
+            padding: 2rem 2.5rem;
+        }
+
+        .info {
+            padding: unset;
+
+            @include tablet {
+                padding: unset;
             }
         }
     }

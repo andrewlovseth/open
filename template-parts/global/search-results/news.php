@@ -21,7 +21,7 @@
     $term = $terms[0]->name;
 
     $class_list = "search-result news";
-    if($photo['url'] === NULL) {
+    if($photo === NULL) {
         $class_list .= " no-photo";
     }
 

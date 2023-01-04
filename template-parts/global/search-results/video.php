@@ -20,11 +20,6 @@
 ?>
 
 <article class="search-result resource video">
-    <?php if($icon): ?>
-        <div class="icon">
-            <?php echo print_svg($icon['url']); ?>
-        </div>
-    <?php endif; ?>
 
     <div class="info">
         <h4 class="types">
@@ -33,8 +28,16 @@
 
         <div class="headline">
             <h3 class="title">
-                <a href="#" class="js-video-modal" data-micromodal-trigger="<?php echo $slug; ?>-modal">
-                    <?php the_title(); ?>
+                <a href="#" class="js-video-modal<?php if($icon): ?> has-icon<?php endif; ?>" data-micromodal-trigger="<?php echo $slug; ?>-modal">
+                    <?php if($icon): ?>
+                        <span class="icon">
+                            <?php echo print_svg($icon['url']); ?>
+                        </span>
+                    <?php endif; ?>
+
+                    <span class="label">
+                        <?php the_title(); ?>
+                    </span>
                 </a>
             </h3>
         </div>
@@ -47,7 +50,7 @@
 
         <div class="cta">
             <a href="#" class="js-video-modal underline" data-micromodal-trigger="<?php echo $slug; ?>-modal">
-                Watch <?php echo $types[0]; ?>
+                Watch <?php echo $type; ?>
             </a>
         </div>
 
