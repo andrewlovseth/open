@@ -6,6 +6,7 @@
             "key": "field_621e4b8ee11a5",
             "label": "File",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_621e4a100aa11",
             "label": "File",
             "name": "file",
+            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -41,6 +43,7 @@
             "key": "field_621e4b94e11a6",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -66,44 +69,8 @@
             },
             {
                 "param": "post_taxonomy",
-                "operator": "==",
-                "value": "resource_type:product-overviews"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "resources"
-            },
-            {
-                "param": "post_taxonomy",
-                "operator": "==",
-                "value": "resource_type:solution-briefs"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "resources"
-            },
-            {
-                "param": "post_taxonomy",
-                "operator": "==",
-                "value": "resource_type:white-papers"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "resources"
-            },
-            {
-                "param": "post_taxonomy",
-                "operator": "==",
-                "value": "resource_type:case-studies"
+                "operator": "!=",
+                "value": "resource_type:videos"
             }
         ]
     ],
@@ -128,5 +95,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650469618
+    "modified": 1672858203
 }
