@@ -8268,6 +8268,45 @@ body.page-template-api-docs .site-content {
   }
 }
 
+body.page-template-landing-page .page-header {
+  padding: 0 0 3rem 0;
+  text-align: center;
+}
+body.page-template-landing-page .page-header .image {
+  grid-column: 1/-1;
+  aspect-ratio: 30/1;
+}
+body.page-template-landing-page .page-header .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body.page-template-landing-page .page-header .page-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-landing-page .page-header .copy {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-landing-page .page-header .copy {
+    grid-column: 4/span 8;
+  }
+}
+@media screen and (min-width: 480px) {
+  body.page-template-landing-page .active-campaign-form .embed {
+    grid-column: 3/span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-landing-page .active-campaign-form .embed {
+    grid-column: 5/span 6;
+  }
+}
+
 body.blog,
 body.single-post {
   background: rgba(229, 228, 208, 0.5);

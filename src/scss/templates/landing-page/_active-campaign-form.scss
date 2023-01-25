@@ -1,0 +1,11 @@
+.active-campaign-form {
+    .embed {
+        @include tablet-small {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 5 / span 6;
+        }
+    }
+}
