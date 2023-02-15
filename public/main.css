@@ -2659,7 +2659,7 @@ body.nav-overlay-open .nav-content {
 }
 .site-footer .newsletter-form .field-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
@@ -2683,6 +2683,9 @@ body.nav-overlay-open .nav-content {
 }
 .site-footer .newsletter-form .email-input input:focus, .site-footer .newsletter-form .email-input input:active {
   outline: 1px solid #a510f8 !important;
+}
+.site-footer .newsletter-form .g-recaptcha {
+  margin-top: 1rem;
 }
 .site-footer .pre-footer {
   margin-top: clamp(-8rem, -25vh, -16rem);

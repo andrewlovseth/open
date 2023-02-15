@@ -45,7 +45,7 @@
 
     .field-container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
@@ -74,5 +74,9 @@
                 outline: 1px solid #a510f8 !important;
             }
         }
+    }
+
+    .g-recaptcha {
+        margin-top: 1rem;
     }
 }
