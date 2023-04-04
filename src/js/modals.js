@@ -1,3 +1,5 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+
 !(function (e, t) {
     'object' == typeof exports && 'undefined' != typeof module ? (module.exports = t()) : 'function' == typeof define && define.amd ? define(t) : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).MicroModal = t());
 })(this, function () {
@@ -265,8 +267,6 @@
             });
     return 'undefined' != typeof window && (window.MicroModal = l), l;
 });
-
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
 const Modal = {
     modals: function () {

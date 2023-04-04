@@ -8,7 +8,7 @@
 // Enqueue custom styles and scripts
 function bearsmith_enqueue_styles_and_scripts() {
     wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/public/main.css');
-    wp_enqueue_script( 'main-js', get_theme_file_path('/src/js/main.js'), array(), '1112');
+    wp_enqueue_script( 'main-js', get_stylesheet_directory_uri() . '/src/js/main.js', array(), '1112');
 }
 add_action( 'wp_enqueue_scripts', 'bearsmith_enqueue_styles_and_scripts' );
 
