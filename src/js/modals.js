@@ -354,13 +354,13 @@ const Modal = {
         const modal = document.querySelector('#nab');
         const showModal = localStorage.getItem('showModal');
 
-        if (sessionStorage.pageCount) {
-            sessionStorage.pageCount = Number(sessionStorage.pageCount) + 1;
+        if (sessionStorage.nab2023_pageCount) {
+            sessionStorage.nab2023_pageCount = Number(sessionStorage.nab2023_pageCount) + 1;
         } else {
-            sessionStorage.pageCount = 1;
+            sessionStorage.nab2023_pageCount = 1;
         }
 
-        if (sessionStorage.pageCount == 1) {
+        if (sessionStorage.nab2023_pageCount == 1) {
             if (showModal == null) {
                 localStorage.setItem('showModal', 1);
                 MicroModal.show('nab');
