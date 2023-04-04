@@ -266,7 +266,7 @@
     return 'undefined' != typeof window && (window.MicroModal = l), l;
 });
 
-import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js';
 
 const Modal = {
     modals: function () {

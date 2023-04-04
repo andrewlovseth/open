@@ -15,10 +15,10 @@
 	<?php 
 		// Atlas Cloud Plus
 		if(is_page(26)): ?>
-		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<?php endif; ?>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
 
 	<?php if(get_field('code_head', 'options')): ?>
