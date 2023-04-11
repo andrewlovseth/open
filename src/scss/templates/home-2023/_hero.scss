@@ -1,3 +1,60 @@
 .hero {
-    
+    background: $white;
+    padding: 3rem 0;
+
+    @include desktop-small {
+        padding: 4rem 0;
+    }
+
+    &__grid {
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__info {
+        @include tablet {
+            grid-column: 2 / span 4;
+        }
+
+        @include desktop-small {
+            grid-column: 3 / span 5;
+        }
+    }
+
+    &__photo {
+        @include tablet {
+            grid-column: 6 / span 4;
+        }
+        @include desktop-small {
+            grid-column: 8 / span 5;
+        }
+
+        &-wrapper {
+            max-width: 40rem;
+            aspect-ratio: 5 / 4;
+            @include cover-fill-image;
+        }
+    }
+
+    &__headline {
+        font-size: $type-size-700;
+        font-weight: 900;
+        line-height: 1.125em;
+
+        @include desktop-small {
+            font-size: $type-size-800;
+        }
+
+        &-phrase {
+            display: block;
+            padding-top: 0.5rem;
+            font-family: $oooh-baby;
+            text-transform: lowercase;
+            font-weight: bold;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        margin: 0 0.75rem;
+    }
 }

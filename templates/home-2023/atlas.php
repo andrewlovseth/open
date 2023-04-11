@@ -10,8 +10,8 @@ if(have_rows('atlas_features')): ?>
         <div class="section-header">
             <h2 class="section-title"><?php echo $section_headline; ?></h2>
 
-            <div class="copy copy-2">
-                <?php echo $dek; ?>
+            <div class="copy copy-3">
+                <?php echo $section_dek; ?>
             </div>
             
             <?php 
@@ -22,7 +22,7 @@ if(have_rows('atlas_features')): ?>
             ?>
 
                 <div class="cta">
-                    <a class="btn btn__blue" href="<?php echo esc_url($section_link_url); ?>" target="<?php echo esc_attr($section_link_target); ?>"><?php echo esc_html($section_link_title); ?></a>
+                    <a class="btn blue" href="<?php echo esc_url($section_link_url); ?>" target="<?php echo esc_attr($section_link_target); ?>"><?php echo esc_html($section_link_title); ?></a>
                 </div>
 
             <?php endif; ?>

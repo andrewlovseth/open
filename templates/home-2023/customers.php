@@ -4,20 +4,18 @@
 
 ?>
 
-<section class="customers grid">
+<section class="customers">
     <?php if( $logos ): ?>
-        <div class="customer-grid">
-            <?php $i = 1; foreach( $logos as $logo ): ?>
-                <?php
-                    $delay = 400 + (25 * $i);
-                ?>
+        <?php $i = 1; foreach( $logos as $logo ): ?>
+            <?php
+                $delay = 400 + (25 * $i);
+            ?>
 
-                <div class="logo" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>" data-aos-once="true">
-                    <div class="image">
-                        <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
-                    </div>                    
-                </div>
-            <?php $i++; endforeach; ?>
-        </div>
+            <div class="logo" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>" data-aos-once="true">
+                <div class="image">
+                    <?php echo print_svg($logo['url']); ?>
+                </div>                    
+            </div>
+        <?php $i++; endforeach; ?>
     <?php endif; ?>
 </section>

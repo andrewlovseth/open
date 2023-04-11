@@ -377,6 +377,28 @@ const Modal = {
         }
     },
 
+    homeHeroSwiper: function () {
+
+        const heroSwiper = new Swiper('.hero-swiper', {
+            autoplay: {
+                delay: 5000,
+            },
+            speed: 600,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            spaceBetween: 0,
+            grabCursor: true,
+            loop: true,
+            navigation: false,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+    },
     init: function () {
         this.modals();
         this.videoModal();
@@ -384,6 +406,7 @@ const Modal = {
         this.leadershipModal();
         this.formModals();
         this.nabModal();
+        this.homeHeroSwiper();
     },
 };
 

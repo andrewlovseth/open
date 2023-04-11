@@ -1,4 +1,10 @@
 body.page-template-home-2023 {
+
+    .site-logo:before {
+        background: $blue;
+        opacity: 1;
+    }
+
     @import 'home-2023/hero';
     
     @import 'home-2023/customers';

@@ -1,3 +1,74 @@
 .partners {
-    
+    padding: 3rem 0;
+    background: $white;
+
+    @include desktop-small {
+        padding: 6rem 0;
+    }
+
+    .section-header {
+        display: grid;
+        gap: 1rem 2rem;
+        padding-bottom: 3rem;
+        border-bottom: 2px solid $black;
+
+        @include desktop-small {
+            grid-template-columns: repeat(12, minmax(0, 4.5rem));
+            align-items: end;
+        }
+        .section-title {
+            @include desktop-small {
+                grid-column: 1 / span 4;
+            }
+        }
+        .copy {
+            @include desktop-small {
+                grid-column: 5 / span 8;
+            }
+        }
+
+
+    }
+
+    &__item {
+        padding-top: 3rem;
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+
+        @include tablet {
+            grid-template-columns: repeat(2, minmax(auto, 1fr));
+        }
+
+        & + .partners__item {
+            @include tablet {
+                padding-top: 6rem;
+            }
+        }
+
+        &:nth-of-type(even) {
+            .partners__photo {
+                @include tablet {
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    &__photo {
+        aspect-ratio: 16 / 9;
+        @include cover-fill-image;
+    }
+
+    &__puzzle-pieces {
+        max-width: 8rem;
+    }
+
+    &__headline {
+        font-size: $type-size-500;
+    }
+
+    &__copy {
+        padding: 1rem 0;
+    }
 }
