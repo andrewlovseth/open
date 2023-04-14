@@ -12,7 +12,7 @@
         z-index: 2;
         transform: translateY(1rem);
 
-        @include desktop-small {
+        @include desktop-medium {
             transform: translateY(3rem);
         }
     }
@@ -34,7 +34,7 @@
         &-wrapper {
             aspect-ratio: 4 / 3;
 
-            @include desktop-small {
+            @include desktop-medium {
                 aspect-ratio: 16 / 11;
             }
 
@@ -68,7 +68,7 @@
     }
 
     .swiper-pagination {
-        @include desktop-small {
+        @include desktop-medium {
             bottom: 2rem;
         }
     }
