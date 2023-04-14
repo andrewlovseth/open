@@ -1,37 +1,48 @@
 .hero {
     background: $white;
-    padding: 3rem 0;
-
-    @include desktop-small {
-        padding: 4rem 0;
-    }
 
     &__grid {
+        display: grid;
         align-items: center;
-        gap: 2rem;
     }
 
     &__info {
-        @include tablet {
-            grid-column: 2 / span 4;
-        }
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        transform: translateY(1rem);
 
         @include desktop-small {
-            grid-column: 3 / span 5;
+            transform: translateY(3rem);
         }
     }
 
     &__photo {
-        @include tablet {
-            grid-column: 6 / span 4;
-        }
-        @include desktop-small {
-            grid-column: 8 / span 5;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            background: rgba($black, 0.1);
+            z-index: 1;
         }
 
         &-wrapper {
-            max-width: 40rem;
-            aspect-ratio: 5 / 4;
+            aspect-ratio: 4 / 3;
+
+            @include desktop-small {
+                aspect-ratio: 16 / 11;
+            }
+
+            @include desktop-medium {
+                aspect-ratio: unset;
+                max-height: clamp(50vh, 54rem, 70vh);
+            }
+
             @include cover-fill-image;
         }
     }
@@ -40,21 +51,38 @@
         font-size: $type-size-700;
         font-weight: 900;
         line-height: 1.125em;
+        color: $white;
 
-        @include desktop-small {
-            font-size: $type-size-800;
+        @include tablet {
+            font-size: $type-size-1000;
         }
 
         &-phrase {
-            display: block;
-            padding-top: 0.5rem;
-            font-family: $oooh-baby;
+            margin-top: 0.25rem;
+            display: inline-block;
+            color: $white;
+            background: $blue;
+            padding: 0 0.5rem 0.5rem 0.5rem;
             text-transform: lowercase;
-            font-weight: bold;
+        }
+    }
+
+    .swiper-pagination {
+        @include desktop-small {
+            bottom: 2rem;
         }
     }
 
     .swiper-pagination-bullet {
-        margin: 0 0.75rem;
+        margin: 0 1rem;
+        background: $white;
+        opacity: 1;
+        border: 2px solid $white;
+        width: 0.75rem;
+        height: 0.75rem;
+
+        &-active {
+            background: $blue;
+        }
     }
 }

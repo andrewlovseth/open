@@ -14,7 +14,7 @@
 
 	<?php 
 		// Atlas Cloud Plus
-		if(is_page(array(26, 2825))): ?>
+		if(is_page(array(26, 'home-2023'))): ?>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<?php endif; ?>
 

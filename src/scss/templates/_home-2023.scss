@@ -1,19 +1,13 @@
 body.page-template-home-2023 {
+    @import "home-2023/hero";
 
-    .site-logo:before {
-        background: $blue;
-        opacity: 1;
-    }
+    @import "home-2023/customers";
 
-    @import 'home-2023/hero';
-    
-    @import 'home-2023/customers';
+    @import "home-2023/about";
 
-    @import 'home-2023/about';
+    @import "home-2023/atlas";
 
-    @import 'home-2023/atlas';
+    @import "home-2023/ecosystem";
 
-    @import 'home-2023/ecosystem';
-
-    @import 'home-2023/partners';
+    @import "home-2023/partners";
 }

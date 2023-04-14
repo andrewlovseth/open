@@ -24,12 +24,13 @@
         @include tablet {
             grid-template-columns: repeat(6, minmax(auto, 1fr));
             grid-template-rows: repeat(6, minmax(auto, 1fr));
-            grid-template-areas: "tl tl tm tm tr tr"
-                                "tl tl tm tm tr tr"
-                                "bl bl tm tm tr tr"
-                                "bl bl bm bm tr tr"
-                                "bl bl bm bm br br"
-                                "bl bl bm bm br br";
+            grid-template-areas:
+                "tl tl tm tm tr tr"
+                "tl tl tm tm tr tr"
+                "bl bl tm tm tr tr"
+                "bl bl bm bm tr tr"
+                "bl bl bm bm br br"
+                "bl bl bm bm br br";
         }
 
         @include desktop-small {
@@ -43,9 +44,18 @@
         background: $blue;
         min-width: 0px;
         border-radius: 0.25rem;
+        transition: all 1000ms ease-in-out;
+        background-position: 0;
+        background: linear-gradient(var(--angle, 90deg), var(--c1, #1e6166), var(--c2, #07aeb7) 51%, var(--c1, #1e6166)) var(--x, 0) / 200%;
+
+        &:hover {
+            --x: 100%;
+        }
 
         &-1 {
-            background: linear-gradient(15deg, #1e6166 0%, #07aeb7 100%);
+            --angle: 90deg;
+            --c1: #1e6166;
+            --c2: #07aeb7;
 
             @include tablet {
                 grid-area: tl;
@@ -53,7 +63,9 @@
         }
 
         &-2 {
-            background: linear-gradient(45deg, #785ea6 0%, #4e2780 100%);
+            --angle: 45deg;
+            --c1: #785ea6;
+            --c2: #4e2780;
 
             @include tablet {
                 grid-area: tm;
@@ -61,7 +73,9 @@
         }
 
         &-3 {
-            background: linear-gradient(125deg, #1a5577 0%, #00a3ff 100%);
+            --angle: 125deg;
+            --c1: #1a5577;
+            --c2: #00a3ff;
 
             @include tablet {
                 grid-area: tr;
@@ -69,8 +83,10 @@
         }
 
         &-4 {
-            background: linear-gradient(85deg, #ef5425 0%, #fbe116 100%);
-            
+            --angle: -135deg;
+            --c1: #ef5425;
+            --c2: #fbe116;
+
             @include tablet {
                 grid-area: bl;
                 display: flex;
@@ -80,7 +96,9 @@
         }
 
         &-5 {
-            background: linear-gradient(160deg, #e661a0 0%, #ab278e 100%);
+            --angle: 160deg;
+            --c1: #e661a0;
+            --c2: #ab278e;
 
             @include tablet {
                 grid-area: bm;
@@ -88,12 +106,13 @@
                 flex-direction: column;
                 justify-content: flex-end;
             }
-
         }
 
         &-6 {
-            background: linear-gradient(15deg, #111d2d 0%, #00838b 100%);
-            
+            --angle: 15deg;
+            --c1: #111d2d;
+            --c2: #00838b;
+
             @include tablet {
                 grid-area: br;
             }
@@ -105,5 +124,4 @@
         line-height: 1.125em;
         padding-bottom: 0.25rem;
     }
-    
 }

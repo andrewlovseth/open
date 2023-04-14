@@ -7,14 +7,12 @@ $section_link = get_field('partners_link');
 if(have_rows('partners')): ?>
 
     <section class="partners grid"> 
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
             <h2 class="section-title"><?php echo $section_headline; ?></h2>
 
             <div class="copy copy-2">
                 <?php echo $section_dek; ?>
             </div>
-        
-
         </div>
 
         <?php while(have_rows('partners')) : the_row(); ?>
@@ -29,7 +27,7 @@ if(have_rows('partners')): ?>
 
                 ?>
 
-                <div class="partners__item">
+                <div class="partners__item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                     <div class="partners__photo">
                         <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
                     </div>

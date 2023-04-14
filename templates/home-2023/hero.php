@@ -1,8 +1,4 @@
-<?php
-
-$hero_headline = get_field('hero_headline');
-
-if(have_rows('hero')): ?>
+<?php if(have_rows('hero')): ?>
 
     <section class="hero hero-swiper swiper">
         <div class="swiper-wrapper">
@@ -11,16 +7,19 @@ if(have_rows('hero')): ?>
 
                 <?php if( get_row_layout() == 'slide' ): ?>
                     <?php
+                        $headline = get_sub_field('headline');
                         $phrase = get_sub_field('phrase');
                         $image = get_sub_field('image');
                     ?>
 
                     <div class="hero__slide swiper-slide">
-                        <div class="hero__grid grid">
-                            <div class="hero__info">
+                        <div class="hero__grid">
+                            <div class="hero__info grid">
                                 <h1 class="hero__headline">
-                                    <?php echo $hero_headline; ?>
-                                    <span class="hero__headline-phrase"><?php echo $phrase; ?></span>
+                                    <?php echo $headline; ?>
+                                    <div>
+                                          <span class="hero__headline-phrase"><?php echo $phrase; ?></span>
+                                    </div>
                                 </h1>
                             </div>
 
@@ -38,9 +37,6 @@ if(have_rows('hero')): ?>
         </div>
 
         <div class="swiper-pagination"></div>
-
-
-
     </section>
 
 <?php endif; ?>

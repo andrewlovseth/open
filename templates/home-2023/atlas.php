@@ -36,9 +36,10 @@ if(have_rows('atlas_features')): ?>
                     <?php
                         $headline = get_sub_field('headline');
                         $copy = get_sub_field('copy');
+                        $delay = 200 + (50 * $count);
                     ?>
 
-                    <div class="atlas__item atlas__item-<?php echo $count; ?>">
+                    <div class="atlas__item atlas__item-<?php echo $count; ?>" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>">
                         <h4 class="atlas__headline"><?php echo $headline; ?></h4>
 
                         <div class="atlas__copy copy copy-3">

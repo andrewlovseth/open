@@ -15,16 +15,17 @@ if(have_rows('ecosystem_features')): ?>
         </div>
 
         <div class="ecosystem__features">
-            <?php while(have_rows('ecosystem_features')) : the_row(); ?>
+            <?php $i = 1; while(have_rows('ecosystem_features')) : the_row(); ?>
 
                 <?php if( get_row_layout() == 'feature' ): ?>
                     <?php
                         $icon = get_sub_field('icon');
                         $headline = get_sub_field('headline');
                         $copy = get_sub_field('copy');
+                        $delay = 400 + (50 * $i);
                     ?>
 
-                    <div class="ecosystem__feature">
+                    <div class="ecosystem__feature" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>">
                         <h3 class="ecosystem__headline">
                             <div class="ecosystem__icon">
                                 <?php echo print_svg($icon['url']); ?>
@@ -40,7 +41,7 @@ if(have_rows('ecosystem_features')): ?>
 
                 <?php endif; ?>
 
-            <?php endwhile; ?>
+            <?php $i++; endwhile; ?>
         </div>
 
 

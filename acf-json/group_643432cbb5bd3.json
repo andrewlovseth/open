@@ -20,26 +20,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_6434332a9eb53",
-            "label": "Hero Headline",
-            "name": "hero_headline",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": 4,
-            "placeholder": "",
-            "new_lines": "br"
-        },
-        {
             "key": "field_643433449056c",
             "label": "Hero",
             "name": "hero",
@@ -60,6 +40,26 @@
                     "label": "Slide",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_64397ee757b6c",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
                         {
                             "key": "field_6434334d9056d",
                             "label": "Phrase",
@@ -750,5 +750,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681143074
+    "modified": 1681492039
 }

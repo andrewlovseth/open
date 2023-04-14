@@ -1,10 +1,14 @@
 <?php
 
+global $has_hero;
+$has_hero = 'has-hero';
+
 /*
 	Template Name: Home 2023
 */
 
 get_header(); ?>
+
 
 	<?php get_template_part('templates/home-2023/hero'); ?>
 

@@ -1,13 +1,13 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
 !(function (e, t) {
-    'object' == typeof exports && 'undefined' != typeof module ? (module.exports = t()) : 'function' == typeof define && define.amd ? define(t) : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).MicroModal = t());
+    "object" == typeof exports && "undefined" != typeof module ? (module.exports = t()) : "function" == typeof define && define.amd ? define(t) : ((e = "undefined" != typeof globalThis ? globalThis : e || self).MicroModal = t());
 })(this, function () {
-    'use strict';
+    "use strict";
     function e(e, t) {
         for (var o = 0; o < t.length; o++) {
             var n = t[o];
-            (n.enumerable = n.enumerable || !1), (n.configurable = !0), 'value' in n && (n.writable = !0), Object.defineProperty(e, n.key, n);
+            (n.enumerable = n.enumerable || !1), (n.configurable = !0), "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n);
         }
     }
     function t(e) {
@@ -16,18 +16,18 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                 if (Array.isArray(e)) return o(e);
             })(e) ||
             (function (e) {
-                if ('undefined' != typeof Symbol && Symbol.iterator in Object(e)) return Array.from(e);
+                if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) return Array.from(e);
             })(e) ||
             (function (e, t) {
                 if (!e) return;
-                if ('string' == typeof e) return o(e, t);
+                if ("string" == typeof e) return o(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                'Object' === n && e.constructor && (n = e.constructor.name);
-                if ('Map' === n || 'Set' === n) return Array.from(e);
-                if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return o(e, t);
+                "Object" === n && e.constructor && (n = e.constructor.name);
+                if ("Map" === n || "Set" === n) return Array.from(e);
+                if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return o(e, t);
             })(e) ||
             (function () {
-                throw new TypeError('Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
+                throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
             })()
         );
     }
@@ -42,7 +42,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
         r,
         s,
         l =
-            ((n = ['a[href]', 'area[href]', 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', 'select:not([disabled]):not([aria-hidden])', 'textarea:not([disabled]):not([aria-hidden])', 'button:not([disabled]):not([aria-hidden])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])']),
+            ((n = ["a[href]", "area[href]", 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', "select:not([disabled]):not([aria-hidden])", "textarea:not([disabled]):not([aria-hidden])", "button:not([disabled]):not([aria-hidden])", "iframe", "object", "embed", "[contenteditable]", '[tabindex]:not([tabindex^="-"])']),
             (i = (function () {
                 function o(e) {
                     var n = e.targetModal,
@@ -53,11 +53,11 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                         l = e.onClose,
                         c = void 0 === l ? function () {} : l,
                         d = e.openTrigger,
-                        u = void 0 === d ? 'data-micromodal-trigger' : d,
+                        u = void 0 === d ? "data-micromodal-trigger" : d,
                         f = e.closeTrigger,
-                        h = void 0 === f ? 'data-micromodal-close' : f,
+                        h = void 0 === f ? "data-micromodal-close" : f,
                         v = e.openClass,
-                        g = void 0 === v ? 'is-open' : v,
+                        g = void 0 === v ? "is-open" : v,
                         m = e.disableScroll,
                         b = void 0 !== m && m,
                         y = e.disableFocus,
@@ -69,7 +69,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                         A = e.debugMode,
                         C = void 0 !== A && A;
                     !(function (e, t) {
-                        if (!(e instanceof t)) throw new TypeError('Cannot call a class as a function');
+                        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
                     })(this, o),
                         (this.modal = document.getElementById(n)),
                         (this.config = {
@@ -93,41 +93,41 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                     (i = o),
                     (a = [
                         {
-                            key: 'registerTriggers',
+                            key: "registerTriggers",
                             value: function () {
                                 for (var e = this, t = arguments.length, o = new Array(t), n = 0; n < t; n++) o[n] = arguments[n];
                                 o.filter(Boolean).forEach(function (t) {
-                                    t.addEventListener('click', function (t) {
+                                    t.addEventListener("click", function (t) {
                                         return e.showModal(t);
                                     });
                                 });
                             },
                         },
                         {
-                            key: 'showModal',
+                            key: "showModal",
                             value: function () {
                                 var e = this,
                                     t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-                                if (((this.activeElement = document.activeElement), this.modal.setAttribute('aria-hidden', 'false'), this.modal.classList.add(this.config.openClass), this.scrollBehaviour('disable'), this.addEventListeners(), this.config.awaitOpenAnimation)) {
+                                if (((this.activeElement = document.activeElement), this.modal.setAttribute("aria-hidden", "false"), this.modal.classList.add(this.config.openClass), this.scrollBehaviour("disable"), this.addEventListeners(), this.config.awaitOpenAnimation)) {
                                     var o = function t() {
-                                        e.modal.removeEventListener('animationend', t, !1), e.setFocusToFirstNode();
+                                        e.modal.removeEventListener("animationend", t, !1), e.setFocusToFirstNode();
                                     };
-                                    this.modal.addEventListener('animationend', o, !1);
+                                    this.modal.addEventListener("animationend", o, !1);
                                 } else this.setFocusToFirstNode();
                                 this.config.onShow(this.modal, this.activeElement, t);
                             },
                         },
                         {
-                            key: 'closeModal',
+                            key: "closeModal",
                             value: function () {
                                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
                                     t = this.modal;
-                                if ((this.modal.setAttribute('aria-hidden', 'true'), this.removeEventListeners(), this.scrollBehaviour('enable'), this.activeElement && this.activeElement.focus && this.activeElement.focus(), this.config.onClose(this.modal, this.activeElement, e), this.config.awaitCloseAnimation)) {
+                                if ((this.modal.setAttribute("aria-hidden", "true"), this.removeEventListeners(), this.scrollBehaviour("enable"), this.activeElement && this.activeElement.focus && this.activeElement.focus(), this.config.onClose(this.modal, this.activeElement, e), this.config.awaitCloseAnimation)) {
                                     var o = this.config.openClass;
                                     this.modal.addEventListener(
-                                        'animationend',
+                                        "animationend",
                                         function e() {
-                                            t.classList.remove(o), t.removeEventListener('animationend', e, !1);
+                                            t.classList.remove(o), t.removeEventListener("animationend", e, !1);
                                         },
                                         !1
                                     );
@@ -135,59 +135,59 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                             },
                         },
                         {
-                            key: 'closeModalById',
+                            key: "closeModalById",
                             value: function (e) {
                                 (this.modal = document.getElementById(e)), this.modal && this.closeModal();
                             },
                         },
                         {
-                            key: 'scrollBehaviour',
+                            key: "scrollBehaviour",
                             value: function (e) {
                                 if (this.config.disableScroll) {
-                                    var t = document.querySelector('body');
+                                    var t = document.querySelector("body");
                                     switch (e) {
-                                        case 'enable':
-                                            Object.assign(t.style, { overflow: '' });
+                                        case "enable":
+                                            Object.assign(t.style, { overflow: "" });
                                             break;
-                                        case 'disable':
-                                            Object.assign(t.style, { overflow: 'hidden' });
+                                        case "disable":
+                                            Object.assign(t.style, { overflow: "hidden" });
                                     }
                                 }
                             },
                         },
                         {
-                            key: 'addEventListeners',
+                            key: "addEventListeners",
                             value: function () {
-                                this.modal.addEventListener('touchstart', this.onClick), this.modal.addEventListener('click', this.onClick), document.addEventListener('keydown', this.onKeydown);
+                                this.modal.addEventListener("touchstart", this.onClick), this.modal.addEventListener("click", this.onClick), document.addEventListener("keydown", this.onKeydown);
                             },
                         },
                         {
-                            key: 'removeEventListeners',
+                            key: "removeEventListeners",
                             value: function () {
-                                this.modal.removeEventListener('touchstart', this.onClick), this.modal.removeEventListener('click', this.onClick), document.removeEventListener('keydown', this.onKeydown);
+                                this.modal.removeEventListener("touchstart", this.onClick), this.modal.removeEventListener("click", this.onClick), document.removeEventListener("keydown", this.onKeydown);
                             },
                         },
                         {
-                            key: 'onClick',
+                            key: "onClick",
                             value: function (e) {
                                 (e.target.hasAttribute(this.config.closeTrigger) || e.target.parentNode.hasAttribute(this.config.closeTrigger)) && (e.preventDefault(), e.stopPropagation(), this.closeModal(e));
                             },
                         },
                         {
-                            key: 'onKeydown',
+                            key: "onKeydown",
                             value: function (e) {
                                 27 === e.keyCode && this.closeModal(e), 9 === e.keyCode && this.retainFocus(e);
                             },
                         },
                         {
-                            key: 'getFocusableNodes',
+                            key: "getFocusableNodes",
                             value: function () {
                                 var e = this.modal.querySelectorAll(n);
                                 return Array.apply(void 0, t(e));
                             },
                         },
                         {
-                            key: 'setFocusToFirstNode',
+                            key: "setFocusToFirstNode",
                             value: function () {
                                 var e = this;
                                 if (!this.config.disableFocus) {
@@ -202,7 +202,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                             },
                         },
                         {
-                            key: 'retainFocus',
+                            key: "retainFocus",
                             value: function (e) {
                                 var t = this.getFocusableNodes();
                                 if (0 !== t.length)
@@ -224,12 +224,12 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
             })()),
             (a = null),
             (r = function (e) {
-                if (!document.getElementById(e)) return console.warn("MicroModal: ❗Seems like you have missed %c'".concat(e, "'"), 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'ID somewhere in your code. Refer example below to resolve it.'), console.warn('%cExample:', 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', '<div class="modal" id="'.concat(e, '"></div>')), !1;
+                if (!document.getElementById(e)) return console.warn("MicroModal: ❗Seems like you have missed %c'".concat(e, "'"), "background-color: #f8f9fa;color: #50596c;font-weight: bold;", "ID somewhere in your code. Refer example below to resolve it."), console.warn("%cExample:", "background-color: #f8f9fa;color: #50596c;font-weight: bold;", '<div class="modal" id="'.concat(e, '"></div>')), !1;
             }),
             (s = function (e, t) {
                 if (
                     ((function (e) {
-                        e.length <= 0 && (console.warn("MicroModal: ❗Please specify at least one %c'micromodal-trigger'", 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'data attribute.'), console.warn('%cExample:', 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', '<a href="#" data-micromodal-trigger="my-modal"></a>'));
+                        e.length <= 0 && (console.warn("MicroModal: ❗Please specify at least one %c'micromodal-trigger'", "background-color: #f8f9fa;color: #50596c;font-weight: bold;", "data attribute."), console.warn("%cExample:", "background-color: #f8f9fa;color: #50596c;font-weight: bold;", '<a href="#" data-micromodal-trigger="my-modal"></a>'));
                     })(e),
                     !t)
                 )
@@ -239,8 +239,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
             }),
             {
                 init: function (e) {
-                    var o = Object.assign({}, { openTrigger: 'data-micromodal-trigger' }, e),
-                        n = t(document.querySelectorAll('['.concat(o.openTrigger, ']'))),
+                    var o = Object.assign({}, { openTrigger: "data-micromodal-trigger" }, e),
+                        n = t(document.querySelectorAll("[".concat(o.openTrigger, "]"))),
                         r = (function (e, t) {
                             var o = [];
                             return (
@@ -265,18 +265,18 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                     e ? a.closeModalById(e) : a.closeModal();
                 },
             });
-    return 'undefined' != typeof window && (window.MicroModal = l), l;
+    return "undefined" != typeof window && (window.MicroModal = l), l;
 });
 
 const Modal = {
     modals: function () {
         MicroModal.init({
             onClose: () => {
-                const videoPlayers = document.querySelectorAll('.modal__content .video-player');
+                const videoPlayers = document.querySelectorAll(".modal__content .video-player");
 
                 videoPlayers.forEach((player) => {
-                    const iframe = player.querySelector('iframe');
-                    iframe.setAttribute('src', '');
+                    const iframe = player.querySelector("iframe");
+                    iframe.setAttribute("src", "");
                 });
             },
             awaitOpenAnimation: true,
@@ -285,17 +285,17 @@ const Modal = {
     },
 
     videoModal: function () {
-        const videoLinks = document.querySelectorAll('.js-video-modal');
+        const videoLinks = document.querySelectorAll(".js-video-modal");
 
         videoLinks.forEach((link) => {
             const modalTarget = link.dataset.micromodalTrigger;
             const modal = document.getElementById(modalTarget);
-            const videoPlayer = modal.querySelector('.video-player');
-            const iframe = videoPlayer.querySelector('iframe');
+            const videoPlayer = modal.querySelector(".video-player");
+            const iframe = videoPlayer.querySelector("iframe");
             const autoplayUrl = videoPlayer.dataset.autoplayUrl;
 
-            link.addEventListener('click', (e) => {
-                iframe.setAttribute('src', autoplayUrl);
+            link.addEventListener("click", (e) => {
+                iframe.setAttribute("src", autoplayUrl);
 
                 e.preventDefault();
             });
@@ -303,14 +303,14 @@ const Modal = {
     },
 
     acPlusModal: function () {
-        const acPlusLinks = document.querySelectorAll('.js-ac-plus-modal');
+        const acPlusLinks = document.querySelectorAll(".js-ac-plus-modal");
 
         acPlusLinks.forEach((link) => {
-            link.addEventListener('click', (e) => {
+            link.addEventListener("click", (e) => {
                 const slideIndex = link.dataset.slideIndex;
                 console.log(slideIndex);
 
-                const acPlusSwiper = new Swiper('.swiper', {
+                const acPlusSwiper = new Swiper(".swiper", {
                     autoplay: false,
                     speed: 600,
                     spaceBetween: 0,
@@ -319,8 +319,8 @@ const Modal = {
                     loop: true,
                     navigation: false,
                     pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
+                        el: ".swiper-pagination",
+                        type: "bullets",
                         clickable: true,
                     },
                 });
@@ -331,28 +331,28 @@ const Modal = {
     },
 
     leadershipModal: function () {
-        const leadershipLinks = document.querySelectorAll('.js-leader-modal');
+        const leadershipLinks = document.querySelectorAll(".js-leader-modal");
 
         leadershipLinks.forEach((link) => {
-            link.addEventListener('click', (e) => {
+            link.addEventListener("click", (e) => {
                 e.preventDefault();
             });
         });
     },
 
     formModals: function () {
-        const formLinks = document.querySelectorAll('.js-form-trigger');
+        const formLinks = document.querySelectorAll(".js-form-trigger");
 
         formLinks.forEach((link) => {
-            link.addEventListener('click', (e) => {
+            link.addEventListener("click", (e) => {
                 e.preventDefault();
             });
         });
     },
 
     nabModal: function () {
-        const modal = document.querySelector('#nab');
-        const showModal = localStorage.getItem('showModal');
+        const modal = document.querySelector("#nab");
+        const showModal = localStorage.getItem("showModal");
 
         if (sessionStorage.nab2023_pageCount) {
             sessionStorage.nab2023_pageCount = Number(sessionStorage.nab2023_pageCount) + 1;
@@ -362,29 +362,28 @@ const Modal = {
 
         if (sessionStorage.nab2023_pageCount == 1) {
             if (showModal == null) {
-                localStorage.setItem('showModal', 1);
-                MicroModal.show('nab');
+                localStorage.setItem("showModal", 1);
+                MicroModal.show("nab");
             } else if (showModal >= 1 && showModal <= 3) {
-                var visit_count = parseInt(localStorage.getItem('showModal'));
+                var visit_count = parseInt(localStorage.getItem("showModal"));
                 visit_count++;
-                localStorage.setItem('showModal', visit_count);
-                MicroModal.show('nab');
+                localStorage.setItem("showModal", visit_count);
+                MicroModal.show("nab");
             } else {
-                var visit_count = parseInt(localStorage.getItem('showModal'));
+                var visit_count = parseInt(localStorage.getItem("showModal"));
                 visit_count++;
-                localStorage.setItem('showModal', visit_count);
+                localStorage.setItem("showModal", visit_count);
             }
         }
     },
 
     homeHeroSwiper: function () {
-
-        const heroSwiper = new Swiper('.hero-swiper', {
+        const heroSwiper = new Swiper(".hero-swiper", {
             autoplay: {
                 delay: 5000,
             },
             speed: 600,
-            effect: 'fade',
+            effect: "fade",
             fadeEffect: {
                 crossFade: true,
             },
@@ -393,8 +392,8 @@ const Modal = {
             loop: true,
             navigation: false,
             pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
+                el: ".swiper-pagination",
+                type: "bullets",
                 clickable: true,
             },
         });
