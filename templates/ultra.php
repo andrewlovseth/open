@@ -17,7 +17,7 @@ get_header(); ?>
 
     <?php get_template_part('templates/ultra/series'); ?>
 
-	<?php get_template_part('templates/ultra/consumption-models'); ?>
+	<?php // get_template_part('templates/ultra/consumption-models'); ?>
 
 	<?php get_template_part('template-parts/global/ecosystem'); ?>
 
