@@ -26,8 +26,6 @@
                 grid-column: 5 / span 8;
             }
         }
-
-
     }
 
     &__item {
@@ -58,6 +56,10 @@
     &__photo {
         aspect-ratio: 16 / 9;
         @include cover-fill-image;
+
+        img {
+            border-radius: 0.5rem;
+        }
     }
 
     &__puzzle-pieces {

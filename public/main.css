@@ -3421,6 +3421,9 @@ body.page-template-home-2023 .partners__photo img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+body.page-template-home-2023 .partners__photo img {
+  border-radius: 0.5rem;
+}
 body.page-template-home-2023 .partners__puzzle-pieces {
   max-width: 8rem;
 }
