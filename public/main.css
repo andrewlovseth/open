@@ -3061,7 +3061,7 @@ body.page-template-home-2023 .hero__info {
   z-index: 2;
   transform: translateY(1rem);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   body.page-template-home-2023 .hero__info {
     transform: translateY(3rem);
   }
@@ -3082,12 +3082,7 @@ body.page-template-home-2023 .hero__photo::before {
 body.page-template-home-2023 .hero__photo-wrapper {
   aspect-ratio: 4/3;
 }
-@media screen and (min-width: 1280px) {
-  body.page-template-home-2023 .hero__photo-wrapper {
-    aspect-ratio: 16/11;
-  }
-}
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   body.page-template-home-2023 .hero__photo-wrapper {
     aspect-ratio: unset;
     max-height: clamp(50vh, 54rem, 90vh);
@@ -3100,7 +3095,7 @@ body.page-template-home-2023 .hero__photo-wrapper img {
      object-fit: cover;
 }
 body.page-template-home-2023 .hero__headline {
-  font-size: clamp(1.8rem, 1.54rem + 1.29vw, 2.34rem);
+  font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
   font-weight: 900;
   line-height: 1.125em;
   color: #fff;
@@ -3118,7 +3113,7 @@ body.page-template-home-2023 .hero__headline-phrase {
   padding: 0 0.5rem 0.5rem 0.5rem;
   text-transform: lowercase;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   body.page-template-home-2023 .hero .swiper-pagination {
     bottom: 2rem;
   }

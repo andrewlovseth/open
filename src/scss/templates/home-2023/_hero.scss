@@ -12,7 +12,7 @@
         z-index: 2;
         transform: translateY(1rem);
 
-        @include desktop-medium {
+        @include desktop-large {
             transform: translateY(3rem);
         }
     }
@@ -34,11 +34,7 @@
         &-wrapper {
             aspect-ratio: 4 / 3;
 
-            @include desktop-medium {
-                aspect-ratio: 16 / 11;
-            }
-
-            @include desktop-medium {
+            @include desktop-large {
                 aspect-ratio: unset;
                 max-height: clamp(50vh, 54rem, 90vh);
             }
@@ -48,7 +44,7 @@
     }
 
     &__headline {
-        font-size: $type-size-700;
+        font-size: $type-size-800;
         font-weight: 900;
         line-height: 1.125em;
         color: $white;
@@ -68,7 +64,7 @@
     }
 
     .swiper-pagination {
-        @include desktop-medium {
+        @include desktop-large {
             bottom: 2rem;
         }
     }
