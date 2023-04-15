@@ -12,7 +12,7 @@
         z-index: 2;
         transform: translateY(1rem);
 
-        @include desktop-large {
+        @include desktop-small {
             transform: translateY(3rem);
         }
     }
@@ -32,11 +32,19 @@
         }
 
         &-wrapper {
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 1 / 1;
 
-            @include desktop-large {
+            @include tablet-small {
+                aspect-ratio: 4 / 3;
+            }
+
+            @include desktop-small {
+                aspect-ratio: 16 / 11;
+            }
+
+            @include desktop-medium {
                 aspect-ratio: unset;
-                max-height: clamp(50vh, 54rem, 90vh);
+                max-height: clamp(40rem, 97vh, 54rem);
             }
 
             @include cover-fill-image;
@@ -64,7 +72,7 @@
     }
 
     .swiper-pagination {
-        @include desktop-large {
+        @include tablet-small {
             bottom: 2rem;
         }
     }

@@ -25,7 +25,7 @@ if(have_rows('ecosystem_features')): ?>
                         $delay = 400 + (50 * $i);
                     ?>
 
-                    <div class="ecosystem__feature" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>">
+                    <div class="ecosystem__feature" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>" data-aos-once="true">
                         <h3 class="ecosystem__headline">
                             <div class="ecosystem__icon">
                                 <?php echo print_svg($icon['url']); ?>
