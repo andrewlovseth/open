@@ -3090,7 +3090,7 @@ body.page-template-home-2023 .hero__photo-wrapper {
 @media screen and (min-width: 1280px) {
   body.page-template-home-2023 .hero__photo-wrapper {
     aspect-ratio: unset;
-    max-height: clamp(50vh, 54rem, 70vh);
+    max-height: clamp(50vh, 54rem, 90vh);
   }
 }
 body.page-template-home-2023 .hero__photo-wrapper img {

@@ -40,7 +40,7 @@
 
             @include desktop-medium {
                 aspect-ratio: unset;
-                max-height: clamp(50vh, 54rem, 70vh);
+                max-height: clamp(50vh, 54rem, 90vh);
             }
 
             @include cover-fill-image;
