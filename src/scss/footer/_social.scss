@@ -50,8 +50,13 @@
     align-items: center;
 
     .badge {
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
+
+        @include tablet-small {
+            width: 4rem;
+            height: 4rem;
+        }
 
         & + .badge {
             margin-left: 1rem;

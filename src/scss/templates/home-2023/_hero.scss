@@ -52,10 +52,14 @@
     }
 
     &__headline {
-        font-size: $type-size-800;
+        font-size: $type-size-700;
         font-weight: 900;
         line-height: 1.125em;
         color: $white;
+
+        @include tablet-small {
+            font-size: $type-size-800;
+        }
 
         @include tablet {
             font-size: $type-size-1000;

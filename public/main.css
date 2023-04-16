@@ -2621,7 +2621,11 @@ body.nav-overlay-open .nav-content {
 }
 .site-footer .newsletter-form .email-input {
   flex: 1 !important;
-  padding-right: 1rem;
+}
+@media screen and (min-width: 480px) {
+  .site-footer .newsletter-form .email-input {
+    padding-right: 1rem;
+  }
 }
 .site-footer .newsletter-form .email-input input {
   width: 100% !important;
@@ -2632,8 +2636,27 @@ body.nav-overlay-open .nav-content {
 .site-footer .newsletter-form .email-input input:focus, .site-footer .newsletter-form .email-input input:active {
   outline: 1px solid #a510f8 !important;
 }
+.site-footer .newsletter-form .cta {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .site-footer .newsletter-form .cta {
+    width: unset;
+  }
+}
 .site-footer .newsletter-form .g-recaptcha {
   margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.site-footer .newsletter-form .g-recaptcha > div,
+.site-footer .newsletter-form .g-recaptcha iframe {
+  width: 100% !important;
+}
+@media screen and (min-width: 480px) {
+  .site-footer .newsletter-form .g-recaptcha > div,
+.site-footer .newsletter-form .g-recaptcha iframe {
+    max-width: 340px;
+  }
 }
 .site-footer .pre-footer {
   margin-top: clamp(-8rem, -25vh, -16rem);
@@ -2812,8 +2835,14 @@ body.nav-overlay-open .nav-content {
   align-items: center;
 }
 .site-footer .badges .badge {
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (min-width: 480px) {
+  .site-footer .badges .badge {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .site-footer .badges .badge + .badge {
   margin-left: 1rem;
@@ -3105,10 +3134,15 @@ body.page-template-home-2023 .hero__photo-wrapper img {
      object-fit: cover;
 }
 body.page-template-home-2023 .hero__headline {
-  font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+  font-size: clamp(1.8rem, 1.54rem + 1.29vw, 2.34rem);
   font-weight: 900;
   line-height: 1.125em;
   color: #fff;
+}
+@media screen and (min-width: 480px) {
+  body.page-template-home-2023 .hero__headline {
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+  }
 }
 @media screen and (min-width: 768px) {
   body.page-template-home-2023 .hero__headline {
