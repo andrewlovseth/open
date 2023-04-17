@@ -462,7 +462,9 @@ aside.banner strong {
   color: #fff;
 }
 aside.banner.nab-banner {
+  display: block;
   background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
+  max-height: unset;
 }
 aside.banner.nab-banner.bg-image {
   background-size: cover;
@@ -471,8 +473,14 @@ aside.banner.nab-banner.bg-image {
 aside.banner.nab-banner .link-wrapper {
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 1rem;
   width: 100%;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .link-wrapper {
+    width: unset;
+  }
 }
 aside.banner.nab-banner .link-wrapper:hover strong {
   text-decoration: none;
@@ -485,19 +493,41 @@ aside.banner.nab-banner .link-wrapper:hover .copy .cta .btn {
 aside.banner.nab-banner .icon {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  border-right: 1px solid #fff;
-  padding-right: 1rem;
-  width: 19rem;
+  margin: 0;
+  width: unset;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .icon {
+    width: 10rem;
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
 }
 aside.banner.nab-banner img {
   max-width: 8rem;
   max-height: 3rem;
-  margin-right: 1rem;
-  margin-left: auto;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner img {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+aside.banner.nab-banner .date-time {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .date-time {
+    text-align: right;
+  }
 }
 aside.banner.nab-banner .date-time p {
   font-size: 0.8125rem;
@@ -505,6 +535,44 @@ aside.banner.nab-banner .date-time p {
 }
 aside.banner.nab-banner .copy {
   padding-right: 0;
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .copy {
+    display: flex;
+    padding-top: 0;
+    flex: 1;
+    max-width: 40rem;
+  }
+}
+aside.banner.nab-banner .copy__desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .copy__desktop {
+    display: block;
+  }
+}
+aside.banner.nab-banner .copy__mobile {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .copy__mobile {
+    display: none;
+  }
+}
+aside.banner.nab-banner .copy-wrapper p + p {
+  padding-top: 0.5rem;
+}
+aside.banner.nab-banner .cta {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  aside.banner.nab-banner .cta {
+    display: block;
+  }
 }
 aside.banner .copy {
   display: flex;
@@ -1963,6 +2031,13 @@ body.has-hero .site-header {
   left: 0;
   top: 0;
   transition: all 200ms ease;
+}
+body.has-hero .site-header.has-banner {
+  position: static;
+}
+body.has-hero .site-header.has-banner .site-logo:before {
+  opacity: 1;
+  background: #2d77f8;
 }
 
 body:not(.has-hero) .site-header .site-logo:before {

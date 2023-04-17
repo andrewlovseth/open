@@ -2,6 +2,7 @@
     $banner = get_field('nab_banner', 'options');
     $show = $banner['show'];
     $copy = $banner['copy'];
+    $mobile_copy = $banner['mobile_copy'];
     $date_time = $banner['date_time'];
     $bg_image = $banner['background'];
     $bg_color = $banner['background_color'];
@@ -43,7 +44,13 @@
 
             <div class="copy">
                 <div class="copy-wrapper">
-                    <?php echo $copy; ?>
+                    <div class="copy__desktop">
+                        <?php echo $copy; ?>
+                    </div>
+
+                    <div class="copy__mobile">
+                        <?php echo $mobile_copy; ?>
+                    </div>
                 </div>
 
                 <div class="cta">

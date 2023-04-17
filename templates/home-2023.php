@@ -11,7 +11,7 @@ get_header(); ?>
 
 
 	<?php get_template_part('templates/home-2023/hero'); ?>
-
+	
 	<?php get_template_part('templates/home-2023/customers'); ?>
 
 	<?php get_template_part('templates/home-2023/about'); ?>

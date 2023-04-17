@@ -353,7 +353,7 @@ const Modal = {
     nabModal: function () {
         const modal = document.querySelector("#nab");
         const showModal = localStorage.getItem("showModal");
-
+        /*
         if (sessionStorage.nab2023_pageCount) {
             sessionStorage.nab2023_pageCount = Number(sessionStorage.nab2023_pageCount) + 1;
         } else {
@@ -375,6 +375,9 @@ const Modal = {
                 localStorage.setItem("showModal", visit_count);
             }
         }
+
+        */
+        MicroModal.show("nab");
     },
 
     homeHeroSwiper: function () {

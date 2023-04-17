@@ -21,15 +21,15 @@
         }
     }
 
-    @import 'logo';
+    @import "logo";
 
-    @import 'desktop-navigation';
+    @import "desktop-navigation";
 
-    @import 'search';
+    @import "search";
 
-    @import 'cta';
+    @import "cta";
 
-    @import 'hamburger';
+    @import "hamburger";
 }
 
 body.nav-overlay-open {
@@ -40,7 +40,7 @@ body.nav-overlay-open {
     }
 }
 
-@import 'mobile-navigation';
+@import "mobile-navigation";
 
 // ACTIVE UNDERLINES
 body.page-template-products .desktop-nav__link-products,
@@ -62,6 +62,17 @@ body.has-hero {
         left: 0;
         top: 0;
         transition: all 200ms ease;
+
+        &.has-banner {
+            position: static;
+
+            .site-logo {
+                &:before {
+                    opacity: 1;
+                    background: $blue;
+                }
+            }
+        }
     }
 }
 
@@ -74,6 +85,6 @@ body:not(.has-hero) {
     }
 }
 
-@import 'navigation';
+@import "navigation";
 
-@import 'nav-overlay-open';
+@import "nav-overlay-open";

@@ -77,7 +77,9 @@ aside.banner {
     }
 
     &.nab-banner {
+        display: block;
         @include purple-blue-gradient;
+        max-height: unset;
 
         &.bg-image {
             background-size: cover;
@@ -87,8 +89,13 @@ aside.banner {
         .link-wrapper {
             flex-wrap: wrap;
             justify-content: center;
-            padding: 1rem;
+            padding: 1rem 1rem;
             width: 100%;
+            background-size: cover;
+
+            @include tablet {
+                width: unset;
+            }
 
             &:hover {
                 strong {
@@ -110,23 +117,39 @@ aside.banner {
         .icon {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             justify-content: flex-end;
-            border-right: 1px solid $white;
-            padding-right: 1rem;
-            width: 19rem;
+            margin: 0;
+            width: unset;
+
+            @include tablet {
+                width: 10rem;
+                border-right: 1px solid $white;
+                padding-right: 1rem;
+                margin-right: 1rem;
+            }
         }
 
         img {
             max-width: 8rem;
             max-height: 3rem;
-            margin-right: 1rem;
-            margin-left: auto;
             width: auto;
-
             object-fit: contain;
+            margin: 0 auto;
+
+            @include tablet {
+                margin-right: 0;
+                margin-left: auto;
+            }
         }
 
         .date-time {
+            width: 100%;
+            text-align: center;
+
+            @include tablet {
+                text-align: right;
+            }
             p {
                 font-size: 0.8125rem;
                 line-height: 1.25em;
@@ -135,6 +158,46 @@ aside.banner {
 
         .copy {
             padding-right: 0;
+            display: grid;
+            gap: 1rem;
+            padding-top: 1rem;
+
+            @include tablet {
+                display: flex;
+                padding-top: 0;
+                flex: 1;
+                max-width: 40rem;
+            }
+
+            &__desktop {
+                display: none;
+
+                @include tablet {
+                    display: block;
+                }
+            }
+
+            &__mobile {
+                display: block;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+
+            &-wrapper {
+                p + p {
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+
+        .cta {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
         }
     }
 
