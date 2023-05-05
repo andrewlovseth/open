@@ -338,14 +338,14 @@ body {
   display: grid;
   gap: 4rem 2rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .three-col-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
   .three-col-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 .three-col-grid .item.center {
@@ -3837,21 +3837,6 @@ body.page-template-leadership .leader-modal .modal__content .info .position h4 {
   font-family: "Rubik", sans-serif;
 }
 
-@media screen and (min-width: 768px) {
-  body.post-type-archive-news .page-header h1 {
-    grid-column: 3/span 6;
-  }
-}
-@media screen and (min-width: 992px) {
-  body.post-type-archive-news .page-header h1 {
-    grid-column: 3/span 10;
-  }
-}
-@media screen and (min-width: 1280px) {
-  body.post-type-archive-news .page-header h1 {
-    grid-column: 2/span 12;
-  }
-}
 body.post-type-archive-news article.press-release {
   background: #fff;
   border-radius: 10px;
@@ -4001,6 +3986,50 @@ body.post-type-archive-news .archive {
 }
 body.post-type-archive-news .teaser .copy {
   padding-top: 0.5rem;
+}
+body.post-type-archive-news .pagination {
+  margin-top: 3rem;
+  border-top: 2px solid #0a2d6b;
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 6rem;
+}
+@media screen and (min-width: 992px) {
+  body.post-type-archive-news .pagination {
+    padding-bottom: 0;
+  }
+}
+body.post-type-archive-news .pagination a {
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 2px solid;
+  margin: 0 0.5rem;
+  color: #0a2d6b;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+}
+body.post-type-archive-news .pagination a:hover {
+  background: #0a2d6b;
+  color: #fff;
+  text-decoration: none;
+  border-color: #0a2d6b;
+}
+body.post-type-archive-news .pagination span.current {
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #0a2d6b;
+  margin: 0 0.5rem;
+  background: #0a2d6b;
+  color: #fff;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+}
+@media screen and (min-width: 992px) {
+  body.post-type-archive-news .pagination {
+    grid-column: 1/-1;
+  }
 }
 
 body.single-news article.news {

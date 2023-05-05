@@ -1,25 +1,17 @@
 body.post-type-archive-news {
-    .page-header {
-        h1 {
-            @include tablet {
-                grid-column: 3 / span 6;
-            }
+    @import "archive-news/press-release";
 
-            @include desktop-small {
-                grid-column: 3 / span 10;
-            }
+    @import "archive-news/in-the-press";
 
-            @include desktop-medium {
-                grid-column: 2 / span 12;
-            }
+    @import "archive-news/featured";
+
+    @import "archive-news/archive";
+
+    @import "search/pagination";
+
+    .pagination {
+        @include desktop-small {
+            grid-column: 1 / -1;
         }
     }
-
-    @import 'archive-news/press-release';
-
-    @import 'archive-news/in-the-press';
-
-    @import 'archive-news/featured';
-
-    @import 'archive-news/archive';
 }

@@ -8,10 +8,7 @@
     $news_types = get_the_terms( $news->ID, 'news_types');
     $news_type = $news_types[0]->name;
     $news_type_slug = $news_types[0]->slug;
-
     $copy = get_field('search_description', $news->ID);
-
-
 
 ?>
 
@@ -22,12 +19,8 @@
         </div>
 
         <div class="info">
-            <div class="publication-logo">
-                <?php echo wp_get_attachment_image($logo['ID'], 'medium'); ?>
-            </div>
-
             <div class="header">
-                <h4><?php echo $news_type; ?> | <?php the_time('M j Y'); ?></h4>
+                <h4><?php echo $news_type; ?> | <?php echo get_the_time('M j Y', $news->ID); ?></h4>
                 <h3><?php echo get_the_title( $news->ID ); ?></h3>
             </div>
 
