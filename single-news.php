@@ -7,7 +7,7 @@
     $news_type_slug = $news_types[0]->slug;
     $news_type = $news_types[0]->name;
 
-    $in_the_press = get_field('in_the_press', $news->ID);
+    $in_the_press = get_field('in_the_press', $post->ID);
     $publication = $in_the_press['publication'];
     $logo = $in_the_press['publication_logo'];
     $link = $in_the_press['link'];
@@ -36,6 +36,12 @@
             <?php if(get_the_post_thumbnail()): ?>
                 <div class="featured-image">
                     <?php the_post_thumbnail(); ?>
+
+                    <?php if(get_the_post_thumbnail_caption()): ?>
+                        <div class="caption">
+                            <p><?php the_post_thumbnail_caption(); ?></p>
+                        </div>
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
             

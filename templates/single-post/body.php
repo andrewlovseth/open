@@ -10,6 +10,12 @@
             <div class="photo-wrapper">
                 <?php the_post_thumbnail(); ?>
             </div>
+        
+            <?php if(get_the_post_thumbnail_caption()): ?>
+                <div class="caption">
+                    <p><?php the_post_thumbnail_caption(); ?></p>
+                </div>
+            <?php endif; ?>
         </div>
     <?php endif; ?>
 

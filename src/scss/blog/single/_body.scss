@@ -10,6 +10,14 @@
 
     .featured-image {
         padding-bottom: 2rem;
+
+        .caption {
+            padding-top: 0.5rem;
+            font-weight: 300;
+            font-size: $type-size-150;
+            line-height: 1.5em;
+            font-style: italic;
+        }
     }
 
     .featured-image:not(.photo-color) {
