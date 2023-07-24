@@ -6,13 +6,13 @@
 
 ?>
 
-<section class="page-header grid">
+<section class="section-header">
 
     <div class="headline">
-        <h1 class="page-title dark-blue"><?php echo $headline; ?></h1>
+        <h1 class="page-title"><?php echo $headline; ?></h1>
     </div>
 
-    <div class="copy copy-2 extended secondary-color">
+    <div class="copy copy-1 extended">
         <?php echo $copy; ?>
     </div>
     

@@ -1,0 +1,63 @@
+.contact-info {
+    background: $blue;
+    color: $white;
+    padding: 2rem;
+
+    @include tablet {
+        padding: 4rem;
+    }
+
+    &-wrapper {
+        max-width: 30rem;
+        margin-left: auto;
+    }
+
+    &-section {
+        padding-top: 3rem;
+    }
+
+    .section-header {
+        .copy {
+            padding-top: 1rem;
+        }
+    }
+
+    .header {
+        padding-bottom: 0.5rem;
+        color: $white;
+
+        h3 {
+            font-size: $type-size-400;
+            color: $white;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            & + li {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .label {
+            display: block;
+            text-transform: uppercase;
+            font-size: $type-size-150;
+            letter-spacing: 0.05em;
+            font-family: $rubik;
+            font-weight: bold;
+        }
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

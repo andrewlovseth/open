@@ -1,0 +1,32 @@
+.demo {
+    &__content {
+        background: $blue;
+        color: $white;
+        padding: 2rem;
+
+        @include desktop-small {
+            padding: 4rem;
+        }
+    }
+
+    &__header {
+        max-width: 40rem;
+        padding-bottom: 2rem;
+
+        @include desktop-small {
+            margin-left: auto;
+        }
+    }
+
+    &__copy {
+        max-width: 40rem;
+        @include desktop-small {
+            margin-left: auto;
+        }
+    }
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
+}

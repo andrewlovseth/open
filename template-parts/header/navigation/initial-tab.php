@@ -23,7 +23,7 @@
     </div>
 
     <div class="content-columns">
-        <div class="column copy copy-2 about">
+        <div class="column copy copy-2 about-column">
             <div class="header">
                 <h4><?php echo $what_we_do_headline; ?></h4>
             </div>

@@ -9,7 +9,7 @@
  ?>
 
  	<div class="cta">
- 		<a class="btn blue js-form-trigger" href="<?php echo esc_url($link_url); ?>" data-micromodal-trigger="contact">
+ 		<a class="btn blue" href="<?php echo esc_url($link_url); ?>">
             <?php echo esc_html($link_title); ?>
         </a>
  	</div>

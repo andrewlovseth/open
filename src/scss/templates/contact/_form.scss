@@ -1,0 +1,15 @@
+.contact__form {
+    background: $white;
+    padding: 2rem;
+    padding-bottom: clamp(10rem, 30vh, 15rem);
+
+    @include desktop-small {
+        padding: 4rem;
+        padding-bottom: clamp(10rem, 30vh, 15rem);
+    }
+
+    .forminator-custom-form {
+        max-width: 40rem;
+        margin-right: auto;
+    }
+}

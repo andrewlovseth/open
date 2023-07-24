@@ -8,10 +8,11 @@
 
 ?>
 
-<section class="contact-info grid">
+<section class="contact-info">
+    <div class="contact-info-wrapper">
+        <?php get_template_part('templates/contact/page-header'); ?>
 
-    <div class="three-col-grid">
-        <div class="col phone">
+        <div class="contact-info-section phone">
             <div class="header">
                 <h3>Phone</h3>
             </div>
@@ -36,7 +37,7 @@
             </ul>
         </div>
 
-        <div class="col email">
+        <div class="contact-info-section email">
             <div class="header">
                 <h3>Email</h3>
             </div>
@@ -61,7 +62,7 @@
             </ul>
         </div>
 
-        <div class="col address">
+        <div class="contact-info-section address">
             <div class="header">
                 <h3>Address</h3>
             </div>
@@ -73,5 +74,6 @@
             </div>
         </div>
     </div>
+
 
 </section>

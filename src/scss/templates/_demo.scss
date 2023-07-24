@@ -1,16 +1,18 @@
-body.page-template-contact {
+body.page-template-demo {
     .site-footer {
         margin-top: unset;
     }
 
-    .contact-container {
+    @import "demo/hero";
+
+    .demo {
         display: grid;
         @include desktop-small {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
     }
 
-    @import "contact/contact-info";
+    @import "demo/content";
 
-    @import "contact/form";
+    @import "demo/form";
 }
