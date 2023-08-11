@@ -466,16 +466,13 @@ aside.banner.nab-banner {
   background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
   max-height: unset;
 }
-aside.banner.nab-banner.bg-image {
-  background-size: cover;
-  background-position: center center;
-}
 aside.banner.nab-banner .link-wrapper {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem 1rem;
   width: 100%;
   background-size: cover;
+  background-position: center center;
 }
 @media screen and (min-width: 768px) {
   aside.banner.nab-banner .link-wrapper {
@@ -500,24 +497,24 @@ aside.banner.nab-banner .icon {
 }
 @media screen and (min-width: 768px) {
   aside.banner.nab-banner .icon {
-    width: 10rem;
+    width: 13rem;
     border-right: 1px solid #fff;
     padding-right: 1rem;
     margin-right: 1rem;
+    flex-wrap: unset;
   }
 }
 aside.banner.nab-banner img {
   max-width: 8rem;
-  max-height: 3rem;
+  max-height: 4rem;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 @media screen and (min-width: 768px) {
   aside.banner.nab-banner img {
-    margin-right: 0;
-    margin-left: auto;
+    margin: 0 1rem 0 auto;
   }
 }
 aside.banner.nab-banner .date-time {
@@ -526,7 +523,7 @@ aside.banner.nab-banner .date-time {
 }
 @media screen and (min-width: 768px) {
   aside.banner.nab-banner .date-time {
-    text-align: right;
+    text-align: left;
   }
 }
 aside.banner.nab-banner .date-time p {
@@ -538,13 +535,15 @@ aside.banner.nab-banner .copy {
   display: grid;
   gap: 1rem;
   padding-top: 1rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   aside.banner.nab-banner .copy {
     display: flex;
     padding-top: 0;
     flex: 1;
-    max-width: 40rem;
+    max-width: 60rem;
+    text-align: left;
   }
 }
 aside.banner.nab-banner .copy__desktop {
