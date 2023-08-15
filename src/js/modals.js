@@ -354,17 +354,17 @@ const Modal = {
         const modal = document.querySelector("#nab");
         const showModal = localStorage.getItem("showModal");
 
-        if (sessionStorage.nab2023_pageCount) {
-            sessionStorage.nab2023_pageCount = Number(sessionStorage.nab2023_pageCount) + 1;
+        if (sessionStorage.ibc2023_pageCount) {
+            sessionStorage.ibc2023_pageCount = Number(sessionStorage.ibc2023_pageCount) + 1;
         } else {
-            sessionStorage.nab2023_pageCount = 1;
+            sessionStorage.ibc2023_pageCount = 1;
         }
 
-        if (sessionStorage.nab2023_pageCount == 1) {
+        if (sessionStorage.ibc2023_pageCount == 1) {
             if (showModal == null) {
                 localStorage.setItem("showModal", 1);
                 MicroModal.show("nab");
-            } else if (showModal >= 1 && showModal <= 3) {
+            } else if (showModal >= 1 && showModal <= 5) {
                 var visit_count = parseInt(localStorage.getItem("showModal"));
                 visit_count++;
                 localStorage.setItem("showModal", visit_count);
