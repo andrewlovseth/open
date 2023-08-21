@@ -2206,6 +2206,12 @@ body:not(.has-hero) .site-header .site-logo:before {
   height: 0;
   inset: 0;
 }
+.site-navigation .tab-initial .tab-header__banner {
+  padding-bottom: 4rem;
+}
+.site-navigation .tab-initial .tab-header__banner-link {
+  display: block;
+}
 .site-navigation .tab-initial .tab-header .logo {
   margin-bottom: 1rem;
 }

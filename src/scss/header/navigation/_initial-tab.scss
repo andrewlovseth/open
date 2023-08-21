@@ -1,5 +1,13 @@
 .tab-initial {
     .tab-header {
+        &__banner {
+            padding-bottom: 4rem;
+
+            &-link {
+                display: block;
+            }
+        }
+
         .logo {
             margin-bottom: 1rem;
         }

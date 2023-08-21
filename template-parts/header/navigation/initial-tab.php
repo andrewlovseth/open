@@ -10,11 +10,26 @@
 
     $contact_headline = get_field('header_contact_headline', 'options');
 
+
+    $banner = get_field('header_banner', 'options');
+    $banner_show = $banner['show'];
+    $banner_image = $banner['image'];
+    $banner_link = $banner['link'];
+
 ?>
 
 <div class="tab-panel tab-initial" data-tab-panel="initial">
 
     <div class="tab-header">
+        <?php if($banner_show): ?>
+            <div class="tab-header__banner">
+                <a href="<?php echo $banner_link; ?>" class="tab-header__banner-link" target="window">
+                    <?php echo wp_get_attachment_image($banner_image['ID'], 'full', "", array( "class" => "tab-header__banner-image" ) ); ?>        
+                </a>
+            </div>
+
+
+        <?php endif; ?>
         <div class="logo">
             <a href="<?php echo site_url(); ?>">
                 <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
