@@ -497,7 +497,7 @@ aside.banner.nab-banner .icon {
 }
 @media screen and (min-width: 768px) {
   aside.banner.nab-banner .icon {
-    width: 13rem;
+    width: 20rem;
     border-right: 1px solid #fff;
     padding-right: 1rem;
     margin-right: 1rem;
@@ -564,14 +564,6 @@ aside.banner.nab-banner .copy__mobile {
 }
 aside.banner.nab-banner .copy-wrapper p + p {
   padding-top: 0.5rem;
-}
-aside.banner.nab-banner .cta {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .cta {
-    display: block;
-  }
 }
 aside.banner .copy {
   display: flex;
