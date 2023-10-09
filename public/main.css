@@ -8986,7 +8986,6 @@ body.blog .featured .blog .photo {
   aspect-ratio: 4/3;
 }
 body.blog .featured .blog .photo .photo-wrapper {
-  background-color: #e5e4d0;
   display: flex;
   flex: 1 1 100%;
   height: 100%;
@@ -8994,30 +8993,18 @@ body.blog .featured .blog .photo .photo-wrapper {
   position: relative;
 }
 body.blog .featured .blog .photo .photo-wrapper img {
-  filter: grayscale(100%) contrast(1) blur(0);
   flex: 1 0 100%;
   height: 100%;
   max-width: 100%;
-  mix-blend-mode: multiply;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.71;
   position: relative;
   width: 100%;
+  transition: all 500ms ease;
 }
-body.blog .featured .blog .photo .photo-wrapper::before {
-  background-color: #2d77f8;
-  bottom: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  mix-blend-mode: overlay;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.75;
+body.blog .featured .blog .photo .photo-wrapper img:hover {
+  opacity: 1;
 }
 @media screen and (min-width: 992px) {
   body.blog .featured .blog .photo {
@@ -9169,7 +9156,6 @@ body.blog section.archive .blog .photo-wrapper img {
      object-fit: cover;
 }
 body.blog section.archive .blog .photo .photo-wrapper {
-  background-color: #e5e4d0;
   display: flex;
   flex: 1 1 100%;
   height: 100%;
@@ -9177,30 +9163,18 @@ body.blog section.archive .blog .photo .photo-wrapper {
   position: relative;
 }
 body.blog section.archive .blog .photo .photo-wrapper img {
-  filter: grayscale(100%) contrast(1) blur(0);
   flex: 1 0 100%;
   height: 100%;
   max-width: 100%;
-  mix-blend-mode: multiply;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.71;
   position: relative;
   width: 100%;
+  transition: all 500ms ease;
 }
-body.blog section.archive .blog .photo .photo-wrapper::before {
-  background-color: #2d77f8;
-  bottom: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  mix-blend-mode: overlay;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.75;
+body.blog section.archive .blog .photo .photo-wrapper img:hover {
+  opacity: 1;
 }
 body.blog section.archive .blog .photo img {
   border-top-right-radius: 4px;
@@ -9392,6 +9366,9 @@ body.single-post article.post .article-header .in-use .module-title {
 body.single-post article.post .article-body .featured-image {
   padding-bottom: 2rem;
 }
+body.single-post article.post .article-body .featured-image img {
+  opacity: 1 !important;
+}
 body.single-post article.post .article-body .featured-image .caption {
   padding-top: 0.5rem;
   font-weight: 300;
@@ -9400,7 +9377,6 @@ body.single-post article.post .article-body .featured-image .caption {
   font-style: italic;
 }
 body.single-post article.post .article-body .featured-image:not(.photo-color) .photo-wrapper {
-  background-color: #e5e4d0;
   display: flex;
   flex: 1 1 100%;
   height: 100%;
@@ -9408,30 +9384,18 @@ body.single-post article.post .article-body .featured-image:not(.photo-color) .p
   position: relative;
 }
 body.single-post article.post .article-body .featured-image:not(.photo-color) .photo-wrapper img {
-  filter: grayscale(100%) contrast(1) blur(0);
   flex: 1 0 100%;
   height: 100%;
   max-width: 100%;
-  mix-blend-mode: multiply;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.71;
   position: relative;
   width: 100%;
+  transition: all 500ms ease;
 }
-body.single-post article.post .article-body .featured-image:not(.photo-color) .photo-wrapper::before {
-  background-color: #2d77f8;
-  bottom: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  mix-blend-mode: overlay;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.75;
+body.single-post article.post .article-body .featured-image:not(.photo-color) .photo-wrapper img:hover {
+  opacity: 1;
 }
 body.single-post article.post .article-body .copy-2 {
   line-height: 1.675em;

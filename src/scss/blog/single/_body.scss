@@ -11,6 +11,10 @@
     .featured-image {
         padding-bottom: 2rem;
 
+        img {
+            opacity: 1 !important;
+        }
+
         .caption {
             padding-top: 0.5rem;
             font-weight: 300;
