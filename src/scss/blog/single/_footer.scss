@@ -1,6 +1,6 @@
 .article-footer {
     padding-top: 2rem;
-    border-top: 2px solid $blog-tan;
+    border-top: 2px solid $black;
 
     @include tablet {
         grid-column: 3 / span 6;
@@ -28,7 +28,7 @@
         }
 
         .module-title {
-            color: $blog-green;
+            color: $black;
         }
     }
 
@@ -47,9 +47,12 @@
             }
         }
 
-        .section-title,
+        .section-title {
+            color: $black;
+        }
+
         .item .info h4 {
-            color: $blog-green;
+            color: $blue;
         }
     }
 }

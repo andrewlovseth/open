@@ -8,7 +8,7 @@
     }
 
     .container {
-        background: $blog-tan;
+        background: $white;
         padding: 2rem;
 
         @include desktop-medium {
@@ -19,26 +19,23 @@
     .date {
         h4 {
             display: inline-block;
-            background: $blog-green;
-            padding: 0.6125rem 0.5rem 0.25rem 0.5rem;
-            color: $white;
-            font-family: $benne;
+            color: $blue;
+            font-family: $circular;
             font-weight: normal;
-            font-size: $type-size-200;
+            font-size: $type-size-150;
             line-height: 1em;
-            letter-spacing: 0.15em;
-            font-variant: small-caps;
+            text-transform: capitalize;
         }
     }
 
     .post-title {
-        padding: 1.5rem 0 2rem 0;
+        padding: 0.5rem 0 2rem 0;
 
         h1 {
             font-size: $type-size-800;
-            font-family: $benne;
+            font-family: $circular;
             font-weight: normal;
-            color: $blog-green;
+            color: $black;
             line-height: 1em;
 
             @include desktop-small {
@@ -52,7 +49,7 @@
     }
 
     .share-links {
-        border-color: $blog-green;
+        border-color: $black;
         flex-wrap: wrap;
         padding: 1rem 0;
 
@@ -72,7 +69,7 @@
             svg,
             g,
             path {
-                fill: $blog-green;
+                fill: $blue;
             }
 
             &:first-of-type {
@@ -110,7 +107,7 @@
             .info {
                 .name {
                     h3 {
-                        color: $blog-green;
+                        color: $blue;
                         font-size: $type-size-400;
                         line-height: 1.125em;
                     }

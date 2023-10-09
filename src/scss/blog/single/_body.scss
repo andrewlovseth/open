@@ -29,12 +29,12 @@
     }
 
     a {
-        color: $blog-green;
+        color: $blue;
         font-weight: bold;
     }
 
     blockquote {
-        background: $blog-green;
+        background: $blue;
         color: $white;
         padding: 2rem;
 
@@ -71,26 +71,29 @@
     h4,
     h5,
     h6 {
-        font-family: $benne;
+        font-family: $circular;
         font-weight: normal;
-        color: $blog-green;
+        color: $black;
         padding-top: 1rem;
 
         & + * {
-            margin-top: 0;
+            margin-top: 0.5rem;
         }
     }
 
     h1 {
         font-size: $type-size-1000;
+        line-height: 1.25em;
     }
 
     h2 {
         font-size: $type-size-800;
+        line-height: 1.25em;
     }
 
     h3 {
         font-size: $type-size-600;
+        line-height: 1.25em;
     }
 
     h4,

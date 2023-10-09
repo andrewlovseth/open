@@ -1,18 +1,18 @@
-@import 'reset/reset';
+@import "reset/reset";
 
-@import 'variables/variables';
-@import 'mixins/mixins';
-@import 'typography/typography';
-@import 'layout/layout';
-@import 'elements/elements';
+@import "variables/variables";
+@import "mixins/mixins";
+@import "typography/typography";
+@import "layout/layout";
+@import "elements/elements";
 
-@import 'header/header';
-@import 'footer/footer';
+@import "header/header";
+@import "footer/footer";
 
-@import 'templates/templates';
-@import 'blog/blog';
+@import "templates/templates";
+@import "blog/blog";
 
-@import 'browser/browser';
+@import "browser/browser";
 
 .dev-nav {
     padding: 1rem 0;

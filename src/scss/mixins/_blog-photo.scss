@@ -20,9 +20,9 @@
         }
 
         &::before {
-            background-color: $blog-green;
+            background-color: $blue;
             bottom: 0;
-            content: '';
+            content: "";
             height: 100%;
             left: 0;
             mix-blend-mode: overlay;
@@ -31,6 +31,7 @@
             top: 0;
             width: 100%;
             z-index: 1;
+            opacity: 0.75;
         }
     }
 }
