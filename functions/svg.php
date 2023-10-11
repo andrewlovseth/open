@@ -14,3 +14,14 @@ function print_svg($url) {
         return $svg;
     }
 }
+
+function is_svg($url) {
+
+
+    $file_ext = pathinfo($url, PATHINFO_EXTENSION);
+
+    if ('svg' == $file_ext ) {
+        return true;
+    }
+
+}

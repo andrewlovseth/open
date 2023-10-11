@@ -29,4 +29,17 @@
         color: $white;
         text-decoration: underline;
     }
+
+    .customers {
+        margin-top: 3rem;
+        border-top: 1px solid rgba($white, 0.25);
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+
+        svg {
+            * {
+                fill: $white;
+            }
+        }
+    }
 }
