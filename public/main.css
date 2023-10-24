@@ -8807,6 +8807,9 @@ body.page-template-landing-page .page-header .page-title {
 body.page-template-demo .site-footer {
   margin-top: unset;
 }
+body.page-template-demo .nab-modal.micromodal-slide.is-open {
+  display: none !important;
+}
 body.page-template-demo .hero-demo {
   display: grid;
   overflow: hidden;

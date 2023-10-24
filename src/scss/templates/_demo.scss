@@ -3,6 +3,10 @@ body.page-template-demo {
         margin-top: unset;
     }
 
+    .nab-modal.micromodal-slide.is-open {
+        display: none !important;
+    }
+
     @import "demo/hero";
 
     .demo {
