@@ -1,46 +1,9 @@
 .site-logo {
-    aspect-ratio: 218 / 106;
-
-    &:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        inset: 0;
-        z-index: 10;
-        transition: all 500ms ease 50ms;
-        opacity: 0;
-    }
-
-    &.scrolled {
-        @include logo-background;
-        transition: all 500ms ease 50ms;
-
-        &:before {
-            opacity: 1;
-        }
-    }
+    display: flex;
+    align-items: center;
 
     a {
-        display: block;
-        position: relative;
-        z-index: 20;
-        width: 100%;
-        height: 100%;
-        max-width: 10rem;
-
-        @include tablet {
-            max-width: 14rem;
-        }
-
-        svg {
-            object-fit: cover;
-
-            #background {
-                fill: $white;
-                transition: fill 500ms ease 50ms;
-            }
-        }
+        display: flex;
+        align-items: center;
     }
 }

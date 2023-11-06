@@ -1,39 +1,14 @@
 .cta {
     display: none;
 
-    @include tablet {
+    @include desktop-medium {
         display: flex;
         align-items: center;
         background: $white;
-        padding-left: 2rem;
     }
 
     .btn {
-        background-size: 600% 100%;
-        background-image: linear-gradient(
-            90deg,
-            #a510f8,
-            #00a3ff,
-            #a510f8,
-            #00a3ff,
-            #a510f8,
-            #00a3ff
-        );
-
-        &:hover {
-            animation: gradient-animation 8000ms ease-out infinite;
-        }
-    }
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: 0% 0%;
+        background: $blue;
+        white-space: nowrap;
     }
 }

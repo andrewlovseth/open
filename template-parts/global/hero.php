@@ -2,7 +2,7 @@
 
     $hero_check = get_field('hero');
 
-    if($hero_check['headline'] === null) {
+    if(!isset($hero_check['headline'])) {
         $hero_array = get_field('hero');
         $hero = $hero_array['hero'];
 
@@ -13,6 +13,8 @@
     $photo = $hero['photo'];
     $headline = $hero['headline'];
     $deck = $hero['deck'];
+
+    if($headline):
 ?>
 
 <section class="grid hero">
@@ -36,3 +38,5 @@
         </div>
     <?php endif; ?>
 </section>
+
+<?php endif; ?>
