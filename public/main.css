@@ -660,6 +660,15 @@ nav.company-nav ul a:hover {
   background: #fff;
   color: #2d77f8;
 }
+.cta .btn.black-outline {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+.cta .btn.black-outline:hover {
+  background: #000;
+  color: #fff;
+}
 .cta .underline {
   text-transform: uppercase;
   display: inline-block;
@@ -1527,7 +1536,7 @@ section.page-header {
 .site-header-wrapper {
   display: flex;
   align-content: center;
-  gap: 0 2rem;
+  gap: 0 1rem;
   margin: 0 auto;
   padding: 0.75rem 2rem;
   position: static;
@@ -1577,8 +1586,15 @@ section.page-header {
     height: 4rem;
   }
 }
-.site-header .desktop-nav__list-item:first-of-type {
-  display: none;
+@media screen and (min-width: 768px) {
+  .site-header .desktop-nav__list-item[data-featured=false] {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .site-header .desktop-nav__list-item[data-featured=false] {
+    display: flex;
+  }
 }
 .site-header .desktop-nav__list-item[data-state=active] .desktop-nav__sub-nav {
   top: 4rem;
@@ -1602,7 +1618,7 @@ section.page-header {
 }
 @media screen and (min-width: 1280px) {
   .site-header .desktop-nav__link {
-    font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+    font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
     padding: 0 1rem;
   }
 }
@@ -1640,9 +1656,14 @@ section.page-header {
   text-decoration: underline;
 }
 .site-header .search-container {
-  background: #fff;
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .site-header .search-container {
+    background: #fff;
+    display: flex;
+    align-items: center;
+  }
 }
 .site-header .search-toggle {
   width: 1.25rem;
@@ -1797,25 +1818,26 @@ section.page-header {
   color: #fff;
 }
 .site-header .cta {
-  display: none;
-}
-@media screen and (min-width: 1280px) {
-  .site-header .cta {
-    display: flex;
-    align-items: center;
-    background: #fff;
-  }
+  display: flex;
+  align-items: center;
+  background: #fff;
 }
 .site-header .cta .btn {
   background: #2d77f8;
   white-space: nowrap;
+}
+.site-header .cta .btn__login {
+  background: #fff;
+}
+.site-header .cta .btn__login:hover {
+  background: #000;
 }
 .site-header .hamburger {
   display: flex;
   align-items: center;
   background: #fff;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .site-header .hamburger-mobile {
     display: none;
   }
@@ -1864,7 +1886,7 @@ section.page-header {
   width: 100vw;
   left: -100vw;
   height: 100vh;
-  background: #000;
+  background: #fff;
   z-index: 5555;
   box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.25);
   transition: all 200ms ease;
@@ -1876,7 +1898,7 @@ section.page-header {
     left: -28rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .mobile-nav {
     display: none !important;
   }
@@ -1909,11 +1931,12 @@ section.page-header {
 }
 .mobile-nav-close svg,
 .mobile-nav-close rect {
-  fill: #fff;
+  fill: #000;
 }
 .mobile-nav a {
-  color: #fff;
+  color: #000;
   font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+  font-family: "Rubik", sans-serif;
 }
 .mobile-nav-logo {
   padding-bottom: 1rem;
@@ -1935,13 +1958,11 @@ section.page-header {
 }
 .mobile-nav-toggle .label {
   font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .mobile-nav-toggle .icon {
   width: 0.875rem;
   height: 0.875rem;
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
   transition: all 200ms ease;
 }
 .mobile-nav-toggle .icon svg {
@@ -1949,11 +1970,11 @@ section.page-header {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 .mobile-nav-toggle .icon svg,
 .mobile-nav-toggle .icon path {
-  fill: #fff;
+  fill: #000;
 }
 .mobile-nav-toggle.active .icon {
   transform: rotate(-90deg);
@@ -1963,8 +1984,6 @@ section.page-header {
 }
 .mobile-nav-section.basic a {
   font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .mobile-nav-body {
   display: none;
@@ -1982,6 +2001,179 @@ section.page-header {
 .mobile-nav-body .mobile-nav-link a {
   font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
   font-weight: 400;
+}
+.mobile-nav .search-container {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .mobile-nav .search-container {
+    background: #fff;
+    display: flex;
+    align-items: center;
+  }
+}
+.mobile-nav .search-toggle {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.mobile-nav .search-toggle:hover {
+  cursor: pointer;
+}
+.mobile-nav .search-toggle svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: black;
+}
+.mobile-nav .search-modal {
+  position: absolute;
+  top: 4.5rem;
+  right: -0.5rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.4) 0px 40px 60px -12px, rgba(0, 0, 0, 0.25) 0px 18px 36px -18px;
+  padding: 2rem;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: all 400ms ease 50ms;
+  width: 80vw;
+  transform: translateY(-1rem);
+}
+@media screen and (min-width: 768px) {
+  .mobile-nav .search-modal {
+    width: 30rem;
+  }
+}
+.mobile-nav .search-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+}
+.mobile-nav .search-close:hover {
+  cursor: pointer;
+}
+.mobile-nav .search-close:hover svg rect {
+  fill: #2d77f8;
+}
+.mobile-nav .search-close svg {
+  width: 1rem;
+  height: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mobile-nav .search-close svg rect {
+  fill: #999;
+  transition: fill 200ms ease;
+}
+.mobile-nav .search-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.mobile-nav .search-input {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+  font-weight: 300;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-family: "Rubik", sans-serif;
+  transition: all 200ms ease;
+}
+.mobile-nav .search-input::-webkit-input-placeholder {
+  color: #bbb;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+}
+.mobile-nav .search-input::-moz-placeholder {
+  color: #bbb;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+}
+.mobile-nav .search-input:-moz-placeholder {
+  color: #bbb;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+}
+.mobile-nav .search-input:-ms-input-placeholder {
+  color: #bbb;
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+}
+.mobile-nav .search-input:focus, .mobile-nav .search-input:active {
+  outline: none;
+  border-bottom-color: rgba(0, 0, 0, 0.75);
+}
+.mobile-nav .search-submit {
+  border: none;
+  background: none;
+  padding: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 0.5rem 0 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  font-family: "Rubik", sans-serif;
+  transition: all 200ms ease;
+}
+.mobile-nav .search-submit:hover {
+  cursor: pointer;
+  color: #2d77f8;
+  border-bottom-color: #2d77f8;
+}
+.mobile-nav .search-submit:focus, .mobile-nav .search-submit:active {
+  outline: none;
+}
+.mobile-nav .search-container.show .search-modal {
+  opacity: 1;
+  z-index: 50;
+  pointer-events: unset;
+  transform: translateY(0);
+}
+.mobile-nav .queries__header {
+  padding: 1.5rem 0 0 0;
+}
+.mobile-nav .queries__header h5 {
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  font-weight: 700;
+}
+.mobile-nav .queries__list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mobile-nav .queries__list-item {
+  margin-right: 0.75rem;
+  margin-top: 0.75rem;
+}
+.mobile-nav .queries__link {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(0.5rem, 0.42rem + 0.38vw, 0.675rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem 0.375rem;
+  border: 1px solid;
+  border-radius: 25px;
+  transition: all 400ms ease;
+}
+.mobile-nav .queries__link:hover {
+  background: #2d77f8;
+  border-color: #2d77f8;
+  color: #fff;
+}
+.mobile-nav .search-container {
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.mobile-nav .search-modal {
+  right: auto;
+  left: 0;
+  width: 100%;
+  top: 2.5rem;
 }
 
 body.page-template-atlas .desktop-nav__link-products,

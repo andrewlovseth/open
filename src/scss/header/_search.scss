@@ -1,8 +1,12 @@
 .search {
     &-container {
-        background: $white;
-        display: flex;
-        align-items: center;
+        display: none;
+
+        @include desktop-small {
+            background: $white;
+            display: flex;
+            align-items: center;
+        }
     }
 
     &-toggle {
@@ -29,8 +33,7 @@
         background: $white;
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 10px;
-        box-shadow: rgba(50, 50, 93, 0.4) 0px 40px 60px -12px,
-            rgba(0, 0, 0, 0.25) 0px 18px 36px -18px;
+        box-shadow: rgba(50, 50, 93, 0.4) 0px 40px 60px -12px, rgba(0, 0, 0, 0.25) 0px 18px 36px -18px;
         padding: 2rem;
         pointer-events: none;
         z-index: -1;

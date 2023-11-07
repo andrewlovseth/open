@@ -75,6 +75,34 @@ const Header = {
         });
     },
 
+    mobileSearchToggle() {
+        const searchToggle = document.querySelector(".mobile-nav .js-search-toggle");
+        const searchClose = document.querySelector(".mobile-nav .js-search-close");
+        const searchContainer = document.querySelector(".mobile-nav .search-container");
+        const searchModal = document.querySelector(".mobile-nav .search-modal");
+
+        searchToggle.addEventListener("click", (e) => {
+            searchContainer.classList.toggle("show");
+            e.preventDefault();
+        });
+
+        searchClose.addEventListener("click", (e) => {
+            searchContainer.classList.remove("show");
+            e.preventDefault();
+        });
+
+        document.addEventListener("keyup", (e) => {
+            if (e.key == "Escape") {
+                searchContainer.classList.remove("show");
+            }
+        });
+
+        document.addEventListener("click", (e) => {
+            if (e.target.closest(".mobile-nav .search-modal") || e.target.closest(".mobile-nav .js-search-toggle")) return;
+            searchContainer.classList.remove("show");
+        });
+    },
+
     desktopSubNavs() {
         const desktopSubNavs = document.querySelectorAll('[data-subnav="true"]');
         desktopSubNavs.forEach((desktopSubNav) => {
@@ -83,13 +111,11 @@ const Header = {
             desktopSubNav.addEventListener("mouseover", function () {
                 this.setAttribute("data-state", "active");
                 hoverLink.setAttribute("data-state", "active");
-                console.log("active");
             });
 
             desktopSubNav.addEventListener("mouseout", function () {
                 this.setAttribute("data-state", "inactive");
                 hoverLink.setAttribute("data-state", "inactive");
-                console.log("inactive");
             });
 
             hoverLink.addEventListener("click", (e) => {
@@ -117,8 +143,6 @@ const Header = {
                 const activeTab = document.querySelector(".site-navigation .nav-content .tab-panel");
 
                 activeTab.replaceWith(tabClone);
-
-                console.log(tab);
             });
         });
 
@@ -129,8 +153,6 @@ const Header = {
                     setTimeout(() => {
                         activeTab.classList.add("show");
                     }, 200);
-
-                    console.log(mutation);
                 }
             });
         });
@@ -182,6 +204,7 @@ const Header = {
         this.esc();
         this.desktopSubNavs();
         this.searchToggle();
+        this.mobileSearchToggle();
         this.navTabs();
         this.mobileNavToggle();
         this.mobileNavSectionToggle();

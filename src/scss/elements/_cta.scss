@@ -33,6 +33,17 @@
                 color: $blue;
             }
         }
+
+        &.black-outline {
+            background: transparent;
+            color: $black;
+            border: 1px solid $black;
+
+            &:hover {
+                background: $black;
+                color: $white;
+            }
+        }
     }
 
     .underline {
@@ -57,7 +68,7 @@
 
         &.arrow {
             &::after {
-                content: ' →';
+                content: " →";
             }
         }
     }
@@ -72,7 +83,7 @@
 
         &.arrow {
             &::after {
-                content: ' →';
+                content: " →";
             }
         }
     }

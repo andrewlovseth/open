@@ -27,8 +27,14 @@
                 height: 4rem;
             }
 
-            &:first-of-type {
-                display: none;
+            &[data-featured="false"] {
+                @include tablet {
+                    display: none;
+                }
+
+                @include desktop-medium {
+                    display: flex;
+                }
             }
 
             &[data-state="active"] {
@@ -56,7 +62,7 @@
         }
 
         @include desktop-medium {
-            font-size: $type-size-200;
+            font-size: $type-size-150;
             padding: 0 1rem;
         }
 

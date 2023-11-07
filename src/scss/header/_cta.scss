@@ -1,14 +1,18 @@
 .cta {
-    display: none;
-
-    @include desktop-medium {
-        display: flex;
-        align-items: center;
-        background: $white;
-    }
+    display: flex;
+    align-items: center;
+    background: $white;
 
     .btn {
         background: $blue;
         white-space: nowrap;
+
+        &__login {
+            background: $white;
+
+            &:hover {
+                background: $black;
+            }
+        }
     }
 }

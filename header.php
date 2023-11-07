@@ -48,6 +48,8 @@
 			<?php get_template_part('template-parts/header/search'); ?>
 
 			<?php get_template_part('template-parts/header/cta'); ?>
+			
+			<?php get_template_part('template-parts/header/login'); ?>
 
 			<?php get_template_part('template-parts/header/hamburger'); ?>
 		</div>

@@ -11,10 +11,17 @@
                         $section_toggle = get_sub_field('section_toggle');
                         $section_slug = sanitize_title_with_dashes($section_toggle);
                         $links = get_sub_field('links');
+                        $featured = get_sub_field('featured');
+                        if($featured === true) {
+                            $featured_state = "true";
+                        } else {
+                            $featured_state = "false";
+                        }
+
                     ?>
 
                     <?php if($section_toggle): ?>
-                        <li class="desktop-nav__list-item" data-subnav="true">
+                        <li class="desktop-nav__list-item" data-subnav="true" data-featured="<?php echo $featured_state; ?>">
                                 <a href="#" class="desktop-nav__link" data-section-id="<?php echo $section_slug; ?>"><?php echo $section_toggle; ?></a>
 
                                 <ul class="desktop-nav__sub-nav"  role="navigation" data-section="<?php echo $section_slug; ?>" data-state="inactive">
@@ -40,7 +47,7 @@
 
                     <?php else: ?>
 
-                        <li class="desktop-nav__list-item" data-subnav="false">
+                        <li class="desktop-nav__list-item" data-subnav="false" data-featured="<?php echo $featured_state; ?>">
                             <?php if(have_rows('links')): while(have_rows('links')): the_row(); ?>                    
                                 
                                 <?php 
