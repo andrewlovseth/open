@@ -32,10 +32,10 @@ section.by-the-numbers {
             grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: 1fr;
             grid-template-areas:
-                'number1 number1 number2 number2'
-                'number1 number1 number3 number4'
-                'number5 number5 number8 number8'
-                'number6 number7 number8 number8';
+                "number1 number1 number2 number2"
+                "number1 number1 number3 number4"
+                "number5 number5 number7 number7"
+                "number6 number6 number7 number7";
         }
     }
 
@@ -48,7 +48,7 @@ section.by-the-numbers {
         padding: 2rem 2rem;
 
         @include tablet {
-            padding: 1rem 2rem;
+            padding: 2rem;
         }
 
         .copy {
@@ -81,6 +81,8 @@ section.by-the-numbers {
         &-medium {
             .content-wrapper {
                 display: flex;
+                align-items: center;
+                gap: 2rem;
 
                 .graphic {
                     width: 25%;
@@ -88,7 +90,6 @@ section.by-the-numbers {
 
                 .copy {
                     flex: 1;
-                    padding-left: 2rem;
                 }
             }
         }
@@ -102,10 +103,24 @@ section.by-the-numbers {
             .copy {
                 padding-top: 1rem;
                 text-align: center;
+                font-size: 1rem;
             }
         }
 
-        &.item-8 {
+        &.item-6 {
+            .content-wrapper {
+                @include tablet {
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    gap: 2rem;
+                }
+            }
+            .copy {
+                padding: 0;
+            }
+        }
+
+        &.item-7 {
             flex-direction: column;
             justify-content: space-between;
             padding: 0;
@@ -115,7 +130,18 @@ section.by-the-numbers {
                 padding: 2rem 2rem;
 
                 @include tablet {
+                    display: flex;
+                    gap: 2rem;
+                    align-items: center;
                     padding: 2rem 2.5rem;
+
+                    .graphic {
+                        width: 6rem;
+                    }
+
+                    .copy {
+                        text-align: left;
+                    }
                 }
             }
         }
