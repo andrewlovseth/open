@@ -1,5 +1,4 @@
 <nav class="mobile-nav">
-
     <div class="mobile-nav-wrapper">
 
         <span class="mobile-nav-close js-mobile-nav-close"><?php get_template_part('src/svg/icon-close') ?></span>
@@ -78,11 +77,13 @@
 
         <?php endwhile; endif; ?>
 
+		<?php get_template_part('template-parts/header/search'); ?>
 
-			<?php get_template_part('template-parts/header/search'); ?>
+        <div class="mobile-ctas">
+            <?php get_template_part('template-parts/header/login'); ?>
 
+            <?php get_template_part('template-parts/header/cta'); ?>
+        </div>
+        
     </div>
-
-
-
 </nav>

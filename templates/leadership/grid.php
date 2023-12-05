@@ -7,7 +7,7 @@
 ?>
 
     <section class="leadership grid">
-        <div class="three-col-grid">
+        <div class="four-col-grid">
             <?php foreach( $leaders as $leader ): ?>
 
                 <?php

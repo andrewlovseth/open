@@ -10,36 +10,28 @@ body.page-template-leadership {
     }
 
     .leadership {
-        @include section-spacing;
+        @include small-section-spacing-bottom;
 
-        .three-col-grid {
-            @include tablet {
-                grid-column: 3 / span 6;
-            }
-
-            @include desktop-small {
-                grid-column: 3 / span 10;
-            }
+        .four-col-grid {
+            align-items: stretch;
         }
     }
 
     .leader-teaser {
-        a {
-            display: block;
-            transition: all 400ms ease;
+        background: $white;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        transition: all 400ms ease;
+        height: 100%;
 
-            &:hover {
-                .photo {
-                    background: $dark-blue;
-                }
-                .info {
-                    background: $dark-blue;
-                    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        &:hover {
+            .info {
+                background: $dark-blue;
 
-                    .name h3,
-                    .position h4 {
-                        color: $white;
-                    }
+                .name h3,
+                .position h4 {
+                    color: $white;
                 }
             }
         }
@@ -52,12 +44,9 @@ body.page-template-leadership {
         }
 
         .info {
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-            background: $white;
             padding: 1.5rem 2rem;
             transition: all 400ms ease;
-            transform: translateY(-2px);
-            margin-bottom: -2px;
+            flex: 1;
 
             .name {
                 h3 {

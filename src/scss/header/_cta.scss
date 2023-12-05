@@ -9,6 +9,11 @@
 
         &__login {
             background: $white;
+            display: none;
+
+            @include desktop-large {
+                display: block;
+            }
 
             &:hover {
                 background: $black;

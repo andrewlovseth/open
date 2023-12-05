@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-    <?php get_template_part('templates/company/nav'); ?>
-
 <?php
     $news_types = get_the_terms(get_the_ID(), 'news_types');
     $news_type_slug = $news_types[0]->slug;

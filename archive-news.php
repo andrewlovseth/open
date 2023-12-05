@@ -6,8 +6,6 @@
 
 get_header(); ?>
 
-	<?php get_template_part('templates/company/nav'); ?>
-
     <section class="page-header grid">
         <h1 class="page-title dark-blue">Newsroom</h1>
     </section>

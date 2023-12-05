@@ -8,12 +8,6 @@
         justify-content: center;
         flex-direction: column;
         color: $white;
-        max-height: 90vh;
-        padding-top: 78px;
-
-        @include tablet {
-            padding-top: 108px;
-        }
 
         .headline {
             text-align: center;
@@ -53,7 +47,7 @@
             aspect-ratio: 1 / 1;
 
             @include tablet {
-                aspect-ratio: 16 / 9;
+                aspect-ratio: unset;
             }
         }
     }
