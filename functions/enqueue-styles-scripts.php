@@ -7,8 +7,23 @@
 
 // Enqueue custom styles and scripts
 function bearsmith_enqueue_styles_and_scripts() {
-    wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/public/main.css');
-    wp_enqueue_script( 'main-js', get_stylesheet_directory_uri() . '/src/js/main.js', array(), '1112');
+    $stylesheet_url = get_stylesheet_directory_uri() . '/public/main.css';
+    $script_url = get_stylesheet_directory_uri() . '/src/js/main.js';
+
+    wp_enqueue_style(
+        'main-css', 
+        $stylesheet_url, 
+        array(), 
+        filemtime(get_stylesheet_directory() . '/public/main.css')
+    );
+
+    wp_enqueue_script(
+        'main-js', 
+        $script_url, 
+        array(), 
+        filemtime(get_stylesheet_directory() . '/src/js/main.js'),
+        true
+    );
 }
 add_action( 'wp_enqueue_scripts', 'bearsmith_enqueue_styles_and_scripts' );
 
