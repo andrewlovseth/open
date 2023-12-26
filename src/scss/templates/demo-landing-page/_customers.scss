@@ -1,0 +1,25 @@
+.customers {
+    background: $blue;
+    color: $white;
+    @include section-spacing;
+
+    .copy {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+
+        a {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+
+    svg {
+        * {
+            fill: $white;
+        }
+    }
+
+    .cta {
+        padding-top: 3rem;
+    }
+}

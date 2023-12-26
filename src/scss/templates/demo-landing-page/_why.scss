@@ -1,0 +1,25 @@
+.why {
+    background: $white;
+    gap: 2rem;
+    @include section-spacing;
+
+    &__info {
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+    }
+
+    &__copy {
+        padding-top: 2rem;
+    }
+
+    &__media {
+        @include desktop-small {
+            grid-column: 9 / span 5;
+        }
+    }
+
+    &__cta {
+        padding-top: 2rem;
+    }
+}

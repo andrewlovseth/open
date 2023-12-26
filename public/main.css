@@ -647,6 +647,10 @@ nav.company-nav ul a:hover {
   background: #2d77f8;
   color: #fff;
 }
+.cta .btn.white {
+  background: #fff;
+  color: #2d77f8;
+}
 .cta .btn.purple-gradient {
   background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
   color: #fff;
@@ -9073,6 +9077,144 @@ body.page-template-demo .demo__form {
     max-width: 40rem;
     margin-right: auto;
   }
+}
+
+body.page-template-demo-landing-page .site-footer {
+  margin-top: unset;
+}
+body.page-template-demo-landing-page .site-footer .pre-footer {
+  display: none;
+}
+body.page-template-demo-landing-page .nab-modal.micromodal-slide.is-open {
+  display: none !important;
+}
+body.page-template-demo-landing-page .hero {
+  color: #fff;
+}
+body.page-template-demo-landing-page .hero__photo {
+  grid-row: 1;
+  grid-column: 1/-1;
+  z-index: 1;
+}
+@media screen and (min-width: 1280px) {
+  body.page-template-demo-landing-page .hero__photo {
+    max-height: 83vh;
+  }
+}
+body.page-template-demo-landing-page .hero__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body.page-template-demo-landing-page .hero__wrapper {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  grid-row: 1;
+  z-index: 2;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .hero__wrapper {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .hero__wrapper {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .hero__info {
+    grid-column: 1/span 6;
+  }
+}
+body.page-template-demo-landing-page .hero__title {
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 1280px) {
+  body.page-template-demo-landing-page .hero__title {
+    font-size: 3rem;
+  }
+}
+body.page-template-demo-landing-page .hero__copy {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+}
+body.page-template-demo-landing-page .hero__form {
+  background: #fff;
+  align-self: start;
+  padding: 3rem 4rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .hero__form {
+    grid-column: 8/span 5;
+  }
+}
+body.page-template-demo-landing-page .hero__form #_form_21_ {
+  margin: 0;
+  padding: 0;
+}
+body.page-template-demo-landing-page .hero__copy {
+  padding: 2rem 0;
+}
+body.page-template-demo-landing-page .hero__copy a {
+  font-weight: bold;
+}
+body.page-template-demo-landing-page .why {
+  background: #fff;
+  gap: 2rem;
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .why {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .why__info {
+    grid-column: 2/span 6;
+  }
+}
+body.page-template-demo-landing-page .why__copy {
+  padding-top: 2rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .why__media {
+    grid-column: 9/span 5;
+  }
+}
+body.page-template-demo-landing-page .why__cta {
+  padding-top: 2rem;
+}
+body.page-template-demo-landing-page .customers {
+  background: #2d77f8;
+  color: #fff;
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-demo-landing-page .customers {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+body.page-template-demo-landing-page .customers .copy {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+body.page-template-demo-landing-page .customers .copy a {
+  color: #fff;
+  text-decoration: underline;
+}
+body.page-template-demo-landing-page .customers svg * {
+  fill: #fff;
+}
+body.page-template-demo-landing-page .customers .cta {
+  padding-top: 3rem;
 }
 
 body.blog .blog-header {
