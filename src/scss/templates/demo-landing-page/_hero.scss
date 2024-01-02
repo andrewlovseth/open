@@ -7,7 +7,7 @@
         z-index: 1;
 
         @include desktop-medium {
-            max-height: 83vh;
+            max-height: max(820px, 83vh);
         }
 
         @include cover-fill-image;

@@ -9098,7 +9098,7 @@ body.page-template-demo-landing-page .hero__photo {
 }
 @media screen and (min-width: 1280px) {
   body.page-template-demo-landing-page .hero__photo {
-    max-height: 83vh;
+    max-height: max(820px, 83vh);
   }
 }
 body.page-template-demo-landing-page .hero__photo img {
