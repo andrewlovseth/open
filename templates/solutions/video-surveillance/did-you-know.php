@@ -1,7 +1,7 @@
 <section class="did-you-know grid">
 
     <div class="section-header">
-        <h2 class="section-title"><?php the_field('did_you_know_header'); ?></h2>
+        <h2 class="section-title"><?php echo get_field('did_you_know_header'); ?></h2>
     </div>
 
     <div class="info">

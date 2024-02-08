@@ -122,15 +122,15 @@
                     <?php if(have_rows('footer_phones', 'options')): while(have_rows('footer_phones', 'options')): the_row(); ?>
     
                         <span class="phone">
-                            <?php the_sub_field('phone'); ?>
+                            <?php echo get_sub_field('phone'); ?>
                         </span>
 
                     <?php endwhile; endif; ?>
 
                     <?php if(have_rows('footer_emails', 'options')): while(have_rows('footer_emails', 'options')): the_row(); ?>
     
-                        <a href="mailto:<?php the_sub_field('email'); ?>" class="email">
-                            <?php the_sub_field('email'); ?>
+                        <a href="mailto:<?php echo get_sub_field('email'); ?>" class="email">
+                            <?php echo get_sub_field('email'); ?>
                         </a>
 
                     <?php endwhile; endif; ?>

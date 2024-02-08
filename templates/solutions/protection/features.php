@@ -1,6 +1,6 @@
 <section class="features grid">
     <div class="section-header">
-        <h2 class="small"><?php the_field('features_header'); ?></h2>
+        <h2 class="small"><?php echo get_field('features_header'); ?></h2>
     </div>
 
     <div class="three-col-grid">

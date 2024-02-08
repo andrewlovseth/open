@@ -1,6 +1,6 @@
 <section class="uses grid">
     <div class="section-header center">
-        <h2 class="section-title"><?php the_field('uses_header'); ?></h2>
+        <h2 class="section-title"><?php echo get_field('uses_header'); ?></h2>
     </div>
 
     <div class="uses-list">

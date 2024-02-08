@@ -23,7 +23,7 @@
 <?php wp_footer(); ?>
 
 <?php if(get_field('code_body_bottom', 'options')): ?>
-	<?php the_field('code_body_bottom', 'options'); ?>
+	<?php echo get_field('code_body_bottom', 'options'); ?>
 <?php endif; ?>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

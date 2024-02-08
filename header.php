@@ -23,13 +23,13 @@
 
 
 	<?php if(get_field('code_head', 'options')): ?>
-		<?php the_field('code_head', 'options'); ?>
+		<?php echo get_field('code_head', 'options'); ?>
 	<?php endif; ?>
 </head>
 
 <body <?php body_class($has_hero); ?>>
 <?php if(get_field('code_body_top', 'options')): ?>
-	<?php the_field('code_body_top', 'options'); ?>
+	<?php echo get_field('code_body_top', 'options'); ?>
 <?php endif; ?>
 
 <?php wp_body_open(); ?>

@@ -1,11 +1,11 @@
 <section class="features grid icon-three-col">
     <div class="section-header">
         <div class="headline">
-            <h2 class="section-title"><?php the_field('features_headline'); ?></h2>
+            <h2 class="section-title"><?php echo get_field('features_headline'); ?></h2>
         </div>
 
         <div class="copy copy-2 extended">
-            <?php the_field('features_copy'); ?>
+            <?php echo get_field('features_copy'); ?>
         </div>
     </div>
 

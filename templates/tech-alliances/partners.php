@@ -27,7 +27,7 @@
         <div class="button-group">
             <a href="#" class="active js-partner-filter-link" data-filter="all">All</a>
             <?php if(have_rows('filters')): while(have_rows('filters')): the_row(); ?>
-                <a href="#" class="js-partner-filter-link" data-filter="<?php the_sub_field('slug'); ?>"><?php the_sub_field('label'); ?></a>
+                <a href="#" class="js-partner-filter-link" data-filter="<?php echo get_sub_field('slug'); ?>"><?php echo get_sub_field('label'); ?></a>
             <?php endwhile; endif; ?>
         </div>
 
