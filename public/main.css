@@ -9283,7 +9283,7 @@ body.page-template-demo-landing-page .hero__photo {
 }
 @media screen and (min-width: 1280px) {
   body.page-template-demo-landing-page .hero__photo {
-    max-height: max(820px, 83vh);
+    max-height: max(860px, 86vh);
   }
 }
 body.page-template-demo-landing-page .hero__photo img {
@@ -9400,6 +9400,11 @@ body.page-template-demo-landing-page .customers svg * {
 }
 body.page-template-demo-landing-page .customers .cta {
   padding-top: 3rem;
+}
+body.page-template-demo-landing-page .customers .customer-grid .tbn .image,
+body.page-template-demo-landing-page .customers .customer-grid .christ-fellowship .image {
+  width: 10rem;
+  height: 5rem;
 }
 
 body.blog .blog-header {

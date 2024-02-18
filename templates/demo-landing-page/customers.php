@@ -1,6 +1,11 @@
 <?php
-    $company = get_page_by_path('company');
-    $logos = get_field('customers', $company); 
+
+    if(get_field('customers_alt_logos')) {
+        $logos = get_field('customers_alt_logos');
+    } else {
+        $company = get_page_by_path('company');
+        $logos = get_field('customers', $company); 
+    }
 
     $customers = get_field('customers');
     $headline = $customers['headline'];
@@ -24,7 +29,7 @@
             <?php foreach( $logos as $logo ): ?>
                 
                 <?php if(is_svg($logo['url'])): ?>
-                    <div class="logo">
+                    <div class="logo <?php echo $logo['title']; ?>">
                         <div class="image">
                             <?php echo print_svg($logo['url']); ?>
                         </div>                    
