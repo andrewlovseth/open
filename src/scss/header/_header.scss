@@ -5,10 +5,8 @@
     position: sticky;
     top: 0;
 
-    &.scrolled.has-banner {
-        @include desktop-small {
-            transform: translateY(-74px);
-        }
+    &.has-banner {
+        top: 40px;
     }
 
     &-wrapper {

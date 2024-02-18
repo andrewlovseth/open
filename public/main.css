@@ -400,6 +400,9 @@ body {
 aside.banner {
   text-align: center;
   padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 5555;
 }
 aside.banner a {
   display: inline-block;
@@ -1525,10 +1528,8 @@ section.page-header {
   position: sticky;
   top: 0;
 }
-@media screen and (min-width: 992px) {
-  .site-header.scrolled.has-banner {
-    transform: translateY(-74px);
-  }
+.site-header.has-banner {
+  top: 40px;
 }
 .site-header-wrapper {
   display: flex;
