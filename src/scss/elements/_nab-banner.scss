@@ -1,0 +1,221 @@
+.nab-banner {
+    display: block;
+    @include purple-blue-gradient;
+    max-height: unset;
+
+    .link-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem 1rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+
+        @include tablet {
+            width: unset;
+        }
+
+        &:hover {
+            strong {
+                text-decoration: none;
+            }
+
+            .copy {
+                .cta {
+                    .btn {
+                        background: $white !important;
+                        color: $blue;
+                        border: 1px solid $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 0;
+        width: unset;
+
+        @include tablet {
+            width: 20rem;
+            border-right: 1px solid $white;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            flex-wrap: unset;
+        }
+    }
+
+    img {
+        max-width: 8rem;
+        max-height: 4rem;
+        width: auto;
+        object-fit: contain;
+        margin: 0 auto 1rem auto;
+
+        @include tablet {
+            margin: 0 1rem 0 auto;
+        }
+    }
+
+    .date-time {
+        width: 100%;
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+        p {
+            font-size: 0.8125rem;
+            line-height: 1.25em;
+        }
+    }
+
+    .copy {
+        padding-right: 0;
+        display: grid;
+        gap: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+
+        @include tablet {
+            display: flex;
+            padding-top: 0;
+            flex: 1;
+            max-width: 60rem;
+            text-align: left;
+        }
+
+        &__desktop {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+
+        &__mobile {
+            display: block;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &-wrapper {
+            p + p {
+                padding-top: 0.5rem;
+            }
+        }
+    }
+
+    &.bg-image {
+        background-size: cover;
+        background-position: right top;
+    }
+
+    .link-wrapper {
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            strong {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &.has-icon {
+        .link-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon {
+            width: 200px;
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 100%;
+            transform: translateY(3px);
+            height: auto;
+        }
+    }
+
+    .copy {
+        text-align: center;
+    }
+
+    p {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        line-height: 1.125em;
+
+        .btn {
+            text-shadow: none;
+            display: inline-block;
+            margin-left: 0.5rem;
+            border: 1px solid;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            line-height: 0.75rem;
+            padding: 0.675rem 1rem 0.5rem 1rem;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: $white;
+                color: $black;
+                border: 1px solid $white;
+            }
+        }
+    }
+
+    strong {
+        color: $white;
+    }
+
+    .copy {
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        &-wrapper {
+            margin-right: 1rem;
+            p {
+                font-size: 0.8125rem;
+                line-height: 1.375em;
+
+                @include desktop-medium {
+                    font-size: 0.9375rem;
+                }
+
+                & + p {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .cta {
+            background: unset !important;
+            text-align: center;
+            padding: 0;
+
+            .btn {
+                background: unset !important;
+                white-space: nowrap;
+
+                &:hover {
+                    background: $white !important;
+                    color: $blue !important;
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+}

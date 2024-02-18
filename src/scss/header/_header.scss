@@ -2,6 +2,8 @@
     z-index: 5555;
     transition: all 200ms ease;
     background: $white;
+    position: sticky;
+    top: 0;
 
     &.scrolled.has-banner {
         @include desktop-small {

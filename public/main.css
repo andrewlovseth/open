@@ -398,206 +398,12 @@ body {
 }
 
 aside.banner {
-  color: #fff;
-  border-bottom: none;
-  max-height: 74px;
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  aside.banner {
-    display: block;
-  }
-}
-aside.banner.bg-image {
-  background-size: cover;
-  background-position: right top;
-}
-aside.banner .link-wrapper {
-  display: flex;
-  justify-content: center;
-}
-aside.banner .link-wrapper:hover strong {
-  text-decoration: underline;
-}
-aside.banner.has-icon .link-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-aside.banner.has-icon .icon {
-  width: 200px;
-  margin-right: 1rem;
-}
-aside.banner.has-icon img {
-  width: 100%;
-  transform: translateY(3px);
-  height: auto;
-}
-aside.banner .copy {
   text-align: center;
+  padding: 0.5rem;
 }
-aside.banner p {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  line-height: 1.125em;
-}
-aside.banner p .btn {
-  text-shadow: none;
+aside.banner a {
   display: inline-block;
-  margin-left: 0.5rem;
-  border: 1px solid;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
-  line-height: 0.75rem;
-  padding: 0.675rem 1rem 0.5rem 1rem;
-  transition: all 0.2s ease;
-}
-aside.banner p .btn:hover {
-  background: #fff;
-  color: #000;
-  border: 1px solid #fff;
-}
-aside.banner strong {
-  color: #fff;
-}
-aside.banner.nab-banner {
-  display: block;
-  background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
-  max-height: unset;
-}
-aside.banner.nab-banner .link-wrapper {
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem 1rem;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .link-wrapper {
-    width: unset;
-  }
-}
-aside.banner.nab-banner .link-wrapper:hover strong {
-  text-decoration: none;
-}
-aside.banner.nab-banner .link-wrapper:hover .copy .cta .btn {
-  background: #fff !important;
-  color: #2d77f8;
-  border: 1px solid #fff;
-}
-aside.banner.nab-banner .icon {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 0;
-  width: unset;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .icon {
-    width: 20rem;
-    border-right: 1px solid #fff;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    flex-wrap: unset;
-  }
-}
-aside.banner.nab-banner img {
-  max-width: 8rem;
-  max-height: 4rem;
-  width: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 0 auto 1rem auto;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner img {
-    margin: 0 1rem 0 auto;
-  }
-}
-aside.banner.nab-banner .date-time {
-  width: 100%;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .date-time {
-    text-align: left;
-  }
-}
-aside.banner.nab-banner .date-time p {
-  font-size: 0.8125rem;
-  line-height: 1.25em;
-}
-aside.banner.nab-banner .copy {
-  padding-right: 0;
-  display: grid;
-  gap: 1rem;
-  padding-top: 1rem;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .copy {
-    display: flex;
-    padding-top: 0;
-    flex: 1;
-    max-width: 60rem;
-    text-align: left;
-  }
-}
-aside.banner.nab-banner .copy__desktop {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .copy__desktop {
-    display: block;
-  }
-}
-aside.banner.nab-banner .copy__mobile {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  aside.banner.nab-banner .copy__mobile {
-    display: none;
-  }
-}
-aside.banner.nab-banner .copy-wrapper p + p {
-  padding-top: 0.5rem;
-}
-aside.banner .copy {
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-aside.banner .copy-wrapper {
-  margin-right: 1rem;
-}
-aside.banner .copy-wrapper p {
-  font-size: 0.8125rem;
-  line-height: 1.375em;
-}
-@media screen and (min-width: 1280px) {
-  aside.banner .copy-wrapper p {
-    font-size: 0.9375rem;
-  }
-}
-aside.banner .copy-wrapper p + p {
-  margin-top: 0;
-}
-aside.banner .copy .cta {
-  background: unset !important;
-  text-align: center;
-  padding: 0;
-}
-aside.banner .copy .cta .btn {
-  background: unset !important;
-  white-space: nowrap;
-}
-aside.banner .copy .cta .btn:hover {
-  background: #fff !important;
-  color: #2d77f8 !important;
-  border: 1px solid #fff;
+  text-decoration: underline;
 }
 
 nav.company-nav {
@@ -1384,6 +1190,198 @@ section.ecosystem .product:nth-child(2) {
   outline: none;
 }
 
+.nab-banner {
+  display: block;
+  background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
+  max-height: unset;
+}
+.nab-banner .link-wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 1rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner .link-wrapper {
+    width: unset;
+  }
+}
+.nab-banner .link-wrapper:hover strong {
+  text-decoration: none;
+}
+.nab-banner .link-wrapper:hover .copy .cta .btn {
+  background: #fff !important;
+  color: #2d77f8;
+  border: 1px solid #fff;
+}
+.nab-banner .icon {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  width: unset;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner .icon {
+    width: 20rem;
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    flex-wrap: unset;
+  }
+}
+.nab-banner img {
+  max-width: 8rem;
+  max-height: 4rem;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto 1rem auto;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner img {
+    margin: 0 1rem 0 auto;
+  }
+}
+.nab-banner .date-time {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner .date-time {
+    text-align: left;
+  }
+}
+.nab-banner .date-time p {
+  font-size: 0.8125rem;
+  line-height: 1.25em;
+}
+.nab-banner .copy {
+  padding-right: 0;
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner .copy {
+    display: flex;
+    padding-top: 0;
+    flex: 1;
+    max-width: 60rem;
+    text-align: left;
+  }
+}
+.nab-banner .copy__desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner .copy__desktop {
+    display: block;
+  }
+}
+.nab-banner .copy__mobile {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .nab-banner .copy__mobile {
+    display: none;
+  }
+}
+.nab-banner .copy-wrapper p + p {
+  padding-top: 0.5rem;
+}
+.nab-banner.bg-image {
+  background-size: cover;
+  background-position: right top;
+}
+.nab-banner .link-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.nab-banner .link-wrapper:hover strong {
+  text-decoration: underline;
+}
+.nab-banner.has-icon .link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nab-banner.has-icon .icon {
+  width: 200px;
+  margin-right: 1rem;
+}
+.nab-banner.has-icon img {
+  width: 100%;
+  transform: translateY(3px);
+  height: auto;
+}
+.nab-banner .copy {
+  text-align: center;
+}
+.nab-banner p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.125em;
+}
+.nab-banner p .btn {
+  text-shadow: none;
+  display: inline-block;
+  margin-left: 0.5rem;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  line-height: 0.75rem;
+  padding: 0.675rem 1rem 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+.nab-banner p .btn:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+.nab-banner strong {
+  color: #fff;
+}
+.nab-banner .copy {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.nab-banner .copy-wrapper {
+  margin-right: 1rem;
+}
+.nab-banner .copy-wrapper p {
+  font-size: 0.8125rem;
+  line-height: 1.375em;
+}
+@media screen and (min-width: 1280px) {
+  .nab-banner .copy-wrapper p {
+    font-size: 0.9375rem;
+  }
+}
+.nab-banner .copy-wrapper p + p {
+  margin-top: 0;
+}
+.nab-banner .copy .cta {
+  background: unset !important;
+  text-align: center;
+  padding: 0;
+}
+.nab-banner .copy .cta .btn {
+  background: unset !important;
+  white-space: nowrap;
+}
+.nab-banner .copy .cta .btn:hover {
+  background: #fff !important;
+  color: #2d77f8 !important;
+  border: 1px solid #fff;
+}
+
 section.page-header {
   padding-top: clamp(2.5rem, 10vh, 5rem);
   padding-bottom: 2rem;
@@ -1524,6 +1522,8 @@ section.page-header {
   z-index: 5555;
   transition: all 200ms ease;
   background: #fff;
+  position: sticky;
+  top: 0;
 }
 @media screen and (min-width: 992px) {
   .site-header.scrolled.has-banner {

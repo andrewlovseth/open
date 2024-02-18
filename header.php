@@ -1,6 +1,7 @@
 <?php
 	global $has_hero;
 	$nab_banner = get_field('nab_banner_show', 'options');
+	$banner = get_field('banner_show', 'options');
 	
 ?>
 
@@ -38,7 +39,9 @@
 
 	<?php get_template_part('template-parts/header/nab-banner'); ?>
 
-	<header class="site-header<?php if($nab_banner == TRUE): ?> has-banner<?php endif; ?>">
+	<?php get_template_part('template-parts/header/banner'); ?>
+
+	<header class="site-header<?php if($nab_banner == TRUE || $banner == TRUE): ?> has-banner<?php endif; ?>">
 
 		<div class="site-header-wrapper">
 			<?php get_template_part('template-parts/header/logo'); ?>
