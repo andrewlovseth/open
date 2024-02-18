@@ -1,0 +1,30 @@
+.customers-standard {
+    background: $blue;
+    color: $white;
+    @include small-section-spacing;
+
+    .section-header {
+        padding-bottom: 3rem;
+
+        .headline {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    p a {
+        color: $white;
+        text-decoration: underline;
+    }
+
+    svg {
+        fill: white;
+
+        * {
+            fill: white;
+        }
+    }
+
+    .cta {
+        padding-top: 2rem;
+    }
+}

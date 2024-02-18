@@ -1,5 +1,19 @@
 body.page-template-landing-page {
-    @import 'landing-page/page-header';
+    @import "landing-page/page-header";
 
-    @import 'landing-page/active-campaign-form';
+    @import "landing-page/active-campaign-form";
+
+    @import "landing-page/video-form";
+
+    @import "landing-page/newsletter";
+
+    @import "landing-page/customers-standard";
+
+    .pre-footer {
+        display: none;
+    }
+
+    .site-footer {
+        margin: 0;
+    }
 }
