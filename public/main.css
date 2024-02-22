@@ -9282,11 +9282,6 @@ body.page-template-demo-landing-page .hero__photo {
   grid-column: 1/-1;
   z-index: 1;
 }
-@media screen and (min-width: 1280px) {
-  body.page-template-demo-landing-page .hero__photo {
-    max-height: max(860px, 86vh);
-  }
-}
 body.page-template-demo-landing-page .hero__photo img {
   width: 100%;
   height: 100%;
