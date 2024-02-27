@@ -10,6 +10,7 @@
                         $headline = get_sub_field('headline');
                         $phrase = get_sub_field('phrase');
                         $image = get_sub_field('image');
+                        $link = get_sub_field('link');
                     ?>
 
                     <div class="hero__slide swiper-slide">
@@ -21,6 +22,19 @@
                                           <span class="hero__headline-phrase"><?php echo $phrase; ?></span>
                                     </div>
                                 </h1>
+
+                                <?php 
+                                    if( $link ): 
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                ?>
+
+                                    <div class="hero__cta | cta">
+                                        <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                    </div>
+
+                                <?php endif; ?>
                             </div>
 
                             <div class="hero__photo">

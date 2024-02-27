@@ -1,0 +1,62 @@
+.hero {
+    color: $white;
+
+    &__photo {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        z-index: 1;
+
+        @include cover-fill-image;
+    }
+
+    &__wrapper {
+        @include section-spacing;
+        grid-row: 1;
+        z-index: 2;
+        display: grid;
+        gap: 2rem;
+
+        @include desktop-small {
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+        }
+    }
+
+    &__info {
+        @include desktop-small {
+            grid-column: 1 / span 6;
+        }
+    }
+
+    &__title {
+        text-shadow: 0 0 12px rgba($black, 0.75);
+        @include desktop-medium {
+            font-size: 3rem;
+        }
+    }
+
+    &__copy {
+        text-shadow: 0 0 8px rgba($black, 0.75);
+    }
+
+    &__form {
+        background: $white;
+        align-self: start;
+        padding: 3rem 4rem;
+        @include desktop-small {
+            grid-column: 8 / span 5;
+        }
+
+        #_form_21_ {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__copy {
+        padding: 2rem 0;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}

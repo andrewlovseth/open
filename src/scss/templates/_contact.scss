@@ -3,14 +3,11 @@ body.page-template-contact {
         margin-top: unset;
     }
 
-    .contact-container {
-        display: grid;
-        @include desktop-small {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
+    .pre-footer {
+        z-index: 1;
     }
 
-    @import "contact/contact-info";
+    @import "contact/hero";
 
-    @import "contact/form";
+    @import "contact/contact-info";
 }

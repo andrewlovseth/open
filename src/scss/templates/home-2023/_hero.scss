@@ -32,19 +32,15 @@
         }
 
         &-wrapper {
-            aspect-ratio: 1 / 1;
+            aspect-ratio: 4 / 3;
 
-            @include tablet-small {
-                aspect-ratio: 4 / 3;
+            @include tablet {
+                aspect-ratio: 16 / 9;
             }
 
             @include desktop-small {
-                aspect-ratio: 16 / 11;
-            }
-
-            @include desktop-medium {
                 aspect-ratio: unset;
-                max-height: clamp(40rem, 97vh, 54rem);
+                max-height: clamp(24rem, 50vh, 36rem);
             }
 
             @include cover-fill-image;
@@ -52,24 +48,26 @@
     }
 
     &__headline {
-        font-size: $type-size-700;
+        font-size: $type-size-600;
         font-weight: 900;
         line-height: 1.125em;
         color: $white;
+        transform: translateY(-2rem);
 
         @include tablet-small {
-            font-size: $type-size-800;
+            font-size: $type-size-700;
         }
 
         @include tablet {
-            font-size: $type-size-1000;
+            font-size: $type-size-900;
+            transform: translateY(-4rem);
         }
 
         &-phrase {
             margin-top: 0.25rem;
             display: inline-block;
-            color: $white;
-            background: $blue;
+            color: $blue;
+            background: $white;
             padding: 0 0.5rem 0.5rem 0.5rem;
             text-transform: lowercase;
         }

@@ -104,6 +104,22 @@
                             "max_size": "",
                             "mime_types": "",
                             "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_65de1af8c00e5",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -750,5 +766,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681492039
+    "modified": 1709054719
 }

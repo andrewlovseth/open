@@ -226,6 +226,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "+ Add Phone Number",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_6250dbf972341",
@@ -269,8 +270,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_6250dbea7233f"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 },
                 {
                     "key": "field_6250dc0072342",
@@ -291,6 +291,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "+ Add Email",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_6250dc0072343",
@@ -334,8 +335,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_6250dc0072342"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -425,5 +425,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690225959
+    "modified": 1709054695
 }
