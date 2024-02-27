@@ -38,19 +38,13 @@ section.ecosystem {
             padding: 2rem 0;
         }
     }
-    .product:nth-child(1),
-    .product:nth-child(3) {
-        @include tablet {
-            flex: 1;
-        }
-    }
 
     .product:nth-child(1) {
         @include tablet-small {
-            width: 50%;
+            width: 100%;
         }
         @include tablet {
-            width: unset;
+            width: 50%;
 
             .info {
                 margin-left: auto;
@@ -59,21 +53,6 @@ section.ecosystem {
     }
 
     .product:nth-child(2) {
-        @include tablet-small {
-            width: 50%;
-        }
-
-        @include tablet {
-            width: unset;
-            flex: 1;
-        }
-
-        @include desktop-small {
-            max-width: 26rem;
-        }
-    }
-
-    .product:nth-child(3) {
         margin-bottom: calc($bottom-spacer * -1);
         padding-bottom: calc($bottom-spacer * 1.5);
 
@@ -82,7 +61,7 @@ section.ecosystem {
         }
 
         @include tablet {
-            max-width: unset;
+            width: 50%;
         }
 
         @include desktop-small {

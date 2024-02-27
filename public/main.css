@@ -799,57 +799,35 @@ section.ecosystem .product .logo img {
 section.ecosystem .product .deck {
   padding: 2rem 0;
 }
-@media screen and (min-width: 768px) {
-  section.ecosystem .product:nth-child(1),
-section.ecosystem .product:nth-child(3) {
-    flex: 1;
-  }
-}
 @media screen and (min-width: 480px) {
   section.ecosystem .product:nth-child(1) {
-    width: 50%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   section.ecosystem .product:nth-child(1) {
-    width: unset;
+    width: 50%;
   }
   section.ecosystem .product:nth-child(1) .info {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 480px) {
-  section.ecosystem .product:nth-child(2) {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 768px) {
-  section.ecosystem .product:nth-child(2) {
-    width: unset;
-    flex: 1;
-  }
-}
-@media screen and (min-width: 992px) {
-  section.ecosystem .product:nth-child(2) {
-    max-width: 26rem;
-  }
-}
-section.ecosystem .product:nth-child(3) {
+section.ecosystem .product:nth-child(2) {
   margin-bottom: calc(clamp(5rem, 15vh, 7.5rem) * -1);
   padding-bottom: calc(clamp(5rem, 15vh, 7.5rem) * 1.5);
 }
 @media screen and (min-width: 480px) {
-  section.ecosystem .product:nth-child(3) {
+  section.ecosystem .product:nth-child(2) {
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  section.ecosystem .product:nth-child(3) {
-    max-width: unset;
+  section.ecosystem .product:nth-child(2) {
+    width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
-  section.ecosystem .product:nth-child(3) {
+  section.ecosystem .product:nth-child(2) {
     margin-bottom: calc(clamp(10rem, 30vh, 15rem) * -1);
     padding-bottom: clamp(10rem, 30vh, 15rem);
   }
