@@ -3,11 +3,9 @@
     $hero = get_field('hero');
     $photo = $hero['image'];
 
-
     $page_header = get_field('page_header');
     $headline = $page_header['headline'];
     $copy = $page_header['copy'];
-    $link = $page_header['link'];
 
     $contact_info = get_field('contact_info');
     $phone_numbers = $contact_info['phone_numbers'];

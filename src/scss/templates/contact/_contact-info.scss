@@ -1,4 +1,9 @@
 .contact-info {
+    padding-bottom: 2rem;
+
+    @include desktop-small {
+        padding-bottom: 0;
+    }
     &-section {
         padding-top: 2rem;
     }

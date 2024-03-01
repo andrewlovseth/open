@@ -13,10 +13,10 @@
         @include section-spacing;
         grid-row: 1;
         z-index: 2;
-        display: grid;
-        gap: 2rem;
 
         @include desktop-small {
+            display: grid;
+            gap: 2rem;
             grid-template-columns: repeat(12, minmax(0, 1fr));
         }
     }
@@ -36,27 +36,29 @@
 
     &__copy {
         text-shadow: 0 0 8px rgba($black, 0.75);
+        padding: 0.5rem 0 0 0;
+
+        @include desktop-large {
+            padding: 2rem 0;
+        }
+
+        a {
+            font-weight: bold;
+        }
     }
 
     &__form {
         background: $white;
         align-self: start;
-        padding: 3rem 4rem;
+        padding: 1rem 2rem;
         @include desktop-small {
             grid-column: 8 / span 5;
+            padding: 3rem 4rem;
         }
 
         #_form_21_ {
             margin: 0;
             padding: 0;
-        }
-    }
-
-    &__copy {
-        padding: 2rem 0;
-
-        a {
-            font-weight: bold;
         }
     }
 }

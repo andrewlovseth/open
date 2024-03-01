@@ -2849,10 +2849,12 @@ body.nav-overlay-open .nav-content {
 }
 .site-footer .newsletter-form .cta {
   width: 100%;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .site-footer .newsletter-form .cta {
     width: unset;
+    margin-top: 0;
   }
 }
 .site-footer .newsletter-form .g-recaptcha {
@@ -4330,8 +4332,8 @@ body.page-template-careers .embed {
   }
 }
 
-body.page-template-contact .site-footer {
-  margin-top: unset;
+body.page-template-contact {
+  background: #000;
 }
 body.page-template-contact .pre-footer {
   z-index: 1;
@@ -4355,8 +4357,6 @@ body.page-template-contact .hero__wrapper {
   padding-bottom: clamp(2.5rem, 10vh, 5rem);
   grid-row: 1;
   z-index: 2;
-  display: grid;
-  gap: 2rem;
 }
 @media screen and (min-width: 992px) {
   body.page-template-contact .hero__wrapper {
@@ -4366,6 +4366,8 @@ body.page-template-contact .hero__wrapper {
 }
 @media screen and (min-width: 992px) {
   body.page-template-contact .hero__wrapper {
+    display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
@@ -4384,26 +4386,38 @@ body.page-template-contact .hero__title {
 }
 body.page-template-contact .hero__copy {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 0 0 0;
+}
+@media screen and (min-width: 1440px) {
+  body.page-template-contact .hero__copy {
+    padding: 2rem 0;
+  }
+}
+body.page-template-contact .hero__copy a {
+  font-weight: bold;
 }
 body.page-template-contact .hero__form {
   background: #fff;
   align-self: start;
-  padding: 3rem 4rem;
+  padding: 1rem 2rem;
 }
 @media screen and (min-width: 992px) {
   body.page-template-contact .hero__form {
     grid-column: 8/span 5;
+    padding: 3rem 4rem;
   }
 }
 body.page-template-contact .hero__form #_form_21_ {
   margin: 0;
   padding: 0;
 }
-body.page-template-contact .hero__copy {
-  padding: 2rem 0;
+body.page-template-contact .contact-info {
+  padding-bottom: 2rem;
 }
-body.page-template-contact .hero__copy a {
-  font-weight: bold;
+@media screen and (min-width: 992px) {
+  body.page-template-contact .contact-info {
+    padding-bottom: 0;
+  }
 }
 body.page-template-contact .contact-info-section {
   padding-top: 2rem;

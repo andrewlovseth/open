@@ -80,9 +80,11 @@
 
     .cta {
         width: 100%;
+        margin-top: 1rem;
 
         @include tablet {
             width: unset;
+            margin-top: 0;
         }
     }
 
