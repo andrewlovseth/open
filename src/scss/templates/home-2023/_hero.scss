@@ -63,6 +63,12 @@
             transform: translateY(-4rem);
         }
 
+        br {
+            @media screen and (max-width: 375px) {
+                display: none;
+            }
+        }
+
         &-phrase {
             margin-top: 0.25rem;
             display: inline-block;

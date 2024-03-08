@@ -2,18 +2,30 @@
     display: flex;
     align-items: center;
     background: $white;
+    @media screen and (max-width: 350px) {
+        display: none;
+    }
+
+    &__login {
+        display: none;
+
+        @include desktop-large {
+            display: block;
+        }
+    }
 
     .btn {
-        background: $blue;
         white-space: nowrap;
+        padding: 0.5rem 1rem 0.375rem;
+        background: $blue;
+        color: $white;
+
+        @include desktop-small {
+            padding: 0.75rem 1.75rem 0.625rem;
+        }
 
         &__login {
             background: $white;
-            display: none;
-
-            @include desktop-large {
-                display: block;
-            }
 
             &:hover {
                 background: $black;
