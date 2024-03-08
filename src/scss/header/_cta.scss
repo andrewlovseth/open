@@ -10,7 +10,7 @@
         display: none;
 
         @include desktop-large {
-            display: block;
+            display: flex;
         }
     }
 
@@ -26,6 +26,7 @@
 
         &__login {
             background: $white;
+            color: $black;
 
             &:hover {
                 background: $black;
