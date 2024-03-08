@@ -20,7 +20,7 @@
     <article <?php post_class('grid'); ?>>
         <section class="article-header">
             <div class="back">
-                <a href="<?php echo site_url('/news/'); ?>">Newsroom</a>
+                <a href="<?php echo site_url('/news/'); ?>">Press Room</a>
             </div>
 
             <h1><?php the_title(); ?></h1>

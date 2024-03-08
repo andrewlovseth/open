@@ -7,7 +7,7 @@
 get_header(); ?>
 
     <section class="page-header grid">
-        <h1 class="page-title dark-blue">Newsroom</h1>
+        <h1 class="page-title dark-blue">Press Room</h1>
     </section>
 
     <?php if($paged == 1): ?>
