@@ -9372,15 +9372,19 @@ body.page-template-demo-landing-page .hero__title {
 body.page-template-demo-landing-page .hero__copy {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 }
-body.page-template-demo-landing-page .hero__form {
-  background: #fff;
-  align-self: start;
-  padding: 3rem 4rem;
+body.page-template-demo-landing-page .hero__aside {
+  display: grid;
+  gap: 2rem;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-demo-landing-page .hero__form {
+  body.page-template-demo-landing-page .hero__aside {
     grid-column: 8/span 5;
+    align-self: start;
   }
+}
+body.page-template-demo-landing-page .hero__form {
+  background: #fff;
+  padding: 3rem 4rem;
 }
 body.page-template-demo-landing-page .hero__form #_form_21_ {
   margin: 0;

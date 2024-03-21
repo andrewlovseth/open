@@ -38,13 +38,19 @@
         text-shadow: 0 0 8px rgba($black, 0.75);
     }
 
-    &__form {
-        background: $white;
-        align-self: start;
-        padding: 3rem 4rem;
+    &__aside {
+        display: grid;
+        gap: 2rem;
+
         @include desktop-small {
             grid-column: 8 / span 5;
+            align-self: start;
         }
+    }
+
+    &__form {
+        background: $white;
+        padding: 3rem 4rem;
 
         #_form_21_ {
             margin: 0;
