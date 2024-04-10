@@ -1,9 +1,12 @@
 <?php
 
-$section_headline = get_field('ecosystem_headline');
-$section_dek = get_field('ecosystem_dek');
+$front_page_id = get_option('page_on_front');
 
-if(have_rows('ecosystem_features')): ?>
+
+$section_headline = get_field('ecosystem_headline', $front_page_id);
+$section_dek = get_field('ecosystem_dek'. $front_page_id);
+
+if(have_rows('ecosystem_features', $front_page_id)): ?>
 
     <section class="ecosystem grid"> 
         <div class="section-header">
@@ -15,7 +18,7 @@ if(have_rows('ecosystem_features')): ?>
         </div>
 
         <div class="ecosystem__features">
-            <?php $i = 1; while(have_rows('ecosystem_features')) : the_row(); ?>
+            <?php $i = 1; while(have_rows('ecosystem_features', $front_page_id)) : the_row(); ?>
 
                 <?php if( get_row_layout() == 'feature' ): ?>
                     <?php

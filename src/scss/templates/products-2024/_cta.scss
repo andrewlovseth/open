@@ -1,0 +1,27 @@
+.call-to-action {
+    @include section-spacing-top;
+
+    &__header {
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+    }
+
+    &__title {
+        padding-bottom: 1rem;
+    }
+
+    &__info {
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+
+        strong {
+            color: $blue;
+        }
+    }
+
+    &__cta {
+        padding: 2rem 0 0.5rem 0;
+    }
+}

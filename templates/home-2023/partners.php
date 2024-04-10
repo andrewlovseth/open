@@ -1,10 +1,13 @@
 <?php
 
-$section_headline = get_field('partners_headline');
-$section_dek = get_field('partners_dek');
-$section_link = get_field('partners_link');
+$front_page_id = get_option('page_on_front');
 
-if(have_rows('partners')): ?>
+
+$section_headline = get_field('partners_headline', $front_page_id);
+$section_dek = get_field('partners_dek', $front_page_id);
+$section_link = get_field('partners_link', $front_page_id);
+
+if(have_rows('partners', $front_page_id)): ?>
 
     <section class="partners grid"> 
         <div class="section-header" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800" data-aos-once="true">
@@ -15,7 +18,7 @@ if(have_rows('partners')): ?>
             </div>
         </div>
 
-        <?php while(have_rows('partners')) : the_row(); ?>
+        <?php while(have_rows('partners', $front_page_id)) : the_row(); ?>
 
             <?php if( get_row_layout() == 'partner' ): ?>
                 <?php

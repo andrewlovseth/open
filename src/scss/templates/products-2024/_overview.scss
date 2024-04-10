@@ -1,0 +1,10 @@
+.overview {
+    @include small-section-spacing;
+    &__copy {
+        text-align: center;
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+}
