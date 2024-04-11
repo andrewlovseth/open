@@ -10,11 +10,11 @@
 
     <div class="featured-video">
         <?php if($source === 'youtube'): ?>
-            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1920" height="1080" src="https://www.youtube-nocookie.com/embed/<?php echo $video_id; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <?php endif; ?>
 
         <?php if($source === 'vimeo'): ?>
-            <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>&dnt=1" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         <?php endif; ?>
 
     </div>

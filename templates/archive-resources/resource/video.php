@@ -98,7 +98,7 @@
 
                 <div class="modal__content" id="<?php echo $slug; ?>-modal-content">
                     <?php if($source['value'] === 'vimeo'): ?>
-                        <div class="video-player vimeo-video-player" data-autoplay-url="https://player.vimeo.com/video/<?php echo $video_id; ?>&autoplay=1&loop=1&autopause=0">
+                        <div class="video-player vimeo-video-player" data-autoplay-url="https://player.vimeo.com/video/<?php echo $video_id; ?>&autoplay=1&loop=1&autopause=0&dnt=1">
                             <div class="embed">
                                 <iframe src="" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                             </div>
@@ -106,7 +106,7 @@
                     <?php endif; ?>
 
                     <?php if($source['value'] === 'youtube'): ?>
-                        <div class="video-player youtube-video-player" data-autoplay-url="https://www.youtube.com/embed/<?php echo $video_id; ?>?autoplay=1&modestbranding=1&rel=0">
+                        <div class="video-player youtube-video-player" data-autoplay-url="https://www.youtube-nocookie.com/embed/<?php echo $video_id; ?>?autoplay=1&modestbranding=1&rel=0">
                             <div class="embed">
                                 <iframe width="1920" height="1080" allowfullscreen allow="autoplay" frameborder="0" allowTransparency="true" src=""></iframe>
                             </div>
