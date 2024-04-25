@@ -4795,6 +4795,15 @@ body.page-template-products-2024 .hero__title {
     font-size: 3rem;
   }
 }
+body.page-template-products-2024 .hero__sub-title {
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-products-2024 .hero__sub-title {
+    font-size: 1.5rem;
+  }
+}
 body.page-template-products-2024 .hero__deck {
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
   padding: 1rem;
@@ -4970,23 +4979,53 @@ body.page-template-products-2024 .capabilities__header {
     grid-column: 4/span 8;
   }
 }
+body.page-template-products-2024 .capabilities__info {
+  display: grid;
+  gap: 1rem 2rem;
+  align-items: start;
+}
 @media screen and (min-width: 992px) {
   body.page-template-products-2024 .capabilities__info {
-    grid-column: 2/span 6;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-body.page-template-products-2024 .capabilities__copy ul {
+body.page-template-products-2024 .capabilities__sub-title {
+  font-weight: bold;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-products-2024 .capabilities__sub-title {
+    grid-column: span 3;
+  }
+}
+body.page-template-products-2024 .capabilities__copy p {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-products-2024 .capabilities__copy {
+    grid-column: span 2;
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+body.page-template-products-2024 .capabilities__other {
+  background: #e4ebf8;
+  padding: 2rem;
+}
+body.page-template-products-2024 .capabilities__other ul {
   padding-left: 1rem;
 }
-body.page-template-products-2024 .capabilities__copy li {
+body.page-template-products-2024 .capabilities__other li {
   padding-top: 0.5rem;
 }
-body.page-template-products-2024 .capabilities__copy ul + h4 {
+body.page-template-products-2024 .capabilities__photo {
   padding-top: 2rem;
 }
 @media screen and (min-width: 992px) {
   body.page-template-products-2024 .capabilities__photo {
-    grid-column: 8/span 6;
+    padding-top: 4rem;
+    grid-column: 4/span 8;
   }
 }
 body.page-template-products-2024 .open-standards {

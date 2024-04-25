@@ -3,6 +3,8 @@
     $hero = get_field('hero');
     $photo = $hero['photo'];
     $headline = $hero['headline'];
+    $sub_headline = $hero['sub_headline'];
+
     $deck = $hero['deck'];
     $link = $hero['link'];
 
@@ -13,6 +15,12 @@
         <?php if($headline): ?>
             <div class="hero__headline" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
                 <h1 class="hero__title"><?php echo $headline; ?></h1>
+            </div>
+        <?php endif; ?>
+
+        <?php if($sub_headline): ?>
+            <div class="hero__sub-headline" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                <h2 class="hero__sub-title"><?php echo $sub_headline; ?></h2>
             </div>
         <?php endif; ?>
 

@@ -24,6 +24,15 @@
         text-shadow: 0 0 12px rgba($black, 0.75);
     }
 
+    &__sub-title {
+        text-shadow: 0 0 12px rgba($black, 0.75);
+        font-size: 1.25rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+    }
+
     &__deck {
         text-shadow: 0 0 12px rgba($black, 0.75);
         padding: 1rem;

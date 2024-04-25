@@ -9,7 +9,7 @@
 
 <section class="open-standards | grid">
     <div class="open-standards__header | section-header">
-        <h3 class="open-standards__title | section-title small"><?php echo $headline; ?></h3>
+        <h2 class="open-standards__title | section-title small"><?php echo $headline; ?></h2>
 
         <div class="open-standards__copy | copy copy-2 extended">
             <?php echo $copy; ?>

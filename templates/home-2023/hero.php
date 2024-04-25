@@ -16,12 +16,12 @@
                     <div class="hero__slide swiper-slide">
                         <div class="hero__grid">
                             <div class="hero__info grid">
-                                <h1 class="hero__headline">
+                                <h2 class="hero__headline">
                                     <?php echo $headline; ?>
                                     <div>
                                           <span class="hero__headline-phrase"><?php echo $phrase; ?></span>
                                     </div>
-                                </h1>
+                                </h2>
 
                                 <?php 
                                     if( $link ): 

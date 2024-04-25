@@ -81,6 +81,26 @@
                     "append": ""
                 },
                 {
+                    "key": "field_662a869d07c95",
+                    "label": "Sub Headline",
+                    "name": "sub_headline",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_6616cfaf8d4f0",
                     "label": "Deck",
                     "name": "deck",
@@ -374,9 +394,49 @@
                     "append": ""
                 },
                 {
+                    "key": "field_662a83937989b",
+                    "label": "Sub Headline",
+                    "name": "sub_headline",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_6616e0f61f147",
                     "label": "Copy",
                     "name": "copy",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_662a839e7989c",
+                    "label": "Other Copy",
+                    "name": "other_copy",
                     "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -699,5 +759,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712776846
+    "modified": 1714063015
 }
