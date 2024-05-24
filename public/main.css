@@ -3414,11 +3414,8 @@ body.page-template-home-2023 .hero .hero-swiper {
   }
 }
 body.page-template-home-2023 .hero .swiper-slide {
-  width: auto;
-  flex-shrink: 0;
-  display: block;
-  height: 100%;
-  max-height: 100%;
+  opacity: 0;
+  transition: opacity 200ms ease;
 }
 body.page-template-home-2023 .hero .swipper-wrapper {
   max-height: 100%;
@@ -3440,6 +3437,9 @@ body.page-template-home-2023 .hero .swiper-pagination-bullet {
 }
 body.page-template-home-2023 .hero .swiper-pagination-bullet-active {
   background: #2d77f8;
+}
+body.page-template-home-2023 .hero .swiper-initialized .swiper-slide {
+  opacity: 1;
 }
 body.page-template-home-2023 .customers {
   background: #fff;
