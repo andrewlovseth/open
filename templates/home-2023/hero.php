@@ -1,56 +1,67 @@
-<?php if(have_rows('hero')): ?>
+<?php 
 
-    <section class="hero hero-swiper swiper">
-        <div class="swiper-wrapper">
 
-            <?php while(have_rows('hero')) : the_row(); ?>
+    $hero = get_field('hero');
+    $sub_headline = $hero['sub_headline'];
+    $headline = $hero['headline'];
+    $photo = $hero['photo'];
+    $link = $hero['link'];
 
-                <?php if( get_row_layout() == 'slide' ): ?>
-                    <?php
-                        $headline = get_sub_field('headline');
-                        $phrase = get_sub_field('phrase');
-                        $image = get_sub_field('image');
-                        $link = get_sub_field('link');
-                    ?>
 
-                    <div class="hero__slide swiper-slide">
-                        <div class="hero__grid">
-                            <div class="hero__info grid">
-                                <h2 class="hero__headline">
-                                    <?php echo $headline; ?>
-                                    <div>
-                                          <span class="hero__headline-phrase"><?php echo $phrase; ?></span>
-                                    </div>
-                                </h2>
 
-                                <?php 
-                                    if( $link ): 
-                                    $link_url = $link['url'];
-                                    $link_title = $link['title'];
-                                    $link_target = $link['target'] ? $link['target'] : '_self';
+if(have_rows('hero')): while(have_rows('hero')) : the_row(); ?>
+
+    <section class="hero grid">
+
+        <div class="hero__info">
+            <div class="hero__info-wrapper">
+                <h2 class="hero__sub-headline">
+                    <?php echo $sub_headline; ?>
+                </h2>
+
+                <?php if(have_rows('phrases')): ?>
+                    <div class="hero-swiper">
+                        <div class="swiper-wrapper">
+                            <?php while(have_rows('phrases')): the_row(); ?>
+
+                                <?php
+                                    $phrase = get_sub_field('phrase');
                                 ?>
 
-                                    <div class="hero__cta | cta">
-                                        <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-                                    </div>
-
-                                <?php endif; ?>
-                            </div>
-
-                            <div class="hero__photo">
-                                <div class="hero__photo-wrapper">
-                                    <?php echo wp_get_attachment_image($image['ID'], 'large'); ?>
+                                <div class="hero__slide swiper-slide">
+                                    <h1 class="hero__headline">
+                                        <?php echo $headline; ?> <?php echo $phrase; ?> 
+                                    </h1>
                                 </div>
-                            </div>
+                            <?php endwhile; ?>
                         </div>
+
                     </div>
 
                 <?php endif; ?>
 
-            <?php endwhile; ?>
+                <?php 
+                    if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+
+                    <div class="hero__cta | cta">
+                        <a class="btn blue" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                    </div>
+
+                <?php endif; ?>
+            </div>
+
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="hero__photo">
+            <div class="hero__photo-wrapper">
+                <?php echo wp_get_attachment_image($photo['ID'], 'large'); ?>
+            </div>
+        </div>
+
     </section>
 
-<?php endif; ?>
+<?php endwhile; endif; ?>

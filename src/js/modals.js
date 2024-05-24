@@ -1,13 +1,20 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
 !(function (e, t) {
-    "object" == typeof exports && "undefined" != typeof module ? (module.exports = t()) : "function" == typeof define && define.amd ? define(t) : ((e = "undefined" != typeof globalThis ? globalThis : e || self).MicroModal = t());
+    "object" == typeof exports && "undefined" != typeof module
+        ? (module.exports = t())
+        : "function" == typeof define && define.amd
+        ? define(t)
+        : ((e = "undefined" != typeof globalThis ? globalThis : e || self).MicroModal = t());
 })(this, function () {
     "use strict";
     function e(e, t) {
         for (var o = 0; o < t.length; o++) {
             var n = t[o];
-            (n.enumerable = n.enumerable || !1), (n.configurable = !0), "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n);
+            (n.enumerable = n.enumerable || !1),
+                (n.configurable = !0),
+                "value" in n && (n.writable = !0),
+                Object.defineProperty(e, n.key, n);
         }
     }
     function t(e) {
@@ -27,7 +34,9 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                 if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return o(e, t);
             })(e) ||
             (function () {
-                throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                throw new TypeError(
+                    "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                );
             })()
         );
     }
@@ -42,7 +51,19 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
         r,
         s,
         l =
-            ((n = ["a[href]", "area[href]", 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', "select:not([disabled]):not([aria-hidden])", "textarea:not([disabled]):not([aria-hidden])", "button:not([disabled]):not([aria-hidden])", "iframe", "object", "embed", "[contenteditable]", '[tabindex]:not([tabindex^="-"])']),
+            ((n = [
+                "a[href]",
+                "area[href]",
+                'input:not([disabled]):not([type="hidden"]):not([aria-hidden])',
+                "select:not([disabled]):not([aria-hidden])",
+                "textarea:not([disabled]):not([aria-hidden])",
+                "button:not([disabled]):not([aria-hidden])",
+                "iframe",
+                "object",
+                "embed",
+                "[contenteditable]",
+                '[tabindex]:not([tabindex^="-"])',
+            ]),
             (i = (function () {
                 function o(e) {
                     var n = e.targetModal,
@@ -95,7 +116,8 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                         {
                             key: "registerTriggers",
                             value: function () {
-                                for (var e = this, t = arguments.length, o = new Array(t), n = 0; n < t; n++) o[n] = arguments[n];
+                                for (var e = this, t = arguments.length, o = new Array(t), n = 0; n < t; n++)
+                                    o[n] = arguments[n];
                                 o.filter(Boolean).forEach(function (t) {
                                     t.addEventListener("click", function (t) {
                                         return e.showModal(t);
@@ -108,7 +130,14 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                             value: function () {
                                 var e = this,
                                     t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-                                if (((this.activeElement = document.activeElement), this.modal.setAttribute("aria-hidden", "false"), this.modal.classList.add(this.config.openClass), this.scrollBehaviour("disable"), this.addEventListeners(), this.config.awaitOpenAnimation)) {
+                                if (
+                                    ((this.activeElement = document.activeElement),
+                                    this.modal.setAttribute("aria-hidden", "false"),
+                                    this.modal.classList.add(this.config.openClass),
+                                    this.scrollBehaviour("disable"),
+                                    this.addEventListeners(),
+                                    this.config.awaitOpenAnimation)
+                                ) {
                                     var o = function t() {
                                         e.modal.removeEventListener("animationend", t, !1), e.setFocusToFirstNode();
                                     };
@@ -122,7 +151,14 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                             value: function () {
                                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
                                     t = this.modal;
-                                if ((this.modal.setAttribute("aria-hidden", "true"), this.removeEventListeners(), this.scrollBehaviour("enable"), this.activeElement && this.activeElement.focus && this.activeElement.focus(), this.config.onClose(this.modal, this.activeElement, e), this.config.awaitCloseAnimation)) {
+                                if (
+                                    (this.modal.setAttribute("aria-hidden", "true"),
+                                    this.removeEventListeners(),
+                                    this.scrollBehaviour("enable"),
+                                    this.activeElement && this.activeElement.focus && this.activeElement.focus(),
+                                    this.config.onClose(this.modal, this.activeElement, e),
+                                    this.config.awaitCloseAnimation)
+                                ) {
                                     var o = this.config.openClass;
                                     this.modal.addEventListener(
                                         "animationend",
@@ -158,19 +194,25 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                         {
                             key: "addEventListeners",
                             value: function () {
-                                this.modal.addEventListener("touchstart", this.onClick), this.modal.addEventListener("click", this.onClick), document.addEventListener("keydown", this.onKeydown);
+                                this.modal.addEventListener("touchstart", this.onClick),
+                                    this.modal.addEventListener("click", this.onClick),
+                                    document.addEventListener("keydown", this.onKeydown);
                             },
                         },
                         {
                             key: "removeEventListeners",
                             value: function () {
-                                this.modal.removeEventListener("touchstart", this.onClick), this.modal.removeEventListener("click", this.onClick), document.removeEventListener("keydown", this.onKeydown);
+                                this.modal.removeEventListener("touchstart", this.onClick),
+                                    this.modal.removeEventListener("click", this.onClick),
+                                    document.removeEventListener("keydown", this.onKeydown);
                             },
                         },
                         {
                             key: "onClick",
                             value: function (e) {
-                                (e.target.hasAttribute(this.config.closeTrigger) || e.target.parentNode.hasAttribute(this.config.closeTrigger)) && (e.preventDefault(), e.stopPropagation(), this.closeModal(e));
+                                (e.target.hasAttribute(this.config.closeTrigger) ||
+                                    e.target.parentNode.hasAttribute(this.config.closeTrigger)) &&
+                                    (e.preventDefault(), e.stopPropagation(), this.closeModal(e));
                             },
                         },
                         {
@@ -213,7 +255,11 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                                         this.modal.contains(document.activeElement))
                                     ) {
                                         var o = t.indexOf(document.activeElement);
-                                        e.shiftKey && 0 === o && (t[t.length - 1].focus(), e.preventDefault()), !e.shiftKey && t.length > 0 && o === t.length - 1 && (t[0].focus(), e.preventDefault());
+                                        e.shiftKey && 0 === o && (t[t.length - 1].focus(), e.preventDefault()),
+                                            !e.shiftKey &&
+                                                t.length > 0 &&
+                                                o === t.length - 1 &&
+                                                (t[0].focus(), e.preventDefault());
                                     } else t[0].focus();
                             },
                         },
@@ -224,12 +270,35 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
             })()),
             (a = null),
             (r = function (e) {
-                if (!document.getElementById(e)) return console.warn("MicroModal: ❗Seems like you have missed %c'".concat(e, "'"), "background-color: #f8f9fa;color: #50596c;font-weight: bold;", "ID somewhere in your code. Refer example below to resolve it."), console.warn("%cExample:", "background-color: #f8f9fa;color: #50596c;font-weight: bold;", '<div class="modal" id="'.concat(e, '"></div>')), !1;
+                if (!document.getElementById(e))
+                    return (
+                        console.warn(
+                            "MicroModal: ❗Seems like you have missed %c'".concat(e, "'"),
+                            "background-color: #f8f9fa;color: #50596c;font-weight: bold;",
+                            "ID somewhere in your code. Refer example below to resolve it."
+                        ),
+                        console.warn(
+                            "%cExample:",
+                            "background-color: #f8f9fa;color: #50596c;font-weight: bold;",
+                            '<div class="modal" id="'.concat(e, '"></div>')
+                        ),
+                        !1
+                    );
             }),
             (s = function (e, t) {
                 if (
                     ((function (e) {
-                        e.length <= 0 && (console.warn("MicroModal: ❗Please specify at least one %c'micromodal-trigger'", "background-color: #f8f9fa;color: #50596c;font-weight: bold;", "data attribute."), console.warn("%cExample:", "background-color: #f8f9fa;color: #50596c;font-weight: bold;", '<a href="#" data-micromodal-trigger="my-modal"></a>'));
+                        e.length <= 0 &&
+                            (console.warn(
+                                "MicroModal: ❗Please specify at least one %c'micromodal-trigger'",
+                                "background-color: #f8f9fa;color: #50596c;font-weight: bold;",
+                                "data attribute."
+                            ),
+                            console.warn(
+                                "%cExample:",
+                                "background-color: #f8f9fa;color: #50596c;font-weight: bold;",
+                                '<a href="#" data-micromodal-trigger="my-modal"></a>'
+                            ));
                     })(e),
                     !t)
                 )
@@ -259,7 +328,9 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
                 },
                 show: function (e, t) {
                     var o = t || {};
-                    (o.targetModal = e), (!0 === o.debugMode && !1 === r(e)) || (a && a.removeEventListeners(), (a = new i(o)).showModal());
+                    (o.targetModal = e),
+                        (!0 === o.debugMode && !1 === r(e)) ||
+                            (a && a.removeEventListeners(), (a = new i(o)).showModal());
                 },
                 close: function (e) {
                     e ? a.closeModalById(e) : a.closeModal();
@@ -382,7 +453,7 @@ const Modal = {
     homeHeroSwiper: function () {
         const heroSwiper = new Swiper(".hero-swiper", {
             autoplay: {
-                delay: 5000,
+                delay: 4000,
             },
             speed: 600,
             effect: "fade",
