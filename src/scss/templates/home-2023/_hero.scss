@@ -39,6 +39,14 @@
             }
 
             @include cover-fill-image;
+
+            @include desktop-medium {
+                aspect-ratio: unset;
+                height: 44rem;
+                img {
+                    object-position: top center;
+                }
+            }
         }
     }
 
@@ -52,6 +60,10 @@
         @include desktop-small {
             font-size: $type-size-400;
         }
+
+        @include desktop-medium {
+            font-size: $type-size-500;
+        }
     }
 
     &__headline {
@@ -59,11 +71,15 @@
         font-weight: 400;
         line-height: 1.125em;
         color: $white;
-        text-shadow: 0 2px 2px rgba($black, 0.5);
+        text-shadow: 2px 4px 8px rgba($black, 0.5);
         padding-bottom: 2rem;
 
         @include desktop-small {
             font-size: $type-size-800;
+        }
+
+        @include desktop-medium {
+            font-size: $type-size-900;
         }
 
         br {
@@ -78,8 +94,8 @@
     .hero-swiper {
         width: 375px;
 
-        @include tablet-small {
-            width: 600px;
+        @include tablet {
+            width: 768px;
         }
 
         @include desktop-small {

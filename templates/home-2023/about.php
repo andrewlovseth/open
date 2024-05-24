@@ -7,7 +7,7 @@
 
 <section class="about grid">
     <?php if($copy): ?>
-        <div class="copy copy-1 extended" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
+        <div class="copy copy-1 extended">
             <?php echo $copy; ?>
         </div>
     <?php endif; ?>

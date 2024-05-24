@@ -39,7 +39,7 @@ if(have_rows('atlas_features')): ?>
                         $delay = 200 + (50 * $count);
                     ?>
 
-                    <div class="atlas__item atlas__item-<?php echo $count; ?>" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>" data-aos-once="true">
+                    <div class="atlas__item atlas__item-<?php echo $count; ?>">
                         <h3 class="atlas__headline"><?php echo $headline; ?></h3>
 
                         <div class="atlas__copy copy copy-3">

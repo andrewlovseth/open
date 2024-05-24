@@ -11,7 +11,7 @@
                 $delay = 400 + (25 * $i);
             ?>
 
-            <div class="logo" data-aos="fade-up" data-aos-duration="600" data-aos-delay="<?php echo $delay; ?>" data-aos-once="true">
+            <div class="logo">
                 <div class="image">
                     <?php echo print_svg($logo['url']); ?>
                 </div>                    
