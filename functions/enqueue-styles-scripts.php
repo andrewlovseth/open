@@ -17,6 +17,10 @@ function bearsmith_enqueue_styles_and_scripts() {
         filemtime(get_stylesheet_directory() . '/public/main.css')
     );
 
+
+        wp_enqueue_script('micromodal-scripts', 'https://unpkg.com/micromodal/dist/micromodal.min.js', array(), false, true );
+
+
     wp_enqueue_script(
         'main-js', 
         $script_url, 
