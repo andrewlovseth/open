@@ -208,7 +208,7 @@
                     "delay": 0
                 },
                 {
-                    "key": "field_669013c6ad45a",
+                    "key": "field_6690541e9b5f3",
                     "label": "Link",
                     "name": "link",
                     "aria-label": "",
@@ -488,8 +488,8 @@
         },
         {
             "key": "field_669014a6fc545",
-            "label": "Essentials Link",
-            "name": "essentials_link",
+            "label": "Essentials Sales Link",
+            "name": "essentials_sales_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -504,8 +504,8 @@
         },
         {
             "key": "field_669014b0fc546",
-            "label": "Comprehensive Link",
-            "name": "comprehensive_link",
+            "label": "Comprehensive Sales Link",
+            "name": "comprehensive_sales_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -662,5 +662,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720718545
+    "modified": 1720734795
 }

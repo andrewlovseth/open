@@ -1,0 +1,17 @@
+.hero {
+    background: #010316;
+    color: $white;
+
+    &__background {
+        grid-column: 1 / -1;
+    }
+
+    &__info {
+        padding: 3rem 0;
+    }
+
+    &__logo {
+        width: 12rem;
+        height: 4rem;
+    }
+}

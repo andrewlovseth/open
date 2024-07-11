@@ -1,0 +1,81 @@
+.features {
+    background: #000110 url(../src/images/features-table-bg-web.jpg) no-repeat center center;
+    background-size: cover;
+    color: $white;
+    padding: 4rem 0;
+
+    &__table {
+        &-th {
+            text-align: left;
+            font-size: $type-size-300;
+            background: #3d68f7;
+            padding: 0.5rem 1rem;
+            border-bottom: 3px solid #fe7b02;
+
+            &.name {
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+            }
+        }
+
+        &-td {
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #fe7b02;
+            background: rgba($white, 0.075);
+
+            &.name {
+                font-size: $type-size-400;
+                font-weight: 300;
+
+                span {
+                    color: #fe7b02;
+                    display: inline-block;
+                    padding-left: 0.25rem;
+                }
+
+                &::before {
+                    display: inline-block;
+                    content: "· ";
+                    color: #fe7b02;
+                    font-size: 2em;
+                    line-height: 0.5em;
+                    transform: translateY(5px);
+                    padding-right: 0.25rem;
+                }
+            }
+        }
+
+        .footer-row {
+            td {
+                border-bottom: unset;
+                background: unset;
+            }
+            .name {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .product {
+            text-align: center;
+            width: 16rem;
+        }
+
+        .note {
+            font-size: $type-size-200;
+            font-weight: 300;
+            color: #fe7b02;
+        }
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    &__notes {
+        color: #fe7b02;
+        padding: 2rem 0;
+    }
+}
