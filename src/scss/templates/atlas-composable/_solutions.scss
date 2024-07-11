@@ -1,0 +1,82 @@
+.solutions {
+    background: $white;
+    padding: 4rem 0;
+
+    &__main {
+        @include desktop-small {
+            grid-column: 2 / span 7;
+        }
+    }
+
+    &__headline {
+        padding-bottom: 1rem;
+
+        .section-title {
+            color: #ff7b02;
+            font-size: $type-size-500;
+        }
+    }
+
+    &__copy {
+        h3 {
+            color: #ff7b02;
+            font-size: $type-size-500;
+
+            & + p {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    &__sidebar {
+        display: grid;
+        gap: 2rem;
+        align-content: start;
+
+        @include desktop-small {
+            grid-column: 9 / span 5;
+        }
+    }
+
+    &__photos {
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+    }
+
+    &__form {
+        background: #646464;
+        color: $white;
+        padding: 2rem;
+        border-radius: 0.25rem;
+
+        &-headline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-logo {
+            svg {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+
+        &-title {
+            display: inline-block;
+            background: #3d68f7;
+            padding: 0.25rem;
+        }
+
+        #solutions-form form {
+            background: unset !important;
+            padding: 2rem 0 0 0;
+            margin: 0;
+
+            label {
+                color: $white;
+            }
+        }
+    }
+}

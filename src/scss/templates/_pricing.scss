@@ -1,0 +1,9 @@
+body.page-template-pricing {
+    @import "pricing/hero";
+
+    @import "pricing/overview";
+
+    @import "pricing/features";
+
+    @import "pricing/cta";
+}

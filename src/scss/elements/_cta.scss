@@ -174,3 +174,24 @@
         }
     }
 }
+
+.o-btn,
+.copy .o-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2e76f8;
+    color: $white;
+    text-decoration: none;
+    line-height: 1em;
+    padding: 0.25rem 0.5rem;
+
+    &::after {
+        display: block;
+        content: "";
+        background: url(../src/svg/o-logo-fill.svg) no-repeat 0 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: translateY(2px);
+    }
+}

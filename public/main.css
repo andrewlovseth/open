@@ -590,6 +590,27 @@ nav.company-nav ul a:hover {
   }
 }
 
+.o-btn,
+.copy .o-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2e76f8;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1em;
+  padding: 0.25rem 0.5rem;
+}
+.o-btn::after,
+.copy .o-btn::after {
+  display: block;
+  content: "";
+  background: url(../src/svg/o-logo-fill.svg) no-repeat 0 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(2px);
+}
+
 .customer-grid {
   display: flex;
   justify-content: center;
@@ -5551,6 +5572,99 @@ body.page-template-atlas-2024 section.cta {
   text-align: center;
 }
 body.page-template-atlas-2024 .cta__copy {
+  padding: 1rem 0;
+}
+
+body.page-template-atlas-composable .hero {
+  background: #010316;
+  color: #fff;
+}
+body.page-template-atlas-composable .hero__background {
+  grid-column: 1/-1;
+}
+body.page-template-atlas-composable .hero__info {
+  padding: 3rem 0;
+}
+body.page-template-atlas-composable .hero__logo {
+  width: 12rem;
+  height: 4rem;
+}
+body.page-template-atlas-composable .solutions {
+  background: #fff;
+  padding: 4rem 0;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .solutions__main {
+    grid-column: 2/span 7;
+  }
+}
+body.page-template-atlas-composable .solutions__headline {
+  padding-bottom: 1rem;
+}
+body.page-template-atlas-composable .solutions__headline .section-title {
+  color: #ff7b02;
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+}
+body.page-template-atlas-composable .solutions__copy h3 {
+  color: #ff7b02;
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+}
+body.page-template-atlas-composable .solutions__copy h3 + p {
+  margin-top: 0.5rem;
+}
+body.page-template-atlas-composable .solutions__sidebar {
+  display: grid;
+  gap: 2rem;
+  align-content: start;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .solutions__sidebar {
+    grid-column: 9/span 5;
+  }
+}
+body.page-template-atlas-composable .solutions__photos {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+body.page-template-atlas-composable .solutions__form {
+  background: #646464;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+body.page-template-atlas-composable .solutions__form-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.page-template-atlas-composable .solutions__form-logo svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+body.page-template-atlas-composable .solutions__form-title {
+  display: inline-block;
+  background: #3d68f7;
+  padding: 0.25rem;
+}
+body.page-template-atlas-composable .solutions__form #solutions-form form {
+  background: unset !important;
+  padding: 2rem 0 0 0;
+  margin: 0;
+}
+body.page-template-atlas-composable .solutions__form #solutions-form form label {
+  color: #fff;
+}
+body.page-template-atlas-composable section.cta {
+  padding: 6rem 0 3rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable section.cta {
+    padding: 6rem 0 0 0;
+  }
+}
+body.page-template-atlas-composable .cta__copy {
   padding: 1rem 0;
 }
 
