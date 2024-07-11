@@ -1,0 +1,56 @@
+.solutions {
+    background: $white;
+    padding: 4rem 0;
+
+    &__headline {
+        padding-bottom: 2rem;
+    }
+
+    &__copy {
+        @include desktop-small {
+            grid-column: 2 / span 7;
+        }
+
+        h3 {
+            color: #ff7b02;
+            font-size: $type-size-500;
+
+            & + p {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    &__features {
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+
+        @include desktop-small {
+            grid-column: 9 / span 5;
+        }
+    }
+
+    &__feature {
+        &-info {
+            background: #3d68f7;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+
+            .play-btn {
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                    transform: translateY(2px);
+                }
+            }
+        }
+
+        &-title {
+            font-size: $type-size-400;
+        }
+    }
+}

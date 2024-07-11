@@ -49,6 +49,17 @@
                 color: $white;
             }
         }
+
+        &.alt {
+            background: $blue;
+            color: $white;
+            border-radius: 0;
+            text-transform: unset;
+            font-size: 1rem;
+            letter-spacing: unset;
+            padding: 0.5rem 1.5rem;
+            font-weight: 300;
+        }
     }
 
     .underline {

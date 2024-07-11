@@ -1,0 +1,49 @@
+.hero {
+    background: #010316;
+    color: $white;
+
+    &__background {
+        grid-column: 1 / -1;
+    }
+
+    &__info {
+        display: grid;
+        gap: 2rem;
+        padding: 3rem 0;
+        align-content: start;
+
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+    }
+
+    &__logo {
+        width: 12rem;
+        height: 4rem;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__video {
+        padding: 3rem 0;
+        gap: 1rem;
+        display: grid;
+        align-content: end;
+
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+
+        &-link {
+            display: block;
+        }
+
+        .hero__logo-outline {
+            margin-left: auto;
+        }
+    }
+}

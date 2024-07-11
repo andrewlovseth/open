@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Box sizing rules */
-@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Nothing+You+Could+Do&family=Benne&family=Anton&family=Rubik:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Nothing+You+Could+Do&family=Benne&family=Anton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 *,
 *::before,
 *::after {
@@ -482,6 +482,16 @@ nav.company-nav ul a:hover {
 .cta .btn.black-outline:hover {
   background: #000;
   color: #fff;
+}
+.cta .btn.alt {
+  background: #2d77f8;
+  color: #fff;
+  border-radius: 0;
+  text-transform: unset;
+  font-size: 1rem;
+  letter-spacing: unset;
+  padding: 0.5rem 1.5rem;
+  font-weight: 300;
 }
 .cta .underline {
   text-transform: uppercase;
@@ -5413,6 +5423,135 @@ body.page-template-atlas section.containerization .cta {
   body.page-template-atlas section.containerization .cta {
     padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
   }
+}
+
+body.page-template-atlas-2024 .hero {
+  background: #010316;
+  color: #fff;
+}
+body.page-template-atlas-2024 .hero__background {
+  grid-column: 1/-1;
+}
+body.page-template-atlas-2024 .hero__info {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 0;
+  align-content: start;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-2024 .hero__info {
+    grid-column: 2/span 6;
+  }
+}
+body.page-template-atlas-2024 .hero__logo {
+  width: 12rem;
+  height: 4rem;
+}
+body.page-template-atlas-2024 .hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body.page-template-atlas-2024 .hero__video {
+  padding: 3rem 0;
+  gap: 1rem;
+  display: grid;
+  align-content: end;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-2024 .hero__video {
+    grid-column: 8/span 6;
+  }
+}
+body.page-template-atlas-2024 .hero__video-link {
+  display: block;
+}
+body.page-template-atlas-2024 .hero__video .hero__logo-outline {
+  margin-left: auto;
+}
+body.page-template-atlas-2024 .clients {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  body.page-template-atlas-2024 .clients {
+    justify-content: space-between;
+  }
+}
+body.page-template-atlas-2024 .clients .image {
+  aspect-ratio: 16/9;
+  max-width: 8rem;
+}
+body.page-template-atlas-2024 .clients .image svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body.page-template-atlas-2024 .capabilities {
+  padding: 4rem 0;
+  gap: 2rem;
+}
+body.page-template-atlas-2024 .capabilities__headline {
+  padding-bottom: 1rem;
+}
+body.page-template-atlas-2024 .solutions {
+  background: #fff;
+  padding: 4rem 0;
+}
+body.page-template-atlas-2024 .solutions__headline {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-2024 .solutions__copy {
+    grid-column: 2/span 7;
+  }
+}
+body.page-template-atlas-2024 .solutions__copy h3 {
+  color: #ff7b02;
+  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+}
+body.page-template-atlas-2024 .solutions__copy h3 + p {
+  margin-top: 0.5rem;
+}
+body.page-template-atlas-2024 .solutions__features {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-2024 .solutions__features {
+    grid-column: 9/span 5;
+  }
+}
+body.page-template-atlas-2024 .solutions__feature-info {
+  background: #3d68f7;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+body.page-template-atlas-2024 .solutions__feature-info .play-btn svg {
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(2px);
+}
+body.page-template-atlas-2024 .solutions__feature-title {
+  font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+}
+body.page-template-atlas-2024 section.cta {
+  padding: 6rem 0 0 0;
+  text-align: center;
+}
+body.page-template-atlas-2024 .cta__copy {
+  padding: 1rem 0;
 }
 
 body.page-template-atlas-cloud-plus section.overview {
