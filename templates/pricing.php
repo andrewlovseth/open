@@ -8,7 +8,7 @@ $has_hero = 'has-hero';
 */
 
 get_header(); ?>
-`
+
     <?php get_template_part('templates/pricing/hero'); ?>
 
     <?php // get_template_part('templates/pricing/overview'); ?>
