@@ -10415,7 +10415,7 @@ body.blog .featured {
   }
 }
 body.blog .featured .blog .photo {
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
 }
 body.blog .featured .blog .photo .photo-wrapper {
   display: flex;
@@ -10528,7 +10528,7 @@ body.blog .featured .blog .info .authors .author-info .meta h5 {
 }
 @media screen and (min-width: 768px) {
   body.blog .featured .blog-1 .photo {
-    aspect-ratio: 4/3;
+    aspect-ratio: 16/9;
   }
 }
 @media screen and (min-width: 1280px) {
