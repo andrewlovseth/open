@@ -13,7 +13,7 @@
 
     <div class="hero__info">
         <div class="hero__logo">
-            <?php echo print_svg($logo['url']); ?>
+            <?php get_template_part('src/svg/logo-atlas-orange'); ?>
         </div>
     </div>
 </section>

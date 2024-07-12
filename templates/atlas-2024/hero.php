@@ -21,7 +21,7 @@ if(have_rows('hero')): while(have_rows('hero')): the_row(); ?>
 
     <div class="hero__info">
         <div class="hero__logo">
-            <?php echo print_svg($logo['url']); ?>
+            <?php get_template_part('src/svg/logo-atlas-orange'); ?>
         </div>
 
         <div class="hero__header">
