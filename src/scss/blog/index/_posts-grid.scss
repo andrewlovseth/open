@@ -11,7 +11,7 @@ section.archive {
 
         .photo {
             &-wrapper {
-                aspect-ratio: 4 / 3;
+                aspect-ratio: 16 / 9;
                 @include cover-fill-image;
             }
             @include blog-photo;

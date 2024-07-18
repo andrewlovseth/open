@@ -10,7 +10,6 @@
     $sub_copy = $hero['sub_copy'];
     $copy = $hero['copy'];
     $video = $hero['video'];
-    $video_thumbnail = $hero['video_thumbnail'];
 
 if(have_rows('hero')): while(have_rows('hero')): the_row(); ?>
 
