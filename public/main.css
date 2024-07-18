@@ -10591,7 +10591,7 @@ body.blog section.archive .blog {
   background: #fff;
 }
 body.blog section.archive .blog .photo-wrapper {
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
 }
 body.blog section.archive .blog .photo-wrapper img {
   width: 100%;
