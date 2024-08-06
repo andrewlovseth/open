@@ -32,7 +32,7 @@
     }     
 
     $class_list = "search-result page";
-    if($photo['url'] === NULL) {
+    if($photo && $photo['url'] === NULL) {
         $class_list .= " no-photo";
     }
 

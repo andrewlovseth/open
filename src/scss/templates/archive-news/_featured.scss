@@ -3,9 +3,9 @@
         display: grid;
         gap: 2rem;
         grid-template-areas:
-            'a'
-            'b'
-            'c';
+            "a"
+            "b"
+            "c";
         align-items: start;
 
         @include tablet {
@@ -17,8 +17,8 @@
             grid-template-columns: 1fr 1fr;
 
             grid-template-areas:
-                'a a'
-                'b c';
+                "a a"
+                "b c";
         }
 
         @include desktop-medium {
@@ -26,8 +26,8 @@
             grid-template-columns: 2fr 1fr;
             grid-template-rows: 1fr 1fr;
             grid-template-areas:
-                'a b'
-                'a c';
+                "a b"
+                "a c";
         }
     }
 
@@ -37,7 +37,7 @@
 
             .photo {
                 @include desktop-medium {
-                    aspect-ratio: 4 / 3;
+                    aspect-ratio: 16 / 9;
                 }
             }
         }
