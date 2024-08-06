@@ -15,13 +15,20 @@
     $link = $in_the_press['link'];
     $date = $in_the_press['date_of_publication'];
     $author = $in_the_press['author'];
+    $external = $in_the_press['external'];
 
     $copy = get_field('search_description', $news->ID);
+
+    if($external) {
+        $news_link = $link;
+    } else {
+        $news_link = get_permalink( $news->ID );
+    }
 
 ?>
 
 <article class="teaser <?php echo $news_type_slug; ?>">
-    <a href="<?php echo get_permalink( $news->ID ); ?>">
+    <a href="<?php echo $news_link; ?>"<?php if($external): ?> target="window"<?php endif; ?>>
         <div class="photo">
             <?php echo get_the_post_thumbnail($news->ID ); ?>
         </div>

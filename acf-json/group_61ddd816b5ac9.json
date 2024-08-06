@@ -6,6 +6,7 @@
             "key": "field_621fa369e78cb",
             "label": "In the Press",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -16,12 +17,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_621fa372e78cc",
             "label": "In the Press",
             "name": "in_the_press",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -37,6 +40,7 @@
                     "key": "field_621fa385e78ce",
                     "label": "Publication",
                     "name": "publication",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -56,6 +60,7 @@
                     "key": "field_621fa38be78cf",
                     "label": "Publication Logo",
                     "name": "publication_logo",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -80,6 +85,7 @@
                     "key": "field_621fa378e78cd",
                     "label": "Link",
                     "name": "link",
+                    "aria-label": "",
                     "type": "url",
                     "instructions": "",
                     "required": 0,
@@ -96,6 +102,7 @@
                     "key": "field_621fa3a863160",
                     "label": "Date of Publication",
                     "name": "date_of_publication",
+                    "aria-label": "",
                     "type": "date_picker",
                     "instructions": "",
                     "required": 0,
@@ -113,6 +120,7 @@
                     "key": "field_621fa3c7556d4",
                     "label": "Author",
                     "name": "author",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -127,6 +135,26 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_66b24b41badb1",
+                    "label": "External",
+                    "name": "external",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
                 }
             ]
         },
@@ -134,6 +162,7 @@
             "key": "field_621fb688b0d29",
             "label": "Related",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -144,12 +173,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_621fb69ab0d2a",
             "label": "Related Headline",
             "name": "related_headline",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -169,6 +200,7 @@
             "key": "field_621fb6575432c",
             "label": "Related",
             "name": "related",
+            "aria-label": "",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -193,7 +225,8 @@
             "elements": "",
             "min": "",
             "max": 3,
-            "return_format": "object"
+            "return_format": "object",
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -228,5 +261,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650411021
+    "modified": 1722961154
 }
