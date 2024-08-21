@@ -35,10 +35,13 @@ get_header(); ?>
                 
                 <?php
                     $news_types = get_the_terms( $post->ID, 'news_types');
-                    $news_type_slug = $news_types[0]->slug;
+                    if($news_types) { 
+                        $news_type_slug = $news_types[0]->slug;
 
-                    $args = ['news' => $post];
-                    get_template_part('templates/archive-news/' . $news_type_slug, null, $args);
+                        $args = ['news' => $post];
+                        get_template_part('templates/archive-news/' . $news_type_slug, null, $args);
+                    }
+
                 ?>
 
             <?php endwhile; ?>

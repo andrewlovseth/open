@@ -41,12 +41,6 @@
             <div class="details">
                 <h4><?php echo $news_type; ?> | <?php echo $date; ?></h4>
                 <h3><?php echo get_the_title( $news->ID ); ?></h3>
-
-                <?php if($copy): ?>
-                    <div class="body copy copy-3">
-                        <?php echo $copy; ?>
-                    </div>
-                <?php endif; ?>
             </div>
         </div>
     </a>

@@ -23,12 +23,6 @@
                 <h4><?php echo $news_type; ?> | <?php echo get_the_time('M j Y', $news->ID); ?></h4>
                 <h3><?php echo get_the_title( $news->ID ); ?></h3>
             </div>
-
-            <?php if($copy): ?>
-                <div class="body copy copy-3">
-                    <?php echo $copy; ?>
-                </div>
-            <?php endif; ?>
         </div>
     </a>
 </article>

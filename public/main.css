@@ -10914,6 +10914,27 @@ body.single-post article.post .article-body h5,
 body.single-post article.post .article-body h6 {
   font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
 }
+body.single-post article.post .article-body .blog-table {
+  font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+body.single-post article.post .article-body .blog-table thead {
+  background: #2d77f8;
+  color: #fff;
+}
+body.single-post article.post .article-body .blog-table thead th {
+  text-align: left;
+  line-height: 1em;
+  padding: 0.5rem 1rem;
+}
+body.single-post article.post .article-body .blog-table tbody tr:nth-child(odd) td {
+  background: #fff;
+}
+body.single-post article.post .article-body .blog-table tbody td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
 body.single-post article.post .article-footer {
   padding-top: 2rem;
   border-top: 2px solid #000;

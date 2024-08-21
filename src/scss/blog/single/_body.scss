@@ -105,4 +105,36 @@
     h6 {
         font-size: $type-size-400;
     }
+
+    .blog-table {
+        font-size: $type-size-150;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+
+        thead {
+            background: $blue;
+            color: $white;
+
+            th {
+                text-align: left;
+                line-height: 1em;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    td {
+                        background: #fff;
+                    }
+                }
+            }
+
+            td {
+                padding: 0.5rem 1rem;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
 }
