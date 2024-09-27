@@ -6,7 +6,9 @@
     top: 0;
 
     &.has-banner {
-        top: 40px;
+        @include desktop-small {
+            top: 78px;
+        }
     }
 
     &-wrapper {
@@ -36,7 +38,7 @@
 body.nav-overlay-open {
     .site-header.has-banner {
         @include desktop-small {
-            transform: translateY(-74px);
+            transform: translateY(-78px);
         }
     }
 }

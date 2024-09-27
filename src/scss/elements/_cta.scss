@@ -61,6 +61,18 @@
             font-weight: 300;
             line-height: 1em;
         }
+
+        &.orange {
+            border-radius: 4px;
+            background: #ff7b00;
+            color: $white;
+            font-weight: 500;
+
+            &:hover {
+                background: #ff7b00;
+                color: $white;
+            }
+        }
     }
 
     .underline {

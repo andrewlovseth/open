@@ -1,0 +1,74 @@
+.hero {
+    color: $white;
+    @include section-spacing;
+
+    &__info {
+        @include desktop-small {
+            grid-column: 2 / span 8;
+        }
+    }
+
+    &__form {
+        align-self: flex-start;
+        background: $white;
+        border-radius: 0.25rem;
+        padding: 2rem;
+        box-shadow: 0px 127px 36px 0px rgba(0, 0, 0, 0), 0px 81px 32px 0px rgba(0, 0, 0, 0.01),
+            0px 46px 27px 0px rgba(0, 0, 0, 0.05), 0px 20px 20px 0px rgba(0, 0, 0, 0.09),
+            0px 5px 11px 0px rgba(0, 0, 0, 0.1);
+
+        form {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        label {
+            margin-bottom: 0.25rem;
+        }
+
+        input[type="text"] {
+            border-radius: 0.25rem;
+            border: 1px solid $black;
+            margin-bottom: 1rem;
+        }
+
+        @include desktop-small {
+            grid-column: 10 / span 4;
+        }
+    }
+
+    .conf-info {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: end;
+    }
+
+    .logos {
+        margin: 2rem 0 0.5rem 0;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(#2d77f8, 0.2);
+        border-radius: 1rem;
+        border: 1px solid #0f2b71;
+    }
+
+    .booth {
+        font-size: $type-size-400;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .copy.extended {
+        > * + * {
+            margin-top: 1rem;
+        }
+    }
+
+    .nab-logo {
+        max-width: 18rem;
+    }
+}

@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="cta">
-                    <span class="btn white-outline"><?php echo $link_title; ?></span>
+                    <span class="btn orange"><?php echo $link_title; ?></span>
                 </div>
             </div>
         </a>

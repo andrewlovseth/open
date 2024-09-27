@@ -1,7 +1,5 @@
 .nab-banner {
     display: block;
-    @include purple-blue-gradient;
-    max-height: unset;
 
     .link-wrapper {
         flex-wrap: wrap;
@@ -10,25 +8,10 @@
         width: 100%;
         background-size: cover;
         background-position: center center;
+        text-decoration: none;
 
         @include tablet {
             width: unset;
-        }
-
-        &:hover {
-            strong {
-                text-decoration: none;
-            }
-
-            .copy {
-                .cta {
-                    .btn {
-                        background: $white !important;
-                        color: $blue;
-                        border: 1px solid $white;
-                    }
-                }
-            }
         }
     }
 
@@ -120,12 +103,6 @@
     .link-wrapper {
         display: flex;
         justify-content: center;
-
-        &:hover {
-            strong {
-                text-decoration: underline;
-            }
-        }
     }
 
     &.has-icon {
@@ -136,7 +113,7 @@
         }
 
         .icon {
-            width: 200px;
+            width: 245px;
             margin-right: 1rem;
         }
 
@@ -145,6 +122,16 @@
             transform: translateY(3px);
             height: auto;
         }
+
+        .copy {
+            text-align: right;
+        }
+
+        .cta {
+            .btn {
+                white-space: nowrap;
+            }
+        }
     }
 
     .copy {
@@ -152,7 +139,6 @@
     }
 
     p {
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         line-height: 1.125em;
 
         .btn {
@@ -197,23 +183,6 @@
 
                 & + p {
                     margin-top: 0;
-                }
-            }
-        }
-
-        .cta {
-            background: unset !important;
-            text-align: center;
-            padding: 0;
-
-            .btn {
-                background: unset !important;
-                white-space: nowrap;
-
-                &:hover {
-                    background: $white !important;
-                    color: $blue !important;
-                    border: 1px solid $white;
                 }
             }
         }

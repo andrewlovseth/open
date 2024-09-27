@@ -1,13 +1,15 @@
 aside.banner {
     text-align: center;
-    padding: 0.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 5555;
+
     font-size: $type-size-300;
+
+    @include desktop-small {
+        position: sticky;
+        top: 0;
+        z-index: 5555;
+    }
 
     a {
         display: inline-block;
-        text-decoration: underline;
     }
 }
