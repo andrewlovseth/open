@@ -106,6 +106,13 @@
         font-size: $type-size-400;
     }
 
+    ol,
+    ul {
+        li::marker {
+            font-weight: bold;
+        }
+    }
+
     .blog-table {
         font-size: $type-size-150;
         border-collapse: collapse;

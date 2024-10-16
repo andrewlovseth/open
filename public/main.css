@@ -10978,6 +10978,10 @@ body.single-post article.post .article-body h5,
 body.single-post article.post .article-body h6 {
   font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
 }
+body.single-post article.post .article-body ol li::marker,
+body.single-post article.post .article-body ul li::marker {
+  font-weight: bold;
+}
 body.single-post article.post .article-body .blog-table {
   font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
   border-collapse: collapse;
