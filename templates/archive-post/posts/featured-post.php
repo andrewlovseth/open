@@ -39,70 +39,7 @@
                 </div>
             <?php endif; ?>
 
-            <?php if($author_type === 'team'): ?>
-                <?php if($team_authors): ?>
-                    <div class="authors">
 
-                            <?php 
-                                $name = get_the_title($team_authors[0]->ID);
-                                $meta = get_field('position', $team_authors[0]->ID);
-                                $photo = get_field('blog_photo', $team_authors[0]->ID);
-
-                                if(get_field('blog_photo', $team_authors[0]->ID)) {
-                                    $photo = get_field('blog_photo', $team_authors[0]->ID);
-                                } else {
-                                    $photo = get_field('photo', $team_authors[0]->ID);
-                                }
-                            ?>
-
-                            <div class="author">
-                                <div class="author-photo">
-                                    <?php echo wp_get_attachment_image($photo['ID'], 'thumbnail'); ?>
-                                </div>
-
-                                <div class="author-info">
-                                    <div class="name">
-                                        <h4><?php echo $name; ?></h4>
-                                    </div>
-
-                                    <div class="meta">
-                                        <h5><?php echo $meta; ?></h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                    </div>
-                <?php endif; ?>
-            <?php endif; ?>
-
-            <?php if($author_type === 'guest'): ?>
-                <?php if($guest_author): ?>
-                    <div class="authors">
-                        <?php                
-                            $name = $guest_author['name'];
-                            $meta = $guest_author['meta'];
-                            $photo = $guest_author['photo'];
-                        ?>
-
-                        <div class="author">
-                            <div class="author-photo">
-                                <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
-                            </div>
-
-                            <div class="author-info">
-                                <div class="name">
-                                    <h4><?php echo $name; ?></h4>
-                                </div>
-
-                                <div class="meta">
-                                    <h5><?php echo $meta; ?></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php endif; ?>
-
-            <?php endif; ?>
 
         </div>
     </a>
