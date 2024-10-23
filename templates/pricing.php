@@ -11,7 +11,7 @@ get_header(); ?>
 
     <?php get_template_part('templates/pricing/hero'); ?>
 
-    <?php // get_template_part('templates/pricing/overview'); ?>
+    <?php get_template_part('templates/pricing/overview'); ?>
 
     <?php get_template_part('templates/pricing/features'); ?>
 

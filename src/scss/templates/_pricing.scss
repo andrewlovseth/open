@@ -1,4 +1,14 @@
 body.page-template-pricing {
+    background: $white;
+
+    .site-content {
+        .grid {
+            @include desktop-small {
+                grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4rem)) minmax(0, auto);
+            }
+        }
+    }
+
     @import "pricing/hero";
 
     @import "pricing/overview";

@@ -1,12 +1,12 @@
 <?php
 
-    $comprehensive = get_field('comprehensive');
-    $title = $comprehensive['title'];
-    $copy = $comprehensive['copy'];
+    $professional = get_field('professional');
+    $title = $professional['title'];
+    $copy = $professional['copy'];
 
  ?>
 
-<section class="comprehensive overview__panel">
+<section class="professional overview__panel">
     <div class="overview__panel-header">
         <?php get_template_part('src/svg/logo-atlas-orange'); ?>
 

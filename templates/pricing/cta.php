@@ -1,19 +1,12 @@
 <?php
 
     $cta = get_field('cta');
-    $headline = $cta['headline'];
     $copy = $cta['copy'];
     $link = $cta['link'];
 
 ?>
 
 <section class="cta grid">
-
-    <?php if($headline): ?>
-        <div class="cta__headline | headline">
-            <h2 class="section-title small"><?php echo $headline; ?></h2>
-        </div>
-    <?php endif; ?>
 
     <?php if($copy): ?>
         <div class="cta__copy | copy copy-2 extended">

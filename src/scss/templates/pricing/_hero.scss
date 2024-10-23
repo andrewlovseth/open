@@ -1,18 +1,27 @@
 .hero {
-    background: #010316;
+    background: url(../src/images/pricing-hero-bg.jpg) no-repeat center center / cover;
     color: $white;
+    align-items: start;
 
-    &__background {
-        grid-column: 1 / -1;
-    }
-
-    &__info {
+    &__wrapper {
         padding: 3rem 0;
+        display: grid;
+        gap: 2rem;
+
+        @include desktop-small {
+            padding: 8rem 0 4rem 0;
+            grid-template-columns: 1fr 2fr;
+        }
     }
 
     &__logo {
         width: 12rem;
         height: 4rem;
+
+        @include desktop-small {
+            width: 21rem;
+            height: 7rem;
+        }
 
         svg {
             width: 100%;
