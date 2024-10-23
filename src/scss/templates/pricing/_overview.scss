@@ -1,6 +1,7 @@
 .overview {
     background: #000f3d;
     padding: 2rem 0;
+    margin-bottom: -16rem;
 
     @include desktop-small {
         padding: unset;

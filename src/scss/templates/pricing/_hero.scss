@@ -9,7 +9,7 @@
         gap: 2rem;
 
         @include desktop-small {
-            padding: 8rem 0 4rem 0;
+            padding: 8rem 0 20rem 0;
             grid-template-columns: 1fr 2fr;
         }
     }

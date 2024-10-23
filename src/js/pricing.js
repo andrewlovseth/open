@@ -18,8 +18,25 @@ const Pricing = {
                 }
             };
 
+            // Hide content initially
+            document.body.style.visibility = "hidden";
+
+            // Pre-calculate padding
             adjustPadding();
-            window.addEventListener("resize", adjustPadding);
+
+            // Show content and apply transitions
+            window.addEventListener("load", () => {
+                document.body.style.visibility = "visible";
+                hero.style.transition = "padding-bottom 0.3s ease-in-out";
+                features.style.transition = "margin-top 0.3s ease-in-out";
+            });
+
+            // Debounce the resize event handler
+            let resizeTimer;
+            window.addEventListener("resize", () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(adjustPadding, 250);
+            });
         }
     },
     toggleFeatureExpansion() {
@@ -36,7 +53,7 @@ const Pricing = {
         }
     },
     init: function () {
-        this.heroPadding();
+        //this.heroPadding();
         this.toggleFeatureExpansion();
     },
 };
