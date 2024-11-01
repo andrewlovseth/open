@@ -5672,15 +5672,24 @@ body.page-template-pricing .overview__grid {
 }
 body.page-template-pricing .overview .essentials {
   border: 1px solid #01a5c3;
-  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #00b1ce 0%, #010626 100%);
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #05b2dc 0%, #010626 100%);
+}
+body.page-template-pricing .overview .essentials svg path {
+  fill: #05b2dc;
 }
 body.page-template-pricing .overview .professional {
   border: 1px solid #5f5a98;
-  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #605b99 0%, #010626 100%);
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #15a1a1 0%, #010626 100%);
+}
+body.page-template-pricing .overview .professional svg path {
+  fill: #15a1a1;
 }
 body.page-template-pricing .overview .comprehensive {
   border: 1px solid #134f97;
-  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #134f97 0%, #010626 100%);
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #246ca0 0%, #010626 100%);
+}
+body.page-template-pricing .overview .comprehensive svg path {
+  fill: #246ca0;
 }
 body.page-template-pricing .overview__panel {
   color: #fff;
@@ -5697,7 +5706,10 @@ body.page-template-pricing .overview__panel-header svg {
   height: 3rem;
 }
 body.page-template-pricing .overview__panel-title {
-  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+  font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 body.page-template-pricing .overview__panel-info {
   padding-top: 1rem;
@@ -5737,6 +5749,11 @@ body.page-template-pricing .features__table-th {
   text-align: left;
   padding: 0.5rem 1rem;
 }
+@media screen and (min-width: 992px) {
+  body.page-template-pricing .features__table-th {
+    padding: 1rem;
+  }
+}
 body.page-template-pricing .features__table-th.name h4 {
   font-size: 1.125rem;
 }
@@ -5754,13 +5771,13 @@ body.page-template-pricing .features__table-th.product {
   overflow: hidden;
 }
 body.page-template-pricing .features__table-th.essentials {
-  background: #00b1ce;
+  background: #05b2dc;
 }
 body.page-template-pricing .features__table-th.professional {
-  background: #605b99;
+  background: #15a1a1;
 }
 body.page-template-pricing .features__table-th.comprehensive {
-  background: #124f97;
+  background: #246ca0;
 }
 body.page-template-pricing .features__table-tbody {
   display: grid;
@@ -5882,7 +5899,7 @@ body.page-template-pricing .features__table-tbody .features__table-tr .product s
 }
 body.page-template-pricing .features__table-tbody .features__table-tr .essentials {
   grid-area: essentials;
-  background: #00b1ce;
+  background: #05b2dc;
 }
 @media screen and (min-width: 768px) {
   body.page-template-pricing .features__table-tbody .features__table-tr .essentials {
@@ -5891,7 +5908,7 @@ body.page-template-pricing .features__table-tbody .features__table-tr .essential
 }
 body.page-template-pricing .features__table-tbody .features__table-tr .professional {
   grid-area: professional;
-  background: #605b99;
+  background: #15a1a1;
 }
 @media screen and (min-width: 768px) {
   body.page-template-pricing .features__table-tbody .features__table-tr .professional {
@@ -5900,7 +5917,7 @@ body.page-template-pricing .features__table-tbody .features__table-tr .professio
 }
 body.page-template-pricing .features__table-tbody .features__table-tr .comprehensive {
   grid-area: comprehensive;
-  background: #124f97;
+  background: #246ca0;
 }
 @media screen and (min-width: 768px) {
   body.page-template-pricing .features__table-tbody .features__table-tr .comprehensive {

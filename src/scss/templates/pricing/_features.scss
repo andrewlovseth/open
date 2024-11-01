@@ -25,6 +25,10 @@
             text-align: left;
             padding: 0.5rem 1rem;
 
+            @include desktop-small {
+                padding: 1rem;
+            }
+
             &.name {
                 h4 {
                     font-size: 1.125rem;
@@ -47,15 +51,15 @@
             }
 
             &.essentials {
-                background: #00b1ce;
+                background: #05b2dc;
             }
 
             &.professional {
-                background: #605b99;
+                background: #15a1a1;
             }
 
             &.comprehensive {
-                background: #124f97;
+                background: #246ca0;
             }
         }
 
@@ -188,7 +192,7 @@
 
                 .essentials {
                     grid-area: essentials;
-                    background: #00b1ce;
+                    background: #05b2dc;
 
                     @include tablet {
                         background: #e4f8fb;
@@ -197,7 +201,7 @@
 
                 .professional {
                     grid-area: professional;
-                    background: #605b99;
+                    background: #15a1a1;
 
                     @include tablet {
                         background: #efeff6;
@@ -206,7 +210,7 @@
 
                 .comprehensive {
                     grid-area: comprehensive;
-                    background: #124f97;
+                    background: #246ca0;
 
                     @include tablet {
                         background: #e7edf5;
