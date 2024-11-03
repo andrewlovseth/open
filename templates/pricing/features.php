@@ -54,7 +54,7 @@
                                 <?php get_template_part('src/svg/icon-pricing-checkmark'); ?>
                                 
                                 <?php if($essentials['note']): ?>
-                                    <div class="note"><?php echo $comprehensive['note']; ?></div>
+                                    <div class="note"><?php echo $essentials['note']; ?></div>
                                 <?php endif; ?>
                             <?php else: ?>
                                 <?php get_template_part('src/svg/icon-pricing-x'); ?>
