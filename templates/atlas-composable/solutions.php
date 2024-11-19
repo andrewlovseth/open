@@ -4,8 +4,6 @@
     $headline = $solutions['headline'];
     $copy = $solutions['copy'];
     $images = $solutions['photos'];
-    $form_headline = $solutions['form_headline'];
-    $form = $solutions['form'];
 
 ?>
 
@@ -36,20 +34,6 @@
             </div>
         <?php endif; ?>
 
-        <div class="solutions__form">
-            <div class="solutions__form-headline">
-                <h4 class="solutions__form-title"><?php echo $form_headline; ?></h4>
-
-                <div class="solutions__form-logo">
-                    <?php get_template_part('src/svg/o-logo-outline'); ?>
-                </div>
-            </div>
-
-            <div class="solutions__form-embed" id="solutions-form">
-                <?php echo $form; ?>
-            </div>
-
-        </div>
     </div>
 
 </section>
