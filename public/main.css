@@ -245,15 +245,6 @@ a {
 }
 
 .module-title {
-  font-weight: 100;
-  font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
-  line-height: 1.125em;
-}
-
-.module-title {
   font-weight: 700;
   font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
   line-height: 1.125em;
@@ -5512,100 +5503,179 @@ body.page-template-atlas-2024 .cta__copy {
 }
 
 body.page-template-atlas-composable .hero {
-  background: #010316;
+  background-color: #010316;
   color: #fff;
-}
-body.page-template-atlas-composable .hero__background {
-  grid-column: 1/-1;
+  background-size: cover;
+  background-position: center;
 }
 body.page-template-atlas-composable .hero__info {
   padding: 3rem 0;
+  grid-column: 2/span 3;
+}
+@media screen and (min-width: 480px) {
+  body.page-template-atlas-composable .hero__info {
+    grid-column: 2/span 5;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .hero__info {
+    grid-column: 2/span 6;
+    padding: 6rem 0;
+  }
 }
 body.page-template-atlas-composable .hero__logo {
-  width: 12rem;
-  height: 4rem;
+  width: 16rem;
+  height: 6rem;
 }
 body.page-template-atlas-composable .hero__logo svg {
   width: 100%;
   height: 100%;
 }
-body.page-template-atlas-composable .solutions {
-  background: #fff;
-  padding: 4rem 0;
+body.page-template-atlas-composable .hero__copy {
+  padding-top: 2rem;
+}
+body.page-template-atlas-composable .licensing {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  gap: 2rem;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-atlas-composable .solutions__main {
-    grid-column: 2/span 7;
+  body.page-template-atlas-composable .licensing {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
   }
 }
-body.page-template-atlas-composable .solutions__headline {
-  padding-bottom: 1rem;
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .licensing__info {
+    grid-column: 2/span 6;
+  }
 }
-body.page-template-atlas-composable .solutions__headline .section-title {
-  color: #ff7b02;
-  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+body.page-template-atlas-composable .licensing__title {
+  margin-bottom: 0.5rem;
 }
-body.page-template-atlas-composable .solutions__copy h3 {
-  color: #ff7b02;
-  font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .licensing__photo {
+    grid-column: 8/span 6;
+  }
 }
-body.page-template-atlas-composable .solutions__copy h3 + p {
-  margin-top: 0.5rem;
+body.page-template-atlas-composable .licensing__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-body.page-template-atlas-composable .solutions__sidebar {
+body.page-template-atlas-composable .pe {
+  background-color: #010316;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: clamp(1.25rem, 5vh, 2.5rem);
+  padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .pe {
+    padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+    padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .pe__logo {
+    grid-column: 2/span 5;
+  }
+}
+body.page-template-atlas-composable .pe__logo-wrapper {
+  width: 18rem;
+  height: 6rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .pe__logo-wrapper {
+    width: 24rem;
+    height: 8rem;
+  }
+}
+body.page-template-atlas-composable .pe__logo svg {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .pe__copy {
+    grid-column: 7/span 7;
+  }
+}
+body.page-template-atlas-composable .options {
+  padding-top: clamp(1.25rem, 5vh, 2.5rem);
+  padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .options {
+    padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+    padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+  }
+}
+body.page-template-atlas-composable .options__grid {
   display: grid;
   gap: 2rem;
-  align-content: start;
 }
 @media screen and (min-width: 992px) {
-  body.page-template-atlas-composable .solutions__sidebar {
-    grid-column: 9/span 5;
+  body.page-template-atlas-composable .options__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-body.page-template-atlas-composable .solutions__photos {
-  display: grid;
-  gap: 1rem;
-  align-content: start;
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .options__copy-bottom {
+    grid-column: 2/span 9;
+  }
 }
-body.page-template-atlas-composable .solutions__form {
-  background: #646464;
+body.page-template-atlas-composable .option {
+  background: #010626;
+  padding: 2.25rem;
+  border-radius: 1rem;
   color: #fff;
-  padding: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 12px;
 }
-body.page-template-atlas-composable .solutions__form-headline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (min-width: 992px) {
+  body.page-template-atlas-composable .option {
+    aspect-ratio: 327/317;
+    padding: 3rem 2.25rem;
+  }
 }
-body.page-template-atlas-composable .solutions__form-logo svg {
-  width: 2.5rem;
-  height: 2.5rem;
+body.page-template-atlas-composable .option__copy {
+  padding-top: 2rem;
 }
-body.page-template-atlas-composable .solutions__form-title {
-  display: inline-block;
-  background: #3d68f7;
-  padding: 0.25rem;
+body.page-template-atlas-composable .option-1 {
+  border: 1px solid #01A5C3;
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #05B2DC 0%, #010626 100%);
 }
-body.page-template-atlas-composable .solutions__form #solutions-form form {
-  background: unset !important;
-  padding: 2rem 0 0 0;
-  margin: 0;
+body.page-template-atlas-composable .option-2 {
+  border: 1px solid #5F5A98;
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #15A1A1 0%, #010626 100%);
 }
-body.page-template-atlas-composable .solutions__form #solutions-form form label {
-  color: #fff;
+body.page-template-atlas-composable .option-3 {
+  border: 1px solid #134F97;
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #246CA0 0%, #010626 100%);
 }
 body.page-template-atlas-composable section.cta {
-  padding: 6rem 0 3rem 0;
+  padding: 6rem 0 12rem 0;
   text-align: center;
+  background: radial-gradient(226.55% 90.52% at 90.52% 100%, #312245 0%, #010626 100%);
+  color: #fff;
 }
 @media screen and (min-width: 992px) {
   body.page-template-atlas-composable section.cta {
-    padding: 6rem 0 0 0;
+    padding: 8rem 0 12rem 0;
   }
 }
-body.page-template-atlas-composable .cta__copy {
-  padding: 1rem 0;
+body.page-template-atlas-composable section.cta .cta__copy {
+  padding: 0.5rem 0 2rem 0;
+}
+body.page-template-atlas-composable section.cta .btn {
+  background: #FF7B01;
+}
+body.page-template-atlas-composable .site-footer {
+  margin-top: 0;
 }
 
 body.page-template-pricing {
@@ -10710,13 +10780,9 @@ body.blog .featured .blog .photo .photo-wrapper img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.71;
   position: relative;
   width: 100%;
   transition: all 500ms ease;
-}
-body.blog .featured .blog .photo .photo-wrapper img:hover {
-  opacity: 1;
 }
 @media screen and (min-width: 992px) {
   body.blog .featured .blog .photo {
@@ -10880,13 +10946,9 @@ body.blog section.archive .blog .photo .photo-wrapper img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.71;
   position: relative;
   width: 100%;
   transition: all 500ms ease;
-}
-body.blog section.archive .blog .photo .photo-wrapper img:hover {
-  opacity: 1;
 }
 body.blog section.archive .blog .photo img {
   border-top-right-radius: 4px;
@@ -11101,13 +11163,9 @@ body.single-post article.post .article-body .featured-image:not(.photo-color) .p
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.71;
   position: relative;
   width: 100%;
   transition: all 500ms ease;
-}
-body.single-post article.post .article-body .featured-image:not(.photo-color) .photo-wrapper img:hover {
-  opacity: 1;
 }
 body.single-post article.post .article-body .copy-2 {
   line-height: 1.675em;

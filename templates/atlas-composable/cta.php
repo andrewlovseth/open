@@ -11,7 +11,7 @@
 
     <?php if($headline): ?>
         <div class="cta__headline | headline">
-            <h2 class="section-title small"><?php echo $headline; ?></h2>
+            <h2 class="section-title"><?php echo $headline; ?></h2>
         </div>
     <?php endif; ?>
 

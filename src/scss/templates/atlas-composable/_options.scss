@@ -1,0 +1,53 @@
+.options {
+    @include small-section-spacing;
+    gap: 2rem;
+
+    &__grid {
+        display: grid;
+        gap: 2rem;
+
+        @include desktop-small {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+
+    &__copy {
+        &-bottom {
+            @include desktop-small {
+                grid-column: 2 / span 9;
+            }
+        }
+    }
+}
+
+.option {
+    background: #010626;
+    padding: 2.25rem;
+    border-radius: 1rem;
+    color: $white;
+    border-radius: 12px;
+
+    @include desktop-small {
+        aspect-ratio: 327 / 317;
+        padding: 3rem 2.25rem;
+    }
+
+    &__copy {
+        padding-top: 2rem;
+    }
+
+    &-1 {
+        border: 1px solid #01A5C3;
+        background: radial-gradient(58.97% 66.67% at 90.52% 100%, #05B2DC 0%, #010626 100%);
+    }
+
+    &-2 {
+        border: 1px solid #5F5A98;
+        background: radial-gradient(58.97% 66.67% at 90.52% 100%, #15A1A1 0%, #010626 100%);
+    }
+
+    &-3 {
+        border: 1px solid #134F97;
+        background: radial-gradient(58.97% 66.67% at 90.52% 100%, #246CA0 0%, #010626 100%);
+    }
+}

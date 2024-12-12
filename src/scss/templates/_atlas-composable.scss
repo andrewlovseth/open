@@ -1,7 +1,16 @@
 body.page-template-atlas-composable {
     @import "atlas-composable/hero";
+    
+    @import "atlas-composable/licensing";
 
-    @import "atlas-composable/solutions";
+    @import "atlas-composable/performance-engine";
+
+    @import "atlas-composable/options";
 
     @import "atlas-composable/cta";
+
+    .site-footer {
+        margin-top: 0;
+    }
+
 }

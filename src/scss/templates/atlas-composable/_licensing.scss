@@ -1,0 +1,22 @@
+.licensing {
+    @include section-spacing;
+    gap: 2rem;
+
+    &__info {
+        @include desktop-small {
+            grid-column: 2 / span 6;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0.5rem;
+    }
+
+    &__photo {
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+
+        @include cover-fill-image;
+    }
+}

@@ -1,22 +1,33 @@
 .hero {
-    background: #010316;
+    background-color: #010316;
     color: $white;
-
-    &__background {
-        grid-column: 1 / -1;
-    }
-
+    background-size: cover;
+    background-position: center;
     &__info {
         padding: 3rem 0;
+        grid-column: 2 / span 3;
+
+        @include tablet-small {
+            grid-column: 2 / span 5;
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 6;
+            padding: 6rem 0;
+        }
     }
 
     &__logo {
-        width: 12rem;
-        height: 4rem;
+        width: 16rem;
+        height: 6rem;
 
         svg {
             width: 100%;
             height: 100%;
         }
+    }
+
+    &__copy {
+        padding-top: 2rem;
     }
 }

@@ -11,14 +11,9 @@
             height: 100%;
             max-width: 100%;
             object-fit: cover;
-            opacity: 0.71;
             position: relative;
             width: 100%;
             transition: all 500ms ease;
-
-            &:hover {
-                opacity: 1;
-            }
         }
     }
 }
