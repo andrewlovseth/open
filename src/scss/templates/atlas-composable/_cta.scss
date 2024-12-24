@@ -1,11 +1,11 @@
 section.cta {
-    padding: 6rem 0 12rem 0;
+    padding: 6rem 0;
     text-align: center;
     background: radial-gradient(226.55% 90.52% at 90.52% 100%, #312245 0%, #010626 100%);
     color: $white;
 
     @include desktop-small {
-        padding: 8rem 0 12rem 0;
+        padding: 8rem 0;
     }
 
     .cta__copy {

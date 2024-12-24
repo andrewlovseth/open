@@ -1,0 +1,11 @@
+.composable-related {
+    padding: 4rem 0 12rem 0;
+
+    @include desktop-small {
+        padding: 6rem 0 12rem 0;
+    }
+
+    .section-header {
+        padding-bottom: 2rem;
+    }
+}

@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="option__copy | copy copy-2">
-                        <p><?php echo $option_copy; ?></p>
+                        <?php echo $option_copy; ?>
                     </div>  
                         
                 </div>

@@ -475,7 +475,7 @@
                     "label": "Copy",
                     "name": "copy",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -485,11 +485,11 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "rows": 4,
-                    "placeholder": "",
-                    "new_lines": "br",
+                    "allow_in_bindings": 1,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0,
                     "parent_repeater": "field_675a0d21ab12c"
                 }
             ]
@@ -585,6 +585,80 @@
                     "return_format": "array"
                 }
             ]
+        },
+        {
+            "key": "field_676a01defddd8",
+            "label": "Related",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_676a01b2a574a",
+            "label": "Related Headline",
+            "name": "related_headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_676a01a1d805c",
+            "label": "Related",
+            "name": "related",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post",
+                "news",
+                "page",
+                "resources",
+                "customer_stories"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": 3,
+            "allow_in_bindings": 1,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -618,5 +692,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1733954905
+    "modified": 1735001212
 }
