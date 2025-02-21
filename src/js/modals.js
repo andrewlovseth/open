@@ -85,13 +85,13 @@ const Modal = {
         const modal = document.querySelector("#nab");
         const showModal = localStorage.getItem("showModal");
 
-        if (sessionStorage.nabny2024_pageCount) {
-            sessionStorage.nabny2024_pageCount = Number(sessionStorage.nabny2024_pageCount) + 1;
+        if (sessionStorage.nablv2025_pageCount) {
+            sessionStorage.nablv2025_pageCount = Number(sessionStorage.nablv2025_pageCount) + 1;
         } else {
-            sessionStorage.nabny2024_pageCount = 1;
+            sessionStorage.nablv2025_pageCount = 1;
         }
 
-        if (sessionStorage.nabny2024_pageCount == 1) {
+        if (sessionStorage.nablv2025_pageCount == 1) {
             if (showModal == null) {
                 localStorage.setItem("showModal", 1);
                 MicroModal.show("nab");
