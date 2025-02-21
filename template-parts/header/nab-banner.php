@@ -30,8 +30,8 @@
 
     if($show):
 ?>
-	<aside class="<?php echo $className; ?>">
-        <a class="link-wrapper" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"<?php if($bg_image): ?> style="background-image: url(<?php echo $bg_image['url']; ?>);"<?php endif; ?>>
+	<aside class="<?php echo $className; ?>" <?php if($bg_image): ?> style="background-image: url(<?php echo $bg_image['url']; ?>);"<?php endif; ?>>
+        <a class="link-wrapper" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
             <?php if($icon): ?>
                 <div class="icon">
                     <?php echo wp_get_attachment_image($icon['ID'], 'full'); ?>
@@ -60,8 +60,6 @@
         </a>
 
         <style>
-
-
             <?php if($text_color): ?>
                 aside.banner p {
                     color: <?php echo $text_color; ?>;
@@ -73,7 +71,6 @@
                     color: <?php echo $link_color; ?>;
                 }
             <?php endif; ?>
-
         </style>
 	</aside>
 <?php endif; ?>
