@@ -14,13 +14,8 @@
                 <?php 
                     $name = get_the_title($author->ID);
                     $meta = get_field('position', $author->ID);
-                    $photo = get_field('blog_photo', $author->ID);
+                    $photo = get_field('photo', $author->ID);
 
-                    if(get_field('blog_photo', $author->ID)) {
-                        $photo = get_field('blog_photo', $author->ID);
-                    } else {
-                        $photo = get_field('photo', $author->ID);
-                    }
                 ?>
 
                 <div class="author">

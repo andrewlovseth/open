@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Template Name: Leadership
+	Template Name: CEO
 */
 
 get_header(); ?>
@@ -10,6 +10,6 @@ get_header(); ?>
         <h1 class="page-title"><?php echo get_field("hero_headline"); ?></h1>
     </section>
 
-	<?php get_template_part('templates/leadership/groups'); ?>
+	<?php get_template_part('templates/leadership/grid'); ?>
 		
 <?php get_footer(); ?>

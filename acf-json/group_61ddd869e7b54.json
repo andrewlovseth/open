@@ -77,11 +77,11 @@
             "selected": 0
         },
         {
-            "key": "field_6250d32c19d50",
+            "key": "field_67c60aa41d21e",
             "label": "Leadership",
             "name": "leadership",
             "aria-label": "",
-            "type": "relationship",
+            "type": "flexible_content",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -90,18 +90,74 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "team"
-            ],
-            "taxonomy": "",
-            "filters": [
-                "search"
-            ],
-            "elements": "",
+            "layouts": {
+                "layout_67c60aa72925b": {
+                    "key": "layout_67c60aa72925b",
+                    "name": "group",
+                    "label": "Group",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_67c60aab1d21f",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_67c60ac81d220",
+                            "label": "Leaders",
+                            "name": "leaders",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "team"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "return_format": "object",
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "elements": "",
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
             "min": "",
             "max": "",
-            "return_format": "object",
-            "bidirectional_target": []
+            "button_label": "+ Add Group"
         }
     ],
     "location": [
@@ -134,5 +190,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728342321
+    "modified": 1741032161
 }

@@ -1,4 +1,8 @@
 section.page-header {
-    @include section-spacing-top;
+    padding-top: 2rem;
     padding-bottom: 2rem;
+
+    @include desktop-small {
+        padding-top: 4rem;
+    }
 }
