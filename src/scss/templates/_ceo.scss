@@ -1,9 +1,14 @@
 body.page-template-ceo {
+    .leadership {
+        @include section-spacing-bottom;
+    }
     .leader {
+        display: grid;
+        gap: 1rem 2rem;
+        align-items: start;
+
         @include tablet {
-            display: grid;
             grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-            gap: 2rem;
         }
 
         &__photo {

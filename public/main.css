@@ -4061,11 +4061,22 @@ body.page-template-leadership .leader__bio-body {
   padding-top: 1rem;
 }
 
+body.page-template-ceo .leadership {
+  padding-bottom: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-ceo .leadership {
+    padding-bottom: clamp(5rem, 15vh, 7.5rem);
+  }
+}
+body.page-template-ceo .leader {
+  display: grid;
+  gap: 1rem 2rem;
+  align-items: start;
+}
 @media screen and (min-width: 768px) {
   body.page-template-ceo .leader {
-    display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    gap: 2rem;
   }
 }
 body.page-template-ceo .leader__photo {
