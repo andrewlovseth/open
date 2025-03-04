@@ -26,45 +26,68 @@
                             ?>
 
                             <div class="leader">
-                                <div class="leader__photo<?php if(!$bio_page): ?> leader__bio-trigger<?php endif; ?>">
-                                    <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
-                                </div>
+                                <?php if($bio_page): ?>
+                                    <?php 
+                                        $link_url = $bio_page['url'];
+                                        $link_title = $bio_page['title'];
+                                        $link_target = $bio_page['target'] ? $bio_page['target'] : '_self';
+                                    ?>
 
-                                <div class="leader__info">
-                                    <div class="leader__name">
-                                        <h3 class="leader__title">
-                                            <span class="leader__title-label<?php if(!$bio_page): ?> leader__bio-trigger<?php endif; ?>"><?php echo $name; ?></span>
+                                    
+                                        <div class="leader__photo">
+                                            <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                                                <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
+                                            </a>
+                                        </div>
 
-                                            <?php if($linkedin): ?>
-                                                <div class="leader__linkedin">
-                                                    <a href="<?php echo $linkedin; ?>" target="_blank"><?php get_template_part('src/svg/icon-linkedin-box'); ?></a>
-                                                </div>
-                                            <?php endif; ?>
-                                        </h3>
-                                    </div>
+                                        <div class="leader__info">
+                                            <div class="leader__name">
+                                                <h3 class="leader__title">
+                                                    <a class="leader__title-label" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                                                        <?php echo $name; ?>
+                                                    </a>
 
-                                    <div class="leader__position">
-                                        <h4><?php echo $position; ?></h4>
-                                    </div>
+                                                    <?php if($linkedin): ?>
+                                                        <div class="leader__linkedin">
+                                                            <a href="<?php echo $linkedin; ?>" target="_blank"><?php get_template_part('src/svg/icon-linkedin-box'); ?></a>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                </h3>
+                                            </div>
 
-                                    <?php if($bio_page): ?>
-                                        <?php 
-                                            if( $bio_page ): 
-                                            $link_url = $bio_page['url'];
-                                            $link_title = $bio_page['title'];
-                                            $link_target = $bio_page['target'] ? $bio_page['target'] : '_self';
-                                        ?>
+                                            <div class="leader__position">
+                                                <h4><?php echo $position; ?></h4>
+                                            </div>
+                                            
+                                            <a class="leader__bio-link" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                        </div>
+                                <?php else: ?>
+                                        <div class="leader__photo leader__bio-trigger">
+                                            <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
+                                        </div>
 
-                                                <a class="leader__bio-link" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                        <div class="leader__info">
+                                            <div class="leader__name">
+                                                <h3 class="leader__title">
+                                                    <span class="leader__title-label leader__bio-trigger"><?php echo $name; ?></span>
 
-                                        <?php endif; ?>
-                                    <?php else: ?>
-                                        <button class="leader__bio-link leader__bio-trigger">
-                                            Bio
-                                        </button>
-                                    <?php endif; ?>
-                                </div>
+                                                    <?php if($linkedin): ?>
+                                                        <div class="leader__linkedin">
+                                                            <a href="<?php echo $linkedin; ?>" target="_blank"><?php get_template_part('src/svg/icon-linkedin-box'); ?></a>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                </h3>
+                                            </div>
 
+                                            <div class="leader__position">
+                                                <h4><?php echo $position; ?></h4>
+                                            </div>
+
+                                            <button class="leader__bio-link leader__bio-trigger">
+                                                Bio
+                                            </button>
+                                        </div>
+                                <?php endif; ?>
 
                                 <dialog class="leader__bio">
                                     <button class="leader__bio-close" aria-label="Close bio">
@@ -102,6 +125,7 @@
                                     </div>
                                 </dialog>
                             </div>
+
                         <?php endforeach; ?>
                     </section>
                 </div>
