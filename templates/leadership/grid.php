@@ -18,7 +18,7 @@
                                 $name = get_the_title( $leader->ID );
                                 $slug = sanitize_title_with_dashes($name);
                                 $position = get_field('position', $leader->ID);
-                                $bio = get_field('bio', $leader->ID);
+                                $bio = get_field('bio_long', $leader->ID);
                             ?>
 
                             <div class="leader ceo">

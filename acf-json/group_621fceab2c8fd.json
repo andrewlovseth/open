@@ -89,6 +89,27 @@
             "delay": 0
         },
         {
+            "key": "field_67c9474e48cfc",
+            "label": "Bio (Long)",
+            "name": "bio_long",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_67c61c3885725",
             "label": "Bio Page",
             "name": "bio_page",
@@ -137,5 +158,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1741036623
+    "modified": 1741244247
 }
