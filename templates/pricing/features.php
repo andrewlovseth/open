@@ -18,7 +18,6 @@
                         <h4>Feature</h4>
                         <p>Click on title below to see more info</p>
                     </div>
-                    <div class="features__table-th product essentials">Essentials</div>
                     <div class="features__table-th product professional">Professional</div>
                     <div class="features__table-th product comprehensive">Comprehensive</div>
                 </div>
@@ -42,23 +41,6 @@
                             <div class="features__copy | copy copy-3">
                                 <p><?php echo $copy; ?></p>
                             </div>
-                        </div>
-
-                        <div class="features__table-td product essentials">
-                            <div class="mobile-header mobile-header__essentials">
-                                Essentials
-                            </div>
-
-
-                            <?php if($essentials['included'] == TRUE): ?>
-                                <?php get_template_part('src/svg/icon-pricing-checkmark'); ?>
-                                
-                                <?php if($essentials['note']): ?>
-                                    <div class="note"><?php echo $essentials['note']; ?></div>
-                                <?php endif; ?>
-                            <?php else: ?>
-                                <?php get_template_part('src/svg/icon-pricing-x'); ?>
-                            <?php endif; ?>
                         </div>
 
                         <div class="features__table-td product professional">

@@ -7,7 +7,7 @@
 <section class="overview grid">
     <div class="overview__grid">
 
-        <?php get_template_part('templates/pricing/essentials'); ?>
+        <?php // get_template_part('templates/pricing/essentials'); ?>
 
         <?php get_template_part('templates/pricing/professional'); ?>
 

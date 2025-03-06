@@ -5773,7 +5773,7 @@ body.page-template-atlas-composable .options__grid {
 }
 @media screen and (min-width: 992px) {
   body.page-template-atlas-composable .options__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
@@ -5790,7 +5790,6 @@ body.page-template-atlas-composable .option {
 }
 @media screen and (min-width: 992px) {
   body.page-template-atlas-composable .option {
-    aspect-ratio: 327/317;
     padding: 3rem 2.25rem;
   }
 }
@@ -5801,16 +5800,16 @@ body.page-template-atlas-composable .option__copy a {
   color: #fff;
 }
 body.page-template-atlas-composable .option-1 {
-  border: 1px solid #01A5C3;
-  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #05B2DC 0%, #010626 100%);
+  border: 1px solid #01a5c3;
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #05b2dc 0%, #010626 100%);
 }
 body.page-template-atlas-composable .option-2 {
-  border: 1px solid #5F5A98;
-  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #15A1A1 0%, #010626 100%);
+  border: 1px solid #5f5a98;
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #15a1a1 0%, #010626 100%);
 }
 body.page-template-atlas-composable .option-3 {
-  border: 1px solid #134F97;
-  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #246CA0 0%, #010626 100%);
+  border: 1px solid #134f97;
+  background: radial-gradient(58.97% 66.67% at 90.52% 100%, #246ca0 0%, #010626 100%);
 }
 body.page-template-atlas-composable section.cta {
   padding: 6rem 0;
@@ -5902,7 +5901,8 @@ body.page-template-pricing .overview__grid {
   body.page-template-pricing .overview__grid {
     top: -50%;
     z-index: 10;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
     padding-bottom: 0;
   }
 }
@@ -5977,7 +5977,7 @@ body.page-template-pricing .features__table-thead {
 }
 body.page-template-pricing .features__table-thead .features__table-tr {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
   border: 1px solid #000;
   border-bottom: none;
 }
@@ -6027,13 +6027,13 @@ body.page-template-pricing .features__table-tbody {
 body.page-template-pricing .features__table-tbody .features__table-tr {
   border: 1px solid #000;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-areas: "name name name" "essentials professional comprehensive";
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "name name" "professional comprehensive";
 }
 @media screen and (min-width: 768px) {
   body.page-template-pricing .features__table-tbody .features__table-tr {
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-areas: "name essentials professional comprehensive";
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "name professional comprehensive";
     border-bottom: none;
   }
 }

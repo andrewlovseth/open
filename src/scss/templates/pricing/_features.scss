@@ -16,7 +16,7 @@
 
             .features__table-tr {
                 display: grid;
-                grid-template-columns: minmax(0, 3fr) repeat(3, minmax(0, 1fr));
+                grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
                 border: 1px solid $black;
                 border-bottom: none;
             }
@@ -74,14 +74,14 @@
             .features__table-tr {
                 border: 1px solid $black;
                 display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-template-columns: repeat(2, minmax(0, 1fr));
                 grid-template-areas:
-                    "name name name"
-                    "essentials professional comprehensive";
+                    "name name"
+                    "professional comprehensive";
 
                 @include tablet {
-                    grid-template-columns: 3fr 1fr 1fr 1fr;
-                    grid-template-areas: "name essentials professional comprehensive";
+                    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+                    grid-template-areas: "name professional comprehensive";
                     border-bottom: none;
                 }
 
