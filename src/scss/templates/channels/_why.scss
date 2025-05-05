@@ -2,7 +2,6 @@ section.why {
     @include section-spacing;
     background: $light-blue;
     gap: 2rem;
-    align-items: center;
 
     .info {
         @include tablet {
@@ -10,21 +9,32 @@ section.why {
         }
 
         @include desktop-small {
-            grid-column: 2 / span 7;
+            grid-column: 2 / span 5;
         }
 
         .headline {
             padding-bottom: 1rem;
         }
+
+        .cta {
+            padding-top: 2rem;
+        }
     }
 
-    .cta {
+    .video {
+        aspect-ratio: 16 / 9;
         @include tablet {
             grid-column: 3 / span 6;
         }
 
         @include desktop-small {
-            grid-column: 10 / span 4;
+            grid-column: 8 / span 6;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

@@ -8372,7 +8372,6 @@ body.page-template-channels section.why {
   padding-bottom: clamp(2.5rem, 10vh, 5rem);
   background: #f4f7f9;
   gap: 2rem;
-  align-items: center;
 }
 @media screen and (min-width: 992px) {
   body.page-template-channels section.why {
@@ -8387,21 +8386,33 @@ body.page-template-channels section.why {
 }
 @media screen and (min-width: 992px) {
   body.page-template-channels section.why .info {
-    grid-column: 2/span 7;
+    grid-column: 2/span 5;
   }
 }
 body.page-template-channels section.why .info .headline {
   padding-bottom: 1rem;
 }
+body.page-template-channels section.why .info .cta {
+  padding-top: 2rem;
+}
+body.page-template-channels section.why .video {
+  aspect-ratio: 16/9;
+}
 @media screen and (min-width: 768px) {
-  body.page-template-channels section.why .cta {
+  body.page-template-channels section.why .video {
     grid-column: 3/span 6;
   }
 }
 @media screen and (min-width: 992px) {
-  body.page-template-channels section.why .cta {
-    grid-column: 10/span 4;
+  body.page-template-channels section.why .video {
+    grid-column: 8/span 6;
   }
+}
+body.page-template-channels section.why .video iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body.page-template-channels section.partners {
   background: #fff;
