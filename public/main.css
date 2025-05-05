@@ -1493,6 +1493,7 @@ section.page-header {
 .related .item .info h3 {
   font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
   margin: 0;
+  line-height: 1.1;
 }
 .related .item .info .copy {
   padding-top: 0.5rem;
@@ -8413,6 +8414,14 @@ body.page-template-channels section.why .video iframe {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+body.page-template-channels .related-wrapper {
+  padding-top: clamp(2.5rem, 10vh, 5rem);
+}
+@media screen and (min-width: 992px) {
+  body.page-template-channels .related-wrapper {
+    padding-top: clamp(5rem, 15vh, 7.5rem);
+  }
 }
 body.page-template-channels section.partners {
   background: #fff;

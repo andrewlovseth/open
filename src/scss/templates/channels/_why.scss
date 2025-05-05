@@ -38,3 +38,7 @@ section.why {
         }
     }
 }
+
+.related-wrapper {
+    @include section-spacing-top;
+}

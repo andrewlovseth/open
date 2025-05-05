@@ -6,6 +6,7 @@
             "key": "field_624451a2b9169",
             "label": "Hero",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -16,12 +17,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_624451a2b916e",
             "label": "Hero",
             "name": "hero",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -43,6 +46,7 @@
             "key": "field_624451a2b9172",
             "label": "Intro",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -53,12 +57,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_624451a2b9176",
             "label": "Intro",
             "name": "intro",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -74,6 +80,7 @@
                     "key": "field_624451a2bd657",
                     "label": "Headline",
                     "name": "headline",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -93,6 +100,7 @@
                     "key": "field_624451a2bd660",
                     "label": "Copy",
                     "name": "copy",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -114,6 +122,7 @@
             "key": "field_62445da75d4d9",
             "label": "Features",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -124,12 +133,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_62445dab5d4da",
             "label": "Features",
             "name": "features",
+            "aria-label": "",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -150,6 +161,7 @@
                             "key": "field_62445db75d4db",
                             "label": "Icon",
                             "name": "icon",
+                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -174,6 +186,7 @@
                             "key": "field_62445dbb5d4dc",
                             "label": "Headline",
                             "name": "headline",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -193,6 +206,7 @@
                             "key": "field_62445dc15d4dd",
                             "label": "Copy",
                             "name": "copy",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -221,6 +235,7 @@
             "key": "field_624451a2b917a",
             "label": "Related",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -231,12 +246,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6244c8b732aa1",
             "label": "Related Headline",
             "name": "related_headline",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -256,6 +273,7 @@
             "key": "field_6244c89b2052b",
             "label": "Related",
             "name": "related",
+            "aria-label": "",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -280,7 +298,8 @@
             "elements": "",
             "min": "",
             "max": 3,
-            "return_format": "object"
+            "return_format": "object",
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -314,5 +333,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649033004
+    "modified": 1746463778
 }

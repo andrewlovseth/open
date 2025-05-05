@@ -18,4 +18,9 @@ get_header(); ?>
 
 	<?php get_template_part('templates/channels/form'); ?>
 
+	<section class="related-wrapper | grid">
+		<?php get_template_part('template-parts/global/related'); ?>
+	</section>
+
+
 <?php get_footer(); ?>

@@ -21,17 +21,26 @@
 
 <div class="item page">
     <a href="<?php echo get_permalink( $item->ID ); ?>">
-        <div class="photo">
-            <?php echo wp_get_attachment_image($photo['ID'], 'medium'); ?>
-        </div>
+        <?php if($photo): ?>    
+            <div class="photo">
+                <?php echo wp_get_attachment_image($photo['ID'], 'medium'); ?>
+            </div>
+        <?php endif; ?>
 
         <div class="info">
-            <h4><?php echo $label; ?></h4>
-            <h3><?php echo $title; ?></h3>
+            <?php if($label): ?>
+                <h4><?php echo $label; ?></h4>
+            <?php endif; ?>
 
-            <div class="copy copy-3">
-                <p><?php echo $description; ?></p>
-            </div>
+            <?php if($title): ?>
+                <h3><?php echo $title; ?></h3>
+            <?php endif; ?>
+                
+            <?php if($description): ?>
+                <div class="copy copy-3">
+                    <p><?php echo $description; ?></p>
+                </div>
+            <?php endif; ?>
         </div>        
     </a>
 </div>
