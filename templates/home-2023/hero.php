@@ -29,9 +29,9 @@ if(have_rows('hero')): while(have_rows('hero')) : the_row(); ?>
                                 ?>
 
                                 <div class="hero__slide swiper-slide">
-                                    <h1 class="hero__headline">
+                                    <h2 class="hero__headline">
                                         <?php echo $headline; ?> <?php echo $phrase; ?> 
-                                    </h1>
+                                    </h2>
                                 </div>
                             <?php endwhile; ?>
                         </div>
