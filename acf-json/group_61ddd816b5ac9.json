@@ -99,24 +99,6 @@
                     "placeholder": ""
                 },
                 {
-                    "key": "field_621fa3a863160",
-                    "label": "Date of Publication",
-                    "name": "date_of_publication",
-                    "aria-label": "",
-                    "type": "date_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "F j, Y",
-                    "return_format": "M j Y",
-                    "first_day": 1
-                },
-                {
                     "key": "field_621fa3c7556d4",
                     "label": "Author",
                     "name": "author",
@@ -261,5 +243,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1722961154
+    "modified": 1748967431
 }

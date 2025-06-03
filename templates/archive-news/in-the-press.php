@@ -13,7 +13,7 @@
     $publication = $in_the_press['publication'];
     $logo = $in_the_press['publication_logo'];
     $link = $in_the_press['link'];
-    $date = $in_the_press['date_of_publication'];
+    $date = get_the_date('M j, Y', $news->ID);
     $author = $in_the_press['author'];
     $external = $in_the_press['external'];
 
