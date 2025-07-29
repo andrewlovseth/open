@@ -41,17 +41,17 @@
 
             <?php
                 $file = get_field('file');
-                header("HTTP/1.1 301 Moved Permanently");
-                header("Location: " . $file['url']);
-                exit();
+                if ($file) {
+                    // Send a canonical header so Google knows to treat the PDF as the "real" version
+                    header("Link: <" . esc_url($file['url']) . ">; rel=\"canonical\"");
+                    header("HTTP/1.1 301 Moved Permanently");
+                    header("Location: " . esc_url($file['url']));
+                    exit();
+                }
             ?>
 
         <?php endif; ?>
 
     <?php endwhile; ?>
 
-<?php endif; ?>    
-
-
-
-
+<?php endif; ?>
