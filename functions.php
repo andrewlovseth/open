@@ -10,4 +10,3 @@ require_once( plugin_dir_path( __FILE__ ) . '/functions/svg.php');
 
 require_once( plugin_dir_path( __FILE__ ) . '/functions/posts-per-page.php');
 
-require_once( plugin_dir_path( __FILE__ ) . '/functions/compression.php');
