@@ -6,7 +6,7 @@
 
 <?php if(have_rows('company_nav', $company)): ?>
     <nav class="company-nav">
-        <ul role="navigation">
+        <ul class="navigation">
             <?php while(have_rows('company_nav', $company)): the_row(); ?>
         
                 <?php 

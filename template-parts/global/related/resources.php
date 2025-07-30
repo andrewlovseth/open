@@ -36,7 +36,7 @@
 
         <div class="info">  
             <?php if($term): ?>
-                <h4><?php echo $term; ?></h4>
+                <span class="item__label"><?php echo $term; ?></span>
             <?php endif; ?>
 
             <?php if($title): ?>

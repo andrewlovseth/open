@@ -14,13 +14,13 @@
         transition: all 400ms ease;
 
         &.blue {
-            background: $blue;
+            background: $blue-a11y;
             color: $white;
         }
 
         &.white {
             background: $white;
-            color: $blue;
+            color: $blue-a11y;
         }
 
         &.purple-gradient {
@@ -35,7 +35,7 @@
 
             &:hover {
                 background: $white;
-                color: $blue;
+                color: $blue-a11y;
             }
         }
 
@@ -51,7 +51,7 @@
         }
 
         &.alt {
-            background: $blue;
+            background: $blue-a11y;
             color: $white;
             border-radius: 0;
             text-transform: unset;
@@ -92,7 +92,7 @@
 
         &.blue {
             color: $black;
-            border-bottom: 3px solid $blue;
+            border-bottom: 3px solid $blue-a11y;
         }
 
         &.arrow {
@@ -103,7 +103,7 @@
     }
 
     .basic {
-        color: $blue;
+        color: $blue-a11y;
         font-size: $type-size-200;
 
         &:hover {

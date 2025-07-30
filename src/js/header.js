@@ -98,7 +98,8 @@ const Header = {
         });
 
         document.addEventListener("click", (e) => {
-            if (e.target.closest(".mobile-nav .search-modal") || e.target.closest(".mobile-nav .js-search-toggle")) return;
+            if (e.target.closest(".mobile-nav .search-modal") || e.target.closest(".mobile-nav .js-search-toggle"))
+                return;
             searchContainer.classList.remove("show");
         });
     },

@@ -1,7 +1,7 @@
 <?php if(have_rows('header_mobile_nav', 'options')): ?>
     
     <nav class="desktop-nav">
-        <ul class="desktop-nav__list" role="navigation">
+        <ul class="desktop-nav__list navigation">
 
             <?php while(have_rows('header_mobile_nav', 'options')) : the_row(); ?>
 
@@ -24,7 +24,7 @@
                         <li class="desktop-nav__list-item" data-subnav="true" data-featured="<?php echo $featured_state; ?>">
                                 <a href="#" class="desktop-nav__link" data-section-id="<?php echo $section_slug; ?>"><?php echo $section_toggle; ?></a>
 
-                                <ul class="desktop-nav__sub-nav"  role="navigation" data-section="<?php echo $section_slug; ?>" data-state="inactive">
+                                <ul class="desktop-nav__sub-nav navigation" data-section="<?php echo $section_slug; ?>" data-state="inactive">
                                     <?php if(have_rows('links')): while(have_rows('links')): the_row(); ?>
                                                                 
                                         <?php 

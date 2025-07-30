@@ -17,7 +17,7 @@
                 </div>                
 
                 <?php if(have_rows('links')): ?>
-                    <ul role="navigation">
+                    <ul class="navigation">
                         <?php while(have_rows('links')): the_row(); ?>
 
                             <?php 
@@ -49,7 +49,7 @@
         </div>
 
         <div class="social">
-            <ul role="navigation">
+            <ul class="navigation">
                 <?php if(have_rows('footer_social', 'options')): while(have_rows('footer_social', 'options')): the_row(); ?>
     
                     <?php 
@@ -62,7 +62,7 @@
                     ?>
 
                         <li>
-                            <a class="social-link <?php echo $link_slug; ?>" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                            <a aria-label="Go to <?php echo $link_title; ?>" class="social-link <?php echo $link_slug; ?>" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
                                 <?php get_template_part('src/svg/icon-' . $link_slug); ?>
                             </a>
                         </li>

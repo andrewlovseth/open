@@ -95,7 +95,7 @@
             </div>
 
             <div class="social">
-                <ul role="navigation">
+                <ul class="navigation">
                     <?php if(have_rows('footer_social', 'options')): while(have_rows('footer_social', 'options')): the_row(); ?>
         
                         <?php 

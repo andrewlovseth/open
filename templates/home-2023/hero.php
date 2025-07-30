@@ -8,8 +8,7 @@
     $link = $hero['link'];
 
 
-
-if(have_rows('hero')): while(have_rows('hero')) : the_row(); ?>
+?>
 
     <section class="hero grid">
 
@@ -19,10 +18,10 @@ if(have_rows('hero')): while(have_rows('hero')) : the_row(); ?>
                     <?php echo $sub_headline; ?>
                 </h2>
 
-                <?php if(have_rows('phrases')): ?>
+                <?php if(have_rows('hero_phrases')): ?>
                     <div class="hero-swiper">
                         <div class="swiper-wrapper">
-                            <?php while(have_rows('phrases')): the_row(); ?>
+                            <?php while(have_rows('hero_phrases')): the_row(); ?>
 
                                 <?php
                                     $phrase = get_sub_field('phrase');
@@ -64,4 +63,3 @@ if(have_rows('hero')): while(have_rows('hero')) : the_row(); ?>
 
     </section>
 
-<?php endwhile; endif; ?>

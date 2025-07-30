@@ -29,7 +29,7 @@
 
         <div class="info">
             <?php if($label): ?>
-                <h4><?php echo $label; ?></h4>
+                <span class="item__label"><?php echo $label; ?></span>
             <?php endif; ?>
 
             <?php if($title): ?>

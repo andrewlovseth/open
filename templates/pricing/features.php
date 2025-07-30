@@ -15,7 +15,7 @@
             <div class="features__table-thead">
                 <div class="features__table-tr">
                     <div class="features__table-th name">
-                        <h4>Feature</h4>
+                        <h3>Feature</h3>
                         <p>Click on title below to see more info</p>
                     </div>
                     <div class="features__table-th product professional">Professional</div>
@@ -36,7 +36,7 @@
 
                     <div class="features__table-tr">
                         <div class="features__table-td name">
-                            <h4><?php echo $name; ?><?php get_template_part('src/svg/icon-pricing-caret'); ?></h4>
+                            <h3><?php echo $name; ?><?php get_template_part('src/svg/icon-pricing-caret'); ?></h3>
 
                             <div class="features__copy | copy copy-3">
                                 <p><?php echo $copy; ?></p>

@@ -4,7 +4,7 @@
         <span class="mobile-nav-close js-mobile-nav-close"><?php get_template_part('src/svg/icon-close') ?></span>
 
         <div class="mobile-nav-logo">
-            <a href="<?php echo site_url(); ?>">
+            <a href="<?php echo site_url(); ?>" aria-label="Go to the OpenDrives homepage">
                 <?php $logo = get_field('footer_logo', 'options'); echo print_svg($logo['url']); ?>
             </a>
         </div>

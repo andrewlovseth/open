@@ -27,7 +27,7 @@
         <?php endif; ?>
 
         <div class="info">
-            <h4>Customer Story</h4>
+            <span class="item__label">Customer Story</span>
 
             <?php if($title): ?>
                 <h3><?php echo $title; ?></h3>

@@ -27,20 +27,21 @@
             border: 1px solid #f5f5f5;
         }
 
+        &__label {
+            display: inline-block;
+            color: $blue-a11y-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            font-family: $rubik;
+            font-size: $type-size-100;
+            font-family: $rubik;
+
+            margin-bottom: 0.25rem;
+        }
+
         .info {
-            padding-top: 1.5rem;
-
-            h4 {
-                display: inline-block;
-                color: $blue;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                font-weight: bold;
-                font-size: $type-size-050;
-                font-family: $rubik;
-
-                margin-bottom: 0.25rem;
-            }
+            padding-top: 1rem;
 
             h3 {
                 font-size: $type-size-400;

@@ -8,7 +8,7 @@
 ?>
 
     <div class="resources-sidebar">
-        <ul class="resources-sidebar-nav" role="navigation">
+        <ul class="resources-sidebar-nav navigation">
             <li>
                 <?php
                     $all_class = "type-all";

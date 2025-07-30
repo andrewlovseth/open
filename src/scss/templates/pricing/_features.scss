@@ -30,7 +30,7 @@
             }
 
             &.name {
-                h4 {
+                h3 {
                     font-size: 1.125rem;
                 }
 
@@ -102,7 +102,7 @@
                             color: $white;
                             cursor: pointer;
 
-                            h4 {
+                            h3 {
                                 font-weight: bold;
                             }
 
@@ -114,7 +114,7 @@
 
                     &.expanded {
                         @include tablet {
-                            h4 {
+                            h3 {
                                 font-weight: bold;
 
                                 svg {
@@ -127,7 +127,7 @@
                         }
                     }
 
-                    h4 {
+                    h3 {
                         font-size: 1rem;
                         line-height: 1.1;
 
@@ -201,7 +201,7 @@
 
                 .professional {
                     grid-area: professional;
-                    background: #15a1a1;
+                    background: #0e8181;
 
                     @include tablet {
                         background: #efeff6;

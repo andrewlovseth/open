@@ -5,11 +5,11 @@
 ?>
 
 <div class="legal">
-    <div class="copyright copy copy-4">
+    <div class="copyright copy copy-3">
         <p><?php echo $copyright; ?></p>
     </div>
 
-    <div class="legal__links copy copy-4">
+    <div class="legal__links copy copy-3">
 
         <?php if(have_rows('footer_legal_links', 'options')): while(have_rows('footer_legal_links', 'options')): the_row(); ?>
         

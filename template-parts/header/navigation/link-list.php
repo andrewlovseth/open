@@ -1,5 +1,5 @@
 <div class="link-list">
-    <ul role="navigation">
+    <ul class="navigation">
         <?php if(have_rows('header_nav_links', 'options')): while(have_rows('header_nav_links', 'options')): the_row(); ?>
 
             <?php 

@@ -14,9 +14,9 @@
 		<?php get_template_part('template-parts/footer/legal'); ?>
 	</footer>
 
-	<?php get_template_part('template-parts/footer/contact-form'); ?>
+	<?php // get_template_part('template-parts/footer/contact-form'); ?>
 
-	<?php get_template_part('template-parts/footer/demo-form'); ?>
+	<?php // get_template_part('template-parts/footer/demo-form'); ?>
 
 	<?php get_template_part('template-parts/footer/nab-overlay'); ?>
 

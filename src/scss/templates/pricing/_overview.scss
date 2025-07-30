@@ -81,8 +81,16 @@
         grid-column: 1 / -1;
         color: $white;
 
+        a {
+            color: $white;
+        }
+
         @include desktop-small {
             color: $black;
+
+            a {
+                color: $blue-a11y-dark;
+            }
         }
     }
 }

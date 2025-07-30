@@ -19,6 +19,12 @@ update_option( 'thumbnail_size_w', 400 );
 update_option( 'thumbnail_size_h', 400 );
 update_option( 'thumbnail_crop', 1 );
 
+// Add custom image sizes for hero optimization
+add_image_size( 'hero-mobile', 768, 576, true );    // 4:3 aspect ratio for mobile
+add_image_size( 'hero-tablet', 1200, 514, true );   // 16:7 aspect ratio for tablet
+add_image_size( 'hero-desktop', 1920, 825, true );  // 16:7 aspect ratio for desktop
+add_image_size( 'hero-xl', 2560, 1100, true );      // For high-DPI displays
+
 // Switch default core markup for search form, comment form, and comments to output valid HTML5.
 add_theme_support('html5', array(
     'comment-list',
