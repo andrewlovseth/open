@@ -123,7 +123,7 @@ window.executeRecaptcha = function() {
         
         // Get the appropriate site key
         var hostname = window.location.hostname;
-        var siteKey = '6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go'; // Default to production key
+        var siteKey = '6LeV7JQrAAAAANDI3QfH4TZCvsa_9ZCS9HgxP3_e'; // Default to production key
         
         grecaptcha.ready(function() {
             grecaptcha.execute(siteKey, {action: 'newsletter_signup'})
@@ -646,7 +646,7 @@ window._load_script = function(url, callback, isSubmit) {
         }
         
         // For production
-        return '6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go';
+        return '6LeV7JQrAAAAANDI3QfH4TZCvsa_9ZCS9HgxP3_e';
     };
     
     // Try to load reCAPTCHA with better error handling
