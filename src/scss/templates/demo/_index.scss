@@ -1,0 +1,27 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.demo {
+    :where(.page-template-demo) {
+        .site-footer {
+            margin-top: unset;
+        }
+
+        .nab-modal.micromodal-slide.is-open {
+            display: none !important;
+        }
+
+        @include meta.load-css("_hero");
+
+        .demo {
+            display: grid;
+
+            @include desktop-small {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @include meta.load-css("_content");
+        @include meta.load-css("_form");
+    }
+}

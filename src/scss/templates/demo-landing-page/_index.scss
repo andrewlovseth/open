@@ -1,0 +1,22 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.demo-landing-page {
+    :where(.page-template-demo-landing-page) {
+        .site-footer {
+            margin-top: unset;
+
+            .pre-footer {
+                display: none;
+            }
+        }
+
+        .nab-modal.micromodal-slide.is-open {
+            display: none !important;
+        }
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_why");
+        @include meta.load-css("_customers");
+    }
+}

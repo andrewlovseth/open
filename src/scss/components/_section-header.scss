@@ -1,0 +1,7 @@
+@use "./abstracts" as *;
+
+.section-header {
+    &.center {
+        text-align: center;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../../abstracts" as *;
+
+.solutions-intro {
+    background: $light-blue;
+
+    .headline,
+    .sub-headline {
+        text-align: center;
+    }
+
+    .sub-headline {
+        padding: 0.5rem 0 2rem 0;
+
+        h3 {
+            font-weight: 300;
+        }
+    }
+
+    .copy {
+        @include desktop-small {
+            columns: 2;
+            column-gap: 2.5rem;
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 .latest {
     @include desktop-large {
         display: block;
@@ -41,7 +43,7 @@
             &:nth-child(even) {
                 &:before {
                     display: block;
-                    content: '';
+                    content: "";
                     width: 1px;
                     height: 100%;
                     background: rgba(255, 255, 255, 0.1);

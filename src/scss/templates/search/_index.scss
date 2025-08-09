@@ -1,0 +1,11 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.search {
+    :where(.search-results) {
+        @include meta.load-css("_page-header");
+        @include meta.load-css("_search-result");
+        @include meta.load-css("_pdf");
+        @include meta.load-css("_pagination");
+    }
+}

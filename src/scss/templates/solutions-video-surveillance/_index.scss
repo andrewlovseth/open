@@ -1,0 +1,16 @@
+@use "sass:meta";
+
+@layer templates.solutions-video-surveillance {
+    // Main solutions page
+    :where(.page-template-solutions-video-surveillance) {
+        @include meta.load-css("../solutions/_intro");
+        @include meta.load-css("../solutions/_related");
+
+        @include meta.load-css("_intro");
+        @include meta.load-css("_hero");
+        @include meta.load-css("_features");
+        @include meta.load-css("_did-you-know");
+        @include meta.load-css("_simplifies");
+        @include meta.load-css("_difference");
+    }
+}

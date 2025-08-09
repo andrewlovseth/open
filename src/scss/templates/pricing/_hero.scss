@@ -1,5 +1,7 @@
+@use "../../abstracts" as *;
+
 .hero {
-    background: url(../src/images/pricing-hero-bg.jpg) no-repeat center center / cover;
+    background: url(../../../src/images/pricing-hero-bg.jpg) no-repeat center center / cover;
     color: $white;
     align-items: start;
 

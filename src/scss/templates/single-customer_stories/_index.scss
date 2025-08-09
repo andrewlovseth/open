@@ -1,0 +1,17 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.single-customer-stories {
+    :where(.single-customer_stories) {
+        article.customer_stories {
+            gap: 2rem;
+            @include small-section-spacing;
+
+            @include meta.load-css("_header");
+            @include meta.load-css("_body");
+            @include meta.load-css("_sidebar");
+            @include meta.load-css("_footer");
+            @include meta.load-css("_call-to-action");
+        }
+    }
+}

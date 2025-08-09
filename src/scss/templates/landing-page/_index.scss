@@ -1,0 +1,20 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.landing-page {
+    :where(.page-template-landing-page) {
+        @include meta.load-css("_page-header");
+        @include meta.load-css("_active-campaign-form");
+        @include meta.load-css("_video-form");
+        @include meta.load-css("_newsletter");
+        @include meta.load-css("_customers-standard");
+
+        .pre-footer {
+            display: none;
+        }
+
+        .site-footer {
+            margin: 0;
+        }
+    }
+}

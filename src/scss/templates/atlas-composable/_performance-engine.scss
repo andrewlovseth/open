@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .pe {
     background-color: #010316;
     color: $white;
@@ -20,7 +22,7 @@
                 width: 24rem;
                 height: 8rem;
             }
-        }      
+        }
 
         svg {
             width: 100%;
@@ -29,7 +31,6 @@
     }
 
     &__copy {
-
         @include desktop-small {
             grid-column: 7 / span 7;
         }

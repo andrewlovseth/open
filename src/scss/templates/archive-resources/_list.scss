@@ -1,3 +1,6 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
 .resources-list {
     @include section-spacing-bottom;
 
@@ -11,5 +14,5 @@
         grid-column: 5 / span 9;
     }
 
-    @import 'resource';
+    @include meta.load-css("_resource");
 }

@@ -1,0 +1,21 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.pricing {
+    :where(.page-template-pricing) {
+        background: $white;
+
+        .site-content {
+            .grid {
+                @include desktop-small {
+                    grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4rem)) minmax(0, auto);
+                }
+            }
+        }
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_overview");
+        @include meta.load-css("_features");
+        @include meta.load-css("_cta");
+    }
+}

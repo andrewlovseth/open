@@ -12,5 +12,7 @@
         </div>
     </div>
 
-    <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
+    <?php if($photo): ?>
+        <?php echo wp_get_attachment_image($photo['ID'], 'full'); ?>
+    <?php endif; ?>
 </section>

@@ -1,0 +1,212 @@
+@use "./abstracts" as *;
+
+.cta {
+    &.center {
+        text-align: center;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0.75rem 1.75rem 0.625rem;
+        border-radius: 25px;
+        font-size: $type-size-100;
+        font-family: $rubik;
+        letter-spacing: 0.1em;
+        transition: all 400ms ease;
+
+        &.blue {
+            background: $blue-a11y;
+            color: $white;
+        }
+
+        &.white {
+            background: $white;
+            color: $blue-a11y;
+        }
+
+        &.purple-gradient {
+            color: $white;
+            @include purple-blue-gradient;
+        }
+
+        &.white-outline {
+            background: transparent;
+            color: $white;
+            border: 1px solid $white;
+
+            &:hover {
+                background: $white;
+                color: $blue-a11y;
+            }
+        }
+
+        &.black-outline {
+            background: transparent;
+            color: $black;
+            border: 1px solid $black;
+
+            &:hover {
+                background: $black;
+                color: $white;
+            }
+        }
+
+        &.alt {
+            background: $blue-a11y;
+            color: $white;
+            border-radius: 0;
+            text-transform: unset;
+            font-size: 1rem;
+            letter-spacing: unset;
+            padding: 0.25rem 1.5rem;
+            font-weight: 300;
+            line-height: 1em;
+        }
+
+        &.orange {
+            border-radius: 4px;
+            background: #ff7b00;
+            color: $white;
+            font-weight: 500;
+
+            &:hover {
+                background: #ff7b00;
+                color: $white;
+            }
+        }
+    }
+
+    .underline {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0 0 0.125rem 0;
+        font-size: $type-size-100;
+        font-weight: bold;
+        font-family: $rubik;
+        letter-spacing: 0.1em;
+        transition: all 400ms ease;
+
+        &.white {
+            color: $white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        &.blue {
+            color: $black;
+            border-bottom: 3px solid $blue-a11y;
+        }
+
+        &.arrow {
+            &::after {
+                content: " →";
+            }
+        }
+    }
+
+    .basic {
+        color: $blue-a11y;
+        font-size: $type-size-200;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.arrow {
+            &::after {
+                content: " →";
+            }
+        }
+    }
+}
+
+.rich-cta {
+    max-width: 28rem;
+
+    a {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        box-shadow: rgba(50, 50, 93, 0.2) 0px 40px 60px -8px, rgba(0, 0, 0, 0.12) 0px 18px 36px -18px;
+        border-radius: 8px;
+        padding: 1px;
+        background: linear-gradient(-90deg, #a510f8 0%, #00a3ff 100%);
+        transition: all 1000ms ease;
+
+        &:hover {
+            .text {
+                background: rgba(white, 0.95);
+            }
+        }
+    }
+
+    .photo {
+        aspect-ratio: 1 / 1;
+        width: 7.5rem;
+
+        @include cover-fill-image;
+
+        img {
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+    }
+
+    .text {
+        font-size: $type-size-100;
+        padding: 1rem;
+        background: rgba(white, 0.9);
+        display: flex;
+        align-items: center;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        transition: all 1000ms ease;
+        font-family: $rubik;
+    }
+
+    &.half {
+        .photo {
+            @include tablet-small {
+                display: none;
+            }
+
+            @include tablet {
+                display: block;
+            }
+        }
+
+        .text {
+            @include tablet-small {
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+            }
+
+            @include tablet {
+                border-top-left-radius: unset;
+                border-bottom-left-radius: unset;
+            }
+        }
+    }
+}
+
+.o-btn,
+.copy .o-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2e76f8;
+    color: $white;
+    text-decoration: none;
+    line-height: 1em;
+    padding: 0.25rem 0.5rem;
+
+    &::after {
+        display: block;
+        content: "";
+        background: url(../src/svg/o-logo-fill.svg) no-repeat 0 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: translateY(2px);
+    }
+}

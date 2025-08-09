@@ -1,0 +1,40 @@
+@use "../../abstracts" as *;
+
+.did-you-know {
+    background: $powder-blue;
+    align-items: center;
+
+    @include section-spacing;
+
+    @include center-narrow;
+
+    .section-header {
+        padding-bottom: 2rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 5;
+        }
+
+        br {
+            display: none;
+
+            @include desktop-small {
+                display: block;
+            }
+        }
+    }
+
+    .info {
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+
+        .copy {
+            @include white-shadow-card;
+
+            & + .copy {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

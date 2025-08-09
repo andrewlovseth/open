@@ -1,0 +1,15 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.contact {
+    :where(.page-template-contact) {
+        background: $black;
+
+        .pre-footer {
+            z-index: 1;
+        }
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_contact-info");
+    }
+}

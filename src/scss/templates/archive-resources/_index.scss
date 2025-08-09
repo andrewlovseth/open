@@ -1,0 +1,12 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.archive-resources {
+    :where(.post-type-archive-resources) {
+        @include meta.load-css("_page-header");
+
+        @include meta.load-css("_sidebar");
+        @include meta.load-css("_list");
+        @include meta.load-css("_pagination");
+    }
+}

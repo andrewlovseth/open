@@ -1,0 +1,11 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.ultra {
+    :where(.page-template-ultra) {
+        @include meta.load-css("_overview");
+        @include meta.load-css("_features");
+        @include meta.load-css("_series");
+        @include meta.load-css("_consumption-models");
+    }
+}

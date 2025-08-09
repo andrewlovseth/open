@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 section.partners {
     background: $white;
     @include section-spacing;
@@ -21,10 +23,10 @@ section.partners {
     }
 
     .filters {
-        @include small-section-spacing-top;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @include small-section-spacing-top;
 
         @include desktop-small {
             align-items: center;
@@ -40,6 +42,7 @@ section.partners {
                 padding-right: 2rem;
                 width: auto;
             }
+
             h5 {
                 font-size: $type-size-200;
             }

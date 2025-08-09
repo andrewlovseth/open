@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 section.series {
     @include section-spacing;
 
@@ -35,8 +37,7 @@ section.series {
             padding: 2rem;
             text-align: center;
             border-radius: 10px;
-            box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
-                rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+            box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
             display: flex;
             flex-direction: column;
 

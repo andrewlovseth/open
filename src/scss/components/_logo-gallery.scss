@@ -1,0 +1,28 @@
+@use "./abstracts" as *;
+
+.logo-gallery {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+
+    @include tablet-small {
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &.four-col {
+        @include desktop-small {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,6 +1,8 @@
+@use "../../abstracts" as *;
+
 section.by-the-numbers {
-    @include section-spacing;
     background-color: $cream;
+    @include section-spacing;
 
     @include desktop-small {
         padding-bottom: 0;
@@ -40,12 +42,12 @@ section.by-the-numbers {
     }
 
     .number {
-        @include white-shadow-card;
         border-radius: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 2rem 2rem;
+        @include white-shadow-card;
 
         @include tablet {
             padding: 2rem;
@@ -134,7 +136,6 @@ section.by-the-numbers {
                     gap: 2rem;
                     align-items: center;
                     padding: 2rem 2.5rem;
-
                     .graphic {
                         width: 6rem;
                     }

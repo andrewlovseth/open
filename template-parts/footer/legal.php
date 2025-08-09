@@ -9,7 +9,7 @@
         <p><?php echo $copyright; ?></p>
     </div>
 
-    <div class="legal__links copy copy-3">
+    <div class="legal__links">
 
         <?php if(have_rows('footer_legal_links', 'options')): while(have_rows('footer_legal_links', 'options')): the_row(); ?>
         

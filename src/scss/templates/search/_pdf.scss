@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .search-result.resource {
     background: rgba($white, 0.8);
     border: 1px solid rgba($black, 0.1);
@@ -7,6 +9,7 @@
     .info {
         flex: 1;
         padding: 1.5rem 2rem;
+
         @include tablet {
             padding: 2rem 2.5rem;
         }
@@ -204,7 +207,6 @@
 
     &.video {
         align-items: flex-start;
-
         padding: 1.5rem 2rem;
 
         @include tablet {
@@ -213,10 +215,6 @@
 
         .info {
             padding: unset;
-
-            @include tablet {
-                padding: unset;
-            }
         }
     }
 

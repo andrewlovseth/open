@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 .tab-initial {
     .tab-header {
         &__banner {

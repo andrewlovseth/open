@@ -1,0 +1,129 @@
+@use "./abstracts" as *;
+
+.opendrives-form {
+    .forminator-ui.forminator-design--default {
+        .forminator-label {
+            color: $black !important;
+            font-size: $type-size-200 !important;
+        }
+
+        .forminator-description,
+        .forminator-description p {
+            font-weight: normal !important;
+            font-size: $type-size-100 !important;
+            font-style: italic !important;
+        }
+
+        .forminator-multiselect,
+        .forminator-input,
+        .forminator-textarea {
+            background: $white !important;
+            border-radius: 0 !important;
+            border-color: #d5d5d5 !important;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: $white !important;
+                border-color: $blue !important;
+            }
+        }
+
+        .forminator-multiselect {
+            padding: 0 !important;
+        }
+
+        .forminator-multiselect .forminator-option {
+            margin: 0 !important;
+            border-bottom: 1px solid #e5e5e5 !important;
+        }
+
+        .forminator-multiselect .forminator-option:hover {
+            background: $blue !important;
+            color: $white !important;
+        }
+        .forminator-multiselect .forminator-option.forminator-is_checked {
+            background: $blue !important;
+        }
+
+        .forminator-select2 + .forminator-select .selection .select2-selection--single[role="combobox"] {
+            background: $white !important;
+            border-radius: 0 !important;
+            border-color: #d5d5d5 !important;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: $white !important;
+                border-color: $blue !important;
+            }
+        }
+
+        .forminator-button-submit {
+            text-transform: uppercase !important;
+            display: inline-block !important;
+            padding: 0.75rem 1.75rem 0.625rem !important;
+            border-radius: 25px !important;
+            font-size: $type-size-100 !important;
+            font-family: $rubik !important;
+            letter-spacing: 0.1em !important;
+            transition: all 400ms ease !important;
+            background: $blue !important;
+            color: $white !important;
+
+            &:hover {
+                box-shadow: unset !important;
+                background: $blue !important;
+            }
+        }
+    }
+}
+
+.form-modal {
+    .section-title {
+        font-size: $type-size-600;
+    }
+}
+
+body {
+    .forminator-select-dropdown-container--open .forminator-dropdown--default {
+        background-color: $white !important;
+    }
+
+    .forminator-ui.forminator-design--default
+        .forminator-select2
+        + .forminator-select.select2-container--open
+        .selection
+        .select2-selection--single[role="combobox"] {
+        background: $white !important;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $white !important;
+        }
+    }
+
+    .forminator-select-dropdown-container--open
+        .forminator-dropdown--default
+        .select2-results
+        .select2-results__options
+        .select2-results__option.select2-results__option--selected {
+        background: $blue !important;
+    }
+
+    .forminator-select-dropdown-container--open
+        .forminator-dropdown--default
+        .select2-results
+        .select2-results__options
+        .select2-results__option:not(.select2-results__option--selected).select2-results__option--highlighted {
+        background: $white !important;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $blue !important;
+            color: $white !important;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.home-2023 {
+    :where(.page-template-home-2023) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_customers");
+        @include meta.load-css("_about");
+        @include meta.load-css("_atlas");
+        @include meta.load-css("_ecosystem");
+        @include meta.load-css("_partners");
+    }
+}

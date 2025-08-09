@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 .legal {
     margin-top: clamp(2rem, 5vh, 4rem);
     border-top: 1px solid rgba($white, 0.5);
@@ -29,5 +31,12 @@
     &-link {
         display: block;
         color: #ccc;
+        font-size: $type-size-200;
+        line-height: 1.5em;
+        font-weight: 300;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

@@ -1,3 +1,7 @@
+@forward "latest";
+
+@use "./abstracts" as *;
+
 .nav-content {
     color: $white;
 
@@ -42,7 +46,7 @@
         transform: translateY(3rem);
         transition: all 700ms ease;
 
-        &[data-tab-panel='initial'],
+        &[data-tab-panel="initial"],
         &.show {
             opacity: 1;
             transform: translateY(0);
@@ -171,6 +175,4 @@
             justify-content: center;
         }
     }
-
-    @import 'latest';
 }

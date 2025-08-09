@@ -1,7 +1,6 @@
 <?php
 
     $workflow = get_field('workflow');
-    $headline = $workflow['headline'];
     $copy = $workflow['caption'];
     $graphic = $workflow['graphic'];
 

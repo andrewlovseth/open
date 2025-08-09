@@ -1,0 +1,11 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.atlas-cloud-plus {
+    :where(.page-template-atlas-cloud-plus) {
+        @include meta.load-css("_overview");
+        @include meta.load-css("_services-mobile");
+        @include meta.load-css("_services-desktop");
+        @include meta.load-css("_features");
+    }
+}

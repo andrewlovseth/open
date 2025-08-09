@@ -1,3 +1,7 @@
+@forward "search";
+
+@use "./abstracts" as *;
+
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -133,8 +137,6 @@
             }
         }
     }
-
-    @import "search";
 
     .search {
         &-container {

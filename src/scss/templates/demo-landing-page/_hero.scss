@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .hero {
     color: $white;
 
@@ -10,11 +12,11 @@
     }
 
     &__wrapper {
-        @include section-spacing;
         grid-row: 1;
         z-index: 2;
         display: grid;
         gap: 2rem;
+        @include section-spacing;
 
         @include desktop-small {
             grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -29,6 +31,7 @@
 
     &__title {
         text-shadow: 0 0 12px rgba($black, 0.75);
+
         @include desktop-medium {
             font-size: 3rem;
         }

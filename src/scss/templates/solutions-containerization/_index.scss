@@ -1,0 +1,14 @@
+@use "sass:meta";
+
+@layer templates.solutions-containerization {
+    // Main solutions page
+    :where(.page-template-solutions-containerization) {
+        @include meta.load-css("../solutions/_intro");
+        @include meta.load-css("../solutions/_related");
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_intro");
+        @include meta.load-css("_features");
+        @include meta.load-css("_pods-recipes");
+    }
+}

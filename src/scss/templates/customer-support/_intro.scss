@@ -1,5 +1,9 @@
-section.intro {
+@use "../../abstracts" as *;
+
+.intro {
     background: $white;
+    gap: 2rem;
+
     @include section-spacing;
     @include center-narrow;
 

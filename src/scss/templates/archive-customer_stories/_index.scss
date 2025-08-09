@@ -1,0 +1,13 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.archive-customer-stories {
+    :where(.post-type-archive-customer_stories) {
+        .page-title {
+            color: $dark-blue;
+        }
+
+        @include meta.load-css("_featured");
+        @include meta.load-css("_grid");
+    }
+}

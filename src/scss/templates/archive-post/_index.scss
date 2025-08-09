@@ -1,0 +1,10 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.archive-post {
+    :where(body.blog) {
+        @include meta.load-css("_header");
+        @include meta.load-css("_featured");
+        @include meta.load-css("_posts-grid");
+    }
+}

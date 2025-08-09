@@ -1,8 +1,10 @@
+@use "../../abstracts" as *;
+
 .related {
-    @include small-section-spacing;
     display: grid;
     gap: 0 2rem;
     grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
+    @include small-section-spacing;
 
     @include tablet-small {
         grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);

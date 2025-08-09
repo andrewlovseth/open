@@ -11,9 +11,9 @@ get_header(); ?>
 
 	<?php get_template_part('template-parts/global/hero'); ?>
 
-    <?php get_template_part('templates/atlas/overview'); ?>
+    <?php get_template_part('templates/ultra/overview'); ?>
 
-    <?php get_template_part('templates/atlas/features'); ?>
+    <?php get_template_part('templates/ultra/features'); ?>
 
     <?php get_template_part('templates/ultra/series'); ?>
 

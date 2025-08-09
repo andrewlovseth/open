@@ -1,6 +1,8 @@
+@use "../../abstracts" as *;
+
 section.overview {
-    @include section-spacing;
     background: $white;
+    @include section-spacing;
     @include center-narrow;
 
     .headline {

@@ -1,0 +1,157 @@
+@use "../../abstracts" as *;
+
+.featured {
+    gap: 4rem 2rem;
+
+    .blog {
+        @include desktop-small {
+            a {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                align-items: end;
+            }
+        }
+
+        .photo {
+            aspect-ratio: 16 / 9;
+            @include blog-photo;
+
+            @include desktop-small {
+                grid-column: 1 / span 6;
+                grid-row: 1;
+            }
+
+            img {
+                border-radius: 4px;
+            }
+        }
+
+        .info {
+            background: $white;
+            padding: 2rem;
+            border-radius: 4px;
+
+            @include desktop-small {
+                grid-column: 5 / span 4;
+                grid-row: 1;
+                z-index: 10;
+                transform: translate3d(0, -2rem, 0);
+                padding: 1.5rem;
+                box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+            }
+
+            .date {
+                h4 {
+                    display: inline-block;
+                    color: $blue;
+                    font-family: $circular;
+                    font-weight: normal;
+                    font-size: $type-size-150;
+                    line-height: 1em;
+                    text-transform: capitalize;
+                }
+            }
+
+            .post-title {
+                padding-top: 0.5rem;
+
+                h3 {
+                    font-size: $type-size-600;
+                    line-height: 1.125em;
+                    color: $black;
+                    font-family: $circular;
+                    font-weight: normal;
+
+                    @include desktop-small {
+                        font-size: $type-size-400;
+                    }
+                }
+            }
+
+            .authors {
+                padding-top: 1rem;
+
+                .author {
+                    display: grid;
+                    grid-template-columns: 3.5rem 1fr;
+                    gap: 0 0.5rem;
+                    align-items: center;
+
+                    &-photo {
+                        aspect-ratio: 1 / 1;
+                        @include cover-fill-image;
+
+                        img {
+                            border-radius: 50%;
+                            filter: saturate(0%);
+                        }
+                    }
+
+                    &-info {
+                        .name {
+                            h4 {
+                                font-size: $type-size-300;
+                                line-height: 1.125em;
+                            }
+                        }
+
+                        .meta {
+                            padding-top: 0.25rem;
+                            h5 {
+                                font-family: $rubik;
+                                color: $charcoal;
+                                font-size: $type-size-100;
+                                line-height: 1.25em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-1 {
+            @include desktop-small {
+                grid-column: 2 / span 12;
+            }
+
+            .photo {
+                @include tablet {
+                    aspect-ratio: 16 / 9;
+                }
+            }
+
+            .info {
+                @include desktop-medium {
+                    padding: 2rem;
+                }
+                .post-title {
+                    h3 {
+                        @include desktop-small {
+                            font-size: $type-size-600;
+                        }
+
+                        @include desktop-medium {
+                            font-size: $type-size-600;
+                        }
+                    }
+                }
+
+                .copy {
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+
+        &-2 {
+            @include desktop-small {
+                grid-column: 2 / span 6;
+            }
+        }
+
+        &-3 {
+            @include desktop-small {
+                grid-column: 8 / span 6;
+            }
+        }
+    }
+}

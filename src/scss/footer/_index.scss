@@ -1,0 +1,20 @@
+@use "sass:meta";
+@use "../abstracts" as *;
+
+@layer components {
+    @include meta.load-css("footer/container");
+    @include meta.load-css("footer/pre-footer");
+    @include meta.load-css("footer/nav");
+    @include meta.load-css("footer/social");
+    @include meta.load-css("footer/legal");
+
+    .site-footer {
+        background: $black;
+        color: $white;
+        margin-top: clamp(5rem, 15vh, 7.5rem);
+
+        @include desktop-small {
+            margin-top: clamp(10rem, 30vh, 15rem);
+        }
+    }
+}

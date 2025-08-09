@@ -1,7 +1,9 @@
+@use "../../abstracts" as *;
+
 section.why {
-    @include section-spacing;
     background: $light-blue;
     gap: 2rem;
+    @include section-spacing;
 
     .info {
         @include tablet {
@@ -23,6 +25,7 @@ section.why {
 
     .video {
         aspect-ratio: 16 / 9;
+
         @include tablet {
             grid-column: 3 / span 6;
         }

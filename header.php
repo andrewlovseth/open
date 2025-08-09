@@ -45,7 +45,9 @@
 
 
 	<?php if(get_field('code_head', 'options')): ?>
-		<?php echo get_field('code_head', 'options'); ?>
+		<?php 
+			echo od_delay_rb2b_html(get_field('code_head', 'option'));
+		?>
 	<?php endif; ?>
 </head>
 

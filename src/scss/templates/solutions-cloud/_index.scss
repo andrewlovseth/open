@@ -1,0 +1,13 @@
+@use "sass:meta";
+
+@layer templates.solutions-cloud {
+    // Main solutions page
+    :where(.page-template-solutions-cloud) {
+        @include meta.load-css("../solutions/_intro");
+        @include meta.load-css("../solutions/_related");
+
+        @include meta.load-css("_intro");
+        @include meta.load-css("_cloud-hybrid");
+        @include meta.load-css("_opendrives-anywhere");
+    }
+}

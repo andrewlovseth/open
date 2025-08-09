@@ -1,0 +1,60 @@
+@use "sass:meta";
+@use "../abstracts" as *;
+
+@layer components {
+    @include meta.load-css("header/logo");
+    @include meta.load-css("header/desktop-navigation");
+    @include meta.load-css("header/search");
+    @include meta.load-css("header/cta");
+    @include meta.load-css("header/hamburger");
+    @include meta.load-css("header/mobile-navigation");
+    @include meta.load-css("header/navigation");
+    @include meta.load-css("header/nav-overlay-open");
+
+    .site-header {
+        z-index: 5555;
+        transition: all 200ms ease;
+        background: $white;
+        position: sticky;
+        top: 0;
+
+        &.has-banner {
+            @include desktop-small {
+                top: 86px;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            align-content: center;
+            gap: 0 1rem;
+            margin: 0 auto;
+            padding: 0.75rem 1rem;
+            position: static;
+
+            @include desktop-small {
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    body.nav-overlay-open {
+        .site-header.has-banner {
+            @include desktop-small {
+                transform: translateY(-86px);
+            }
+        }
+    }
+
+    // ACTIVE UNDERLINES
+    body.page-template-atlas .desktop-nav__link-products,
+    body.page-template-solutions .desktop-nav__link-solutions,
+    body.page-template-company .desktop-nav__link-company,
+    body.parent-pageid-30 .desktop-nav__link-solutions,
+    body.post-type-archive-customer_stories .desktop-nav__link-customer-stories,
+    body.post-type-archive-resources .desktop-nav__link-resources,
+    body.single-customer_stories .desktop-nav__link-customer-stories {
+        background: $blue;
+        color: $white;
+    }
+}

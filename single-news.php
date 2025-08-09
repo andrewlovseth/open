@@ -2,15 +2,15 @@
 
 <?php
     $news_types = get_the_terms(get_the_ID(), 'news_types');
-    $news_type_slug = $news_types[0]->slug;
-    $news_type = $news_types[0]->name;
+    $news_type_slug = $news_types && !is_wp_error($news_types) ? $news_types[0]->slug : '';
+    $news_type = $news_types && !is_wp_error($news_types) ? $news_types[0]->name : '';
 
-    $in_the_press = get_field('in_the_press', $post->ID);
-    $publication = $in_the_press['publication'];
-    $logo = $in_the_press['publication_logo'];
-    $link = $in_the_press['link'];
-    $date = get_the_date('M j, Y', $news->ID);
-    $author = $in_the_press['author'];
+    $in_the_press = get_field('in_the_press', $post->ID) ?: [];
+    $publication = $in_the_press['publication'] ?? '';
+    $logo = $in_the_press['publication_logo'] ?? null;
+    $link = $in_the_press['link'] ?? '';
+    $date = get_the_date('M j, Y', $post->ID) ?? '';
+    $author = $in_the_press['author'] ?? '';
 
 ?>
 
@@ -79,9 +79,13 @@
             
         </section>
 
-        <section class="article-footer">
-            <?php get_template_part('template-parts/global/related'); ?>
-        </section>
+        <?php if(get_field('related')): ?>
+            <section class="article-footer">
+                <?php get_template_part('template-parts/global/related'); ?>
+            </section>
+        <?php endif; ?>
+
+       
     </article>
 
 <?php endwhile; endif; ?>

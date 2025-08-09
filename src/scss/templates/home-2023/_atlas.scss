@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .atlas {
     padding: 3rem 0;
     background: $black;
@@ -6,8 +8,10 @@
     @include desktop-small {
         padding: 6rem 0;
     }
+
     .section-header {
         padding-bottom: 3rem;
+
         @include desktop-small {
             grid-column: 2 / span 3;
         }
@@ -22,8 +26,8 @@
         gap: 0.5rem;
 
         @include tablet {
-            grid-template-columns: repeat(6, minmax(auto, 1fr));
             grid-template-rows: repeat(6, minmax(auto, 1fr));
+            grid-template-columns: repeat(6, minmax(auto, 1fr));
             grid-template-areas:
                 "tl tl tm tm tr tr"
                 "tl tl tm tm tr tr"
@@ -46,7 +50,8 @@
         border-radius: 0.25rem;
         transition: all 1000ms ease-in-out;
         background-position: 0;
-        background: linear-gradient(var(--angle, 90deg), var(--c1, #1e6166), var(--c2, #07aeb7) 51%, var(--c1, #1e6166)) var(--x, 0) / 200%;
+        background: linear-gradient(var(--angle, 90deg), var(--c1, #1e6166), var(--c2, #07aeb7) 51%, var(--c1, #1e6166))
+            var(--x, 0) / 200%;
 
         &:hover {
             --x: 100%;

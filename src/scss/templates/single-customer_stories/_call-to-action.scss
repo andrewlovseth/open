@@ -1,0 +1,53 @@
+@use "../../abstracts" as *;
+
+section.call-to-action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(90deg, #f3a530 0%, #ebca38 100%);
+    color: $white;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+
+    @include section-spacing-bottom(margin);
+
+    .icon {
+        width: 4rem;
+        margin-right: 2rem;
+    }
+
+    .info {
+        width: 100%;
+        padding: 1rem 0;
+
+        @include tablet {
+            flex: 1;
+            width: unset;
+            max-width: 40rem;
+            padding: 0;
+        }
+
+        .headline {
+            padding-bottom: 0.25rem;
+
+            h3 {
+                font-size: $type-size-400;
+            }
+        }
+    }
+
+    .cta {
+        @include tablet {
+            margin-left: auto;
+        }
+
+        .btn {
+            white-space: nowrap;
+
+            &:hover {
+                color: #f3a041;
+            }
+        }
+    }
+}

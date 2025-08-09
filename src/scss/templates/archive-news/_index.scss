@@ -1,0 +1,16 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.archive-news {
+    :where(.post-type-archive-news) {
+        @include meta.load-css("_press-release");
+        @include meta.load-css("_in-the-press");
+        @include meta.load-css("_featured");
+        @include meta.load-css("_archive");
+        @include meta.load-css("../search/_pagination");
+
+        .pagination {
+            grid-column: 1 / -1;
+        }
+    }
+}

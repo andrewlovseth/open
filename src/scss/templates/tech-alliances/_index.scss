@@ -1,0 +1,11 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.tech-alliances {
+    :where(.page-template-tech-alliances) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_intro");
+        @include meta.load-css("_why");
+        @include meta.load-css("_partners");
+    }
+}

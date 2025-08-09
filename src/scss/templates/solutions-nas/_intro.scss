@@ -1,0 +1,32 @@
+@use "../../abstracts" as *;
+
+.intro {
+    background: $white;
+    align-items: center;
+
+    @include center-narrow;
+
+    .photo {
+        @include desktop-small {
+            grid-column: 2 / span 5;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info {
+        padding-top: 2rem;
+
+        @include desktop-small {
+            padding-top: 0;
+            grid-column: 7 / span 6;
+            transform: translateX(2rem);
+        }
+
+        .headline {
+            padding-bottom: 1rem;
+        }
+    }
+}

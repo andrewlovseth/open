@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .resources-sidebar {
     @include desktop-small {
         grid-column: 2 / span 4;
@@ -8,11 +10,11 @@
     }
 
     .resources-sidebar-nav {
-        @include white-shadow-card;
         border-radius: 8px;
         padding: 0;
         display: none;
         margin-bottom: 3rem;
+        @include white-shadow-card;
 
         &.show {
             display: block;

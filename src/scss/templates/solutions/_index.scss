@@ -1,81 +1,89 @@
-section.solutions {
-    @include section-spacing;
+@use "sass:meta";
+@use "../../abstracts" as *;
 
-    .solution {
-        display: grid;
-        gap: 2rem;
-        align-items: center;
+@layer templates.solutions {
+    // Main solutions page
+    :where(.page-template-solutions) {
+        section.solutions {
+            @include section-spacing;
 
-        @include tablet-small {
-            grid-column: 3 / span 6;
-        }
+            .solution {
+                display: grid;
+                gap: 2rem;
+                align-items: center;
 
-        @include desktop-small {
-            grid-template-columns: repeat(12, 1fr);
-            grid-column: 2 / span 12;
-        }
+                @include tablet-small {
+                    grid-column: 3 / span 6;
+                }
 
-        & + .solution {
-            @include section-spacing-top;
-        }
-
-        &.center {
-            .info {
-                text-align: center;
                 @include desktop-small {
-                    grid-column: 2 / span 10;
+                    grid-template-columns: repeat(12, 1fr);
+                    grid-column: 2 / span 12;
                 }
 
-                .copy {
-                    max-width: unset;
+                & + .solution {
+                    @include section-spacing-top;
                 }
-            }
-        }
 
-        .photo {
-            aspect-ratio: 16 / 9;
+                &.center {
+                    .info {
+                        text-align: center;
+                        @include desktop-small {
+                            grid-column: 2 / span 10;
+                        }
 
-            @include desktop-small {
-                aspect-ratio: unset;
-                grid-column: 1 / span 5;
-                grid-row: 1;
-            }
-
-            @include cover-fill-image;
-        }
-
-        .info {
-            @include desktop-small {
-                grid-column: 7 / span 5;
-                grid-row: 1;
-            }
-
-            .sub-headline.copy {
-                padding: 0.5rem 0 0 0;
-
-                h4 {
-                    color: #5c5c5c;
+                        .copy {
+                            max-width: unset;
+                        }
+                    }
                 }
-            }
 
-            .copy {
-                padding: 1rem 0 2rem 0;
-                max-width: 34rem;
-            }
-        }
+                .photo {
+                    aspect-ratio: 16 / 9;
 
-        &:nth-child(even) {
-            .photo {
-                @include desktop-small {
-                    grid-column: 7 / span 5;
-                    grid-row: 1;
+                    @include desktop-small {
+                        aspect-ratio: unset;
+                        grid-column: 1 / span 5;
+                        grid-row: 1;
+                    }
+
+                    @include cover-fill-image;
                 }
-            }
 
-            .info {
-                @include desktop-small {
-                    grid-column: 1 / span 6;
-                    grid-row: 1;
+                .info {
+                    @include desktop-small {
+                        grid-column: 7 / span 5;
+                        grid-row: 1;
+                    }
+
+                    .sub-headline.copy {
+                        padding: 0.5rem 0 0 0;
+
+                        h4 {
+                            color: #5c5c5c;
+                        }
+                    }
+
+                    .copy {
+                        padding: 1rem 0 2rem 0;
+                        max-width: 34rem;
+                    }
+                }
+
+                &:nth-child(even) {
+                    .photo {
+                        @include desktop-small {
+                            grid-column: 7 / span 5;
+                            grid-row: 1;
+                        }
+                    }
+
+                    .info {
+                        @include desktop-small {
+                            grid-column: 1 / span 6;
+                            grid-row: 1;
+                        }
+                    }
                 }
             }
         }

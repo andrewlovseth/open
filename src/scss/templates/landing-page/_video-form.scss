@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .video-form {
     @include section-spacing;
 

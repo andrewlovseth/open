@@ -1,0 +1,19 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.archive-resources {
+    :where(.tax-resource_type) {
+        @include meta.load-css("../archive-resources/_page-header");
+        @include meta.load-css("../archive-resources/_sidebar");
+        @include meta.load-css("../archive-resources/_list");
+        @include meta.load-css("../archive-resources/_pagination");
+    }
+
+    :where(.tax-resource_type) {
+        article.resource {
+            h4.types {
+                display: none;
+            }
+        }
+    }
+}

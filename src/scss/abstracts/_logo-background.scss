@@ -1,0 +1,7 @@
+@use "colors" as *;
+
+@mixin logo-background {
+    &:before {
+        background-color: $blue;
+    }
+}

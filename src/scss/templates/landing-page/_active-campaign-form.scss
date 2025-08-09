@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .active-campaign-form {
     .embed {
         @include tablet-small {

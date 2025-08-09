@@ -1,0 +1,13 @@
+// Global stylesheet - site-wide styles
+// Contains: reset, base, components, utilities layers
+// Template-specific styles are loaded separately per context
+
+@use "layers";
+
+@use "reset";
+@use "base";
+@use "components";
+@use "utilities";
+
+@use "header";
+@use "footer";

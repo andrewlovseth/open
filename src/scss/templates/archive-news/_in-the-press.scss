@@ -1,14 +1,15 @@
+@use "../../abstracts" as *;
+
 article.in-the-press {
     background: $white;
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px,
-        rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
 
     .photo {
         aspect-ratio: 16 / 9;
-        @include cover-fill-image;
         border-radius: 10px;
         border: 1px solid #f5f5f5;
+        @include cover-fill-image;
 
         img {
             border-top-left-radius: 10px;

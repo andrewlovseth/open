@@ -1,0 +1,24 @@
+@use "../../abstracts" as *;
+
+section.intro {
+    background: $white;
+
+    @include center-narrow;
+
+    .headline {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .copy {
+        @include desktop-small {
+            columns: 2;
+            column-gap: 3rem;
+        }
+    }
+
+    .cta {
+        padding-top: 2rem;
+        text-align: center;
+    }
+}

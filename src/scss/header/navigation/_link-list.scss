@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 .link-list {
     display: flex;
     align-items: center;
@@ -61,7 +63,7 @@
 
             &:before {
                 display: block;
-                content: '';
+                content: "";
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -79,7 +81,7 @@
                 bottom: 1rem;
                 left: 0;
                 display: block;
-                content: '';
+                content: "";
                 width: 0;
                 height: 1px;
                 transition: all 450ms ease 75ms;

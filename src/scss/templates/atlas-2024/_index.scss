@@ -1,0 +1,12 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.atlas-2024 {
+    :where(.page-template-atlas-2024) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_clients");
+        @include meta.load-css("_capabilities");
+        @include meta.load-css("_solutions");
+        @include meta.load-css("_cta");
+    }
+}

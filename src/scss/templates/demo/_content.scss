@@ -1,11 +1,13 @@
+@use "../../abstracts" as *;
+
 .demo {
     &__content {
         background: $blue;
         color: $white;
         padding: 2rem;
 
-        @include desktop-small {
             padding: 4rem;
+        @include desktop-small {
         }
     }
 
@@ -13,15 +15,15 @@
         max-width: 40rem;
         padding-bottom: 2rem;
 
-        @include desktop-small {
             margin-left: auto;
+        @include desktop-small {
         }
     }
 
     &__copy {
         max-width: 40rem;
-        @include desktop-small {
             margin-left: auto;
+        @include desktop-small {
         }
     }
 

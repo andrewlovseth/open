@@ -8,7 +8,7 @@
 
  ?>
 
- 	<div class="cta">
+ 	<div class="cta navigation-cta">
  		<a class="btn blue" href="<?php echo esc_url($link_url); ?>">
             <?php echo esc_html($link_title); ?>
         </a>

@@ -1,0 +1,16 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.landing-page-nab-2024 {
+    :where(.page-template-landing-page-nab-2024) {
+        background: #00144f url(../../../src/images/nab-ny-2024-bg.jpg) no-repeat center center;
+        background-size: cover;
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_features");
+
+        .site-footer {
+            margin-top: 12rem;
+        }
+    }
+}

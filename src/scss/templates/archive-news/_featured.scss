@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .featured {
     &-container {
         display: grid;
@@ -15,7 +17,6 @@
         @include desktop-small {
             grid-column: 3 / span 10;
             grid-template-columns: 1fr 1fr;
-
             grid-template-areas:
                 "a a"
                 "b c";
@@ -54,6 +55,7 @@
         &:nth-child(3) {
             .info {
                 padding-top: 1rem;
+
                 h3 {
                     @include desktop-medium {
                         font-size: $type-size-300;

@@ -1,6 +1,9 @@
+@use "../../abstracts" as *;
+
 .options {
-    @include small-section-spacing;
     gap: 2rem;
+
+    @include small-section-spacing;
 
     &__grid {
         display: grid;

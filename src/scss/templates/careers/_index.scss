@@ -1,0 +1,29 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.careers {
+    :where(.page-template-careers) {
+        .page-header {
+            padding: 3rem 0;
+
+            .headline {
+                padding-bottom: 1rem;
+            }
+
+            .copy {
+                @include desktop-small {
+                    grid-column: 2 / span 8;
+                }
+            }
+        }
+
+        .embed {
+            margin-bottom: 6rem;
+            @include white-shadow-card;
+
+            @include desktop-small {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

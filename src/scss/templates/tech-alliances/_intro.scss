@@ -1,15 +1,17 @@
+@use "../../abstracts" as *;
+
 section.intro {
-    @include section-spacing;
     text-align: center;
     background: $white;
+    @include section-spacing;
 
     .headline {
         padding-bottom: 1.5rem;
     }
 
     .copy {
+        grid-column: 3 / span 10;
         @include desktop-small {
-            grid-column: 3 / span 10;
         }
     }
 

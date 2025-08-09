@@ -1,6 +1,8 @@
+@use "../../abstracts" as *;
+
 section.services {
-    @include section-spacing;
     background: $light-blue;
+    @include section-spacing;
     @include center-narrow;
 
     .section-header {
@@ -39,7 +41,7 @@ section.services {
 
         &:before {
             display: block;
-            content: '';
+            content: "";
             width: 0.25rem;
             height: 100%;
             position: absolute;

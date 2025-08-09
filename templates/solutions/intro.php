@@ -1,11 +1,10 @@
 <?php
-
     $intro = get_field('intro');
-    $photo = $intro['photo'];
-    $headline = $intro['headline'];
-    $copy = $intro['copy'];
-    $sub_headline = $intro['sub_headline'];
-    $link = $intro['link'];
+    $photo = isset($intro['photo']) ? $intro['photo'] : null;
+    $headline = isset($intro['headline']) ? $intro['headline'] : null;
+    $copy = isset($intro['copy']) ? $intro['copy'] : null;
+    $sub_headline = isset($intro['sub_headline']) ? $intro['sub_headline'] : null;
+    $link = isset($intro['link']) ? $intro['link'] : null;
 
 ?>
 

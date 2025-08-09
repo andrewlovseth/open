@@ -1,0 +1,15 @@
+@use "../../abstracts" as *;
+
+section.workflow {
+    background: $light-blue;
+    gap: 1rem 2rem;
+
+    @include section-spacing;
+
+    .copy {
+        @include desktop-small {
+            padding-top: 1rem;
+            grid-column: 3 / span 10;
+        }
+    }
+}

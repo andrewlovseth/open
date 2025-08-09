@@ -1,0 +1,64 @@
+@use "../../abstracts" as *;
+
+.blog-header {
+    text-align: center;
+    @include small-section-spacing;
+
+    .page-title {
+        font-family: $oooh-baby;
+        font-size: $type-size-1000;
+
+        @include desktop-small {
+            font-size: $type-size-1500;
+        }
+    }
+
+    .copy {
+        padding: 1rem 0 0 0;
+
+        @include tablet {
+            grid-column: 3 / span 6;
+        }
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem;
+
+        @include desktop-small {
+            padding-left: 2rem;
+        }
+
+        p {
+            padding-right: 1rem;
+            font-family: $rubik;
+            text-transform: uppercase;
+            font-size: $type-size-150;
+            letter-spacing: 0.05em;
+            transform: translateY(-5px);
+        }
+
+        .logo {
+            width: 4rem;
+
+            @include desktop-small {
+                width: 6rem;
+            }
+
+            svg {
+                width: 100%;
+
+                g,
+                path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}

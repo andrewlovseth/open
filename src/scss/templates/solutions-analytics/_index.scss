@@ -1,0 +1,13 @@
+@use "sass:meta";
+
+@layer templates.solutions-analytics {
+    // Main solutions page
+    :where(.page-template-solutions-analytics) {
+        @include meta.load-css("../solutions/_intro");
+        @include meta.load-css("../solutions/_related");
+
+        @include meta.load-css("_intro");
+        @include meta.load-css("_hero");
+        @include meta.load-css("_features");
+    }
+}

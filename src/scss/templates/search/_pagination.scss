@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .pagination {
     margin-top: 3rem;
     border-top: 2px solid $dark-blue;
@@ -5,7 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding-bottom: 6rem;
+    gap: 1rem;
 
     @include desktop-small {
         padding-bottom: 0;
@@ -16,7 +20,6 @@
         display: block;
         padding: 0.5rem 1rem;
         border: 2px solid;
-        margin: 0 0.5rem;
         color: $dark-blue;
         font-size: $type-size-200;
 
@@ -33,7 +36,6 @@
         display: block;
         padding: 0.5rem 1rem;
         border: 2px solid $dark-blue;
-        margin: 0 0.5rem;
         background: $dark-blue;
         color: $white;
         font-size: $type-size-200;

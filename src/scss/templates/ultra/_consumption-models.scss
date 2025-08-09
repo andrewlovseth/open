@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 section.consumption-models {
     @include section-spacing-bottom;
 

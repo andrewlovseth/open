@@ -1,8 +1,11 @@
+@use "../../abstracts" as *;
+
 .hero-demo {
     display: grid;
     overflow: hidden;
     height: 8rem;
     align-items: center;
+    background: $black;
 
     .headline {
         grid-row: 1;

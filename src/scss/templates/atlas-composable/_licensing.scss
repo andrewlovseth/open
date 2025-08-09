@@ -1,6 +1,9 @@
+@use "../../abstracts" as *;
+
 .licensing {
-    @include section-spacing;
     gap: 2rem;
+
+    @include section-spacing;
 
     &__info {
         @include desktop-small {

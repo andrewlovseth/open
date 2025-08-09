@@ -1,0 +1,15 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.customer-support {
+    :where(.page-template-customer-support) {
+        .site {
+            background: $cream;
+        }
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_intro");
+        @include meta.load-css("_features");
+        @include meta.load-css("_by-the-numbers");
+    }
+}

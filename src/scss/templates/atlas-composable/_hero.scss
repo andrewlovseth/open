@@ -1,8 +1,11 @@
+@use "../../abstracts" as *;
+
 .hero {
     background-color: #010316;
     color: $white;
     background-size: cover;
     background-position: center;
+
     &__info {
         padding: 3rem 0;
         grid-column: 2 / span 3;

@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 .pre-footer {
     margin-top: clamp(-8rem, -25vh, -16rem);
     @include purple-blue-gradient;

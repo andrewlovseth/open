@@ -1,0 +1,41 @@
+@use "../../abstracts" as *;
+
+section.features {
+    background: $white;
+
+    @include section-spacing;
+
+    .section-header {
+        text-align: center;
+        padding-bottom: 3rem;
+
+        h2.small {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: $type-size-300;
+            font-weight: 300;
+        }
+    }
+
+    .feature {
+        text-align: center;
+        border-bottom: 11px solid $black;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: all 400ms ease;
+        @include white-shadow-card;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+        }
+
+        .headline {
+            padding: 2rem 0 1rem 0;
+
+            @include desktop-small {
+                padding: 2rem 0;
+            }
+        }
+    }
+}

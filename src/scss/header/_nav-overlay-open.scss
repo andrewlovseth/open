@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 body.nav-overlay-open {
     overflow: hidden;
 

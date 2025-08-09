@@ -1,0 +1,48 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.api-docs {
+    :where(.page-template-api-docs) {
+        .hero {
+            .info {
+                padding-top: 0;
+            }
+
+            .photo {
+                height: 40vh;
+                overflow: hidden;
+            }
+        }
+
+        .intro {
+            text-align: center;
+            @include small-section-spacing;
+
+            .copy {
+                @include desktop-small {
+                    grid-column: 3 / span 10;
+                }
+            }
+
+            .ctas {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .cta + .cta {
+                    padding-left: 2rem;
+                }
+
+                .btn {
+                    line-height: 1.25em;
+                }
+            }
+        }
+
+        .site-content {
+            @include desktop-small {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@use "../../abstracts" as *;
+
 .partners {
     padding: 3rem 0;
     background: $white;
@@ -16,6 +18,7 @@
             grid-template-columns: repeat(12, minmax(0, 4.5rem));
             align-items: end;
         }
+
         .section-title {
             @include desktop-small {
                 grid-column: 1 / span 4;

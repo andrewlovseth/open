@@ -1,3 +1,5 @@
+@use "./abstracts" as *;
+
 .footer-container {
     padding: clamp(3rem, 12vh, 7.5rem) 0 0 0;
 
@@ -44,7 +46,7 @@
     }
 
     form {
-        background: unset;
+        background: unset !important;
     }
 
     .field-container {

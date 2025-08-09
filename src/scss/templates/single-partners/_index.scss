@@ -1,0 +1,8 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.single-partners {
+    :where(.single-partners) {
+        // Single partners styles (currently empty)
+    }
+}

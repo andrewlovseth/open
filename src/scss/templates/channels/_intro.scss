@@ -1,7 +1,9 @@
+@use "../../abstracts" as *;
+
 section.intro {
-    @include section-spacing;
     text-align: center;
     background: $white;
+    @include section-spacing;
 
     .headline {
         padding-bottom: 1.5rem;

@@ -1,0 +1,17 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.atlas-composable {
+    :where(.page-template-atlas-composable) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_licensing");
+        @include meta.load-css("_performance-engine");
+        @include meta.load-css("_options");
+        @include meta.load-css("_cta");
+        @include meta.load-css("_related");
+
+        .site-footer {
+            margin-top: 0;
+        }
+    }
+}

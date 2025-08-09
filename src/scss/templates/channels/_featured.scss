@@ -1,6 +1,8 @@
+@use "../../abstracts" as *;
+
 section.featured {
-    @include section-spacing-bottom;
     background: $white;
+    @include section-spacing-bottom;
 
     .partner {
         .logo {

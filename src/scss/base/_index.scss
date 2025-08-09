@@ -1,0 +1,36 @@
+@use "sass:meta";
+@use "../abstracts" as *;
+
+@layer base {
+    @include meta.load-css("base/grid");
+    @include meta.load-css("base/headings");
+    @include meta.load-css("base/copy");
+    @include meta.load-css("base/web-fonts");
+
+    // base-level element defaults
+    body {
+        background-color: #f8f8f8;
+    }
+
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        font-family: $circular;
+        color: $black;
+    }
+
+    ::selection {
+        background: $blue;
+        color: $white;
+        text-shadow: none;
+    }
+
+    a {
+        color: $black;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+}

@@ -1,19 +1,21 @@
+@use "../../abstracts" as *;
+
 .demo {
     &__form {
         background: $white;
         padding: 2rem;
         padding-bottom: clamp(10rem, 30vh, 15rem);
 
-        @include desktop-small {
             padding: 4rem;
             padding-bottom: clamp(10rem, 30vh, 15rem);
+        @include desktop-small {
         }
     }
 
     .forminator-custom-form {
-        @include desktop-small {
             max-width: 40rem;
             margin-right: auto;
+        @include desktop-small {
         }
     }
 }

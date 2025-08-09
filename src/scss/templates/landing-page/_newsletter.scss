@@ -1,9 +1,11 @@
+@use "../../abstracts" as *;
+
 .newsletter {
-    @include section-spacing;
     background: $black;
     color: $white;
     align-items: center;
     gap: 2rem;
+    @include section-spacing;
 
     &__info {
         @include desktop-small {

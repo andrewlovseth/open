@@ -1,0 +1,11 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.company {
+    :where(.page-template-company) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_intro");
+        @include meta.load-css("_features");
+        @include meta.load-css("_customers");
+    }
+}

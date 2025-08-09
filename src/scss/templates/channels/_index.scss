@@ -1,0 +1,12 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.channels {
+    :where(.page-template-channels) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_intro");
+        @include meta.load-css("_featured");
+        @include meta.load-css("_why");
+        @include meta.load-css("_partners");
+    }
+}

@@ -1,3 +1,11 @@
+@forward "navigation/link-list";
+
+@forward "navigation/initial-tab";
+
+@forward "navigation/nav-content";
+
+@use "./abstracts" as *;
+
 .site-navigation {
     background: $black;
     width: 100%;
@@ -17,12 +25,6 @@
         right: -100% !important;
         transition: right 725ms ease 400ms;
     }
-
-    @import 'navigation/link-list';
-
-    @import 'navigation/initial-tab';
-
-    @import 'navigation/nav-content';
 
     .tab-container {
         display: none;

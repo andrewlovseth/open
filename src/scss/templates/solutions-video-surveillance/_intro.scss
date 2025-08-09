@@ -1,0 +1,18 @@
+@use "../../abstracts" as *;
+
+section.intro {
+    background: $white;
+
+    @include center-narrow;
+
+    .headline {
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .info {
+        @include desktop-small {
+            grid-column: 3 / span 10;
+        }
+    }
+}
