@@ -1,0 +1,9 @@
+@layer templates.page-default {
+  :where(.page-template-default) .page-body {
+    padding-bottom: 6rem;
+    padding-bottom: 0;
+  }
+  :where(.page-template-default) .page-body .copy {
+    grid-column: 2/span 8;
+  }
+}

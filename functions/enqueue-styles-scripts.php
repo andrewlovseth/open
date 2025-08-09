@@ -3,8 +3,8 @@
 // Enqueue custom styles and scripts
 function bearsmith_enqueue_styles_and_scripts() {
     // Use stylesheet_* for child-theme safe paths
-    $base_uri  = get_stylesheet_directory_uri() . '/dist/css';
-    $base_path = get_stylesheet_directory() . '/dist/css';
+    $base_uri  = get_stylesheet_directory_uri() . '/public/css';
+    $base_path = get_stylesheet_directory() . '/public/css';
 
     // 1) Global (always)
     $global_uri  = $base_uri . '/global.css';

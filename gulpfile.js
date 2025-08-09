@@ -27,8 +27,8 @@ const paths = {
         watch: ["./**/*.php", "./templates/**/*.php", "./template-parts/**/*.php"],
     },
     out: {
-        root: "dist/css",
-        templates: "dist/css/templates",
+        root: "public/css",
+        templates: "public/css/templates",
     },
 };
 
@@ -48,7 +48,7 @@ function cssGlobal() {
         .pipe(browserSync.stream());
 }
 
-// Compile every templates/**/_index.scss to dist/css/templates/<folder>.css
+// Compile every templates/**/_index.scss to public/css/templates/<folder>.css
 function cssTemplates() {
     console.log("🚀 Starting cssTemplates...");
 

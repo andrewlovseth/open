@@ -1,0 +1,216 @@
+@layer templates.solutions-protection {
+  :where(.page-template-solutions-protection) section.solutions-intro {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.solutions-intro {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.solutions-intro .copy {
+      line-height: 2rem;
+    }
+  }
+  :where(.page-template-solutions-protection) section.solutions-intro .photo img {
+    width: 100%;
+  }
+  :where(.page-template-solutions-protection) .related {
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
+    padding-top: clamp(1.25rem, 5vh, 2.5rem);
+    padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) .related {
+      padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+      padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-protection) .related {
+      grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) .related {
+      grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(0, auto);
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-solutions-protection) .related {
+      padding-top: clamp(2.5rem, 10vh, 5rem);
+    }
+  }
+  @media screen and (min-width: 1280px) and (min-width: 992px) {
+    :where(.page-template-solutions-protection) .related {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-protection) .related > * {
+    grid-column: 2/span 4;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-protection) .related > * {
+      grid-column: 2/span 8;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) .related > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-protection) .related .section-header {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-solutions-protection) section.intro {
+    background: #fff;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-protection) section.intro > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.intro > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-protection) section.intro .headline {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.intro .copy {
+      -moz-columns: 2;
+           columns: 2;
+      -moz-column-gap: 3rem;
+           column-gap: 3rem;
+    }
+  }
+  :where(.page-template-solutions-protection) section.intro .cta {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  :where(.page-template-solutions-protection) .hero h1 {
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-protection) .hero .deck {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-solutions-protection) .hero .deck p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-protection) section.data-protection {
+    background: #f4f7f9;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  :where(.page-template-solutions-protection) section.data-protection .info {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-protection) section.data-protection .info {
+      width: 50%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  :where(.page-template-solutions-protection) section.data-protection .info-wrapper {
+    max-width: 37.75rem;
+    margin-left: auto;
+    padding: 4rem 4.75rem 4rem 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-protection) section.data-protection .info-wrapper {
+      width: 100%;
+    }
+  }
+  :where(.page-template-solutions-protection) section.data-protection .info .headline {
+    padding-bottom: 1.5rem;
+  }
+  :where(.page-template-solutions-protection) section.data-protection .photo {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-protection) section.data-protection .photo {
+      width: 50%;
+    }
+  }
+  :where(.page-template-solutions-protection) section.data-protection .photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  :where(.page-template-solutions-protection) section.features {
+    background: #fff;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.features {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-protection) section.features .section-header {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  :where(.page-template-solutions-protection) section.features .section-header h2.small {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+    font-weight: 300;
+  }
+  :where(.page-template-solutions-protection) section.features .feature {
+    text-align: center;
+    border-bottom: 11px solid #000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 400ms ease;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2rem;
+    border: 1px solid #e5e5e5;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-protection) section.features .feature {
+      padding: 2rem 2.5rem;
+    }
+  }
+  :where(.page-template-solutions-protection) section.features .feature .icon {
+    display: flex;
+    justify-content: center;
+  }
+  :where(.page-template-solutions-protection) section.features .feature .headline {
+    padding: 2rem 0 1rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.features .feature .headline {
+      padding: 2rem 0;
+    }
+  }
+  :where(.page-template-solutions-protection) section.partners {
+    background: #f4f7f9;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-protection) section.partners {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-protection) section.partners .section-header {
+    padding-bottom: 2.5rem;
+  }
+}

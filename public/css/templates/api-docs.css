@@ -1,0 +1,41 @@
+@layer templates.api-docs {
+  :where(.page-template-api-docs) .hero .info {
+    padding-top: 0;
+  }
+  :where(.page-template-api-docs) .hero .photo {
+    height: 40vh;
+    overflow: hidden;
+  }
+  :where(.page-template-api-docs) .intro {
+    text-align: center;
+    padding-top: clamp(1.25rem, 5vh, 2.5rem);
+    padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-api-docs) .intro {
+      padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+      padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-api-docs) .intro .copy {
+      grid-column: 3/span 10;
+    }
+  }
+  :where(.page-template-api-docs) .intro .ctas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  :where(.page-template-api-docs) .intro .ctas .cta + .cta {
+    padding-left: 2rem;
+  }
+  :where(.page-template-api-docs) .intro .ctas .btn {
+    line-height: 1.25em;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-api-docs) .site-content {
+      padding-bottom: 0;
+    }
+  }
+}
