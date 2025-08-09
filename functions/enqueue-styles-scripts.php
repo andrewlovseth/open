@@ -171,10 +171,70 @@ add_action('wp_head', function () {
   echo '<link rel="dns-prefetch" href="//cdn.jsdelivr.net">';
   
   // Preload Swiper JS for critical pages to reduce loading delay
-  if (is_page(array(26, 'home-2023'))) {
+  if (has_swiper_content()) {
     echo '<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js">';
   }
+  
+  // Add resource hints for AOS when needed
+  if (has_aos_animations()) {
+    echo '<link rel="dns-prefetch" href="//unpkg.com">';
+    echo '<link rel="preconnect" href="https://unpkg.com" crossorigin>';
+  }
 }, 1);
+
+// Helper function to determine if current page uses AOS animations
+function has_aos_animations() {
+    // Pages that use AOS animations
+    $aos_pages = array(
+        'home-2023',
+        'template-home.php'
+    );
+    
+    // Check if current page uses AOS
+    if (is_page($aos_pages) || is_page_template($aos_pages)) {
+        return true;
+    }
+    
+    // Check for specific templates that use AOS
+    if (is_page_template('template-home.php')) {
+        return true;
+    }
+    
+    // Check if page content or template parts contain AOS attributes
+    global $post;
+    if ($post && (strpos($post->post_content, 'data-aos') !== false)) {
+        return true;
+    }
+    
+    return false;
+}
+
+// Helper function to determine if current page uses Swiper
+function has_swiper_content() {
+    // Pages that use Swiper
+    $swiper_pages = array(
+        26, // Page ID for home-2023
+        'home-2023'
+    );
+    
+    // Templates that use Swiper
+    $swiper_templates = array(
+        'atlas-cloud-plus.php'
+    );
+    
+    // Check if current page uses Swiper
+    if (is_page($swiper_pages) || is_page_template($swiper_templates)) {
+        return true;
+    }
+    
+    // Check if page content contains swiper elements
+    global $post;
+    if ($post && (strpos($post->post_content, 'swiper') !== false || strpos($post->post_content, 'hero-swiper') !== false)) {
+        return true;
+    }
+    
+    return false;
+}
 
 
 // 1) Convert RB2B <script src="...reb2b.js.gz"> into a delayed placeholder

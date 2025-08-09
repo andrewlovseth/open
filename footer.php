@@ -26,10 +26,40 @@
 	<?php echo get_field('code_body_bottom', 'options'); ?>
 <?php endif; ?>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<?php if (has_aos_animations()): ?>
 <script>
-AOS.init();
+// Load AOS only when needed and after user interaction or page load
+(function() {
+    let aosLoaded = false;
+    
+    function loadAOS() {
+        if (aosLoaded) return;
+        aosLoaded = true;
+        
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+        script.onload = function() {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 50
+            });
+        };
+        document.head.appendChild(script);
+    }
+    
+    // Load on first user interaction for better LCP
+    ['scroll', 'mousemove', 'keydown', 'touchstart'].forEach(function(event) {
+        document.addEventListener(event, loadAOS, { once: true, passive: true });
+    });
+    
+    // Fallback: load after page load with delay
+    window.addEventListener('load', function() {
+        setTimeout(loadAOS, 1000);
+    });
+})();
 </script>
+<?php endif; ?>
 
 </div> <!-- .site -->
 

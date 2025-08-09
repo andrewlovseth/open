@@ -37,17 +37,15 @@ function noop() {
 }
 
 function cssGlobal() {
-    return (
-        src(paths.scss.global, { allowEmpty: true })
-            .pipe(plumber())
-            .pipe(!isProd ? sourcemaps.init() : noop())
-            .pipe(sass.sync({ quietDeps: true }).on("error", sass.logError))
-            .pipe(postcss([autoprefixer()]))
-            //.pipe(isProd ? cleanCSS({ level: 2 }) : noop())
-            .pipe(!isProd ? sourcemaps.write(".") : noop())
-            .pipe(dest(paths.out.root))
-            .pipe(browserSync.stream())
-    );
+    return src(paths.scss.global, { allowEmpty: true })
+        .pipe(plumber())
+        .pipe(!isProd ? sourcemaps.init() : noop())
+        .pipe(sass.sync({ quietDeps: true }).on("error", sass.logError))
+        .pipe(postcss([autoprefixer()]))
+        .pipe(isProd ? cleanCSS({ level: 2 }) : noop())
+        .pipe(!isProd ? sourcemaps.write(".") : noop())
+        .pipe(dest(paths.out.root))
+        .pipe(browserSync.stream());
 }
 
 // Compile every templates/**/_index.scss to dist/css/templates/<folder>.css
@@ -93,6 +91,13 @@ function cssTemplates() {
             // Apply autoprefixer
             const prefixed = postcss([autoprefixer()]).process(css, { from: undefined });
             css = prefixed.css;
+
+            // Apply minification in production
+            if (isProd) {
+                const CleanCSS = require("clean-css");
+                const minified = new CleanCSS({ level: 2 }).minify(css);
+                css = minified.styles;
+            }
 
             // Write output
             const outputPath = path.join(outputDir, `${templateName}.css`);

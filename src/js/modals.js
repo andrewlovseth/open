@@ -153,6 +153,7 @@ const Modal = {
         const heroSwiper = new SwiperClass(".hero-swiper", {
             autoplay: {
                 delay: 4000,
+                disableOnInteraction: false,
             },
             speed: 600,
             effect: "fade",
@@ -168,9 +169,22 @@ const Modal = {
                 type: "bullets",
                 clickable: true,
             },
-            // Ensure smooth initialization
+            // Ensure smooth initialization and performance optimizations
             observer: true,
             observeParents: true,
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            // Optimize for performance
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+            },
+            // Callback to remove initialization blocker class
+            on: {
+                init: function () {
+                    heroSwiperElement.classList.add("swiper-initialized");
+                },
+            },
         });
     },
     init: function () {

@@ -15,13 +15,15 @@
 	<?php wp_head(); ?>
 
 	<?php 
-		// Load Swiper CSS only on pages that use it - load synchronously to prevent layout shift
-		if(is_page(array(26, 'home-2023')) || is_page_template('atlas-cloud-plus.php')): ?>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		// Load Swiper CSS only on pages that use it - use preload for better performance
+		if(has_swiper_content()): ?>
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"></noscript>
 		<style>
-		/* Prevent layout shift and multiple slides showing before Swiper initialization */
+		/* Critical CSS to prevent layout shift and multiple slides showing before Swiper initialization */
 		.hero-swiper:not(.swiper-initialized) .swiper-wrapper {
 			transform: none !important;
+			display: block;
 		}
 		.hero-swiper:not(.swiper-initialized) .swiper-slide {
 			opacity: 0;
@@ -29,6 +31,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
+			height: 100%;
 		}
 		.hero-swiper:not(.swiper-initialized) .swiper-slide:first-child {
 			opacity: 1 !important;
@@ -38,10 +41,26 @@
 		.hero-swiper:not(.swiper-initialized) .swiper-pagination {
 			display: none;
 		}
+		/* Optimize swiper container for LCP */
+		.swiper:not(.swiper-initialized) .swiper-wrapper {
+			display: block;
+		}
+		.swiper:not(.swiper-initialized) .swiper-slide {
+			display: block;
+			width: 100%;
+		}
+		.swiper:not(.swiper-initialized) .swiper-slide:not(:first-child) {
+			display: none;
+		}
 		</style>
 	<?php endif; ?>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <?php
+        // Only load AOS CSS on pages that actually use AOS animations
+        if (has_aos_animations()): ?>
+        <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+    <?php endif; ?>
 
 
 	<?php if(get_field('code_head', 'options')): ?>
