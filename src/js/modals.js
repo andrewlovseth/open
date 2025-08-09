@@ -1,4 +1,27 @@
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+// Dynamically import Swiper only when needed
+let Swiper = null;
+let swiperLoading = false;
+
+async function loadSwiper() {
+    if (Swiper) return Swiper;
+
+    if (swiperLoading) {
+        // Wait for existing load to complete
+        while (swiperLoading) {
+            await new Promise((resolve) => setTimeout(resolve, 10));
+        }
+        return Swiper;
+    }
+
+    swiperLoading = true;
+    try {
+        const module = await import("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js");
+        Swiper = module.default;
+        return Swiper;
+    } finally {
+        swiperLoading = false;
+    }
+}
 
 const Modal = {
     modals: function () {
@@ -37,11 +60,16 @@ const Modal = {
         const acPlusLinks = document.querySelectorAll(".js-ac-plus-modal");
 
         acPlusLinks.forEach((link) => {
-            link.addEventListener("click", (e) => {
+            link.addEventListener("click", async (e) => {
+                e.preventDefault();
+
                 const slideIndex = link.dataset.slideIndex;
                 console.log(slideIndex);
 
-                const acPlusSwiper = new Swiper(".swiper", {
+                // Load Swiper only when modal is triggered
+                const SwiperClass = await loadSwiper();
+
+                const acPlusSwiper = new SwiperClass(".swiper", {
                     autoplay: false,
                     speed: 600,
                     spaceBetween: 0,
@@ -55,8 +83,6 @@ const Modal = {
                         clickable: true,
                     },
                 });
-
-                e.preventDefault();
             });
         });
     },
@@ -110,8 +136,21 @@ const Modal = {
         //MicroModal.show("nab");
     },
 
-    homeHeroSwiper: function () {
-        const heroSwiper = new Swiper(".hero-swiper", {
+    homeHeroSwiper: async function () {
+        const heroSwiperElement = document.querySelector(".hero-swiper");
+
+        // Only initialize if the hero swiper element exists
+        if (!heroSwiperElement) {
+            return;
+        }
+
+        // Load Swiper only when needed
+        const SwiperClass = await loadSwiper();
+
+        // Add a small delay to ensure DOM is stable before initialization
+        await new Promise((resolve) => setTimeout(resolve, 100));
+
+        const heroSwiper = new SwiperClass(".hero-swiper", {
             autoplay: {
                 delay: 4000,
             },
@@ -129,6 +168,9 @@ const Modal = {
                 type: "bullets",
                 clickable: true,
             },
+            // Ensure smooth initialization
+            observer: true,
+            observeParents: true,
         });
     },
     init: function () {

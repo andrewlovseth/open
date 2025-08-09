@@ -15,9 +15,30 @@
 	<?php wp_head(); ?>
 
 	<?php 
-		// Atlas Cloud Plus
-		if(is_page(array(26, 'home-2023'))): ?>
+		// Load Swiper CSS only on pages that use it - load synchronously to prevent layout shift
+		if(is_page(array(26, 'home-2023')) || is_page_template('atlas-cloud-plus.php')): ?>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		<style>
+		/* Prevent layout shift and multiple slides showing before Swiper initialization */
+		.hero-swiper:not(.swiper-initialized) .swiper-wrapper {
+			transform: none !important;
+		}
+		.hero-swiper:not(.swiper-initialized) .swiper-slide {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		.hero-swiper:not(.swiper-initialized) .swiper-slide:first-child {
+			opacity: 1 !important;
+			position: relative;
+		}
+		/* Hide pagination until Swiper is ready */
+		.hero-swiper:not(.swiper-initialized) .swiper-pagination {
+			display: none;
+		}
+		</style>
 	<?php endif; ?>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />

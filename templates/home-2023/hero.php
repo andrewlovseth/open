@@ -57,7 +57,20 @@
 
         <div class="hero__photo">
             <div class="hero__photo-wrapper">
-                <?php echo wp_get_attachment_image($photo['ID'], 'large'); ?>
+<?php
+echo wp_get_attachment_image(
+  $photo['ID'],
+  'hero',        // we'll define this size below
+  false,
+  [
+    'class'          => 'hero__img',
+    'loading'        => 'eager',        // critical
+    'decoding'       => 'async',
+    'fetchpriority'  => 'high',         // Chrome hints this is LCP
+    'sizes'          => '(max-width: 768px) 100vw, 1200px' // tune to your layout
+  ]
+);
+?>
             </div>
         </div>
 
