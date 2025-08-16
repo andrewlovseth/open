@@ -1,0 +1,23 @@
+@layer wordpress-override {
+    /* Override WordPress block editor's automatic link underlining */
+    a:where(:not(.wp-element-button)) {
+        text-decoration: none !important;
+    }
+
+    /* Ensure buttons still have proper styling */
+    .wp-element-button {
+        text-decoration: none !important;
+    }
+
+    /* Override any other WordPress block editor defaults that might interfere */
+    .wp-block {
+        /* Ensure our spacing controls work */
+        margin: inherit;
+        padding: inherit;
+    }
+
+    /* Override WordPress default block margins */
+    .wp-block + .wp-block {
+        margin-top: inherit;
+    }
+}

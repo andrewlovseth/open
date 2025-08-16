@@ -5,11 +5,54 @@
 */
 
 
+// 1) Core block supports
+add_action('after_setup_theme', function () {
+  // Native block styles (frontend parity for many core blocks)
+  add_theme_support('wp-block-styles');
+
+  // Let blocks go wide/full
+  add_theme_support('align-wide');
+
+  // Better media behavior
+  add_theme_support('responsive-embeds');
+
+  // Use editor styles and load your editor CSS
+  add_theme_support('editor-styles');
+  add_editor_style('assets/css/editor.css'); // create this file
+
+  // Modern controls in the editor (spacing, border, etc.)
+  add_theme_support('appearance-tools');
+
+  // Optional but nice: HTML5 markup support
+  add_theme_support('html5', ['style', 'script', 'gallery', 'caption']);
+});
+
+// Debug function to check if theme.json is loaded
+function debug_theme_json() {
+    if (is_admin()) {
+        $theme_json = get_theme_file_path('theme.json');
+        if (file_exists($theme_json)) {
+            error_log('Theme.json exists at: ' . $theme_json);
+            $content = file_get_contents($theme_json);
+            error_log('Theme.json content length: ' . strlen($content));
+        } else {
+            error_log('Theme.json NOT found at: ' . $theme_json);
+        }
+    }
+}
+add_action('admin_init', 'debug_theme_json');
+
+// 2) Set a sensible content width fallback (used by some blocks/embeds)
+if (!isset($content_width)) {
+  $content_width = 800;
+}
+
+
 
 // Theme Support for title tags, post thumbnails, HTML5 elements, feed links
 add_theme_support('title-tag');
 
-
+add_theme_support( 'align-wide' );
 //Enable support for Post Thumbnails on posts and pages.
 add_theme_support('post-thumbnails');
 

@@ -1,0 +1,59 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.single-page {
+    .page-template-default {
+        .site-content {
+            min-height: 60dvh;
+
+            p,
+            ul,
+            ol,
+            blockquote {
+                font-weight: 300;
+            }
+        }
+
+        /* Remove theme's default content max-width for the blocks page template */
+        .no-constrain {
+            max-width: none;
+            padding: 0;
+        }
+
+        /* Optional: keep inner content readable by default */
+        .entry-content,
+        .site-main {
+            /* Do not fix a width here on the full-width template */
+        }
+
+        /* Wide alignment: centered, larger than content */
+        .alignwide {
+            max-width: 1200px; /* match your design */
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* Full alignment: stretch edge to edge */
+        .alignfull {
+            width: 100%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            max-width: 100vw; /* ensure it truly spans viewport */
+        }
+
+        /* Helpful defaults for hero/cover blocks */
+        .wp-block-cover {
+            min-height: 50vh;
+        }
+
+        /* Make images not spill unexpectedly */
+        .wp-block-image img {
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+    }
+}
