@@ -23,6 +23,7 @@
 
     &__container {
         background-color: #fff;
+        border: 1px solid rgba($black, 0.1);
         padding: clamp(1rem, 5vh, 3rem);
         width: calc(100% - 4rem);
         max-width: 64rem;

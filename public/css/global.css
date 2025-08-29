@@ -227,10 +227,10 @@
     text-transform: none;
   }
   .copy {
-    font-weight: 300;
+    font-weight: 400;
   }
   .copy.secondary-color {
-    color: #5c5c5c;
+    color: #5a5b5b;
   }
   .copy.extended > * + * {
     margin-top: 2rem;
@@ -269,76 +269,6 @@
   .copy .btn {
     text-decoration: none;
   }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-Medium.woff2") format("woff2"), url("../../src/fonts/CircularStd-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-Black.woff2") format("woff2"), url("../../src/fonts/CircularStd-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std Book";
-    src: url("../../src/fonts/CircularStd-Book.woff2") format("woff2"), url("../../src/fonts/CircularStd-Book.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-BlackItalic.woff2") format("woff2"), url("../../src/fonts/CircularStd-BlackItalic.woff") format("woff");
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-Light.woff2") format("woff2"), url("../../src/fonts/CircularStd-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-BoldItalic.woff2") format("woff2"), url("../../src/fonts/CircularStd-BoldItalic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-LightItalic.woff2") format("woff2"), url("../../src/fonts/CircularStd-LightItalic.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-Bold.woff2") format("woff2"), url("../../src/fonts/CircularStd-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-BookItalic.woff2") format("woff2"), url("../../src/fonts/CircularStd-BookItalic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Circular Std";
-    src: url("../../src/fonts/CircularStd-MediumItalic.woff2") format("woff2"), url("../../src/fonts/CircularStd-MediumItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-  }
   body {
     background-color: #f8f8f8;
   }
@@ -348,7 +278,7 @@
   select,
   optgroup,
   textarea {
-    font-family: "Circular Std", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #000;
   }
   ::-moz-selection {
@@ -420,7 +350,7 @@
     padding: 0.75rem 1.75rem 0.625rem;
     border-radius: 25px;
     font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
-    font-family: "Rubik", sans-serif;
+    font-weight: 500;
     letter-spacing: 0.1em;
     transition: all 400ms ease;
   }
@@ -481,7 +411,7 @@
     padding: 0 0 0.125rem 0;
     font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
     font-weight: bold;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1em;
     transition: all 400ms ease;
   }
@@ -546,7 +476,7 @@
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     transition: all 1000ms ease;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   @media screen and (min-width: 480px) {
     .rich-cta.half .photo {
@@ -815,7 +745,7 @@
   .hero .info .deck p {
     font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
     font-weight: 300;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .hero .photo {
     grid-column: 1/-1;
@@ -1064,6 +994,7 @@
   }
   .modal__container {
     background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: clamp(1rem, 5vh, 3rem);
     width: calc(100% - 4rem);
     max-width: 64rem;
@@ -1397,9 +1328,9 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 500;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 0.25rem;
   }
   .related .item .info {
@@ -1546,7 +1477,7 @@
   .desktop-nav__link {
     display: block;
     font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: all 200ms ease;
     white-space: nowrap;
     padding: 0 0.75rem;
@@ -1592,7 +1523,7 @@
   }
   .desktop-nav__sub-nav-link {
     font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .desktop-nav__sub-nav-link:hover {
     text-decoration: underline;
@@ -1677,7 +1608,7 @@
     font-weight: 300;
     height: 2.5rem;
     line-height: 2.5rem;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: all 200ms ease;
   }
   .search-input::-webkit-input-placeholder {
@@ -1709,7 +1640,7 @@
     padding: 0 0.5rem 0 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: all 200ms ease;
   }
   .search-submit:hover {
@@ -1745,7 +1676,7 @@
   }
   .queries__link {
     display: inline-block;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.5rem, 0.42rem + 0.38vw, 0.675rem);
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -1916,7 +1847,7 @@
     font-weight: 300;
     height: 2.5rem;
     line-height: 2.5rem;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: all 200ms ease;
   }
   .search-input::-webkit-input-placeholder {
@@ -1948,7 +1879,7 @@
     padding: 0 0.5rem 0 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: all 200ms ease;
   }
   .search-submit:hover {
@@ -1984,7 +1915,7 @@
   }
   .queries__link {
     display: inline-block;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.5rem, 0.42rem + 0.38vw, 0.675rem);
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -2054,7 +1985,7 @@
   .mobile-nav a {
     color: #000;
     font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .mobile-nav-logo {
     padding-bottom: 1rem;
@@ -2075,7 +2006,7 @@
     align-items: center;
   }
   .mobile-nav-toggle .label {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .mobile-nav-toggle .icon {
     width: 0.875rem;
@@ -2101,7 +2032,7 @@
     padding-bottom: 1rem;
   }
   .mobile-nav-section.basic a {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .mobile-nav-body {
     display: none;
@@ -2182,7 +2113,7 @@
     color: #fff;
     font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
     font-weight: 300;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     position: relative;
     transition-property: all;
@@ -2334,7 +2265,7 @@
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .tab-initial .social {
     display: grid;
@@ -2377,7 +2308,7 @@
     fill: #2d77f8;
   }
   .tab-initial .social p {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
   }
@@ -2404,7 +2335,7 @@
   @media screen and (min-width: 1440px) {
     .latest {
       display: block;
-      font-family: "Rubik", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 300;
       margin-top: 4rem;
     }
@@ -2727,6 +2658,8 @@
     background: #fff;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
   }
   @media screen and (min-width: 992px) {
     .site-header.has-banner {
@@ -2822,7 +2755,7 @@
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-bottom: 0.5rem;
   }
   .newsletter-form .email-input {
@@ -2868,24 +2801,16 @@
     }
   }
   .pre-footer {
-    margin-top: clamp(-8rem, -25vh, -16rem);
     background-image: linear-gradient(90deg, #a510f8 0%, #00a3ff 100%);
     color: #fff;
     border-radius: 1rem;
-    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-  }
-  @media screen and (min-width: 992px) {
-    .pre-footer {
-      justify-content: space-between;
-      padding: 3rem;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    .pre-footer {
-      padding: 4rem;
-    }
+    margin: 2rem auto;
+    max-width: 1079px;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
   }
   .pre-footer .headline {
     padding-bottom: 1rem;
@@ -2983,7 +2908,7 @@
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .footer-nav ul {
     padding-top: 0.5rem;
@@ -2992,7 +2917,7 @@
     padding-bottom: 0.25rem;
   }
   .footer-nav ul li a {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
   }
@@ -3021,7 +2946,7 @@
   }
   .social p {
     padding-top: 2rem;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
   }
@@ -3099,12 +3024,12 @@
   .site-footer {
     background: #000;
     color: #fff;
-    margin-top: clamp(5rem, 15vh, 7.5rem);
   }
-  @media screen and (min-width: 992px) {
-    .site-footer {
-      margin-top: clamp(10rem, 30vh, 15rem);
-    }
+  .site-footer a {
+    text-decoration: none;
+  }
+  .site-footer a:hover {
+    text-decoration: underline;
   }
 }
 @layer wordpress-override {

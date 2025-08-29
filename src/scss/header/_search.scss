@@ -90,7 +90,7 @@
         font-weight: 300;
         height: 2.5rem;
         line-height: 2.5rem;
-        font-family: $rubik;
+        font-family: $montserrat;
         transition: all 200ms ease;
 
         @include placeholder {
@@ -114,7 +114,7 @@
         padding: 0 0.5rem 0 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
         font-size: $type-size-200;
-        font-family: $rubik;
+        font-family: $montserrat;
         transition: all 200ms ease;
 
         &:hover {
@@ -163,7 +163,7 @@
 
     &__link {
         display: inline-block;
-        font-family: $rubik;
+        font-family: $montserrat;
         font-size: $type-size-050;
         font-weight: 600;
         letter-spacing: 0.05em;

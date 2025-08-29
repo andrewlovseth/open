@@ -229,7 +229,7 @@
   }
   :where(.page-template-tech-alliances) section.partners .partner h4 {
     color: #0a2d6b;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
   }
 }

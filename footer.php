@@ -1,7 +1,8 @@
 	</main> <!-- .site-content -->
+    
+	<?php get_template_part('template-parts/footer/pre-footer'); ?>
 
 	<footer class="site-footer grid">
-		<?php get_template_part('template-parts/footer/pre-footer'); ?>
 
 		<div class="footer-container">
 			<?php get_template_part('template-parts/footer/logo'); ?>

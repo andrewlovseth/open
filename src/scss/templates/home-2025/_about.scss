@@ -1,0 +1,97 @@
+@use "../../abstracts" as *;
+
+.about {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__headline {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__copy {
+        font-weight: 400;
+        text-wrap: pretty;
+        max-width: 52rem;
+        margin: 0 auto;
+        line-height: 1.75em;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+
+    &__editorial {
+        display: grid;
+        gap: 2rem 4rem;
+        align-items: center;
+
+        @include tablet {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        & + .about__editorial {
+            padding-top: 4rem;
+        }
+
+        .copy {
+            line-height: 1.75em;
+        }
+
+        &-1 {
+            .photo {
+                position: relative;
+
+                &::after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: -24px;
+                    right: -12px;
+                    width: 4rem;
+                    height: 5.5rem;
+                    background-color: #f9a009;
+                }
+            }
+        }
+
+        &-2 {
+            .copy {
+            }
+
+            .photo {
+                position: relative;
+
+                &::after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    bottom: -28px;
+                    left: -32px;
+                    width: 4rem;
+                    height: 5.5rem;
+                    background-color: #cd1055;
+                }
+
+                @include tablet {
+                    order: -1;
+                }
+            }
+        }
+    }
+
+    &__rect-right {
+        position: absolute;
+        top: -5%;
+        right: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 6rem;
+        }
+    }
+}

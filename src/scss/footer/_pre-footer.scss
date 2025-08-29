@@ -1,22 +1,16 @@
 @use "./abstracts" as *;
 
 .pre-footer {
-    margin-top: clamp(-8rem, -25vh, -16rem);
     @include purple-blue-gradient;
     color: $white;
     border-radius: 1rem;
-    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-
-    @include desktop-small {
-        justify-content: space-between;
-        padding: 3rem;
-    }
-
-    @include desktop-medium {
-        padding: 4rem;
-    }
+    margin: 2rem auto;
+    max-width: 1079px;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
 
     .headline {
         padding-bottom: 1rem;

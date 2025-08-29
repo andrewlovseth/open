@@ -112,7 +112,7 @@
   :where(.single-customer_stories) article.customer_stories .article-body blockquote h4 {
     padding-top: 2rem;
     text-transform: uppercase;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
     line-height: 1.5em;
   }
@@ -155,7 +155,7 @@
     color: #000;
     text-decoration: none;
     line-height: 1.375em;
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
   }
   :where(.single-customer_stories) article.customer_stories .article-body .links .link a .icon {

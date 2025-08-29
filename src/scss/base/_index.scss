@@ -5,7 +5,6 @@
     @include meta.load-css("base/grid");
     @include meta.load-css("base/headings");
     @include meta.load-css("base/copy");
-    @include meta.load-css("base/web-fonts");
 
     // base-level element defaults
     body {
@@ -18,7 +17,7 @@
     select,
     optgroup,
     textarea {
-        font-family: $circular;
+        font-family: $montserrat;
         color: $black;
     }
 

@@ -41,6 +41,19 @@
 		.hero-swiper:not(.swiper-initialized) .swiper-pagination {
 			display: none;
 		}
+		/* Values swiper specific styles to prevent layout shift */
+		.values-swiper:not(.swiper-initialized) .swiper-wrapper {
+			display: flex;
+			gap: 2rem;
+			overflow: hidden;
+		}
+		.values-swiper:not(.swiper-initialized) .swiper-slide {
+			flex-shrink: 0;
+			width: 25rem;
+		}
+		.values-swiper:not(.swiper-initialized) .swiper-slide:not(:nth-child(-n+3)) {
+			display: none;
+		}
 		/* Optimize swiper container for LCP */
 		.swiper:not(.swiper-initialized) .swiper-wrapper {
 			display: block;

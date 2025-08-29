@@ -303,7 +303,7 @@
     padding-top: 1.5rem;
   }
   :where(.tax-resource_type) .resources-list .resource .meta p {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
   }
   @media screen and (min-width: 768px) {

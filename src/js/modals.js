@@ -187,6 +187,77 @@ const Modal = {
             },
         });
     },
+
+    homeValuesSwiper: async function () {
+        const valuesSwiperElement = document.querySelector(".values-swiper");
+
+        // Only initialize if the values swiper element exists
+        if (!valuesSwiperElement) {
+            return;
+        }
+
+        // Load Swiper only when needed
+        const SwiperClass = await loadSwiper();
+
+        // Add a small delay to ensure DOM is stable before initialization
+        await new Promise((resolve) => setTimeout(resolve, 100));
+
+        const valuesSwiper = new SwiperClass(".values-swiper", {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            speed: 600,
+            slidesPerView: 1,
+            spaceBetween: 24,
+            grabCursor: true,
+            loop: true,
+            navigation: {
+                nextEl: ".values-swiper .swiper-button-next",
+                prevEl: ".values-swiper .swiper-button-prev",
+            },
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1600: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+
+                1920: {
+                    slidesPerView: 5,
+                    spaceBetween: 24,
+                },
+            },
+            // Ensure smooth initialization and performance optimizations
+            observer: true,
+            observeParents: true,
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            // Optimize for performance
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+            },
+            // Callback to remove initialization blocker class
+            on: {
+                init: function () {
+                    valuesSwiperElement.classList.add("swiper-initialized");
+                },
+                slideChange: function () {
+                    // Optional: Add any slide change logic here
+                },
+            },
+        });
+    },
     init: function () {
         this.modals();
         this.videoModal();
@@ -195,6 +266,7 @@ const Modal = {
         this.formModals();
         this.nabModal();
         this.homeHeroSwiper();
+        this.homeValuesSwiper();
     },
 };
 

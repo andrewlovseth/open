@@ -104,10 +104,12 @@ add_action('wp_head', function () {
   echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
   echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
   // async-load the stylesheet
-  $url = 'https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@300;400;700&family=Oooh+Baby&display=swap';
+  $url = 'https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&display=swap';
   echo '<link rel="preload" as="style" href="'.esc_url($url).'" onload="this.onload=null;this.rel=\'stylesheet\'">';
   echo '<noscript><link rel="stylesheet" href="'.esc_url($url).'"></noscript>';
 }, 1);
+
+
 
 
 add_filter("script_loader_tag", "add_module_to_my_script", 10, 3);
@@ -214,12 +216,14 @@ function has_swiper_content() {
     // Pages that use Swiper
     $swiper_pages = array(
         26, // Page ID for home-2023
-        'home-2023'
+        'home-2023',
+        5161
     );
     
     // Templates that use Swiper
     $swiper_templates = array(
-        'atlas-cloud-plus.php'
+        'atlas-cloud-plus.php',
+        'home-2025.php'
     );
     
     // Check if current page uses Swiper

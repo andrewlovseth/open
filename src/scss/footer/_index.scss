@@ -11,10 +11,13 @@
     .site-footer {
         background: $black;
         color: $white;
-        margin-top: clamp(5rem, 15vh, 7.5rem);
 
-        @include desktop-small {
-            margin-top: clamp(10rem, 30vh, 15rem);
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

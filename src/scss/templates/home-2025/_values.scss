@@ -1,0 +1,157 @@
+@use "../../abstracts" as *;
+
+.values {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__headline {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__copy {
+        font-weight: 400;
+        text-wrap: pretty;
+        max-width: 52rem;
+        margin: 0 auto;
+        line-height: 1.75em;
+        text-align: center;
+    }
+
+    &__slides {
+        grid-column: 1 / -1;
+        position: relative;
+    }
+
+    .values-swiper {
+        position: relative;
+        overflow: hidden;
+        padding: 0 2rem;
+
+        // Ensure proper swiper initialization
+        &.swiper-initialized {
+            .swiper-wrapper {
+                display: flex;
+                align-items: stretch; // Stretch all slides to same height
+                margin: 4rem 0;
+            }
+        }
+    }
+
+    .slide {
+        padding: 4rem 4rem;
+        width: 25rem;
+        height: auto; // Allow height to be flexible
+        min-height: 32rem; // Set minimum height
+        border-radius: 0.25rem;
+        transition: all 0.3s ease;
+        cursor: grab;
+        display: flex; // Make slide a flex container
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+            flex: 1; // Take up all available space
+        }
+
+        &__icon {
+        }
+
+        &__headline {
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: $black;
+            line-height: 1.2;
+        }
+
+        &__copy {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: $black;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 3rem !important;
+        height: 3rem !important;
+        background: $white;
+        border: 1px solid $black;
+        border-radius: 50%;
+        color: $black;
+        transition: all 0.3s ease;
+        z-index: 10;
+        top: auto !important; // Remove default top positioning
+        bottom: 0; // Position at bottom with some spacing
+
+        &:hover {
+            background: $black;
+            color: $white;
+
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+
+        &::after {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 50% !important;
+        transform: translateX(-3.5rem); // Center the prev button
+    }
+
+    .swiper-button-next {
+        right: 50% !important;
+        transform: translateX(3.5rem); // Center the next button
+    }
+
+    &__rect-left-top {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 1.5rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+
+    &__rect-left-bottom {
+        position: absolute;
+        bottom: -4%;
+        left: 0;
+        width: 1.5rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+
+    &__blob {
+        z-index: -1;
+        grid-column: 1;
+        grid-row: 1;
+        position: absolute;
+        top: -50%;
+        right: 0;
+    }
+}

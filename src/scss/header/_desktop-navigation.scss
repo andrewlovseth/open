@@ -52,7 +52,7 @@
     &__link {
         display: block;
         font-size: $type-size-150;
-        font-family: $rubik;
+        font-family: $montserrat;
         transition: all 200ms ease;
         white-space: nowrap;
         padding: 0 0.75rem;
@@ -98,7 +98,7 @@
 
         &-link {
             font-size: $type-size-150;
-            font-family: $rubik;
+            font-family: $montserrat;
 
             &:hover {
                 text-decoration: underline;

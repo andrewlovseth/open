@@ -1,10 +1,10 @@
 @use "./abstracts" as *;
 
 .copy {
-    font-weight: 300;
+    font-weight: 400;
 
     &.secondary-color {
-        color: $charcoal;
+        color: #5a5b5b;
     }
 
     &.extended {

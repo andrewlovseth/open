@@ -29,7 +29,7 @@
     letter-spacing: 0.05em;
     font-weight: bold;
     font-size: clamp(0.5rem, 0.42rem + 0.38vw, 0.675rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 0.25rem;
   }
   :where(.post-type-archive-news) article.press-release .info h3 {
@@ -67,7 +67,7 @@
     letter-spacing: 0.05em;
     font-weight: bold;
     font-size: clamp(0.5rem, 0.42rem + 0.38vw, 0.675rem);
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 0.25rem;
   }
   :where(.post-type-archive-news) article.in-the-press .info h3 {
