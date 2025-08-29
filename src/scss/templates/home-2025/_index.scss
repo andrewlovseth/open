@@ -6,6 +6,7 @@
         @include meta.load-css("_hero");
         @include meta.load-css("_about");
         @include meta.load-css("_values");
+        @include meta.load-css("_customers");
 
         background: $white;
 

@@ -42,7 +42,7 @@
     }
 
     .slide {
-        padding: 4rem 4rem;
+        padding: 2rem;
         width: 25rem;
         height: auto; // Allow height to be flexible
         min-height: 32rem; // Set minimum height
@@ -50,6 +50,10 @@
         transition: all 0.3s ease;
         cursor: grab;
         display: flex; // Make slide a flex container
+
+        @include desktop-small {
+            padding: 4rem;
+        }
 
         &:active {
             cursor: grabbing;
