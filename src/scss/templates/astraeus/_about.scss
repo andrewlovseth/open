@@ -1,0 +1,65 @@
+@use "../../abstracts" as *;
+
+.about {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__editorial {
+        display: grid;
+        gap: 1rem 2rem;
+        align-items: start;
+
+        @include desktop-small {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        & + .about__editorial {
+            padding-top: 2rem;
+
+            @include desktop-small {
+                padding-top: 4rem;
+            }
+        }
+
+        &-1 {
+            .about__image {
+                position: relative;
+
+                &::after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    bottom: -24px;
+                    right: -24px;
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    background-color: #cd1055;
+                }
+            }
+        }
+
+        &-2 {
+            @include desktop-small {
+                .about__image {
+                    order: -1;
+                }
+            }
+        }
+    }
+
+    &__sub-header {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        font-size: $type-size-400;
+        padding-bottom: 0.5rem;
+    }
+
+    &__headline {
+        padding-bottom: 1.5rem;
+    }
+}

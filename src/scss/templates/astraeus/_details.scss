@@ -1,0 +1,27 @@
+@use "../../abstracts" as *;
+
+.details {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__copy {
+        @include desktop-small {
+            grid-column: 3 / span 10;
+        }
+    }
+
+    &__rect-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+}

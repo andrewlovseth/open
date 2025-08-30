@@ -37,7 +37,7 @@
   }
   :where(.page-template-leadership) .leader__title {
     font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1em;
     display: flex;
     align-items: center;

@@ -1,0 +1,219 @@
+@layer templates.astraeus {
+  :where(.page-template-astraeus) {
+    background: #fff;
+  }
+  :where(.page-template-astraeus) .about {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .about {
+      padding: 8rem 0;
+    }
+  }
+  :where(.page-template-astraeus) .about__editorial {
+    display: grid;
+    gap: 1rem 2rem;
+    align-items: start;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .about__editorial {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  :where(.page-template-astraeus) .about__editorial + .about__editorial {
+    padding-top: 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .about__editorial + .about__editorial {
+      padding-top: 4rem;
+    }
+  }
+  :where(.page-template-astraeus) .about__editorial-1 .about__image {
+    position: relative;
+  }
+  :where(.page-template-astraeus) .about__editorial-1 .about__image::after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -24px;
+    right: -24px;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #cd1055;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .about__editorial-2 .about__image {
+      order: -1;
+    }
+  }
+  :where(.page-template-astraeus) .about__sub-header {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+    padding-bottom: 0.5rem;
+  }
+  :where(.page-template-astraeus) .about__headline {
+    padding-bottom: 1.5rem;
+  }
+  :where(.page-template-astraeus) .diagram {
+    padding: 2rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .diagram {
+      padding: 4rem 0;
+    }
+  }
+  :where(.page-template-astraeus) .tenets {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .tenets {
+      padding: 8rem 0;
+    }
+  }
+  :where(.page-template-astraeus) .tenets__headline {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-astraeus) .tenets__rect-right {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 2rem;
+    grid-column: 1;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .tenets__rect-right {
+      width: 4rem;
+    }
+  }
+  :where(.page-template-astraeus) .early-adopters {
+    padding: 3rem 0;
+    background: #cd1055;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .early-adopters {
+      padding: 6rem 0;
+    }
+  }
+  :where(.page-template-astraeus) .early-adopters__content {
+    display: grid;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-astraeus) .early-adopters__content {
+      grid-template-columns: 1fr 1.5fr;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .early-adopters__content {
+      grid-column: 3/span 10;
+    }
+  }
+  :where(.page-template-astraeus) .early-adopters__info {
+    padding: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-astraeus) .early-adopters__info {
+      padding: 2rem 4rem;
+    }
+  }
+  :where(.page-template-astraeus) .early-adopters__image {
+    width: 100%;
+    height: 100%;
+  }
+  :where(.page-template-astraeus) .early-adopters__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-astraeus) .early-adopters__image img {
+      border-bottom-left-radius: 8px;
+      border-top-right-radius: 0;
+    }
+  }
+  :where(.page-template-astraeus) .early-adopters__headline {
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+    line-height: 1.25em;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+  :where(.page-template-astraeus) .data-services {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .data-services {
+      padding: 8rem 0;
+    }
+  }
+  :where(.page-template-astraeus) .data-services__headline {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-astraeus) .data-services__rect-right {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 2rem;
+    grid-column: 1;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .data-services__rect-right {
+      width: 4rem;
+    }
+  }
+  :where(.page-template-astraeus) .details {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .details {
+      padding: 8rem 0;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .details__copy {
+      grid-column: 3/span 10;
+    }
+  }
+  :where(.page-template-astraeus) .details__rect-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2rem;
+    grid-column: 1;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .details__rect-left {
+      width: 4rem;
+    }
+  }
+  :where(.page-template-astraeus) .section-headline-2025 {
+    font-weight: 150;
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1em;
+    color: #141414;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-astraeus) .section-headline-2025 {
+      font-size: clamp(2.59rem, 2.22rem + 1.85vw, 3.37rem);
+    }
+  }
+  :where(.page-template-astraeus) .divider {
+    padding: 0 2rem;
+    position: relative;
+  }
+  :where(.page-template-astraeus) .divider svg {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+}

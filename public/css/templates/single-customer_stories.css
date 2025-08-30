@@ -79,7 +79,7 @@
     font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
     line-height: 1.125em;
     color: #2d77f8;
-    font-weight: 900;
+    font-weight: 600;
   }
   :where(.single-customer_stories) article.customer_stories .article-body .copy-2 {
     padding: 0 1rem;

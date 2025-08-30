@@ -1,0 +1,9 @@
+@use "../../abstracts" as *;
+
+.diagram {
+    padding: 2rem 0;
+
+    @include desktop-small {
+        padding: 4rem 0;
+    }
+}

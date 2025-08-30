@@ -4,6 +4,7 @@
 @layer components {
     @include meta.load-css("footer/container");
     @include meta.load-css("footer/pre-footer");
+    @include meta.load-css("footer/promo");
     @include meta.load-css("footer/nav");
     @include meta.load-css("footer/social");
     @include meta.load-css("footer/legal");

@@ -209,6 +209,7 @@
   :where(.page-template-home-2025) .values__headline {
     padding-bottom: 2rem;
     text-align: center;
+    text-wrap: balance;
   }
   :where(.page-template-home-2025) .values__copy {
     font-weight: 400;
@@ -261,7 +262,7 @@
     text-transform: uppercase;
     padding-bottom: 1rem;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #000;
     line-height: 1.2;
   }

@@ -1,0 +1,315 @@
+@layer templates.products-2025 {
+  :where(.page-template-products-2025) {
+    background: #fff;
+  }
+  :where(.page-template-products-2025) .hero {
+    align-items: start;
+  }
+  :where(.page-template-products-2025) .hero__content {
+    background: #000;
+    grid-column: 1/-1;
+    padding: 3rem 2rem 0 2rem;
+    z-index: 5;
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-products-2025) .hero__content {
+      padding-top: 4rem;
+      background: unset;
+      grid-column: 2/span 12;
+      grid-row: 1;
+      z-index: 2;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    :where(.page-template-products-2025) .hero__content {
+      padding-top: 6em;
+    }
+  }
+  @media screen and (min-width: 1680px) {
+    :where(.page-template-products-2025) .hero__content {
+      padding-top: 8em;
+    }
+  }
+  :where(.page-template-products-2025) .hero__photo {
+    grid-column: 1/-1;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-products-2025) .hero__photo {
+      margin-top: -20%;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-products-2025) .hero__photo {
+      grid-row: 1;
+      z-index: 1;
+      margin-top: 0;
+    }
+  }
+  :where(.page-template-products-2025) .hero__photo img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  :where(.page-template-products-2025) .hero__headline {
+    color: #fff !important;
+    font-size: 1.5rem !important;
+    line-height: 1.25em !important;
+    text-wrap: balance;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .hero__headline {
+      font-size: 2.75rem !important;
+    }
+  }
+  :where(.page-template-products-2025) .hero__copy {
+    padding: 2rem 0 0 0;
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 1.75em;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-products-2025) .about {
+    padding-bottom: 4rem;
+    z-index: 10;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .about {
+      padding-bottom: 8rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .about.grid {
+      grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.75rem)) minmax(0, auto);
+    }
+  }
+  :where(.page-template-products-2025) .about__content {
+    display: grid;
+    gap: 2rem;
+    margin-top: -10%;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-products-2025) .about__content {
+      grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+      align-items: stretch;
+    }
+  }
+  :where(.page-template-products-2025) .about__card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+    padding: 3rem 2rem 2rem;
+    display: grid;
+    align-items: start;
+    gap: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-products-2025) .about__card {
+      padding: 4rem 3rem 3rem;
+    }
+  }
+  :where(.page-template-products-2025) .about__card-headline {
+    font-weight: 150;
+    font-size: clamp(1.8rem, 1.54rem + 1.29vw, 2.34rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1em;
+    color: #141414;
+  }
+  :where(.page-template-products-2025) .about__card-copy strong {
+    font-weight: 600;
+  }
+  :where(.page-template-products-2025) .about__card-link {
+    text-align: right;
+    margin-top: auto;
+  }
+  :where(.page-template-products-2025) .about__card-link a {
+    color: #206cf8;
+    font-weight: 600;
+    font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+  }
+  :where(.page-template-products-2025) .about__card.atlas {
+    background: #fff url(../../../src/images/home-2025/blob-small-orange.png) no-repeat top left;
+  }
+  :where(.page-template-products-2025) .about__card.astraeus {
+    background: #fff url(../../../src/images/home-2025/blob-small-pink.png) no-repeat top center;
+  }
+  :where(.page-template-products-2025) .about__card.atlas-cloud-plus {
+    background: #fff url(../../../src/images/home-2025/blob-small-blue.png) no-repeat top right;
+  }
+  :where(.page-template-products-2025) .about .modal__container {
+    padding: 2rem;
+  }
+  :where(.page-template-products-2025) .about .modal__overlay {
+    background: rgba(0, 0, 0, 0.65);
+  }
+  :where(.page-template-products-2025) .about .modal__content {
+    display: grid;
+    align-items: start;
+    gap: 3rem;
+  }
+  :where(.page-template-products-2025) .about .modal__header {
+    padding: 0;
+  }
+  :where(.page-template-products-2025) .about .modal__close {
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    top: 1rem;
+    right: 1rem;
+    transition: all 300ms ease;
+    width: 2rem;
+    height: 2rem;
+  }
+  :where(.page-template-products-2025) .about .modal__close::before {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  :where(.page-template-products-2025) .about .modal__close:hover {
+    background: #aaa;
+    color: #fff;
+  }
+  :where(.page-template-products-2025) .about .modal__headline {
+    font-weight: 150;
+    font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1em;
+    color: #141414;
+    padding: 0 10%;
+  }
+  :where(.page-template-products-2025) .about .modal__copy {
+    padding: 0 10%;
+  }
+  :where(.page-template-products-2025) .about .modal .divider {
+    padding: 0;
+  }
+  :where(.page-template-products-2025) .about .modal .divider:first-of-type {
+    padding-right: 3rem;
+  }
+  :where(.page-template-products-2025) .related {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .related {
+      padding: 8rem 0;
+    }
+  }
+  :where(.page-template-products-2025) .related .section-header {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-products-2025) .related__copy {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  :where(.page-template-products-2025) .related__rect-left {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 2rem;
+    grid-column: 1;
+    transform: scaleX(-1);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .related__rect-left {
+      width: 6rem;
+    }
+  }
+  :where(.page-template-products-2025) .glance {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .glance {
+      padding: 8rem 0;
+    }
+  }
+  :where(.page-template-products-2025) .glance__headline {
+    padding-bottom: 4rem;
+  }
+  :where(.page-template-products-2025) .glance__table {
+    display: grid;
+    gap: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-products-2025) .glance__table {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  :where(.page-template-products-2025) .glance__column {
+    display: grid;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-products-2025) .glance__column {
+      grid-template-rows: subgrid;
+      grid-row: 1/-1;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-products-2025) .glance__column + .glance__column .glance__column-row {
+      border-left: 1px solid #aaa;
+    }
+  }
+  :where(.page-template-products-2025) .glance__column-header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+  }
+  :where(.page-template-products-2025) .glance__column-header img {
+    max-height: 40px;
+    width: auto;
+  }
+  :where(.page-template-products-2025) .glance__column-row {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #aaa;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+  }
+  :where(.page-template-products-2025) .glance__column-row:last-child {
+    border-bottom: none;
+  }
+  :where(.page-template-products-2025) .glance__column-row strong {
+    font-weight: 600;
+  }
+  :where(.page-template-products-2025) .glance__rect-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2rem;
+    grid-column: 1;
+    transform: scaleX(-1);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .glance__rect-right {
+      width: 6rem;
+    }
+  }
+  :where(.page-template-products-2025) .section-headline-2025 {
+    font-weight: 150;
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1em;
+    color: #141414;
+    text-align: center;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-products-2025) .section-headline-2025 {
+      font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+    }
+  }
+  :where(.page-template-products-2025) .divider {
+    padding: 0 2rem;
+    position: relative;
+  }
+  :where(.page-template-products-2025) .divider svg {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+}

@@ -3,12 +3,12 @@
 
 @layer templates.home-2025 {
     :where(.page-template-home-2025) {
+        background: $white;
+
         @include meta.load-css("_hero");
         @include meta.load-css("_about");
         @include meta.load-css("_values");
         @include meta.load-css("_customers");
-
-        background: $white;
 
         .section-headline-2025 {
             font-weight: 150;

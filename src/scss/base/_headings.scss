@@ -19,7 +19,7 @@
 }
 
 .section-title {
-    font-weight: 900;
+    font-weight: 600;
     font-size: $type-size-700;
     line-height: 1.125em;
 
@@ -37,8 +37,17 @@
 }
 
 .module-title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: $type-size-400;
     line-height: 1.125em;
     text-transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
 }

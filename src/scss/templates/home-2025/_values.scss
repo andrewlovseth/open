@@ -10,6 +10,7 @@
     &__headline {
         padding-bottom: 2rem;
         text-align: center;
+        text-wrap: balance;
     }
 
     &__copy {
@@ -74,7 +75,7 @@
             text-transform: uppercase;
             padding-bottom: 1rem;
             font-size: 1.25rem;
-            font-weight: 700;
+            font-weight: 600;
             color: $black;
             line-height: 1.2;
         }

@@ -1,0 +1,26 @@
+@use "../../abstracts" as *;
+
+.data-services {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__headline {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    &__rect-right {
+        position: absolute;
+        bottom: -10%;
+        right: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+}

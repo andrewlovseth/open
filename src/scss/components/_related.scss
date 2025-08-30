@@ -18,16 +18,19 @@
 
     .item {
         background: $white;
-        padding: 2rem;
-        border-radius: 10px;
+        border-radius: 8px;
         box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
         border: 1px solid #e5e5e5;
 
         .photo {
             aspect-ratio: 16 / 9;
-            border-radius: 3px;
             border: 1px solid #f5f5f5;
             @include cover-fill-image;
+
+            img {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
         }
 
         &__label {
@@ -43,7 +46,7 @@
         }
 
         .info {
-            padding-top: 1rem;
+            padding: 2rem;
 
             h3 {
                 font-size: $type-size-400;

@@ -158,5 +158,9 @@
         align-items: center;
         gap: 1rem;
         padding-top: 2rem;
+
+        .cta__navigation {
+            display: block !important;
+        }
     }
 }
