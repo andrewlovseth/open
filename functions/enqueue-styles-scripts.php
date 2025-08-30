@@ -217,7 +217,8 @@ function has_swiper_content() {
     $swiper_pages = array(
         26, // Page ID for home-2023
         'home-2023',
-        5161
+        5161,
+        5419
     );
     
     // Templates that use Swiper
