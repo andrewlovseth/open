@@ -148,7 +148,6 @@
   }
   :where(.page-template-atlas-cloud-plus) .services-mobile .service .headline h3 {
     line-height: 1.125em;
-    font-family: "Circular Std", sans-serif;
   }
   :where(.page-template-atlas-cloud-plus) section.services .services-desktop {
     display: none;
@@ -176,7 +175,6 @@
     width: 100%;
   }
   :where(.page-template-atlas-cloud-plus) section.services .services-desktop .service .info .module-title {
-    font-family: "Circular Std", sans-serif;
     font-weight: 400;
   }
   :where(.page-template-atlas-cloud-plus) section.services .services-desktop .service .info .link-label {

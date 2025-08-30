@@ -44,7 +44,6 @@
                 h4 {
                     display: inline-block;
                     color: $blue;
-                    font-family: $circular;
                     font-weight: normal;
                     font-size: $type-size-150;
                     line-height: 1em;
@@ -59,7 +58,6 @@
                     font-size: $type-size-600;
                     line-height: 1.125em;
                     color: $black;
-                    font-family: $circular;
                     font-weight: normal;
 
                     @include desktop-small {

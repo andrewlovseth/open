@@ -22,7 +22,6 @@
   :where(body.single-post) .article-header .date h4 {
     display: inline-block;
     color: #2d77f8;
-    font-family: "Circular Std", sans-serif;
     font-weight: normal;
     font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
     line-height: 1em;
@@ -33,7 +32,6 @@
   }
   :where(body.single-post) .article-header .post-title h1 {
     font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
-    font-family: "Circular Std", sans-serif;
     font-weight: normal;
     color: #000;
     line-height: 1em;
@@ -202,7 +200,6 @@
   :where(body.single-post) .article-body h4,
   :where(body.single-post) .article-body h5,
   :where(body.single-post) .article-body h6 {
-    font-family: "Circular Std", sans-serif;
     font-weight: normal;
     color: #000;
     padding-top: 1rem;
@@ -277,7 +274,6 @@
   :where(body.single-post) section.back .link a::before {
     content: "← ";
     font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
-    font-family: "Circular Std", sans-serif;
     padding-right: 0.25rem;
   }
   :where(body.single-post) section.back .link a:hover {

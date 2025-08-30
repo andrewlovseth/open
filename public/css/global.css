@@ -693,7 +693,7 @@
     padding: 0.75rem 1.75rem 0.625rem !important;
     border-radius: 25px !important;
     font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem) !important;
-    font-family: "Rubik", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     letter-spacing: 0.1em !important;
     transition: all 400ms ease !important;
     background: #2d77f8 !important;
@@ -740,8 +740,7 @@
   }
   .hero .info .headline h1 {
     font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
-    font-weight: 400;
-    font-family: "Anton", sans-serif;
+    font-weight: 600;
     line-height: 1.125em;
   }
   @media screen and (min-width: 768px) {
@@ -2426,7 +2425,6 @@
   .latest .post .headline h4 {
     font-weight: 600;
     font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
-    font-family: "Circular Std", sans-serif;
   }
   .latest .post .copy {
     max-width: 28rem;
@@ -2490,7 +2488,6 @@
   .nav-content .tab-header h2 {
     font-size: clamp(1.25rem, 1.07rem + 0.89vw, 1.63rem);
     text-transform: uppercase;
-    font-size: "Rubik", sans-serif;
     letter-spacing: 0.05em;
     font-weight: 400;
   }
@@ -2779,7 +2776,7 @@
     width: 100% !important;
     border-radius: 4px !important;
     height: 2.75rem !important;
-    font-family: "Rubik", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     padding: 0 0.75rem !important;
   }
   .newsletter-form .email-input input:focus, .newsletter-form .email-input input:active {
