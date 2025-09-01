@@ -18,9 +18,11 @@ $count = count($related);
         <div class="section-header">
             <h2 class="section-headline-2025"><?php echo $related_headline; ?></h2>
 
-            <div class="related__copy | copy copy-2 secondary-color">
-                <?php echo $related_copy; ?>
-            </div>
+            <?php if( $related_copy ): ?>
+                <div class="related__copy | copy copy-2 secondary-color">
+                    <?php echo $related_copy; ?>
+                </div>
+            <?php endif; ?>
         </div>        
 
         <div class="related-grid related-grid-<?php echo $count; ?>">

@@ -12,11 +12,11 @@ get_header(); ?>
 
 	<?php get_template_part('templates/home-2025/divider'); ?>
 
-	<?php get_template_part('templates/products-2025/related'); ?>
+	<?php get_template_part('templates/products-2025/at-a-glance'); ?>
 
 	<?php get_template_part('templates/home-2025/divider'); ?>
 
-	<?php get_template_part('templates/products-2025/at-a-glance'); ?>
+	<?php get_template_part('templates/products-2025/related'); ?>
 
 	<?php get_template_part('templates/home-2025/divider'); ?>
 
