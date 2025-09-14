@@ -1,0 +1,56 @@
+@use "../../abstracts" as *;
+
+.about {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__headline {
+        padding-bottom: 1rem;
+    }
+
+    &__content {
+        display: grid;
+        gap: 2rem;
+
+        @include tablet {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 4rem;
+        }
+
+        @include desktop-medium {
+            gap: 6rem;
+        }
+    }
+
+    .copy {
+        padding-top: 1rem;
+        line-height: 1.6;
+    }
+
+    &__rect-top {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        width: 4rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 10rem;
+        }
+    }
+
+    &__rect-right {
+        position: absolute;
+        top: 60%;
+        right: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 5rem;
+        }
+    }
+}

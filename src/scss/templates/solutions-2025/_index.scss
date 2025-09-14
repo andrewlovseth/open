@@ -1,0 +1,61 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.solutions-2025 {
+    :where(.page-template-solutions-2025) {
+        background: $white;
+
+        @include meta.load-css("_about");
+        @include meta.load-css("_challenges");
+        @include meta.load-css("_customer-driven");
+        @include meta.load-css("_solutions");
+        @include meta.load-css("_use-cases");
+
+        .section-headline-2025 {
+            font-weight: 150;
+            font-size: $type-size-800;
+            letter-spacing: -0.02em;
+            line-height: 1.1em;
+            color: #141414;
+            text-align: center;
+
+            @include desktop-small {
+                font-size: $type-size-1000;
+            }
+
+            &.small {
+                font-size: $type-size-600;
+                @include desktop-small {
+                    font-size: $type-size-700;
+                }
+            }
+
+            &.medium {
+                font-size: $type-size-700;
+                @include desktop-small {
+                    font-size: $type-size-800;
+                }
+            }
+        }
+
+        .sub-headline {
+            text-align: center;
+            font-weight: 500;
+            font-size: $type-size-300;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #141414;
+            margin-bottom: 3rem;
+        }
+
+        .divider {
+            padding: 0 2rem;
+            position: relative;
+            svg {
+                margin: 0 auto;
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+}

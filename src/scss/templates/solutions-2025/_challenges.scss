@@ -1,0 +1,142 @@
+@use "../../abstracts" as *;
+
+.challenges {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__content {
+        @include desktop-small {
+            grid-column: 2 / span 5;
+        }
+    }
+
+    &__headline {
+        text-align: left !important;
+        padding-bottom: 1rem;
+    }
+
+    &__copy-top {
+        line-height: 1.6;
+
+        @include desktop-small {
+            grid-column: 8 / span 6;
+        }
+    }
+
+    &__diagram {
+        display: grid;
+        gap: 2rem;
+        padding: 2rem 0;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
+        @include tablet {
+            grid-template-areas:
+                "a b"
+                "d c"
+                "e f";
+        }
+
+        @include desktop-small {
+            grid-template-areas:
+                "a b c"
+                "f e d";
+            grid-column: 3 / span 10;
+            padding-top: 6rem;
+            gap: 4rem 3rem;
+        }
+    }
+
+    &__diagram-step {
+        display: grid;
+        gap: 1rem;
+        align-items: start;
+
+        &-1 {
+            grid-area: a;
+
+            .challenges__diagram-copy {
+                @include desktop-small {
+                    grid-row: -1;
+                }
+            }
+        }
+        &-2 {
+            grid-area: b;
+        }
+        &-3 {
+            grid-area: c;
+            .challenges__diagram-copy {
+                @include desktop-small {
+                    grid-row: -1;
+                }
+            }
+        }
+        &-4 {
+            grid-area: d;
+        }
+        &-5 {
+            grid-area: e;
+            .challenges__diagram-copy {
+                @include desktop-small {
+                    grid-row: -1;
+                }
+            }
+        }
+        &-6 {
+            grid-area: f;
+        }
+    }
+
+    &__diagram-graphic {
+        max-width: 16rem;
+        margin: 0 auto;
+    }
+
+    &__diagram-copy {
+        @include desktop-small {
+            padding: 0 2rem;
+        }
+        p {
+            font-size: $type-size-200;
+            line-height: 1.4;
+        }
+    }
+
+    &__copy-bottom {
+        line-height: 1.6;
+        margin-top: 2rem;
+    }
+
+    &__blob {
+        position: absolute;
+        top: -10%;
+        left: 0%;
+        width: 6rem;
+        grid-column: 1;
+        z-index: -1;
+
+        @include desktop-small {
+            width: 10rem;
+        }
+    }
+
+    &__rect-right {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+}

@@ -1,0 +1,251 @@
+@use "../../abstracts" as *;
+
+.use-cases {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__headline {
+        font-weight: 150;
+        font-size: $type-size-800;
+        letter-spacing: -0.02em;
+        line-height: 1.1em;
+        color: #141414;
+        margin-bottom: 2rem;
+
+        @include desktop-small {
+            font-size: $type-size-1000;
+        }
+    }
+
+    &__copy {
+        line-height: 1.6;
+        margin-bottom: 3rem;
+        text-align: center;
+        font-weight: 350;
+    }
+
+    &__me-headline,
+    &__other-industries-headline {
+        font-weight: 600;
+        font-size: $type-size-300;
+        color: #141414;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    &__me-table {
+        display: grid;
+        gap: 0;
+        align-items: start;
+        border: 1px solid #000;
+        margin-bottom: 3rem;
+        max-width: 60rem;
+        margin: 0 auto;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__me-column {
+        display: grid;
+        align-items: start;
+
+        @include tablet {
+            border-right: 1px solid #000;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    &__me-header {
+        background: $blue-a11y;
+        color: $white;
+        padding: 1rem;
+        font-weight: 600;
+        font-size: $type-size-300;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #000;
+    }
+
+    &__me-copy {
+        padding: 2rem;
+        font-size: $type-size-200;
+        line-height: 1.4;
+        align-self: start;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__other-industries {
+        padding: 4rem 0;
+
+        @include desktop-small {
+            padding: 8rem 0;
+        }
+
+        &-headline {
+            text-wrap: balance;
+        }
+
+        &-list {
+            line-height: 1.6;
+            max-width: 60rem;
+            margin: 0 auto;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                @include tablet {
+                    columns: 2;
+                    column-gap: 2rem;
+                }
+            }
+        }
+    }
+
+    &__workflows {
+        border: 1px solid #000;
+
+        &-header {
+            display: none;
+
+            @include tablet {
+                background: $blue-a11y;
+                color: $white;
+                font-weight: 600;
+                font-size: $type-size-300;
+                text-align: center;
+                margin: 0;
+                border-bottom: 1px solid #000;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            &-item {
+                padding: 1rem;
+
+                &:first-child {
+                    border-right: 1px solid #000;
+                }
+            }
+        }
+
+        &-item {
+            background: $blue-a11y;
+            color: $white;
+            padding: 1.5rem;
+            font-weight: 600;
+            font-size: $type-size-200;
+            text-align: center;
+        }
+
+        &-content {
+            display: grid;
+            gap: 0;
+            overflow: hidden;
+        }
+
+        &-row {
+            display: grid;
+            gap: 0;
+            border-bottom: 1px solid #000;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            @include tablet {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        &-workflow {
+            padding: 2rem;
+            background: #fafafa;
+            border-bottom: 1px solid #d5d5d5;
+            color: #000;
+            font-weight: 600;
+
+            @include tablet {
+                border-right: 1px solid #000;
+                background: unset;
+                border-bottom: unset;
+                color: unset;
+            }
+
+            &:before {
+                display: block;
+                content: "Workflow";
+                font-weight: 600;
+                font-size: $type-size-300;
+                color: $blue-a11y;
+                margin-bottom: 0.25rem;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+
+        &-use-cases {
+            padding: 2rem;
+            line-height: 1.4;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                &:before {
+                    display: block;
+                    content: "Uses Cases";
+                    font-weight: 600;
+                    font-size: $type-size-300;
+                    color: $blue-a11y;
+                    margin-bottom: 1rem;
+
+                    @include tablet {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__rect-left {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+
+    &__rect-right {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
+}

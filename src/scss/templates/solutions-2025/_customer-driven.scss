@@ -1,0 +1,51 @@
+@use "../../abstracts" as *;
+
+.customer-driven {
+    padding: 4rem 0;
+
+    @include desktop-small {
+        padding: 8rem 0;
+    }
+
+    &__content {
+        display: grid;
+        gap: 4rem;
+        align-items: start;
+    }
+
+    &__headline {
+        padding-bottom: 3rem;
+    }
+
+    &__card {
+        display: grid;
+        gap: 2rem;
+
+        @include tablet {
+            grid-template-columns: 1.25fr 1fr;
+            gap: 4rem;
+        }
+
+        &-1 {
+            @include tablet {
+                grid-template-columns: 1fr 1.25fr;
+                .customer-driven__copy-1 {
+                    order: -1;
+                }
+            }
+        }
+    }
+
+    &__blob {
+        position: absolute;
+        top: -10%;
+        right: 0%;
+        width: 6rem;
+        grid-column: 1;
+        z-index: -1;
+
+        @include desktop-small {
+            width: 18rem;
+        }
+    }
+}
