@@ -89,10 +89,39 @@ const Content = {
         });
     },
 
+    futureFeaturesToggle() {
+        const featureItems = document.querySelectorAll(".future-features__item");
+
+        featureItems.forEach((item) => {
+            const headline = item.querySelector(".future-features__headline");
+            const copy = item.querySelector(".future-features__copy");
+            const icon = headline.querySelector(".icon svg");
+
+            if (headline && copy) {
+                headline.addEventListener("click", () => {
+                    const isHidden = copy.style.display === "none" || copy.style.display === "";
+
+                    if (isHidden) {
+                        copy.style.display = "block";
+                        if (icon) {
+                            icon.style.transform = "rotate(180deg)";
+                        }
+                    } else {
+                        copy.style.display = "none";
+                        if (icon) {
+                            icon.style.transform = "rotate(0deg)";
+                        }
+                    }
+                });
+            }
+        });
+    },
+
     init: function () {
         this.toggleResourcesSidebar();
         this.partnersFilter();
         this.leaderBios();
+        this.futureFeaturesToggle();
     },
 };
 
