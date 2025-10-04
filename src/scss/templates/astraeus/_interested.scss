@@ -32,4 +32,13 @@
             grid-column: 8 / span 5;
         }
     }
+
+    &__blob {
+        z-index: -1;
+        grid-column: 1;
+        grid-row: 1;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
 }

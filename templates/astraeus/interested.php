@@ -23,8 +23,9 @@
         </div>
     </div>
 
+    <div class="interested__blob">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/home-2025/blob-red.png" role="presentation" alt="">
+    </div>
 
-
-    <img class="data-services__rect-right" src="<?php echo get_template_directory_uri(); ?>/src/images/home-2025/rect-blue-blue-vert.png" role="presentation" alt="">
 
 </section>

@@ -8,7 +8,6 @@
     $photo_2 = $outcomes['photo_2'];
     $future_headline = get_field('future_headline');
 
-
 ?>
 
 <section class="outcomes grid">
@@ -67,4 +66,6 @@
             </div>
         <?php endif; ?>
     </div>
+
+    <img class="outcomes__rect-left" src="<?php echo get_template_directory_uri(); ?>/src/images/home-2025/rect-red-red.png" role="presentation" alt="">
 </section>

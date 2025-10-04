@@ -22,9 +22,4 @@
             <?php echo $copy; ?>
         </div>
     </div>
-
-
-
-    <img class="data-services__rect-right" src="<?php echo get_template_directory_uri(); ?>/src/images/home-2025/rect-blue-blue-vert.png" role="presentation" alt="">
-
 </section>

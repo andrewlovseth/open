@@ -48,13 +48,28 @@
             }
         }
     }
+
+    &__rect-left {
+        position: absolute;
+        top: 65%;
+        left: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4rem;
+        }
+    }
 }
 
 .future-features {
     padding: 2rem 0 0 0;
     display: grid;
-    grid-template-columns: subgrid;
     gap: 0 2rem;
+
+    @include desktop-small {
+        grid-template-columns: subgrid;
+    }
 
     @include desktop-small {
         padding: 4rem 0 0 0;
