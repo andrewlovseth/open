@@ -115,7 +115,20 @@ add_action('wp_head', function () {
 add_filter("script_loader_tag", "add_module_to_my_script", 10, 3);
 function add_module_to_my_script($tag, $handle, $src) {
     if ('main-js' === $handle) {
-        $tag = '<script type="module" src="' . esc_url($src) . '"></script>';
+        // Get the version that was set during wp_enqueue_script
+        global $wp_scripts;
+        $version = '';
+        if (isset($wp_scripts->registered['main-js'])) {
+            $version = $wp_scripts->registered['main-js']->ver;
+        }
+        
+        // Add version parameter to URL for cache busting
+        $url_with_version = $src;
+        if ($version) {
+            $url_with_version = add_query_arg('ver', $version, $src);
+        }
+        
+        $tag = '<script type="module" src="' . esc_url($url_with_version) . '"></script>';
     }
     return $tag;
 }
