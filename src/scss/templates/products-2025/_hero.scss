@@ -4,7 +4,7 @@
     align-items: start;
 
     &__content {
-        background: $black;
+        background: $white;
         grid-column: 1 / -1;
         padding: 3rem 2rem 0 2rem;
         z-index: 5;
@@ -27,18 +27,6 @@
     }
 
     &__photo {
-        grid-column: 1 / -1;
-
-        @include tablet-small {
-            margin-top: -20%;
-        }
-
-        @include desktop-medium {
-            grid-row: 1;
-            z-index: 1;
-            margin-top: 0;
-        }
-
         img {
             width: 100%;
             height: auto;
@@ -47,10 +35,11 @@
     }
 
     &__headline {
-        color: $white !important;
         font-size: 1.5rem !important;
         line-height: 1.25em !important;
         text-wrap: balance;
+        max-width: 100rem;
+        margin: 0 auto;
 
         @include desktop-small {
             font-size: 2.75rem !important;
@@ -59,11 +48,10 @@
 
     &__copy {
         padding: 2rem 0 0 0;
-        color: $white;
-        opacity: 0.7;
+        color: $black;
         text-align: center;
         line-height: 1.75em;
-        max-width: 42rem;
+        max-width: 55rem;
         margin: 0 auto;
     }
 }

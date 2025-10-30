@@ -6,7 +6,7 @@
     align-items: start;
   }
   :where(.page-template-products-2025) .hero__content {
-    background: #000;
+    background: #fff;
     grid-column: 1/-1;
     padding: 3rem 2rem 0 2rem;
     z-index: 5;
@@ -30,21 +30,6 @@
       padding-top: 8em;
     }
   }
-  :where(.page-template-products-2025) .hero__photo {
-    grid-column: 1/-1;
-  }
-  @media screen and (min-width: 480px) {
-    :where(.page-template-products-2025) .hero__photo {
-      margin-top: -20%;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    :where(.page-template-products-2025) .hero__photo {
-      grid-row: 1;
-      z-index: 1;
-      margin-top: 0;
-    }
-  }
   :where(.page-template-products-2025) .hero__photo img {
     width: 100%;
     height: auto;
@@ -52,10 +37,11 @@
        object-fit: cover;
   }
   :where(.page-template-products-2025) .hero__headline {
-    color: #fff !important;
     font-size: 1.5rem !important;
     line-height: 1.25em !important;
     text-wrap: balance;
+    max-width: 100rem;
+    margin: 0 auto;
   }
   @media screen and (min-width: 992px) {
     :where(.page-template-products-2025) .hero__headline {
@@ -64,11 +50,10 @@
   }
   :where(.page-template-products-2025) .hero__copy {
     padding: 2rem 0 0 0;
-    color: #fff;
-    opacity: 0.7;
+    color: #000;
     text-align: center;
     line-height: 1.75em;
-    max-width: 42rem;
+    max-width: 55rem;
     margin: 0 auto;
   }
   :where(.page-template-products-2025) .about {
@@ -88,12 +73,13 @@
   :where(.page-template-products-2025) .about__content {
     display: grid;
     gap: 2rem;
-    margin-top: -10%;
+    margin-top: -5%;
   }
   @media screen and (min-width: 768px) {
     :where(.page-template-products-2025) .about__content {
       grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
       align-items: stretch;
+      margin-top: -10%;
     }
   }
   :where(.page-template-products-2025) .about__card {

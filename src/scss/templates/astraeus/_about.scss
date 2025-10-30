@@ -44,7 +44,7 @@
 
         &-2 {
             @include desktop-small {
-                .about__image {
+                .about__video {
                     order: -1;
                 }
             }
@@ -61,5 +61,70 @@
 
     &__headline {
         padding-bottom: 1.5rem;
+    }
+
+    &__video {
+        &-link {
+            display: grid;
+            place-items: center;
+
+            &:hover {
+                svg {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        img {
+            grid-column: 1;
+            grid-row: 1;
+            z-index: 2;
+        }
+
+        svg {
+            transition: all 350ms ease;
+            grid-column: 1;
+            grid-row: 1;
+            z-index: 3;
+            width: 3.25rem;
+
+            @include desktop-small {
+                width: 5.25rem;
+            }
+        }
+    }
+
+    .modal {
+        &__container {
+            overflow: visible;
+            padding: 1rem;
+
+            @include desktop-small {
+                padding: 2rem;
+            }
+        }
+
+        &__header {
+            padding-bottom: 0;
+        }
+
+        &__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate3d(50%, -50%, 0);
+        }
+    }
+
+    .video-player {
+        .embed {
+            aspect-ratio: 16 / 9;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }

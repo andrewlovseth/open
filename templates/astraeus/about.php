@@ -6,7 +6,8 @@
     $copy_1 = $about['copy_1'];
     $photo_1 = $about['photo_1'];
     $copy_2 = $about['copy_2'];
-    $photo_2 = $about['photo_2'];
+    $poster = $about['photo_2'];
+    $video_id = $about['video_id'];
 ?>
 
 <section class="about grid">
@@ -32,8 +33,30 @@
             </div>
         </div>
 
-        <div class="about__image">
-            <?php echo wp_get_attachment_image($photo_2['ID'], 'full'); ?>
+
+        <div class="about__video">
+            <a href="#" class="about__video-link | js-video-modal" data-micromodal-trigger="about-video-modal">
+                <?php get_template_part('src/svg/youtube-play-btn'); ?>
+                <?php echo wp_get_attachment_image($poster['ID'], 'full'); ?>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal video-modal about-video-modal micromodal-slide" id="about-video-modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="about-video-modal-title" >
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+
+                <div class="modal__content" id="about-video-modal-content">
+                    <div class="video-player youtube-video-player" data-autoplay-url="https://www.youtube-nocookie.com/embed/<?php echo $video_id; ?>?autoplay=1&modestbranding=1&rel=0">
+                        <div class="embed">
+                            <iframe width="1920" height="1080" allowfullscreen allow="autoplay" frameborder="0" allowTransparency="true" src=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

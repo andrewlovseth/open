@@ -7,7 +7,7 @@
 
 ?>
 
-<section class="hero grid">
+<section class="hero">
     <div class="hero__content">
         <h1 class="hero__headline | section-headline-2025"><?php echo $headline; ?></h1>
         <div class="hero__copy | copy copy-2 secondary-color">
