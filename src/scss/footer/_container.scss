@@ -47,6 +47,17 @@
 
     form {
         background: unset !important;
+        max-width: unset !important;
+        margin: 0 !important;
+        font-family: $montserrat !important;
+    }
+
+    ._form_content {
+        font-family: $montserrat !important;
+
+        * {
+            font-family: $montserrat !important;
+        }
     }
 
     .field-container {
@@ -57,12 +68,22 @@
         width: 100%;
     }
 
+    ._form-label {
+        color: #fff !important;
+    }
+
     ._form-title {
-        font-size: $type-size-200;
+        font-size: $type-size-200 !important;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        font-family: $montserrat;
         padding-bottom: 0.5rem;
+        color: #fff !important;
+    }
+
+    ._form_element {
+        p {
+            color: $white !important;
+        }
     }
 
     .email-input {

@@ -64,6 +64,10 @@
   :where(.page-template-astraeus) .about__video-link:hover svg {
     scale: 1.1;
   }
+  :where(.page-template-astraeus) .about__video-caption {
+    font-style: italic;
+    padding-top: 0.25rem;
+  }
   :where(.page-template-astraeus) .about__video img {
     grid-column: 1;
     grid-row: 1;

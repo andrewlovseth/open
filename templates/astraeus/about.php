@@ -8,6 +8,7 @@
     $copy_2 = $about['copy_2'];
     $poster = $about['photo_2'];
     $video_id = $about['video_id'];
+    $video_caption = $about['video_caption'];
 ?>
 
 <section class="about grid">
@@ -39,6 +40,11 @@
                 <?php get_template_part('src/svg/youtube-play-btn'); ?>
                 <?php echo wp_get_attachment_image($poster['ID'], 'full'); ?>
             </a>
+            <?php if($video_caption): ?>
+                <div class="about__video-caption | copy copy-4 secondary-color">
+                    <p><?php echo $video_caption; ?></p>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 

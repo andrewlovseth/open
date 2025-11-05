@@ -7,7 +7,7 @@
 		<div class="footer-container">
 			<?php get_template_part('template-parts/footer/logo'); ?>
 			
-			<?php get_template_part('template-parts/footer/newsletter-form'); ?>
+			<?php get_template_part('template-parts/footer/newsletter-form-new'); ?>
 
 			<?php get_template_part('template-parts/footer/nav'); ?>
 		</div>

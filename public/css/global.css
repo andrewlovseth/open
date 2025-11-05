@@ -2749,6 +2749,15 @@
   }
   .newsletter-form form {
     background: unset !important;
+    max-width: unset !important;
+    margin: 0 !important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .newsletter-form ._form_content {
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .newsletter-form ._form_content * {
+    font-family: "Montserrat", sans-serif !important;
   }
   .newsletter-form .field-container {
     display: flex;
@@ -2757,12 +2766,18 @@
     flex-wrap: wrap;
     width: 100%;
   }
+  .newsletter-form ._form-label {
+    color: #fff !important;
+  }
   .newsletter-form ._form-title {
-    font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+    font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem) !important;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: "Montserrat", sans-serif;
     padding-bottom: 0.5rem;
+    color: #fff !important;
+  }
+  .newsletter-form ._form_element p {
+    color: #fff !important;
   }
   .newsletter-form .email-input {
     flex: 1 !important;
