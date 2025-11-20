@@ -1,0 +1,43 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.solutions-corporate-creative {
+    :where(.page-template-solutions-corporate-creative) {
+        background: $white;
+
+        @include meta.load-css("_hero");
+        @include meta.load-css("_about");
+        @include meta.load-css("_introducing");
+        @include meta.load-css("_benefits");
+        @include meta.load-css("_under-the-hood");
+        @include meta.load-css("_hardware-options");
+        @include meta.load-css("_features");
+        @include meta.load-css("_faqs");
+        @include meta.load-css("_solution-brief");
+        @include meta.load-css("_sticky-footer");
+
+        .section-headline-2025 {
+            font-weight: 150;
+            font-size: $type-size-800;
+            letter-spacing: -0.02em;
+            line-height: 1.1em;
+            color: #141414;
+
+            @include desktop-small {
+                font-size: $type-size-900;
+            }
+        }
+
+        .divider {
+            padding: 0 2rem;
+            position: relative;
+
+            svg {
+                margin: 0 auto;
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+@layer templates.solutions-corporate-creative {
+  :where(.page-template-solutions-corporate-creative) {
+    background: #fff;
+  }
+  :where(.page-template-solutions-corporate-creative) .section-headline-2025 {
+    font-weight: 150;
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1em;
+    color: #141414;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-corporate-creative) .section-headline-2025 {
+      font-size: clamp(2.59rem, 2.22rem + 1.85vw, 3.37rem);
+    }
+  }
+  :where(.page-template-solutions-corporate-creative) .divider {
+    padding: 0 2rem;
+    position: relative;
+  }
+  :where(.page-template-solutions-corporate-creative) .divider svg {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+}
