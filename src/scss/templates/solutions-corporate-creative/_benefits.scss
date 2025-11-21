@@ -1,6 +1,125 @@
 @use "../../abstracts" as *;
 
 .benefits {
-    // Benefits styles go here
-}
+    padding: 3rem 0 0 0;
+    display: grid;
+    gap: 2rem;
 
+    @include desktop-small {
+        gap: 4rem;
+    }
+
+    &__creatives-wrapper,
+    &__it-wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1 / -1;
+    }
+
+    &__creatives-background,
+    &__it-background {
+        z-index: 1;
+        position: relative;
+        grid-column: 1 / -1;
+        grid-row: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__creatives,
+    &__it {
+        grid-row: 1;
+        z-index: 2;
+        position: relative;
+        color: $white;
+        @include section-spacing;
+        grid-column: 2 / span 4;
+
+        @include tablet-small {
+            grid-column: 2 / span 8;
+        }
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+        }
+    }
+
+    &__creatives-headline.section-headline-2025,
+    &__it-headline.section-headline-2025 {
+        color: $white;
+        padding-bottom: 2rem;
+        font-size: $type-size-600;
+        text-align: center;
+
+        @include desktop-small {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__creatives-grid,
+    &__it-grid {
+        display: grid;
+        gap: 1.5rem;
+
+        @include tablet-small {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem;
+        }
+
+        @include desktop-small {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 2rem;
+            grid-auto-rows: 1fr;
+        }
+    }
+
+    &__creatives-item,
+    &__it-item {
+        background: $white;
+        padding: 1.5rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        @include desktop-small {
+            padding: 2rem;
+        }
+    }
+
+    &__it-item:last-child {
+        @include desktop-small {
+            grid-column: span 2;
+        }
+    }
+
+    &__creatives-copy,
+    &__it-copy {
+        color: $black;
+    }
+
+    &__middle {
+        display: grid;
+        gap: 1.5rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+        }
+    }
+
+    &__middle-headline {
+        font-weight: bold;
+    }
+
+    &__middle-copy {
+        @include desktop-small {
+            columns: 2;
+            column-gap: 2rem;
+        }
+    }
+}

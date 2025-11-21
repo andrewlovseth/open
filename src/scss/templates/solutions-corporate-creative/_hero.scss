@@ -1,6 +1,40 @@
 @use "../../abstracts" as *;
 
 .hero {
-    // Hero styles go here
-}
+    @include section-spacing;
+    align-items: start;
 
+    &__content {
+        display: grid;
+        gap: 2rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 7;
+        }
+    }
+
+    &__form {
+        border: 1px solid #c3c3c3;
+        @include desktop-small {
+            grid-column: 10 / span 4;
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__rect-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 4.5rem;
+        }
+    }
+}

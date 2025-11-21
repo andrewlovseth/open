@@ -1,6 +1,47 @@
 @use "../../abstracts" as *;
 
 .faqs {
-    // FAQs styles go here
-}
+    @include section-spacing;
 
+    &__headline.section-headline-2025 {
+        padding-bottom: 4rem;
+        font-size: $type-size-600;
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        gap: 2rem;
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    &__item {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba($black, 0.1);
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    &__question {
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    &__rect-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 1.5rem;
+        grid-column: 1;
+
+        @include desktop-small {
+            width: 3rem;
+        }
+    }
+}

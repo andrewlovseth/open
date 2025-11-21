@@ -1,6 +1,78 @@
 @use "../../abstracts" as *;
 
 .solution-brief {
-    // Solution Brief styles go here
-}
+    position: relative;
 
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1 / -1;
+        align-items: center;
+    }
+
+    &__background {
+        z-index: 1;
+        position: relative;
+        grid-column: 1 / -1;
+        grid-row: 1;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__content {
+        grid-row: 1;
+        z-index: 2;
+        position: relative;
+        color: $white;
+        @include section-spacing;
+        grid-column: 2 / span 4;
+        display: grid;
+        gap: 2rem;
+        text-align: center;
+
+        @include tablet-small {
+            grid-column: 2 / span 8;
+        }
+
+        @include desktop-small {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    &__headline.section-headline-2025 {
+        color: $white;
+        font-size: $type-size-600;
+        text-align: center;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    &__copy {
+        color: $white;
+    }
+
+    &__link {
+        .btn {
+            text-transform: none;
+            letter-spacing: 0;
+            font-weight: 600;
+            font-size: 0.75rem;
+            border-radius: 0.25em;
+        }
+    }
+}

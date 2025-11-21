@@ -10,21 +10,25 @@
 ?>
 
 <section class="hardware-options grid">
-    <?php if($headline): ?>
-        <h2 class="hardware-options__headline | section-headline-2025"><?php echo $headline; ?></h2>
-    <?php endif; ?>
+    <div class="hardware-options__top">
+        <div class="hardware-options__top-content">
+            <?php if($headline): ?>
+                <h2 class="hardware-options__headline | section-headline-2025"><?php echo $headline; ?></h2>
+            <?php endif; ?>
 
-    <?php if($copy_1): ?>
-        <div class="hardware-options__copy-1 | copy copy-2 secondary-color extended">
-            <?php echo $copy_1; ?>
+            <?php if($copy_1): ?>
+                <div class="hardware-options__copy-1 | copy copy-2 secondary-color extended">
+                    <?php echo $copy_1; ?>
+                </div>
+            <?php endif; ?>
         </div>
-    <?php endif; ?>
 
-    <?php if($image): ?>
-        <div class="hardware-options__image">
-            <?php echo wp_get_attachment_image($image['ID'], 'full'); ?>
-        </div>
-    <?php endif; ?>
+        <?php if($image): ?>
+            <div class="hardware-options__image">
+                <?php echo wp_get_attachment_image($image['ID'], 'full'); ?>
+            </div>
+        <?php endif; ?>
+    </div>
 
     <?php if($graphic): ?>
         <div class="hardware-options__graphic">
@@ -37,4 +41,7 @@
             <?php echo $copy_2; ?>
         </div>
     <?php endif; ?>
+
+    <img class="hardware-options__rect-right" src="<?php echo get_template_directory_uri(); ?>/src/images/home-2025/rect-blue-blue-vert.png" role="presentation" alt="">
+
 </section>

@@ -9,32 +9,42 @@
 
 ?>
 
-<section class="introducing" <?php if($background_image): ?>style="background-image: url('<?php echo $background_image['url']; ?>');"<?php endif; ?>>
-    <div class="introducing__content grid">
-        <div class="introducing__left">
-            <?php if($logo): ?>
-                <div class="introducing__logo">
-                    <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
-                </div>
-            <?php endif; ?>
+<section class="introducing grid">
+    <div class="introducing__hero">
+        <?php if($background_image): ?>
+            <div class="introducing__background">
+                <?php echo wp_get_attachment_image($background_image['ID'], 'full'); ?>
+            </div>
+        <?php endif; ?>
 
-            <?php if($headline): ?>
-                <h2 class="introducing__headline | section-headline-2025"><?php echo $headline; ?></h2>
-            <?php endif; ?>
-        </div>
+        <div class="introducing__content">
+            <div class="introducing__left">
+                <?php if($logo): ?>
+                    <div class="introducing__logo">
+                        <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
+                    </div>
+                <?php endif; ?>
 
-        <div class="introducing__right">
-            <?php if($copy_1): ?>
-                <div class="introducing__copy-1 | copy copy-2 secondary-color extended">
-                    <?php echo $copy_1; ?>
-                </div>
-            <?php endif; ?>
 
-            <?php if($copy_2): ?>
-                <div class="introducing__copy-2 | copy copy-2 secondary-color extended">
-                    <?php echo $copy_2; ?>
-                </div>
-            <?php endif; ?>
+            </div>
+
+            <div class="introducing__right">
+                <?php if($headline): ?>
+                    <h3 class="introducing__headline | copy copy-3"><?php echo $headline; ?></h3>
+                <?php endif; ?>
+
+                <?php if($copy_1): ?>
+                    <div class="introducing__copy-1 | copy copy-3 extended">
+                        <?php echo $copy_1; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
+
+    <?php if($copy_2): ?>
+        <div class="introducing__copy-2 | copy copy-3 secondary-color extended">
+            <?php echo $copy_2; ?>
+        </div>
+    <?php endif; ?>
 </section>

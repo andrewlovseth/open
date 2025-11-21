@@ -1,6 +1,85 @@
 @use "../../abstracts" as *;
 
 .under-the-hood {
-    // Under the Hood styles go here
-}
+    @include section-spacing-bottom;
 
+    &__top {
+        display: grid;
+        gap: 1.5rem;
+        align-items: start;
+        @include small-section-spacing;
+
+        @include desktop-small {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @include desktop-small {
+            order: -1;
+        }
+    }
+
+    &__top-content {
+        display: grid;
+        gap: 1rem;
+    }
+
+    &__headline-1.section-headline-2025 {
+        font-size: $type-size-600;
+    }
+
+    &__middle {
+        display: grid;
+        gap: 1.5rem;
+
+        @include desktop-small {
+            grid-column: 2 / span 12;
+        }
+    }
+
+    &__headline-2 {
+        font-weight: bold;
+    }
+
+    &__copy-2 {
+        @include desktop-small {
+            columns: 2;
+            column-gap: 2rem;
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        gap: 2rem;
+        padding-top: 3rem;
+
+        @include desktop-small {
+            padding-top: 4rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    &__graphic-1,
+    &__graphic-2 {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__note {
+        @include desktop-small {
+            grid-column: 1 / -1;
+        }
+    }
+}

@@ -13,33 +13,44 @@
 ?>
 
 <section class="under-the-hood grid">
-    <?php if($image): ?>
-        <div class="under-the-hood__image">
-            <?php echo wp_get_attachment_image($image['ID'], 'full'); ?>
-        </div>
-    <?php endif; ?>
 
-    <div class="under-the-hood__content">
-        <?php if($headline_1): ?>
-            <h2 class="under-the-hood__headline-1 | section-headline-2025"><?php echo $headline_1; ?></h2>
-        <?php endif; ?>
-
-        <?php if($copy_1): ?>
-            <div class="under-the-hood__copy-1 | copy copy-2 secondary-color extended">
-                <?php echo $copy_1; ?>
+    <div class="under-the-hood__top">
+        <?php if($image): ?>
+            <div class="under-the-hood__image">
+                <?php echo wp_get_attachment_image($image['ID'], 'full'); ?>
             </div>
         <?php endif; ?>
 
+        <div class="under-the-hood__top-content">
+            <?php if($headline_1): ?>
+                <h2 class="under-the-hood__headline-1 | section-headline-2025"><?php echo $headline_1; ?></h2>
+            <?php endif; ?>
+
+            <?php if($copy_1): ?>
+                <div class="under-the-hood__copy-1 | copy copy-3 secondary-color extended">
+                    <?php echo $copy_1; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+
+
+    <div class="under-the-hood__middle">
+
+
         <?php if($headline_2): ?>
-            <h3 class="under-the-hood__headline-2"><?php echo $headline_2; ?></h3>
+            <h3 class="under-the-hood__headline-2 | copy copy-3"><?php echo $headline_2; ?></h3>
         <?php endif; ?>
 
         <?php if($copy_2): ?>
-            <div class="under-the-hood__copy-2 | copy copy-2 secondary-color extended">
+            <div class="under-the-hood__copy-2 | copy copy-3 secondary-color extended">
                 <?php echo $copy_2; ?>
             </div>
         <?php endif; ?>
 
+    </div>
+
+    <div class="under-the-hood__bottom">
         <?php if($graphic_1): ?>
             <div class="under-the-hood__graphic-1">
                 <?php echo wp_get_attachment_image($graphic_1['ID'], 'full'); ?>

@@ -10,6 +10,8 @@
 ?>
 
 <section class="hero grid">
+    <img class="hero__rect-left" src="<?php echo get_template_directory_uri(); ?>/src/images/home-2025/rect-green-blue-vert.png" role="presentation" alt="">
+
     <div class="hero__content">
         <?php if($headline): ?>
             <h1 class="hero__headline | section-headline-2025"><?php echo $headline; ?></h1>
