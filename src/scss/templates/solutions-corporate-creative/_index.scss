@@ -38,5 +38,13 @@
                 max-width: 100%;
             }
         }
+
+        .solutions-corporate-creative-related {
+            @include section-spacing;
+
+            .section-header {
+                padding-bottom: 2rem;
+            }
+        }
     }
 }

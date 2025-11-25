@@ -6,8 +6,8 @@
     $copy_1 = $under_the_hood['copy_1'];
     $headline_2 = $under_the_hood['headline_2'];
     $copy_2 = $under_the_hood['copy_2'];
-    $graphic_1 = $under_the_hood['graphic_1'];
-    $graphic_2 = $under_the_hood['graphic_2'];
+    $comparison_graphic_1 = get_field('comparison_graphic_1');
+    $comparison_graphic_2 = get_field('comparison_graphic_2');
     $note = $under_the_hood['note'];
 
 ?>
@@ -51,15 +51,87 @@
     </div>
 
     <div class="under-the-hood__bottom">
-        <?php if($graphic_1): ?>
-            <div class="under-the-hood__graphic-1">
-                <?php echo wp_get_attachment_image($graphic_1['ID'], 'full'); ?>
-            </div>
-        <?php endif; ?>
+        <?php if($comparison_graphic_1 || $comparison_graphic_2): ?>
+            <div class="under-the-hood__comparison">
+                <?php if($comparison_graphic_1): ?>
+                    <div class="under-the-hood__comparison-card-wrapper">
+                        <div class="under-the-hood__comparison-card">
+                            <?php if($comparison_graphic_1['headline']): ?>
+                                <h3 class="under-the-hood__comparison-headline"><?php echo $comparison_graphic_1['headline']; ?></h3>
+                            <?php endif; ?>
 
-        <?php if($graphic_2): ?>
-            <div class="under-the-hood__graphic-2">
-                <?php echo wp_get_attachment_image($graphic_2['ID'], 'full'); ?>
+                            <div class="under-the-hood__comparison-stats">
+                                <?php if($comparison_graphic_1['stat_1']): ?>
+                                    <div class="under-the-hood__stat">
+                                        <?php if($comparison_graphic_1['stat_1']['top']): ?>
+                                            <div class="under-the-hood__stat-top"><?php echo $comparison_graphic_1['stat_1']['top']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_1['stat_1']['middle']): ?>
+                                            <div class="under-the-hood__stat-middle"><?php echo $comparison_graphic_1['stat_1']['middle']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_1['stat_1']['bottom']): ?>
+                                            <div class="under-the-hood__stat-bottom"><?php echo $comparison_graphic_1['stat_1']['bottom']; ?></div>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php if($comparison_graphic_1['stat_2']): ?>
+                                    <div class="under-the-hood__stat">
+                                        <?php if($comparison_graphic_1['stat_2']['top']): ?>
+                                            <div class="under-the-hood__stat-top"><?php echo $comparison_graphic_1['stat_2']['top']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_1['stat_2']['middle']): ?>
+                                            <div class="under-the-hood__stat-middle"><?php echo $comparison_graphic_1['stat_2']['middle']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_1['stat_2']['bottom']): ?>
+                                            <div class="under-the-hood__stat-bottom"><?php echo $comparison_graphic_1['stat_2']['bottom']; ?></div>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+                <?php if($comparison_graphic_2): ?>
+                    <div class="under-the-hood__comparison-card-wrapper">
+                        <div class="under-the-hood__comparison-card">
+                            <?php if($comparison_graphic_2['headline']): ?>
+                                <h3 class="under-the-hood__comparison-headline"><?php echo $comparison_graphic_2['headline']; ?></h3>
+                            <?php endif; ?>
+
+                            <div class="under-the-hood__comparison-stats">
+                                <?php if($comparison_graphic_2['stat_1']): ?>
+                                    <div class="under-the-hood__stat">
+                                        <?php if($comparison_graphic_2['stat_1']['top']): ?>
+                                            <div class="under-the-hood__stat-top"><?php echo $comparison_graphic_2['stat_1']['top']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_2['stat_1']['middle']): ?>
+                                            <div class="under-the-hood__stat-middle"><?php echo $comparison_graphic_2['stat_1']['middle']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_2['stat_1']['bottom']): ?>
+                                            <div class="under-the-hood__stat-bottom"><?php echo $comparison_graphic_2['stat_1']['bottom']; ?></div>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php if($comparison_graphic_2['stat_2']): ?>
+                                    <div class="under-the-hood__stat">
+                                        <?php if($comparison_graphic_2['stat_2']['top']): ?>
+                                            <div class="under-the-hood__stat-top"><?php echo $comparison_graphic_2['stat_2']['top']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_2['stat_2']['middle']): ?>
+                                            <div class="under-the-hood__stat-middle"><?php echo $comparison_graphic_2['stat_2']['middle']; ?></div>
+                                        <?php endif; ?>
+                                        <?php if($comparison_graphic_2['stat_2']['bottom']): ?>
+                                            <div class="under-the-hood__stat-bottom"><?php echo $comparison_graphic_2['stat_2']['bottom']; ?></div>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
 

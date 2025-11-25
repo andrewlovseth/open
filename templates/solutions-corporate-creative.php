@@ -28,6 +28,10 @@ get_header(); ?>
 
     <?php get_template_part('templates/solutions-corporate-creative/solution-brief'); ?>
 
+    <section class="solutions-corporate-creative-related grid">
+        <?php get_template_part('template-parts/global/related'); ?>
+    </section>
+    
     <?php get_template_part('templates/solutions-corporate-creative/sticky-footer'); ?>
 
 <?php get_footer(); ?>

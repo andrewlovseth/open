@@ -49,6 +49,10 @@
 
     &__copy-2 {
         padding-top: 2rem;
+
+        strong {
+            color: $black;
+        }
     }
 
     &__rect-right {

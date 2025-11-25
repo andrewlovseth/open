@@ -10,6 +10,11 @@
 
         &-copy {
             @include desktop-small {
+                p:nth-of-type(2) {
+                    break-after: avoid-column;
+                    page-break-after: avoid;
+                }
+
                 columns: 2;
                 column-gap: 2rem;
             }
@@ -40,6 +45,7 @@
         }
 
         &-headline {
+            font-weight: 600;
             padding-bottom: 1rem;
         }
     }

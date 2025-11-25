@@ -42,7 +42,6 @@
 
         @include desktop-small {
             grid-column: 2 / span 12;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
         }
     }
 
@@ -57,22 +56,23 @@
         }
     }
 
-    &__headline {
-        color: $white;
-        font-weight: bold;
-        padding-bottom: 0.25rem;
+    &__info {
+        padding: 3rem 0;
     }
 
-    &__copy-1 {
-        color: $white;
+    &__headline {
+        padding-bottom: 1rem;
+        font-size: $type-size-600 !important;
     }
 
     &__copy-2 {
-        padding: 3rem 0;
-
         @include desktop-small {
             columns: 2;
             column-gap: 2rem;
+        }
+
+        a {
+            text-decoration: underline !important;
         }
     }
 }

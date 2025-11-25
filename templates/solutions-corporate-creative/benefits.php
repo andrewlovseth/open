@@ -38,7 +38,7 @@
     <?php if($benefits_middle): ?>
         <div class="benefits__middle">
             <?php if($benefits_middle['headline']): ?>
-                <h2 class="benefits__middle-headline | copy copy-3"><?php echo $benefits_middle['headline']; ?></h2>
+                <h2 class="benefits__middle-headline section-headline-2025"><?php echo $benefits_middle['headline']; ?></h2>
             <?php endif; ?>
 
             <?php if($benefits_middle['copy']): ?>

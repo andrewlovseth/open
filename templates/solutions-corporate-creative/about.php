@@ -31,7 +31,7 @@
 
             <div class="about__middle-content">
                 <?php if($about_middle['headline']): ?>
-                    <h3 class="about__middle-headline copy-3"><?php echo $about_middle['headline']; ?></h3>
+                    <h3 class="about__middle-headline | copy copy-3"><?php echo $about_middle['headline']; ?></h3>
                 <?php endif; ?>
 
                 <?php if($about_middle['copy']): ?>

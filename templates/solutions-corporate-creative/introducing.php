@@ -18,33 +18,23 @@
         <?php endif; ?>
 
         <div class="introducing__content">
-            <div class="introducing__left">
-                <?php if($logo): ?>
-                    <div class="introducing__logo">
-                        <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
-                    </div>
-                <?php endif; ?>
-
-
-            </div>
-
-            <div class="introducing__right">
-                <?php if($headline): ?>
-                    <h3 class="introducing__headline | copy copy-3"><?php echo $headline; ?></h3>
-                <?php endif; ?>
-
-                <?php if($copy_1): ?>
-                    <div class="introducing__copy-1 | copy copy-3 extended">
-                        <?php echo $copy_1; ?>
-                    </div>
-                <?php endif; ?>
-            </div>
+            <?php if($logo): ?>
+                <div class="introducing__logo">
+                    <?php echo wp_get_attachment_image($logo['ID'], 'full'); ?>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 
     <?php if($copy_2): ?>
-        <div class="introducing__copy-2 | copy copy-3 secondary-color extended">
-            <?php echo $copy_2; ?>
+        <div class="introducing__info">        
+            <?php if($headline): ?>
+                <h3 class="introducing__headline section-headline-2025"><?php echo $headline; ?></h3>
+            <?php endif; ?>
+
+            <div class="introducing__copy-2 | copy copy-3 secondary-color extended">
+                <?php echo $copy_2; ?>
+            </div>
         </div>
     <?php endif; ?>
 </section>

@@ -37,7 +37,7 @@
     <?php endif; ?>
 
     <?php if($copy_2): ?>
-        <div class="hardware-options__copy-2 | copy copy-2 secondary-color extended">
+        <div class="hardware-options__copy-2 | copy copy-3 secondary-color extended">
             <?php echo $copy_2; ?>
         </div>
     <?php endif; ?>
