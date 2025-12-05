@@ -2669,7 +2669,7 @@
   }
   @media screen and (min-width: 992px) {
     .site-header.has-banner {
-      top: 86px;
+      top: 68px;
     }
   }
   .site-header-wrapper {
@@ -2687,7 +2687,7 @@
   }
   @media screen and (min-width: 992px) {
     body.nav-overlay-open .site-header.has-banner {
-      transform: translateY(-86px);
+      transform: translateY(-68px);
     }
   }
   body.page-template-atlas .desktop-nav__link-products,

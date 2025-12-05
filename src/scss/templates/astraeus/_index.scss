@@ -13,6 +13,7 @@
         @include meta.load-css("_outcomes");
         @include meta.load-css("_interested");
         @include meta.load-css("_features");
+        @include meta.load-css("_solution-brief");
 
         .section-headline-2025 {
             font-weight: 150;

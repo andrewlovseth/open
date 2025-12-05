@@ -32,6 +32,6 @@ get_header(); ?>
 
     <?php get_template_part('templates/astraeus/features'); ?>
     
-    <?php get_template_part('templates/home-2025/divider'); ?>
+    <?php get_template_part('templates/astraeus/solution-brief'); ?>
 
 <?php get_footer(); ?>
