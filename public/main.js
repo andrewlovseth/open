@@ -413,6 +413,13 @@
     },
     nabModal: function() {
       const modal = document.querySelector("#nab");
+      if (!modal) {
+        return;
+      }
+      const currentPath = window.location.pathname;
+      if (currentPath.includes("/solutions/corporate-creative/")) {
+        return;
+      }
       const showModalAtlasCC = localStorage.getItem("showModalAtlasCC");
       if (sessionStorage.atlas_cc_pageCount) {
         sessionStorage.atlas_cc_pageCount = Number(sessionStorage.atlas_cc_pageCount) + 1;
