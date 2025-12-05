@@ -109,7 +109,7 @@ const Modal = {
 
     nabModal: function () {
         const modal = document.querySelector("#nab");
-        const showModal = localStorage.getItem("showModal");
+        const showModalAtlasCC = localStorage.getItem("showModalAtlasCC");
 
         if (sessionStorage.atlas_cc_pageCount) {
             sessionStorage.atlas_cc_pageCount = Number(sessionStorage.atlas_cc_pageCount) + 1;
@@ -118,18 +118,18 @@ const Modal = {
         }
 
         if (sessionStorage.atlas_cc_pageCount == 1) {
-            if (showModal == null) {
-                localStorage.setItem("showModal", 1);
+            if (showModalAtlasCC == null) {
+                localStorage.setItem("showModalAtlasCC", 1);
                 MicroModal.show("nab");
-            } else if (showModal >= 1 && showModal <= 5) {
-                var visit_count = parseInt(localStorage.getItem("showModal"));
+            } else if (showModalAtlasCC >= 1 && showModalAtlasCC <= 5) {
+                var visit_count = parseInt(localStorage.getItem("showModalAtlasCC"));
                 visit_count++;
-                localStorage.setItem("showModal", visit_count);
+                localStorage.setItem("showModalAtlasCC", visit_count);
                 MicroModal.show("nab");
             } else {
-                var visit_count = parseInt(localStorage.getItem("showModal"));
+                var visit_count = parseInt(localStorage.getItem("showModalAtlasCC"));
                 visit_count++;
-                localStorage.setItem("showModal", visit_count);
+                localStorage.setItem("showModalAtlasCC", visit_count);
             }
         }
 
