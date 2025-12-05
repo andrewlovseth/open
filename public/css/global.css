@@ -1137,45 +1137,56 @@
   }
   .nab-banner .link-wrapper {
     display: flex;
-    gap: 1rem 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem 1rem;
+    padding: 1rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-decoration: none;
-  }
-  @media screen and (min-width: 768px) {
-    .nab-banner .link-wrapper {
-      width: unset;
-    }
   }
   .nab-banner .icon {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 0;
-    width: unset;
+    gap: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    .nab-banner .icon {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 12rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .nab-banner .icon {
+      flex-direction: row;
+      align-items: center;
+      max-width: unset;
+    }
   }
   .nab-banner img {
-    max-width: 8rem;
-    max-height: 4rem;
+    max-width: 5.25rem;
+    max-height: 2rem;
     width: auto;
     -o-object-fit: contain;
        object-fit: contain;
-    margin: 0 1rem 0 auto;
+    margin: 0;
   }
   .nab-banner .date-time {
     width: 100%;
     text-align: left;
-    border-left: 1px solid #fff;
-    padding-left: 1rem;
   }
   .nab-banner .date-time p {
-    font-size: 0.8125rem;
-    font-weight: 300;
+    font-size: 1.125rem;
+    font-weight: 800;
     line-height: 1.25em;
+  }
+  .nab-banner .date-time p strong {
+    font-weight: 800;
+    color: #f9a009 !important;
   }
   .nab-banner .copy {
     padding-right: 0;
@@ -1190,7 +1201,6 @@
       justify-content: space-between;
       padding-top: 0;
       flex: 1;
-      max-width: 60rem;
       text-align: left;
     }
   }
@@ -1226,16 +1236,6 @@
     align-items: center;
     justify-content: center;
   }
-  @media screen and (min-width: 768px) {
-    .nab-banner.has-icon .icon {
-      flex: 1;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .nab-banner.has-icon .copy {
-      flex: 1;
-    }
-  }
   .nab-banner.has-icon img {
     width: 100%;
     transform: translateY(3px);
@@ -1249,37 +1249,26 @@
     background: #f9a009;
     padding: 0.5rem 1.5rem 0.375rem 1.5rem;
   }
-  .nab-banner .copy {
-    text-align: center;
-  }
   .nab-banner p {
     line-height: 1.125em;
-  }
-  .nab-banner p .btn {
-    text-shadow: none;
-    display: inline-block;
-    margin-left: 0.5rem;
-    border: 1px solid;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
-    line-height: 0.75rem;
-    padding: 0.675rem 1rem 0.5rem 1rem;
-    transition: all 0.2s ease;
-  }
-  .nab-banner p .btn:hover {
-    background: #fff;
-    color: #000;
-    border: 1px solid #fff;
   }
   .nab-banner strong {
     color: #fff;
   }
-  .nab-banner .copy {
-    display: flex;
-    align-items: center;
-    text-align: left;
+  @media screen and (min-width: 480px) {
+    .nab-banner .copy {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+  }
+  .nab-banner .copy br {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .nab-banner .copy br {
+      display: block;
+    }
   }
   .nab-banner .copy-wrapper {
     margin-right: 1rem;
@@ -1290,6 +1279,17 @@
   }
   .nab-banner .copy-wrapper p + p {
     margin-top: 0;
+  }
+  .nab-banner .cta .btn {
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    border-radius: 0.25em;
+    padding: 0.5rem 1.5rem 0.375rem 1.5rem;
+  }
+  .nab-banner .cta .btn:hover {
+    text-decoration: none;
   }
   section.page-header {
     padding-top: 2rem;

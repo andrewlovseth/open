@@ -111,13 +111,13 @@ const Modal = {
         const modal = document.querySelector("#nab");
         const showModal = localStorage.getItem("showModal");
 
-        if (sessionStorage.nablv2025_pageCount) {
-            sessionStorage.nablv2025_pageCount = Number(sessionStorage.nablv2025_pageCount) + 1;
+        if (sessionStorage.atlas_cc_pageCount) {
+            sessionStorage.atlas_cc_pageCount = Number(sessionStorage.atlas_cc_pageCount) + 1;
         } else {
-            sessionStorage.nablv2025_pageCount = 1;
+            sessionStorage.atlas_cc_pageCount = 1;
         }
 
-        if (sessionStorage.nablv2025_pageCount == 1) {
+        if (sessionStorage.atlas_cc_pageCount == 1) {
             if (showModal == null) {
                 localStorage.setItem("showModal", 1);
                 MicroModal.show("nab");
