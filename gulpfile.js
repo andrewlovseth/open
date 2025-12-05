@@ -11,6 +11,7 @@ const browserSync = require("browser-sync").create();
 const { execSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
+const esbuild = require("esbuild");
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -21,7 +22,8 @@ const paths = {
         watch: "src/scss/**/*.scss",
     },
     js: {
-        src: "src/js/**/*.js",
+        src: "src/js/main.js",
+        watch: "src/js/**/*.js",
     },
     php: {
         watch: ["./**/*.php", "./templates/**/*.php", "./template-parts/**/*.php"],
@@ -29,6 +31,7 @@ const paths = {
     out: {
         root: "public/css",
         templates: "public/css/templates",
+        js: "public",
     },
 };
 
@@ -118,9 +121,49 @@ function cssTemplates() {
     return Promise.resolve();
 }
 
+function jsBundle(cb) {
+    console.log("🚀 Starting jsBundle...");
+
+    const buildOptions = {
+        entryPoints: [paths.js.src],
+        bundle: true,
+        outfile: path.join(paths.out.js, "main.js"),
+        format: "iife",
+        platform: "browser",
+        target: ["es2017"],
+        minify: isProd,
+        sourcemap: !isProd,
+        // MicroModal is loaded from CDN as a global, so we don't bundle it
+        // Swiper is dynamically imported from CDN, so it's handled at runtime
+        banner: {
+            js: "// Bundled JavaScript - Do not edit directly, edit src/js/ files instead",
+        },
+    };
+
+    esbuild
+        .build(buildOptions)
+        .then(() => {
+            console.log("✅ JavaScript bundled successfully");
+            cb();
+        })
+        .catch((error) => {
+            console.error("❌ JavaScript bundling failed:", error);
+            cb(error);
+        });
+}
+
 function clean(cb) {
     try {
         execSync(`rimraf ${paths.out.root}`);
+        // Also clean the bundled JS file
+        const bundledJs = path.join(paths.out.js, "main.js");
+        const bundledJsMap = path.join(paths.out.js, "main.js.map");
+        if (fs.existsSync(bundledJs)) {
+            fs.unlinkSync(bundledJs);
+        }
+        if (fs.existsSync(bundledJsMap)) {
+            fs.unlinkSync(bundledJsMap);
+        }
         cb();
     } catch (e) {
         cb(e);
@@ -145,12 +188,13 @@ function reloadBrowser(cb) {
 
 function watchFiles() {
     watch(paths.scss.watch, series(cssGlobal, cssTemplates));
-    watch(paths.js.src, reloadBrowser);
+    watch(paths.js.watch, series(jsBundle, reloadBrowser));
     watch(paths.php.watch, reloadBrowser);
 }
 
 exports.clean = clean;
 exports.cssGlobal = cssGlobal;
 exports.cssTemplates = cssTemplates;
-exports.build = series(clean, parallel(cssGlobal, cssTemplates));
-exports.dev = series(parallel(cssGlobal, cssTemplates), initBrowserSync, watchFiles);
+exports.jsBundle = jsBundle;
+exports.build = series(clean, parallel(cssGlobal, cssTemplates, jsBundle));
+exports.dev = series(parallel(cssGlobal, cssTemplates, jsBundle), initBrowserSync, watchFiles);

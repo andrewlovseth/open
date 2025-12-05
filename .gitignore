@@ -7,6 +7,10 @@
 node_modules/
 dist/
 
+# Built JavaScript files
+public/main.js
+public/main.js.map
+
 # Compiled Java class files
 *.class
 

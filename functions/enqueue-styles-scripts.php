@@ -83,19 +83,23 @@ function bearsmith_enqueue_styles_and_scripts() {
     }
 
     // Enqueue JavaScript
-    $script_url = get_stylesheet_directory_uri() . '/src/js/main.js';
+    // Use bundled JavaScript file from public/main.js
+    $script_path = get_stylesheet_directory() . '/public/main.js';
+    $script_url = get_stylesheet_directory_uri() . '/public/main.js';
 
+    // Enqueue MicroModal from CDN (dependency for main-js)
+    wp_enqueue_script('micromodal-scripts', 'https://unpkg.com/micromodal/dist/micromodal.min.js', array(), false, true );
 
-        wp_enqueue_script('micromodal-scripts', 'https://unpkg.com/micromodal/dist/micromodal.min.js', array(), false, true );
-
-
-    wp_enqueue_script(
-        'main-js', 
-        $script_url, 
-        array(), 
-        filemtime(get_stylesheet_directory() . '/src/js/main.js'),
-        true
-    );
+    // Enqueue bundled main JavaScript
+    if (file_exists($script_path)) {
+        wp_enqueue_script(
+            'main-js', 
+            $script_url, 
+            array('micromodal-scripts'), 
+            filemtime($script_path),
+            true
+        );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'bearsmith_enqueue_styles_and_scripts' );
 
@@ -128,7 +132,8 @@ function add_module_to_my_script($tag, $handle, $src) {
             $url_with_version = add_query_arg('ver', $version, $src);
         }
         
-        $tag = '<script type="module" src="' . esc_url($url_with_version) . '"></script>';
+        // Bundled file is IIFE format, not ES module, so no type="module" needed
+        $tag = '<script src="' . esc_url($url_with_version) . '"></script>';
     }
     return $tag;
 }
