@@ -31,11 +31,11 @@
         z-index: 2;
         position: relative;
         color: $white;
-        @include section-spacing;
         grid-column: 2 / span 4;
         display: grid;
         gap: 2rem;
         text-align: center;
+        @include section-spacing;
 
         @include tablet-small {
             grid-column: 2 / span 8;

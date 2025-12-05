@@ -1,1 +1,91 @@
-:where(.page-template-solutions) section.solutions .solution{display:grid;gap:2rem;align-items:center}@media screen and (min-width:480px){:where(.page-template-solutions) section.solutions .solution{grid-column:3/span 6}}:where(.page-template-solutions) section.solutions .solution+.solution{padding-top:clamp(2.5rem,10vh,5rem)}:where(.page-template-solutions) section.solutions .solution.center .info{text-align:center}:where(.page-template-solutions) section.solutions .solution.center .info .copy{max-width:unset}:where(.page-template-solutions) section.solutions .solution .photo{aspect-ratio:16/9}:where(.page-template-solutions) section.solutions .solution .photo img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}@media screen and (min-width:992px){:where(.page-template-solutions) section.solutions .solution{grid-template-columns:repeat(12,1fr);grid-column:2/span 12}:where(.page-template-solutions) section.solutions .solution+.solution{padding-top:clamp(5rem,15vh,7.5rem)}:where(.page-template-solutions) section.solutions .solution.center .info{grid-column:2/span 10}:where(.page-template-solutions) section.solutions .solution .photo{aspect-ratio:unset;grid-column:1/span 5;grid-row:1}:where(.page-template-solutions) section.solutions .solution .info{grid-column:7/span 5;grid-row:1}:where(.page-template-solutions) section.solutions .solution:nth-child(even) .photo{grid-column:7/span 5;grid-row:1}}:where(.page-template-solutions) section.solutions .solution .info .sub-headline.copy{padding:.5rem 0 0}:where(.page-template-solutions) section.solutions .solution .info .sub-headline.copy h4{color:#5c5c5c}:where(.page-template-solutions) section.solutions .solution .info .copy{padding:1rem 0 2rem;max-width:34rem}@media screen and (min-width:992px){:where(.page-template-solutions) section.solutions .solution:nth-child(even) .info{grid-column:1/span 6;grid-row:1}}
+@layer templates.solutions {
+  :where(.page-template-solutions) section.solutions {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions) section.solutions .solution {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions) section.solutions .solution {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution {
+      grid-template-columns: repeat(12, 1fr);
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions) section.solutions .solution + .solution {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution + .solution {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions) section.solutions .solution.center .info {
+    text-align: center;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution.center .info {
+      grid-column: 2/span 10;
+    }
+  }
+  :where(.page-template-solutions) section.solutions .solution.center .info .copy {
+    max-width: unset;
+  }
+  :where(.page-template-solutions) section.solutions .solution .photo {
+    aspect-ratio: 16/9;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution .photo {
+      aspect-ratio: unset;
+      grid-column: 1/span 5;
+      grid-row: 1;
+    }
+  }
+  :where(.page-template-solutions) section.solutions .solution .photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution .info {
+      grid-column: 7/span 5;
+      grid-row: 1;
+    }
+  }
+  :where(.page-template-solutions) section.solutions .solution .info .sub-headline.copy {
+    padding: 0.5rem 0 0 0;
+  }
+  :where(.page-template-solutions) section.solutions .solution .info .sub-headline.copy h4 {
+    color: #5c5c5c;
+  }
+  :where(.page-template-solutions) section.solutions .solution .info .copy {
+    padding: 1rem 0 2rem 0;
+    max-width: 34rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution:nth-child(even) .photo {
+      grid-column: 7/span 5;
+      grid-row: 1;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions) section.solutions .solution:nth-child(even) .info {
+      grid-column: 1/span 6;
+      grid-row: 1;
+    }
+  }
+}

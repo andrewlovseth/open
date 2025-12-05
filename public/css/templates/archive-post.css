@@ -1,1 +1,289 @@
-:where(body.blog) .blog-header .page-title{font-family:"Oooh Baby",cursive;font-size:clamp(3.11rem,2.67rem + 2.22vw,4.625em)}:where(body.blog) .blog-header .copy{padding:1rem 0 0}@media screen and (min-width:768px){:where(body.blog) .blog-header .copy{grid-column:3/span 6}}:where(body.blog) .blog-header .tag{display:flex;justify-content:center;align-items:center;padding-left:.5rem}@media screen and (min-width:992px){:where(body.blog) .blog-header .page-title{font-size:clamp(5rem,6.5rem + 3.33vw,7rem)}:where(body.blog) .blog-header .copy{grid-column:4/span 8}:where(body.blog) .blog-header .tag{padding-left:2rem}}:where(body.blog) .blog-header .tag p{padding-right:1rem;font-family:Montserrat,sans-serif;text-transform:uppercase;font-size:clamp(.66rem,.58rem + .48vw,.88rem);letter-spacing:.05em;transform:translateY(-5px)}:where(body.blog) .blog-header .tag .logo{width:4rem}@media screen and (min-width:992px){:where(body.blog) .blog-header .tag .logo{width:6rem}:where(body.blog) .featured .blog a{display:grid;grid-template-columns:repeat(8,1fr);align-items:end}}:where(body.blog) .blog-header .tag .logo svg{width:100%}:where(body.blog) .blog-header .tag .logo svg g,:where(body.blog) .blog-header .tag .logo svg path{fill:#2d77f8}:where(body.blog) .featured{gap:4rem 2rem}:where(body.blog) .featured .blog .photo{aspect-ratio:16/9}:where(body.blog) .featured .blog .photo .photo-wrapper{display:flex;flex:1 1 100%;height:100%;overflow:hidden;position:relative}:where(body.blog) .featured .blog .photo .photo-wrapper img{flex:1 0 100%;height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;position:relative;width:100%;transition:.5s}:where(body.blog) .featured .blog .photo img{border-radius:4px}:where(body.blog) .featured .blog .info{background:#fff;padding:2rem;border-radius:4px}@media screen and (min-width:992px){:where(body.blog) .featured .blog .photo{grid-column:1/span 6;grid-row:1}:where(body.blog) .featured .blog .info{grid-column:5/span 4;grid-row:1;z-index:10;transform:translate3d(0,-2rem,0);padding:1.5rem;box-shadow:rgba(50,50,93,.1) 0 20px 30px -12px,rgba(0,0,0,.0625) 0 9px 18px -18px}}:where(body.blog) .featured .blog .info .date h4{display:inline-block;color:#2d77f8;font-weight:400;font-size:clamp(.66rem,.58rem + .48vw,.88rem);line-height:1em;text-transform:capitalize}:where(body.blog) .featured .blog .info .post-title{padding-top:.5rem}:where(body.blog) .featured .blog .info .post-title h3{font-size:clamp(1.5rem,1.29rem + 1.07vw,1.95rem);line-height:1.125em;color:#000;font-weight:400}@media screen and (min-width:992px){:where(body.blog) .featured .blog .info .post-title h3{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem)}:where(body.blog) .featured .blog-1{grid-column:2/span 12}}:where(body.blog) .featured .blog .info .authors{padding-top:1rem}:where(body.blog) .featured .blog .info .authors .author{display:grid;grid-template-columns:3.5rem 1fr;gap:0 .5rem;align-items:center}:where(body.blog) .featured .blog .info .authors .author-photo{aspect-ratio:1/1}:where(body.blog) .featured .blog .info .authors .author-photo img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:50%;filter:saturate(0)}:where(body.blog) .featured .blog .info .authors .author-info .name h4{font-size:clamp(.87rem,.74rem + .62vw,1.13rem);line-height:1.125em}:where(body.blog) .featured .blog .info .authors .author-info .meta{padding-top:.25rem}:where(body.blog) .featured .blog .info .authors .author-info .meta h5{font-family:Montserrat,sans-serif;color:#5c5c5c;font-size:clamp(.6rem,.52rem + .43vw,.78rem);line-height:1.25em}@media screen and (min-width:768px){:where(body.blog) .featured .blog-1 .photo{aspect-ratio:16/9}}@media screen and (min-width:1280px){:where(body.blog) .featured .blog-1 .info{padding:2rem}:where(body.blog) .featured .blog-1 .info .post-title h3{font-size:clamp(1.5rem,1.29rem + 1.07vw,1.95rem)}}:where(body.blog) .featured .blog-1 .info .copy{padding-top:.5rem}:where(body.blog) section.archive{padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(body.blog) .featured .blog-1 .info .post-title h3{font-size:clamp(1.5rem,1.29rem + 1.07vw,1.95rem)}:where(body.blog) .featured .blog-2{grid-column:2/span 6}:where(body.blog) .featured .blog-3{grid-column:8/span 6}:where(body.blog) section.archive{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:0}}:where(body.blog) section.archive .blog{box-shadow:0 2px 16px rgba(0,0,0,.1);background:#fff}:where(body.blog) section.archive .blog .photo-wrapper{aspect-ratio:16/9}:where(body.blog) section.archive .blog .photo-wrapper img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}:where(body.blog) section.archive .blog .photo .photo-wrapper{display:flex;flex:1 1 100%;height:100%;overflow:hidden;position:relative}:where(body.blog) section.archive .blog .photo .photo-wrapper img{flex:1 0 100%;height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;position:relative;width:100%;transition:.5s}:where(body.blog) section.archive .blog .photo img{border-top-right-radius:4px;border-top-left-radius:4px}:where(body.blog) section.archive .blog .info{padding:1.5rem 1.5rem 2rem;border-bottom-right-radius:4px;border-bottom-left-radius:4px}:where(body.blog) section.archive .blog .info .date h4{display:inline-block;color:#2d77f8;font-weight:400;font-size:clamp(.66rem,.58rem + .48vw,.88rem);line-height:1em;text-transform:capitalize}:where(body.blog) section.archive .blog .info .post-title{padding-top:.5rem}:where(body.blog) section.archive .blog .info .post-title h3{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem);line-height:1.125em;color:#000;font-weight:400}
+@layer templates.archive-post {
+  :where(body.blog) .blog-header {
+    text-align: center;
+    padding-top: clamp(1.25rem, 5vh, 2.5rem);
+    padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .blog-header {
+      padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+      padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+    }
+  }
+  :where(body.blog) .blog-header .page-title {
+    font-family: "Oooh Baby", cursive;
+    font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .blog-header .page-title {
+      font-size: clamp(5rem, 6.5rem + 3.33vw, 7rem);
+    }
+  }
+  :where(body.blog) .blog-header .copy {
+    padding: 1rem 0 0 0;
+  }
+  @media screen and (min-width: 768px) {
+    :where(body.blog) .blog-header .copy {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .blog-header .copy {
+      grid-column: 4/span 8;
+    }
+  }
+  :where(body.blog) .blog-header .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .blog-header .tag {
+      padding-left: 2rem;
+    }
+  }
+  :where(body.blog) .blog-header .tag p {
+    padding-right: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
+    letter-spacing: 0.05em;
+    transform: translateY(-5px);
+  }
+  :where(body.blog) .blog-header .tag .logo {
+    width: 4rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .blog-header .tag .logo {
+      width: 6rem;
+    }
+  }
+  :where(body.blog) .blog-header .tag .logo svg {
+    width: 100%;
+  }
+  :where(body.blog) .blog-header .tag .logo svg g,
+  :where(body.blog) .blog-header .tag .logo svg path {
+    fill: #2d77f8;
+  }
+  :where(body.blog) .featured {
+    gap: 4rem 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog a {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      align-items: end;
+    }
+  }
+  :where(body.blog) .featured .blog .photo {
+    aspect-ratio: 16/9;
+  }
+  :where(body.blog) .featured .blog .photo .photo-wrapper {
+    display: flex;
+    flex: 1 1 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  :where(body.blog) .featured .blog .photo .photo-wrapper img {
+    flex: 1 0 100%;
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    width: 100%;
+    transition: all 500ms ease;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog .photo {
+      grid-column: 1/span 6;
+      grid-row: 1;
+    }
+  }
+  :where(body.blog) .featured .blog .photo img {
+    border-radius: 4px;
+  }
+  :where(body.blog) .featured .blog .info {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog .info {
+      grid-column: 5/span 4;
+      grid-row: 1;
+      z-index: 10;
+      transform: translate3d(0, -2rem, 0);
+      padding: 1.5rem;
+      box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+    }
+  }
+  :where(body.blog) .featured .blog .info .date h4 {
+    display: inline-block;
+    color: #2d77f8;
+    font-weight: normal;
+    font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
+    line-height: 1em;
+    text-transform: capitalize;
+  }
+  :where(body.blog) .featured .blog .info .post-title {
+    padding-top: 0.5rem;
+  }
+  :where(body.blog) .featured .blog .info .post-title h3 {
+    font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+    line-height: 1.125em;
+    color: #000;
+    font-weight: normal;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog .info .post-title h3 {
+      font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+    }
+  }
+  :where(body.blog) .featured .blog .info .authors {
+    padding-top: 1rem;
+  }
+  :where(body.blog) .featured .blog .info .authors .author {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 0 0.5rem;
+    align-items: center;
+  }
+  :where(body.blog) .featured .blog .info .authors .author-photo {
+    aspect-ratio: 1/1;
+  }
+  :where(body.blog) .featured .blog .info .authors .author-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  :where(body.blog) .featured .blog .info .authors .author-photo img {
+    border-radius: 50%;
+    filter: saturate(0%);
+  }
+  :where(body.blog) .featured .blog .info .authors .author-info .name h4 {
+    font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+    line-height: 1.125em;
+  }
+  :where(body.blog) .featured .blog .info .authors .author-info .meta {
+    padding-top: 0.25rem;
+  }
+  :where(body.blog) .featured .blog .info .authors .author-info .meta h5 {
+    font-family: "Montserrat", sans-serif;
+    color: #5c5c5c;
+    font-size: clamp(0.6rem, 0.52rem + 0.43vw, 0.78rem);
+    line-height: 1.25em;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog-1 {
+      grid-column: 2/span 12;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    :where(body.blog) .featured .blog-1 .photo {
+      aspect-ratio: 16/9;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(body.blog) .featured .blog-1 .info {
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog-1 .info .post-title h3 {
+      font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(body.blog) .featured .blog-1 .info .post-title h3 {
+      font-size: clamp(1.5rem, 1.29rem + 1.07vw, 1.95rem);
+    }
+  }
+  :where(body.blog) .featured .blog-1 .info .copy {
+    padding-top: 0.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog-2 {
+      grid-column: 2/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) .featured .blog-3 {
+      grid-column: 8/span 6;
+    }
+  }
+  :where(body.blog) section.archive {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) section.archive {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(body.blog) section.archive {
+      padding-bottom: 0;
+    }
+  }
+  :where(body.blog) section.archive .blog {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  :where(body.blog) section.archive .blog .photo-wrapper {
+    aspect-ratio: 16/9;
+  }
+  :where(body.blog) section.archive .blog .photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  :where(body.blog) section.archive .blog .photo .photo-wrapper {
+    display: flex;
+    flex: 1 1 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  :where(body.blog) section.archive .blog .photo .photo-wrapper img {
+    flex: 1 0 100%;
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    width: 100%;
+    transition: all 500ms ease;
+  }
+  :where(body.blog) section.archive .blog .photo img {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  :where(body.blog) section.archive .blog .info {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  :where(body.blog) section.archive .blog .info .date h4 {
+    display: inline-block;
+    color: #2d77f8;
+    font-weight: normal;
+    font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
+    line-height: 1em;
+    text-transform: capitalize;
+  }
+  :where(body.blog) section.archive .blog .info .post-title {
+    padding-top: 0.5rem;
+  }
+  :where(body.blog) section.archive .blog .info .post-title h3 {
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+    line-height: 1.125em;
+    color: #000;
+    font-weight: normal;
+  }
+}

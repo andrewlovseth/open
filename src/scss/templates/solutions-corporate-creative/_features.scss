@@ -1,8 +1,9 @@
 @use "../../abstracts" as *;
 
 .features {
-    @include section-spacing;
     background: #f5f5f7;
+
+    @include section-spacing;
 
     &__headline.section-headline-2025 {
         padding-bottom: 2rem;

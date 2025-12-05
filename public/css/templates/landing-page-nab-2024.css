@@ -1,1 +1,146 @@
-:where(.page-template-landing-page-nab-2024) .hero__form{align-self:flex-start;background:#fff;border-radius:.25rem;padding:2rem;box-shadow:0 127px 36px 0 transparent,0 81px 32px 0 rgba(0,0,0,.01),0 46px 27px 0 rgba(0,0,0,.05),0 20px 20px 0 rgba(0,0,0,.09),0 5px 11px 0 rgba(0,0,0,.1)}:where(.page-template-landing-page-nab-2024) .hero__form form{margin:0!important;padding:0!important}:where(.page-template-landing-page-nab-2024) .hero__form label{margin-bottom:.25rem}:where(.page-template-landing-page-nab-2024) .hero__form input[type=text]{border-radius:.25rem;border:1px solid #000;margin-bottom:1rem}:where(.page-template-landing-page-nab-2024) .hero .conf-info{display:grid;gap:2rem;grid-template-columns:repeat(2,minmax(0,1fr));align-items:end}:where(.page-template-landing-page-nab-2024) .hero .logos{margin:2rem 0 .5rem;width:100%;padding:2rem;display:flex;justify-content:center;align-items:center;background:rgba(45,119,248,.2);border-radius:1rem;border:1px solid #0f2b71}:where(.page-template-landing-page-nab-2024) .hero .booth{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem);text-align:center;padding-bottom:2rem}:where(.page-template-landing-page-nab-2024) .hero .copy.extended>*+*{margin-top:1rem}:where(.page-template-landing-page-nab-2024) .hero .nab-logo{max-width:18rem}:where(.page-template-landing-page-nab-2024) .features{color:#fff}:where(.page-template-landing-page-nab-2024) .features .section-header{padding-bottom:2rem}:where(.page-template-landing-page-nab-2024) .features .section-title.x-small{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem)}:where(.page-template-landing-page-nab-2024) .features .columns{display:grid;gap:2rem}@media screen and (min-width:768px){:where(.page-template-landing-page-nab-2024) .features .columns{grid-template-columns:repeat(2,minmax(0,1fr))}}@media screen and (min-width:992px){:where(.page-template-landing-page-nab-2024) .hero__info{grid-column:2/span 8}:where(.page-template-landing-page-nab-2024) .hero__form{grid-column:10/span 4}:where(.page-template-landing-page-nab-2024) .features .columns{padding-inline:4rem;grid-template-columns:repeat(3,minmax(0,1fr))}:where(.page-template-landing-page-nab-2024) .features .call-outs{grid-template-columns:repeat(2,minmax(0,1fr))}}:where(.page-template-landing-page-nab-2024) .features .col{padding:3rem 2.5rem;border-radius:.75rem}:where(.page-template-landing-page-nab-2024) .features .col-1{border:1px solid #01a5c3;background:radial-gradient(58.97% 66.67% at 90.52% 100%,#00b1ce 0,rgba(1,6,38,.6) 100%)}:where(.page-template-landing-page-nab-2024) .features .col-2{border:1px solid #5f5a98;background:radial-gradient(58.97% 66.67% at 90.52% 100%,#605b99 0,rgba(1,6,38,.6) 100%)}:where(.page-template-landing-page-nab-2024) .features .col-3{border:1px solid #134f97;background:radial-gradient(58.97% 66.67% at 90.52% 100%,#134f97 0,rgba(1,6,38,.6) 100%)}:where(.page-template-landing-page-nab-2024) .features .col__headline{padding:1rem 0 1.5rem}:where(.page-template-landing-page-nab-2024) .features .col__headline h3{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem)}:where(.page-template-landing-page-nab-2024) .features .call-outs{padding-top:6rem;display:grid;gap:2rem 4rem}:where(.page-template-landing-page-nab-2024) .features .call-outs__copy{background:#545454;border-radius:.75rem;padding:2rem;text-align:center;text-wrap:balance}:where(.page-template-landing-page-nab-2024) .features .call-outs__copy p{text-shadow:0 0 8px rgba(0,0,0,.75)}:where(.page-template-landing-page-nab-2024) .features .call-outs__copy a{color:#fff}:where(.page-template-landing-page-nab-2024) .site-footer{margin-top:12rem}
+@layer templates.landing-page-nab-2024 {
+  :where(.page-template-landing-page-nab-2024) {
+    background: #00144f url(../../../src/images/nab-ny-2024-bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero {
+    color: #fff;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-landing-page-nab-2024) .hero {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-landing-page-nab-2024) .hero__info {
+      grid-column: 2/span 8;
+    }
+  }
+  :where(.page-template-landing-page-nab-2024) .hero__form {
+    align-self: flex-start;
+    background: #fff;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    box-shadow: 0px 127px 36px 0px rgba(0, 0, 0, 0), 0px 81px 32px 0px rgba(0, 0, 0, 0.01), 0px 46px 27px 0px rgba(0, 0, 0, 0.05), 0px 20px 20px 0px rgba(0, 0, 0, 0.09), 0px 5px 11px 0px rgba(0, 0, 0, 0.1);
+  }
+  :where(.page-template-landing-page-nab-2024) .hero__form form {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero__form label {
+    margin-bottom: 0.25rem;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero__form input[type=text] {
+    border-radius: 0.25rem;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-landing-page-nab-2024) .hero__form {
+      grid-column: 10/span 4;
+    }
+  }
+  :where(.page-template-landing-page-nab-2024) .hero .conf-info {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: end;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero .logos {
+    margin: 2rem 0 0.5rem 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 119, 248, 0.2);
+    border-radius: 1rem;
+    border: 1px solid #0f2b71;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero .booth {
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero .copy.extended > * + * {
+    margin-top: 1rem;
+  }
+  :where(.page-template-landing-page-nab-2024) .hero .nab-logo {
+    max-width: 18rem;
+  }
+  :where(.page-template-landing-page-nab-2024) .features {
+    color: #fff;
+  }
+  :where(.page-template-landing-page-nab-2024) .features .section-header {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-landing-page-nab-2024) .features .section-title.x-small {
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  }
+  :where(.page-template-landing-page-nab-2024) .features .columns {
+    display: grid;
+    gap: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-landing-page-nab-2024) .features .columns {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-landing-page-nab-2024) .features .columns {
+      padding-inline: 4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  :where(.page-template-landing-page-nab-2024) .features .col {
+    padding: 3rem 2.5rem;
+    border-radius: 0.75rem;
+  }
+  :where(.page-template-landing-page-nab-2024) .features .col-1 {
+    border: 1px solid #01a5c3;
+    background: radial-gradient(58.97% 66.67% at 90.52% 100%, #00b1ce 0%, rgba(1, 6, 38, 0.6) 100%);
+  }
+  :where(.page-template-landing-page-nab-2024) .features .col-2 {
+    border: 1px solid #5f5a98;
+    background: radial-gradient(58.97% 66.67% at 90.52% 100%, #605b99 0%, rgba(1, 6, 38, 0.6) 100%);
+  }
+  :where(.page-template-landing-page-nab-2024) .features .col-3 {
+    border: 1px solid #134f97;
+    background: radial-gradient(58.97% 66.67% at 90.52% 100%, #134f97 0%, rgba(1, 6, 38, 0.6) 100%);
+  }
+  :where(.page-template-landing-page-nab-2024) .features .col__headline {
+    padding: 1rem 0 1.5rem 0;
+  }
+  :where(.page-template-landing-page-nab-2024) .features .col__headline h3 {
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  }
+  :where(.page-template-landing-page-nab-2024) .features .call-outs {
+    padding-top: 6rem;
+    display: grid;
+    gap: 2rem 4rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-landing-page-nab-2024) .features .call-outs {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  :where(.page-template-landing-page-nab-2024) .features .call-outs__copy {
+    background: #545454;
+    border-radius: 0.75rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+  :where(.page-template-landing-page-nab-2024) .features .call-outs__copy p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-landing-page-nab-2024) .features .call-outs__copy a {
+    color: white;
+  }
+  :where(.page-template-landing-page-nab-2024) .site-footer {
+    margin-top: 12rem;
+  }
+}

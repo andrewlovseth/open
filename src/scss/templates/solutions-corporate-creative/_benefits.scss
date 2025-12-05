@@ -38,8 +38,8 @@
         z-index: 2;
         position: relative;
         color: $white;
-        @include section-spacing;
         grid-column: 2 / span 4;
+        @include section-spacing;
 
         @include tablet-small {
             grid-column: 2 / span 8;

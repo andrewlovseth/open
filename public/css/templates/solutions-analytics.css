@@ -1,1 +1,105 @@
-:where(.page-template-solutions-analytics) section.solutions-intro .photo img{width:100%}:where(.page-template-solutions-analytics) .related{display:grid;gap:0 2rem;grid-template-columns:minmax(0,auto) repeat(4,minmax(auto,1fr)) minmax(0,auto);padding-top:clamp(1.25rem,5vh,2.5rem);padding-bottom:clamp(1.25rem,5vh,2.5rem)}@media screen and (min-width:480px){:where(.page-template-solutions-analytics) .related{grid-template-columns:minmax(0,auto) repeat(8,minmax(auto,1fr)) minmax(0,auto)}}@media screen and (min-width:992px){:where(.page-template-solutions-analytics) section.solutions-intro .copy{line-height:2rem}:where(.page-template-solutions-analytics) .related{padding-top:clamp(2.5rem,7.5vh,3.75rem);grid-template-columns:minmax(0,auto) repeat(12,minmax(0,4.5rem)) minmax(0,auto);padding-bottom:0}}@media screen and (min-width:1280px){:where(.page-template-solutions-analytics) .related{padding-top:clamp(2.5rem,10vh,5rem)}}@media screen and (min-width:1280px) and (min-width:992px){:where(.page-template-solutions-analytics) .related{padding-top:clamp(5rem,15vh,7.5rem)}}:where(.page-template-solutions-analytics) .related>*{grid-column:2/span 4}@media screen and (min-width:480px){:where(.page-template-solutions-analytics) .related>*{grid-column:2/span 8}}@media screen and (min-width:992px){:where(.page-template-solutions-analytics) .related>*{grid-column:2/span 12}}:where(.page-template-solutions-analytics) .related .section-header{padding-bottom:2rem}:where(.page-template-solutions-analytics) section.intro{background:#fff;text-align:center}@media screen and (min-width:480px){:where(.page-template-solutions-analytics) section.intro>*{grid-column:3/span 6}}:where(.page-template-solutions-analytics) section.intro .headline{padding-bottom:2rem}@media screen and (min-width:992px){:where(.page-template-solutions-analytics) section.intro>*{grid-column:2/span 12}:where(.page-template-solutions-analytics) section.intro .info{grid-column:3/span 10}}:where(.page-template-solutions-analytics) .hero h1{text-shadow:0 0 12px rgba(0,0,0,.75)}:where(.page-template-solutions-analytics) .hero .deck{max-width:50rem;margin:0 auto}:where(.page-template-solutions-analytics) .hero .deck p{text-shadow:0 0 8px rgba(0,0,0,.75)}:where(.page-template-solutions-analytics) .features{background:linear-gradient(314.71deg,#650700 23.48%,#771c15 40.1%,#de713e 88.47%)}
+@layer templates.solutions-analytics {
+  :where(.page-template-solutions-analytics) section.solutions-intro {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) section.solutions-intro {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) section.solutions-intro .copy {
+      line-height: 2rem;
+    }
+  }
+  :where(.page-template-solutions-analytics) section.solutions-intro .photo img {
+    width: 100%;
+  }
+  :where(.page-template-solutions-analytics) .related {
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
+    padding-top: clamp(1.25rem, 5vh, 2.5rem);
+    padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) .related {
+      padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+      padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-analytics) .related {
+      grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) .related {
+      grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(0, auto);
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-solutions-analytics) .related {
+      padding-top: clamp(2.5rem, 10vh, 5rem);
+    }
+  }
+  @media screen and (min-width: 1280px) and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) .related {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-analytics) .related > * {
+    grid-column: 2/span 4;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-analytics) .related > * {
+      grid-column: 2/span 8;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) .related > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-analytics) .related .section-header {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-solutions-analytics) section.intro {
+    background: #fff;
+    text-align: center;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-analytics) section.intro > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) section.intro > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-analytics) section.intro .headline {
+    padding-bottom: 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-analytics) section.intro .info {
+      grid-column: 3/span 10;
+    }
+  }
+  :where(.page-template-solutions-analytics) .hero h1 {
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-analytics) .hero .deck {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-solutions-analytics) .hero .deck p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-analytics) .features {
+    background: linear-gradient(314.71deg, #650700 23.48%, #771c15 40.1%, #de713e 88.47%);
+  }
+}

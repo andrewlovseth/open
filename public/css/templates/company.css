@@ -1,1 +1,171 @@
-:where(.page-template-company) section.intro .info{padding-bottom:3rem}@media screen and (min-width:768px){:where(.page-template-company) section.intro .info{grid-column:3/span 6}}@media screen and (min-width:992px){:where(.page-template-company) section.intro .info{padding-bottom:0;grid-column:2/span 6;padding-right:2rem}}:where(.page-template-company) section.intro .info .headline{padding-bottom:.5rem}:where(.page-template-company) section.intro .info .headline h2{font-weight:700;letter-spacing:0}@media screen and (min-width:768px){:where(.page-template-company) section.intro .photo{grid-column:3/span 6}}:where(.page-template-company) section.features{background:#fff;padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-company) section.intro .photo{grid-column:8/span 6}:where(.page-template-company) section.features{padding-bottom:clamp(5rem,15vh,7.5rem)}}@media screen and (min-width:768px){:where(.page-template-company) section.features .features-container{grid-column:3/span 6}}@media screen and (min-width:992px){:where(.page-template-company) section.features .features-container{grid-column:2/span 12;display:grid;grid-template-columns:repeat(3,1fr)}}:where(.page-template-company) section.features .feature{display:grid;grid-template-columns:4rem 1fr;gap:0 1rem}:where(.page-template-company) section.features .feature+.feature{margin-top:3rem}:where(.page-template-company) section.features .feature .headline{padding-bottom:.5rem}:where(.page-template-company) section.features .feature .headline h3{letter-spacing:0}:where(.page-template-company) section.features .feature .icon svg{width:100%;height:auto}@media screen and (min-width:992px){:where(.page-template-company) section.features .feature{grid-template-columns:1fr}:where(.page-template-company) section.features .feature+.feature{margin-top:0}:where(.page-template-company) section.features .feature .headline{padding-bottom:.25rem}:where(.page-template-company) section.features .feature .headline h3{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem);line-height:1.125em}:where(.page-template-company) section.features .feature .copy{font-size:clamp(.72rem,.62rem + .52vw,.94rem)}:where(.page-template-company) section.features .feature .icon{grid-row:1;grid-column:1;z-index:5;mix-blend-mode:multiply}:where(.page-template-company) section.features .feature .icon svg{transform:scale(1.1);transform-origin:center center}:where(.page-template-company) section.features .feature .info{grid-row:1;z-index:10;grid-column:1;display:flex;align-items:center;justify-content:center;text-align:center}:where(.page-template-company) section.features .feature .info-wrapper{max-width:48%}}:where(.page-template-company) section.customers{padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-company) section.customers{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:0}}:where(.page-template-company) section.customers .section-header{padding-bottom:3rem}:where(.page-template-company) section.customers .section-header .headline{padding-bottom:1.5rem}
+@layer templates.company {
+  :where(.page-template-company) .hero h1 {
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-company) .hero .deck {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-company) .hero .deck p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-company) section.intro {
+    background: #fff;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.intro {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-company) section.intro .info {
+    padding-bottom: 3rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-company) section.intro .info {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.intro .info {
+      padding-bottom: 0;
+      grid-column: 2/span 6;
+      padding-right: 2rem;
+    }
+  }
+  :where(.page-template-company) section.intro .info .headline {
+    padding-bottom: 0.5rem;
+  }
+  :where(.page-template-company) section.intro .info .headline h2 {
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-company) section.intro .photo {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.intro .photo {
+      grid-column: 8/span 6;
+    }
+  }
+  :where(.page-template-company) section.features {
+    background: #fff;
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features {
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-company) section.features .features-container {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .features-container {
+      grid-column: 2/span 12;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  :where(.page-template-company) section.features .feature {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 0 1rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature {
+      grid-template-columns: 1fr;
+    }
+  }
+  :where(.page-template-company) section.features .feature + .feature {
+    margin-top: 3rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature + .feature {
+      margin-top: 0;
+    }
+  }
+  :where(.page-template-company) section.features .feature .headline {
+    padding-bottom: 0.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .headline {
+      padding-bottom: 0.25rem;
+    }
+  }
+  :where(.page-template-company) section.features .feature .headline h3 {
+    letter-spacing: 0;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .headline h3 {
+      font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+      line-height: 1.125em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .copy {
+      font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .icon {
+      grid-row: 1;
+      grid-column: 1;
+      z-index: 5;
+      mix-blend-mode: multiply;
+    }
+  }
+  :where(.page-template-company) section.features .feature .icon svg {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .icon svg {
+      transform: scale(1.1);
+      transform-origin: center center;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .info {
+      grid-row: 1;
+      z-index: 10;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.features .feature .info-wrapper {
+      max-width: 48%;
+    }
+  }
+  :where(.page-template-company) section.customers {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.customers {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-company) section.customers {
+      padding-bottom: 0;
+    }
+  }
+  :where(.page-template-company) section.customers .section-header {
+    padding-bottom: 3rem;
+  }
+  :where(.page-template-company) section.customers .section-header .headline {
+    padding-bottom: 1.5rem;
+  }
+}

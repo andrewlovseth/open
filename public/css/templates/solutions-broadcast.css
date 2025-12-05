@@ -1,1 +1,201 @@
-:where(.page-template-solutions-broadcast) section.solutions-intro .photo img{width:100%}:where(.page-template-solutions-broadcast) .related{display:grid;gap:0 2rem;grid-template-columns:minmax(0,auto) repeat(4,minmax(auto,1fr)) minmax(0,auto);padding-top:clamp(1.25rem,5vh,2.5rem);padding-bottom:clamp(1.25rem,5vh,2.5rem)}@media screen and (min-width:480px){:where(.page-template-solutions-broadcast) .related{grid-template-columns:minmax(0,auto) repeat(8,minmax(auto,1fr)) minmax(0,auto)}}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) section.solutions-intro .copy{line-height:2rem}:where(.page-template-solutions-broadcast) .related{padding-top:clamp(2.5rem,7.5vh,3.75rem);grid-template-columns:minmax(0,auto) repeat(12,minmax(0,4.5rem)) minmax(0,auto);padding-bottom:0}}@media screen and (min-width:1280px){:where(.page-template-solutions-broadcast) .related{padding-top:clamp(2.5rem,10vh,5rem)}}@media screen and (min-width:1280px) and (min-width:992px){:where(.page-template-solutions-broadcast) .related{padding-top:clamp(5rem,15vh,7.5rem)}}:where(.page-template-solutions-broadcast) .related>*{grid-column:2/span 4}@media screen and (min-width:480px){:where(.page-template-solutions-broadcast) .related>*{grid-column:2/span 8}}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) .related>*{grid-column:2/span 12}}:where(.page-template-solutions-broadcast) .related .section-header{padding-bottom:2rem}:where(.page-template-solutions-broadcast) .hero h1{text-shadow:0 0 12px rgba(0,0,0,.75)}:where(.page-template-solutions-broadcast) .hero .deck{max-width:50rem;margin:0 auto}:where(.page-template-solutions-broadcast) .hero .deck p{text-shadow:0 0 8px rgba(0,0,0,.75)}:where(.page-template-solutions-broadcast) section.intro{background:#fff;align-items:center}@media screen and (min-width:480px){:where(.page-template-solutions-broadcast) section.intro>*{grid-column:3/span 6}}:where(.page-template-solutions-broadcast) section.intro .headline,:where(.page-template-solutions-broadcast) section.intro .sub-header{text-align:center}:where(.page-template-solutions-broadcast) section.intro .sub-headline{padding-top:1rem;padding-bottom:3rem;font-weight:300;font-size:clamp(1.04rem,.89rem + .74vw,1.35rem)}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) section.intro>*{grid-column:2/span 12}:where(.page-template-solutions-broadcast) section.intro .sub-headline{padding-bottom:4rem}}@media screen and (min-width:480px){:where(.page-template-solutions-broadcast) section.intro .photo{grid-column:4/span 4}}:where(.page-template-solutions-broadcast) section.intro .copy{padding-top:2rem}:where(.page-template-solutions-broadcast) section.workflow{background:#f4f7f9;gap:1rem 2rem;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) section.intro .photo{grid-column:2/span 5}:where(.page-template-solutions-broadcast) section.intro .copy{grid-column:8/span 6}:where(.page-template-solutions-broadcast) section.workflow{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}}@media screen and (min-width:480px){:where(.page-template-solutions-broadcast) section.workflow>*{grid-column:3/span 6}}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) section.workflow>*{grid-column:2/span 12}:where(.page-template-solutions-broadcast) section.workflow .headline{grid-column:2/span 6}}@media screen and (min-width:1280px){:where(.page-template-solutions-broadcast) section.workflow .headline{grid-column:2/span 5}}:where(.page-template-solutions-broadcast) section.workflow .headline br{display:none}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) section.workflow .headline br{display:block}:where(.page-template-solutions-broadcast) section.workflow .copy{grid-column:8/span 6}:where(.page-template-solutions-broadcast) section.workflow .graphic{padding-top:2rem}}:where(.page-template-solutions-broadcast) .features{background:linear-gradient(335.73deg,#30033c 26.89%,#8b0355 66.63%,#a00c23 97.4%)}:where(.page-template-solutions-broadcast) section.partners{background:#fff;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-solutions-broadcast) section.partners{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}}:where(.page-template-solutions-broadcast) section.partners .section-header{padding-bottom:2.5rem}:where(.page-template-solutions-broadcast) section.partners .three-col-grid{align-items:center}:where(.page-template-solutions-broadcast) section.partners .three-col-grid .logo{display:flex;justify-content:center}
+@layer templates.solutions-broadcast {
+  :where(.page-template-solutions-broadcast) section.solutions-intro {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.solutions-intro {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.solutions-intro .copy {
+      line-height: 2rem;
+    }
+  }
+  :where(.page-template-solutions-broadcast) section.solutions-intro .photo img {
+    width: 100%;
+  }
+  :where(.page-template-solutions-broadcast) .related {
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
+    padding-top: clamp(1.25rem, 5vh, 2.5rem);
+    padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) .related {
+      padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+      padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-broadcast) .related {
+      grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) .related {
+      grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(0, auto);
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-solutions-broadcast) .related {
+      padding-top: clamp(2.5rem, 10vh, 5rem);
+    }
+  }
+  @media screen and (min-width: 1280px) and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) .related {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-broadcast) .related > * {
+    grid-column: 2/span 4;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-broadcast) .related > * {
+      grid-column: 2/span 8;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) .related > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-broadcast) .related .section-header {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-solutions-broadcast) .hero h1 {
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-broadcast) .hero .deck {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-solutions-broadcast) .hero .deck p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-broadcast) section.intro {
+    background: #fff;
+    align-items: center;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-broadcast) section.intro > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.intro > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-broadcast) section.intro .headline,
+  :where(.page-template-solutions-broadcast) section.intro .sub-header {
+    text-align: center;
+  }
+  :where(.page-template-solutions-broadcast) section.intro .sub-headline {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.intro .sub-headline {
+      padding-bottom: 4rem;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-broadcast) section.intro .photo {
+      grid-column: 4/span 4;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.intro .photo {
+      grid-column: 2/span 5;
+    }
+  }
+  :where(.page-template-solutions-broadcast) section.intro .copy {
+    padding-top: 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.intro .copy {
+      grid-column: 8/span 6;
+    }
+  }
+  :where(.page-template-solutions-broadcast) section.workflow {
+    background: #f4f7f9;
+    gap: 1rem 2rem;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.workflow {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-broadcast) section.workflow > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.workflow > * {
+      grid-column: 2/span 12;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.workflow .headline {
+      grid-column: 2/span 6;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-solutions-broadcast) section.workflow .headline {
+      grid-column: 2/span 5;
+    }
+  }
+  :where(.page-template-solutions-broadcast) section.workflow .headline br {
+    display: none;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.workflow .headline br {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.workflow .copy {
+      grid-column: 8/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.workflow .graphic {
+      padding-top: 2rem;
+    }
+  }
+  :where(.page-template-solutions-broadcast) .features {
+    background: linear-gradient(335.73deg, #30033c 26.89%, #8b0355 66.63%, #a00c23 97.4%);
+  }
+  :where(.page-template-solutions-broadcast) section.partners {
+    background: #fff;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-broadcast) section.partners {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-broadcast) section.partners .section-header {
+    padding-bottom: 2.5rem;
+  }
+  :where(.page-template-solutions-broadcast) section.partners .three-col-grid {
+    align-items: center;
+  }
+  :where(.page-template-solutions-broadcast) section.partners .three-col-grid .logo {
+    display: flex;
+    justify-content: center;
+  }
+}

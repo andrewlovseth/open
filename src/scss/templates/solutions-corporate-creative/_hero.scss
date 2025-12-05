@@ -1,8 +1,8 @@
 @use "../../abstracts" as *;
 
 .hero {
-    @include section-spacing;
     align-items: start;
+    @include section-spacing;
 
     &__content {
         display: grid;

@@ -1,1 +1,122 @@
-@media screen and (min-width:992px){:where(.post-type-archive-customer_stories) .featured article:nth-child(1) .info h3{font-size:clamp(3.11rem,2.67rem + 2.22vw,4.625em)}:where(.post-type-archive-customer_stories) .featured article:nth-child(2){grid-column:2/span 6}:where(.post-type-archive-customer_stories) .featured article:nth-child(3){grid-column:8/span 6}}:where(.post-type-archive-customer_stories) .featured article .photo{grid-column:1;grid-row:1;aspect-ratio:1/1}:where(.post-type-archive-customer_stories) .featured article .photo img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:10px}@media screen and (min-width:768px){:where(.post-type-archive-customer_stories) .featured article .photo{aspect-ratio:16/9}}:where(.post-type-archive-customer_stories) .featured article .photo::before{content:"";display:block;position:absolute;inset:0;width:100%;height:100%;background:rgba(10,45,107,.65);border-radius:10px}:where(.post-type-archive-customer_stories) .featured article .info{grid-column:1;grid-row:1;z-index:10;display:flex;align-items:center;justify-content:center;flex-wrap:wrap}:where(.post-type-archive-customer_stories) .featured article .info h3{font-size:clamp(1.8rem,1.54rem + 1.29vw,2.34rem);color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.5);width:100%;text-align:center}:where(.post-type-archive-customer_stories) .featured article .info .description{text-align:center;width:100%;max-width:30rem;margin:0 auto;padding:0 2rem;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.5)}:where(.post-type-archive-customer_stories) .archive{padding-top:2rem;gap:2rem}:where(.post-type-archive-customer_stories) .archive article.customer-story{background:#fff;border-radius:10px;box-shadow:rgba(50,50,93,.1) 0 20px 30px -12px,rgba(0,0,0,.0625) 0 9px 18px -18px}:where(.post-type-archive-customer_stories) .archive article.customer-story .photo{aspect-ratio:16/9;border-radius:3px;border:1px solid #f5f5f5}:where(.post-type-archive-customer_stories) .archive article.customer-story .photo img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-top-left-radius:10px;border-top-right-radius:10px}:where(.post-type-archive-customer_stories) .archive article.customer-story .info{padding:1.5rem 2rem}:where(.post-type-archive-customer_stories) .archive article.customer-story .info h3{font-size:clamp(1.04rem,.89rem + .74vw,1.35rem);margin:0}:where(.post-type-archive-customer_stories) .archive article.customer-story .info .description{padding-top:.5rem}
+@layer templates.archive-customer-stories {
+  :where(.post-type-archive-customer_stories) .page-title {
+    color: #0a2d6b;
+  }
+  :where(.post-type-archive-customer_stories) .featured {
+    gap: 2rem;
+  }
+  :where(.post-type-archive-customer_stories) .featured article {
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+  }
+  :where(.post-type-archive-customer_stories) .featured article a {
+    display: grid;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.post-type-archive-customer_stories) .featured article:nth-child(1) .photo {
+      aspect-ratio: 16/7;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.post-type-archive-customer_stories) .featured article:nth-child(1) .info h3 {
+      font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.post-type-archive-customer_stories) .featured article:nth-child(2) {
+      grid-column: 2/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.post-type-archive-customer_stories) .featured article:nth-child(3) {
+      grid-column: 8/span 6;
+    }
+  }
+  :where(.post-type-archive-customer_stories) .featured article .photo {
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+  }
+  :where(.post-type-archive-customer_stories) .featured article .photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.post-type-archive-customer_stories) .featured article .photo {
+      aspect-ratio: 16/9;
+    }
+  }
+  :where(.post-type-archive-customer_stories) .featured article .photo img {
+    border-radius: 10px;
+  }
+  :where(.post-type-archive-customer_stories) .featured article .photo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 45, 107, 0.65);
+    border-radius: 10px;
+  }
+  :where(.post-type-archive-customer_stories) .featured article .info {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  :where(.post-type-archive-customer_stories) .featured article .info h3 {
+    font-size: clamp(1.8rem, 1.54rem + 1.29vw, 2.34rem);
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+  }
+  :where(.post-type-archive-customer_stories) .featured article .info .description {
+    text-align: center;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  :where(.post-type-archive-customer_stories) .archive {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 20px 30px -12px, rgba(0, 0, 0, 0.0625) 0px 9px 18px -18px;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story .photo {
+    aspect-ratio: 16/9;
+    border-radius: 3px;
+    border: 1px solid #f5f5f5;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story .photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story .photo img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story .info {
+    padding: 1.5rem 2rem;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story .info h3 {
+    font-size: clamp(1.04rem, 0.89rem + 0.74vw, 1.35rem);
+    margin: 0;
+  }
+  :where(.post-type-archive-customer_stories) .archive article.customer-story .info .description {
+    padding-top: 0.5rem;
+  }
+}

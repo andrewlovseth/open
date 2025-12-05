@@ -1,1 +1,291 @@
-:where(.page-template-customer-support) .intro{background:#fff;gap:2rem;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:480px){:where(.page-template-customer-support) .intro>*{grid-column:3/span 6}}@media screen and (min-width:992px){:where(.page-template-customer-support) .intro{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}:where(.page-template-customer-support) .intro>*{grid-column:2/span 12}:where(.page-template-customer-support) .intro .info{grid-column:2/span 6}:where(.page-template-customer-support) .intro .photo{grid-column:9/span 5}}:where(.page-template-customer-support) .intro .info .headline{padding-bottom:1.5rem}:where(.page-template-customer-support) .intro .info .headline h2{line-height:1em}:where(.page-template-customer-support) section.portal-link{background:#000;color:#fff;padding:1.5rem 0}:where(.page-template-customer-support) section.portal-link .container{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}:where(.page-template-customer-support) section.portal-link .container .headline{width:100%;text-align:center;padding-bottom:.75rem}@media screen and (min-width:992px){:where(.page-template-customer-support) section.portal-link .container .headline{width:auto;padding-bottom:0;padding-right:1rem}}:where(.page-template-customer-support) section.portal-link .container .headline h4{font-size:clamp(.87rem,.74rem + .62vw,1.13rem)}:where(.page-template-customer-support) section.features{background-repeat:no-repeat;background-position:center center;background-size:cover}:where(.page-template-customer-support) section.features .feature{border-radius:8px;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15);padding:1.5rem 2rem;border:1px solid #e5e5e5}@media screen and (min-width:768px){:where(.page-template-customer-support) section.features .feature{padding:2rem 2.5rem}}:where(.page-template-customer-support) section.features .feature .icon{width:65%;margin:0 auto}:where(.page-template-customer-support) section.features .feature .icon svg{width:100%}:where(.page-template-customer-support) section.by-the-numbers{background-color:#fff5e6;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-customer-support) section.by-the-numbers{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:0}:where(.page-template-customer-support) section.by-the-numbers .section-header{grid-column:3/span 10}}:where(.page-template-customer-support) section.by-the-numbers .section-header{padding-bottom:3rem}:where(.page-template-customer-support) section.by-the-numbers .section-header .headline{padding-bottom:1rem}:where(.page-template-customer-support) section.by-the-numbers .fancy-grid{display:grid;gap:2rem}@media screen and (min-width:768px){:where(.page-template-customer-support) section.by-the-numbers .fancy-grid{grid-column:3/span 6;grid-template-columns:repeat(2,1fr)}}@media screen and (min-width:992px){:where(.page-template-customer-support) section.by-the-numbers .fancy-grid{grid-column:2/span 12;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;grid-template-areas:"number1 number1 number2 number2" "number1 number1 number3 number4" "number5 number5 number7 number7" "number6 number6 number7 number7"}}:where(.page-template-customer-support) section.by-the-numbers .number{border-radius:8px;display:flex;justify-content:center;align-items:center;padding:1.5rem 2rem;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15);border:1px solid #e5e5e5}:where(.page-template-customer-support) section.by-the-numbers .number .copy{font-size:clamp(1rem,1.1vw,1.125rem)}@media screen and (min-width:768px){:where(.page-template-customer-support) section.by-the-numbers .number{padding:2rem}:where(.page-template-customer-support) section.by-the-numbers .number-large,:where(.page-template-customer-support) section.by-the-numbers .number-medium{grid-column:span 2}}:where(.page-template-customer-support) section.by-the-numbers .number-large .graphic{display:flex;justify-content:center}:where(.page-template-customer-support) section.by-the-numbers .number-large .copy{padding-top:1rem;text-align:center}:where(.page-template-customer-support) section.by-the-numbers .number-medium .content-wrapper{display:flex;align-items:center;gap:2rem}:where(.page-template-customer-support) section.by-the-numbers .number-medium .content-wrapper .graphic{width:25%}:where(.page-template-customer-support) section.by-the-numbers .number-medium .content-wrapper .copy{flex:1}:where(.page-template-customer-support) section.by-the-numbers .number-small .graphic{display:flex;justify-content:center}:where(.page-template-customer-support) section.by-the-numbers .number-small .copy{padding-top:1rem;text-align:center;font-size:1rem}@media screen and (min-width:768px){:where(.page-template-customer-support) section.by-the-numbers .number.item-6 .content-wrapper{align-items:center;flex-direction:row-reverse;gap:2rem}}:where(.page-template-customer-support) section.by-the-numbers .number.item-6 .copy{padding:0}:where(.page-template-customer-support) section.by-the-numbers .number.item-7{flex-direction:column;justify-content:space-between;padding:0;align-items:stretch}:where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper{padding:2rem}@media screen and (min-width:768px){:where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper{display:flex;gap:2rem;align-items:center;padding:2rem 2.5rem}:where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper .graphic{width:6rem}:where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper .copy{text-align:left}}@media screen and (min-width:992px){:where(.page-template-customer-support) section.by-the-numbers .number-large,:where(.page-template-customer-support) section.by-the-numbers .number-medium{grid-column:unset}:where(.page-template-customer-support) section.by-the-numbers .item-1{grid-area:number1}:where(.page-template-customer-support) section.by-the-numbers .item-2{grid-area:number2}:where(.page-template-customer-support) section.by-the-numbers .item-3{grid-area:number3}:where(.page-template-customer-support) section.by-the-numbers .item-4{grid-area:number4}:where(.page-template-customer-support) section.by-the-numbers .item-5{grid-area:number5}:where(.page-template-customer-support) section.by-the-numbers .item-6{grid-area:number6}:where(.page-template-customer-support) section.by-the-numbers .item-7{grid-area:number7}:where(.page-template-customer-support) section.by-the-numbers .item-8{grid-area:number8}}
+@layer templates.customer-support {
+  :where(.page-template-customer-support) .site {
+    background: #fff5e6;
+  }
+  :where(.page-template-customer-support) .hero h1 {
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-customer-support) .hero .deck {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-customer-support) .hero .deck p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-customer-support) .hero .info .headline h1 {
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) .hero .info .headline h1 {
+      font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
+    }
+  }
+  :where(.page-template-customer-support) .intro {
+    background: #fff;
+    gap: 2rem;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) .intro {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-customer-support) .intro > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) .intro > * {
+      grid-column: 2/span 12;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) .intro .info {
+      grid-column: 2/span 6;
+    }
+  }
+  :where(.page-template-customer-support) .intro .info .headline {
+    padding-bottom: 1.5rem;
+  }
+  :where(.page-template-customer-support) .intro .info .headline h2 {
+    line-height: 1em;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) .intro .photo {
+      grid-column: 9/span 5;
+    }
+  }
+  :where(.page-template-customer-support) section.portal-link {
+    background: #000;
+    color: #fff;
+    padding: 1.5rem 0;
+  }
+  :where(.page-template-customer-support) section.portal-link .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  :where(.page-template-customer-support) section.portal-link .container .headline {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.75rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.portal-link .container .headline {
+      width: auto;
+      padding-bottom: 0;
+      padding-right: 1rem;
+    }
+  }
+  :where(.page-template-customer-support) section.portal-link .container .headline h4 {
+    font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+  }
+  :where(.page-template-customer-support) section.features {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  :where(.page-template-customer-support) section.features .feature {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2rem;
+    border: 1px solid #e5e5e5;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.features .feature {
+      padding: 2rem 2.5rem;
+    }
+  }
+  :where(.page-template-customer-support) section.features .feature .icon {
+    width: 65%;
+    margin: 0 auto;
+  }
+  :where(.page-template-customer-support) section.features .feature .icon svg {
+    width: 100%;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers {
+    background-color: #fff5e6;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers {
+      padding-bottom: 0;
+    }
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .section-header {
+    padding-bottom: 3rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .section-header {
+      grid-column: 3/span 10;
+    }
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .section-header .headline {
+    padding-bottom: 1rem;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .fancy-grid {
+    display: grid;
+    gap: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.by-the-numbers .fancy-grid {
+      grid-column: 3/span 6;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .fancy-grid {
+      grid-column: 2/span 12;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 1fr;
+      grid-template-areas: "number1 number1 number2 number2" "number1 number1 number3 number4" "number5 number5 number7 number7" "number6 number6 number7 number7";
+    }
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2rem;
+    border: 1px solid #e5e5e5;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.by-the-numbers .number {
+      padding: 2rem 2.5rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.by-the-numbers .number {
+      padding: 2rem;
+    }
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number .copy {
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.by-the-numbers .number-large, :where(.page-template-customer-support) section.by-the-numbers .number-medium {
+      grid-column: span 2;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .number-large, :where(.page-template-customer-support) section.by-the-numbers .number-medium {
+      grid-column: unset;
+    }
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-large .graphic {
+    display: flex;
+    justify-content: center;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-large .copy {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-medium .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-medium .content-wrapper .graphic {
+    width: 25%;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-medium .content-wrapper .copy {
+    flex: 1;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-small .graphic {
+    display: flex;
+    justify-content: center;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number-small .copy {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.by-the-numbers .number.item-6 .content-wrapper {
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 2rem;
+    }
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number.item-6 .copy {
+    padding: 0;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number.item-7 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    align-items: stretch;
+  }
+  :where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper {
+    padding: 2rem 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem 2.5rem;
+    }
+    :where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper .graphic {
+      width: 6rem;
+    }
+    :where(.page-template-customer-support) section.by-the-numbers .number.item-7 .content-wrapper .copy {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-1 {
+      grid-area: number1;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-2 {
+      grid-area: number2;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-3 {
+      grid-area: number3;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-4 {
+      grid-area: number4;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-5 {
+      grid-area: number5;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-6 {
+      grid-area: number6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-7 {
+      grid-area: number7;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-customer-support) section.by-the-numbers .item-8 {
+      grid-area: number8;
+    }
+  }
+}

@@ -1,1 +1,325 @@
-:where(.page-template-solutions-video-surveillance) section.solutions-intro .photo img{width:100%}:where(.page-template-solutions-video-surveillance) .related{display:grid;gap:0 2rem;grid-template-columns:minmax(0,auto) repeat(4,minmax(auto,1fr)) minmax(0,auto);padding-top:clamp(1.25rem,5vh,2.5rem);padding-bottom:clamp(1.25rem,5vh,2.5rem)}@media screen and (min-width:480px){:where(.page-template-solutions-video-surveillance) .related{grid-template-columns:minmax(0,auto) repeat(8,minmax(auto,1fr)) minmax(0,auto)}}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) section.solutions-intro .copy{line-height:2rem}:where(.page-template-solutions-video-surveillance) .related{padding-top:clamp(2.5rem,7.5vh,3.75rem);grid-template-columns:minmax(0,auto) repeat(12,minmax(0,4.5rem)) minmax(0,auto);padding-bottom:0}}@media screen and (min-width:1280px){:where(.page-template-solutions-video-surveillance) .related{padding-top:clamp(2.5rem,10vh,5rem)}}@media screen and (min-width:1280px) and (min-width:992px){:where(.page-template-solutions-video-surveillance) .related{padding-top:clamp(5rem,15vh,7.5rem)}}:where(.page-template-solutions-video-surveillance) .related>*{grid-column:2/span 4}@media screen and (min-width:480px){:where(.page-template-solutions-video-surveillance) .related>*{grid-column:2/span 8}}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) .related>*{grid-column:2/span 12}}:where(.page-template-solutions-video-surveillance) .related .section-header{padding-bottom:2rem}:where(.page-template-solutions-video-surveillance) section.intro{background:#fff}@media screen and (min-width:480px){:where(.page-template-solutions-video-surveillance) section.intro>*{grid-column:3/span 6}}:where(.page-template-solutions-video-surveillance) section.intro .headline{text-align:center;padding-bottom:1.5rem}:where(.page-template-solutions-video-surveillance) .hero h1{text-shadow:0 0 12px rgba(0,0,0,.75)}:where(.page-template-solutions-video-surveillance) .hero .deck{max-width:50rem;margin:0 auto}:where(.page-template-solutions-video-surveillance) .hero .deck p{text-shadow:0 0 8px rgba(0,0,0,.75)}:where(.page-template-solutions-video-surveillance) .features{background:#fff;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) section.intro>*{grid-column:2/span 12}:where(.page-template-solutions-video-surveillance) section.intro .info{grid-column:3/span 10}:where(.page-template-solutions-video-surveillance) .features{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}}:where(.page-template-solutions-video-surveillance) .features .section-header{padding-bottom:2rem}@media screen and (min-width:768px){:where(.page-template-solutions-video-surveillance) .features .section-header{grid-column:3/span 6;padding-bottom:3rem}}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) .features .section-header{grid-column:2/span 12}}:where(.page-template-solutions-video-surveillance) .features .feature+.feature{margin-top:3rem}@media screen and (min-width:768px){:where(.page-template-solutions-video-surveillance) .features .features-list{grid-column:3/span 6}:where(.page-template-solutions-video-surveillance) .features .feature+.feature{margin-top:6rem}}:where(.page-template-solutions-video-surveillance) .features .photo{padding-top:3rem}:where(.page-template-solutions-video-surveillance) .features .photo img{width:100%;max-width:32rem;margin:0 auto}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) .features .features-list{grid-column:2/span 12}:where(.page-template-solutions-video-surveillance) .features .feature{display:grid;gap:0 2rem;grid-template-columns:repeat(12,minmax(0,4.5rem))}:where(.page-template-solutions-video-surveillance) .features .feature:nth-child(even) .info{grid-column:1/span 6}:where(.page-template-solutions-video-surveillance) .features .feature:nth-child(even) .photo{grid-column:8/span 5}:where(.page-template-solutions-video-surveillance) .features .photo{padding-top:0;grid-row:1;grid-column:1/span 5}:where(.page-template-solutions-video-surveillance) .features .photo img{max-width:100%}:where(.page-template-solutions-video-surveillance) .features .info{grid-row:1;grid-column:7/span 6}}:where(.page-template-solutions-video-surveillance) .features .headline{padding-bottom:1rem}:where(.page-template-solutions-video-surveillance) .features .copy{padding-bottom:2rem}:where(.page-template-solutions-video-surveillance) .did-you-know{background:#c0e8f9;align-items:center;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:480px){:where(.page-template-solutions-video-surveillance) .did-you-know>*{grid-column:3/span 6}}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) .did-you-know{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}:where(.page-template-solutions-video-surveillance) .did-you-know>*{grid-column:2/span 12}:where(.page-template-solutions-video-surveillance) .did-you-know .section-header{grid-column:2/span 5}}:where(.page-template-solutions-video-surveillance) .did-you-know .section-header{padding-bottom:2rem}:where(.page-template-solutions-video-surveillance) .did-you-know .section-header br{display:none}:where(.page-template-solutions-video-surveillance) .did-you-know .info .copy{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15);padding:1.5rem 2rem;border:1px solid #e5e5e5}@media screen and (min-width:768px){:where(.page-template-solutions-video-surveillance) .did-you-know .info .copy{padding:2rem 2.5rem}}:where(.page-template-solutions-video-surveillance) .did-you-know .info .copy+.copy{margin-top:1rem}:where(.page-template-solutions-video-surveillance) .simplifies{background:linear-gradient(344.58deg,#0e1f5a 19.43%,#850771 71.05%,#fe4292 111.03%);padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) .did-you-know .section-header br{display:block}:where(.page-template-solutions-video-surveillance) .did-you-know .info{grid-column:8/span 6}:where(.page-template-solutions-video-surveillance) .simplifies{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}}:where(.page-template-solutions-video-surveillance) .simplifies .section-header{padding-bottom:2.5rem}:where(.page-template-solutions-video-surveillance) .simplifies .section-title{color:#fff}:where(.page-template-solutions-video-surveillance) .simplifies .card{text-align:center;border-radius:8px;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15);padding:1.5rem 2rem;border:1px solid #e5e5e5}@media screen and (min-width:768px){:where(.page-template-solutions-video-surveillance) .simplifies .card{padding:2rem 2.5rem}}:where(.page-template-solutions-video-surveillance) .simplifies .card .headline{padding-bottom:.5rem}:where(.page-template-solutions-video-surveillance) .simplifies .card .headline h4{font-weight:700;font-size:clamp(.87rem,.74rem + .62vw,1.13rem);line-height:1.5em}:where(.page-template-solutions-video-surveillance) .difference{background:#fff;padding-top:clamp(2.5rem,10vh,5rem);padding-bottom:clamp(2.5rem,10vh,5rem)}:where(.page-template-solutions-video-surveillance) .difference .photo img{width:100%}@media screen and (min-width:992px){:where(.page-template-solutions-video-surveillance) .difference{padding-top:clamp(5rem,15vh,7.5rem);padding-bottom:clamp(5rem,15vh,7.5rem)}:where(.page-template-solutions-video-surveillance) .difference .photo{grid-column:2/span 5;grid-row:1}:where(.page-template-solutions-video-surveillance) .difference .info{grid-column:8/span 5;grid-row:1}}:where(.page-template-solutions-video-surveillance) .difference .info .sub-headline.copy{padding:.5rem 0 0}:where(.page-template-solutions-video-surveillance) .difference .info .sub-headline.copy h4{color:#5c5c5c}:where(.page-template-solutions-video-surveillance) .difference .info .copy{padding:1rem 0 2rem;max-width:34rem}
+@layer templates.solutions-video-surveillance {
+  :where(.page-template-solutions-video-surveillance) section.solutions-intro {
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) section.solutions-intro {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) section.solutions-intro .copy {
+      line-height: 2rem;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) section.solutions-intro .photo img {
+    width: 100%;
+  }
+  :where(.page-template-solutions-video-surveillance) .related {
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
+    padding-top: clamp(1.25rem, 5vh, 2.5rem);
+    padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .related {
+      padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
+      padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-video-surveillance) .related {
+      grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .related {
+      grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(0, auto);
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :where(.page-template-solutions-video-surveillance) .related {
+      padding-top: clamp(2.5rem, 10vh, 5rem);
+    }
+  }
+  @media screen and (min-width: 1280px) and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .related {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .related > * {
+    grid-column: 2/span 4;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-video-surveillance) .related > * {
+      grid-column: 2/span 8;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .related > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .related .section-header {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-solutions-video-surveillance) section.intro {
+    background: #fff;
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-video-surveillance) section.intro > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) section.intro > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) section.intro .headline {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) section.intro .info {
+      grid-column: 3/span 10;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .hero h1 {
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-video-surveillance) .hero .deck {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  :where(.page-template-solutions-video-surveillance) .hero .deck p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+  }
+  :where(.page-template-solutions-video-surveillance) .features {
+    background: #fff;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .features .section-header {
+    padding-bottom: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-video-surveillance) .features .section-header {
+      grid-column: 3/span 6;
+      padding-bottom: 3rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .section-header {
+      grid-column: 2/span 12;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-video-surveillance) .features .features-list {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .features-list {
+      grid-column: 2/span 12;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .feature {
+      display: grid;
+      gap: 0 2rem;
+      grid-template-columns: repeat(12, minmax(0, 4.5rem));
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .features .feature + .feature {
+    margin-top: 3rem;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-video-surveillance) .features .feature + .feature {
+      margin-top: 6rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .feature:nth-child(even) .info {
+      grid-column: 1/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .feature:nth-child(even) .photo {
+      grid-column: 8/span 5;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .features .photo {
+    padding-top: 3rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .photo {
+      padding-top: 0;
+      grid-row: 1;
+      grid-column: 1/span 5;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .features .photo img {
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .photo img {
+      max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .features .info {
+      grid-row: 1;
+      grid-column: 7/span 6;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .features .headline {
+    padding-bottom: 1rem;
+  }
+  :where(.page-template-solutions-video-surveillance) .features .copy {
+    padding-bottom: 2rem;
+  }
+  :where(.page-template-solutions-video-surveillance) .did-you-know {
+    background: #c0e8f9;
+    align-items: center;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know > * {
+      grid-column: 3/span 6;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know > * {
+      grid-column: 2/span 12;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .did-you-know .section-header {
+    padding-bottom: 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know .section-header {
+      grid-column: 2/span 5;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .did-you-know .section-header br {
+    display: none;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know .section-header br {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know .info {
+      grid-column: 8/span 6;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .did-you-know .info .copy {
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2rem;
+    border: 1px solid #e5e5e5;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-video-surveillance) .did-you-know .info .copy {
+      padding: 2rem 2.5rem;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .did-you-know .info .copy + .copy {
+    margin-top: 1rem;
+  }
+  :where(.page-template-solutions-video-surveillance) .simplifies {
+    background: linear-gradient(344.58deg, #0e1f5a 19.43%, #850771 71.05%, #fe4292 111.03%);
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .simplifies {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .simplifies .section-header {
+    padding-bottom: 2.5rem;
+  }
+  :where(.page-template-solutions-video-surveillance) .simplifies .section-title {
+    color: #fff;
+  }
+  :where(.page-template-solutions-video-surveillance) .simplifies .card {
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2rem;
+    border: 1px solid #e5e5e5;
+  }
+  @media screen and (min-width: 768px) {
+    :where(.page-template-solutions-video-surveillance) .simplifies .card {
+      padding: 2rem 2.5rem;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .simplifies .card .headline {
+    padding-bottom: 0.5rem;
+  }
+  :where(.page-template-solutions-video-surveillance) .simplifies .card .headline h4 {
+    font-weight: bold;
+    font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+    line-height: 1.5em;
+  }
+  :where(.page-template-solutions-video-surveillance) .difference {
+    background: #fff;
+    padding-top: clamp(2.5rem, 10vh, 5rem);
+    padding-bottom: clamp(2.5rem, 10vh, 5rem);
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .difference {
+      padding-top: clamp(5rem, 15vh, 7.5rem);
+      padding-bottom: clamp(5rem, 15vh, 7.5rem);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .difference .photo {
+      grid-column: 2/span 5;
+      grid-row: 1;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .difference .photo img {
+    width: 100%;
+  }
+  @media screen and (min-width: 992px) {
+    :where(.page-template-solutions-video-surveillance) .difference .info {
+      grid-column: 8/span 5;
+      grid-row: 1;
+    }
+  }
+  :where(.page-template-solutions-video-surveillance) .difference .info .sub-headline.copy {
+    padding: 0.5rem 0 0 0;
+  }
+  :where(.page-template-solutions-video-surveillance) .difference .info .sub-headline.copy h4 {
+    color: #5c5c5c;
+  }
+  :where(.page-template-solutions-video-surveillance) .difference .info .copy {
+    padding: 1rem 0 2rem 0;
+    max-width: 34rem;
+  }
+}
