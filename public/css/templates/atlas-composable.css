@@ -143,6 +143,7 @@
   }
   :where(.page-template-atlas-composable) .option__copy a {
     color: #fff;
+    text-decoration: underline !important;
   }
   :where(.page-template-atlas-composable) .option-1 {
     border: 1px solid #01a5c3;
