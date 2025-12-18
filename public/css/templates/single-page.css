@@ -8,6 +8,7 @@
     /* Make images not spill unexpectedly */
   }
   .page-template-default .site-content {
+    padding: 2rem 0;
     min-height: 60dvh;
   }
   .page-template-default .site-content p,
@@ -45,5 +46,14 @@
     height: auto;
     max-width: 100%;
     display: block;
+  }
+  .page-header {
+    padding-bottom: 2rem;
+  }
+  .page-body {
+    max-width: 55rem;
+  }
+  .page-body a {
+    text-decoration: underline !important;
   }
 }
