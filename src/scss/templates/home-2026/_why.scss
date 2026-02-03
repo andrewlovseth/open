@@ -1,0 +1,28 @@
+@use "../../abstracts" as *;
+
+@layer templates.home-2026 {
+    .home-2026-why {
+        background: $white;
+        text-align: center;
+        @include section-spacing;
+
+        &__content {
+            @include desktop-small {
+                grid-column: 3 / span 10;
+            }
+        }
+
+        &__subheadline {
+            font-size: $type-size-400;
+            font-weight: bold;
+            line-height: 1.4;
+            padding: 2rem 0;
+        }
+
+        &__copy {
+            p {
+                text-wrap: balance;
+            }
+        }
+    }
+}

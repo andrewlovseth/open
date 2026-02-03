@@ -411,6 +411,13 @@
     background: #000;
   }
 
+  .cta .btn.blue-2026 {
+    text-transform: unset;
+    letter-spacing: unset;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
   .cta .btn.alt {
     color: #fff;
     text-transform: unset;

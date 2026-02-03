@@ -1,0 +1,18 @@
+@use "../../abstracts" as *;
+
+@layer templates.home-2026 {
+    .home-2026-cta {
+        text-align: center;
+        @include section-spacing;
+
+        &__headline {
+            font-size: $type-size-500 !important;
+            padding-bottom: 3rem;
+            font-weight: 350 !important;
+
+            @include desktop-small {
+                font-size: $type-size-600 !important;
+            }
+        }
+    }
+}

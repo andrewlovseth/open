@@ -1,0 +1,44 @@
+@use "sass:meta";
+@use "../../abstracts" as *;
+
+@layer templates.home-2026 {
+    :where(.page-template-home-2026) {
+        @include meta.load-css("_hero");
+        @include meta.load-css("_social-proof");
+        @include meta.load-css("_why");
+        @include meta.load-css("_differentiators");
+        @include meta.load-css("_cta");
+
+        .section-headline-2025 {
+            font-weight: 150;
+            font-size: $type-size-800;
+            letter-spacing: -0.02em;
+            line-height: 1.1em;
+            color: #141414;
+            text-align: center;
+
+            @include desktop-small {
+                font-size: $type-size-1000;
+            }
+        }
+
+        .divider {
+            padding: 0 2rem;
+            position: relative;
+
+            svg {
+                margin: 0 auto;
+                display: block;
+                max-width: 100%;
+            }
+        }
+
+        .home-2026 {
+            overflow-x: hidden;
+        }
+
+        .promo {
+            display: none;
+        }
+    }
+}

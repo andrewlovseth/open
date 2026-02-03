@@ -1,0 +1,49 @@
+@use "../../abstracts" as *;
+
+@layer templates.home-2026 {
+    .home-2026-hero {
+        text-align: center;
+        background: $white;
+        @include section-spacing;
+
+        &__logo {
+            width: 12rem;
+            margin-inline: auto;
+            padding-bottom: 2rem;
+
+            @include desktop-small {
+                width: 18rem;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__headline {
+            font-size: $type-size-400;
+            font-weight: bold;
+        }
+
+        &__tagline {
+            font-size: $type-size-300;
+            color: $charcoal;
+            line-height: 1.4;
+        }
+
+        &__diagram {
+            margin-block-start: 3rem;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            @include desktop-small {
+                margin-block-start: 4rem;
+            }
+        }
+    }
+}
