@@ -5,17 +5,41 @@ This file provides guidance for Claude Code when working with the OpenDrives the
 ## Build Commands
 
 ```bash
-npm run dev    # Development mode with BrowserSync (proxies https://open.local)
-npm run build  # Production build (minified CSS/JS)
-npm run clean  # Remove build artifacts
+bun run dev    # Development server with live reload (proxies https://opendrives.dev)
+bun run build  # Production build (minified CSS/JS)
+bun run clean  # Remove build artifacts
 ```
 
-**Note**: BrowserSync expects `https://open.local` - ensure DDEV is configured with this hostname or update `gulpfile.js`.
+## Build System
+
+The theme uses Bun as its build tool with two TypeScript scripts:
+
+| File | Purpose |
+|------|---------|
+| `build.ts` | Production build - compiles SCSS, bundles JS, minifies |
+| `dev.ts` | Development server with live reload |
+
+### How Live Reload Works
+
+The dev server (`bun run dev`):
+1. Proxies requests to DDEV at `https://opendrives.dev`
+2. Injects a WebSocket client into HTML responses
+3. Watches for file changes:
+   - **SCSS changes** → CSS-only reload (no page refresh)
+   - **JS changes** → Full page reload
+   - **PHP changes** → Full page reload
+
+### Dependencies
+
+- **sass** - SCSS compilation
+- **lightningcss** - Autoprefixing and CSS minification (replaces PostCSS + autoprefixer)
+
+Bun's native bundler handles JavaScript (replaces esbuild).
 
 ## Architecture Overview
 
 - **Theme Type**: Classic PHP theme with block support
-- **Build Tools**: Gulp 5 + esbuild + dart-sass + PostCSS
+- **Build Tools**: Bun + sass + LightningCSS
 - **CSS Strategy**: Per-template CSS files for optimal loading
 - **JS Strategy**: Single bundle with lazy-loaded Swiper from CDN
 
@@ -43,6 +67,8 @@ npm run clean  # Remove build artifacts
 │   │       └── <template-name>/   # Each template has _index.scss
 │   └── js/
 │       └── main.js                # Entry point
+├── build.ts             # Production build script
+├── dev.ts               # Development server
 └── public/              # Build output (gitignored)
     ├── css/
     │   ├── global.css
@@ -80,7 +106,7 @@ The CSS loading system in `functions/enqueue-styles-scripts.php` intelligently m
 ## JavaScript
 
 Single entry point at `src/js/main.js`:
-- Bundled with esbuild
+- Bundled with Bun's native bundler (ES2020 target)
 - Swiper lazy-loaded from CDN when carousels are present
 - Module pattern for component initialization
 
@@ -105,13 +131,13 @@ Common pattern for lists, testimonials, features, etc.
 ### Add a New Page Template
 1. Create `templates/template-{name}.php` with template header
 2. Create `src/scss/templates/template-{name}/_index.scss`
-3. Run `npm run build` to compile CSS
+3. Run `bun run build` to compile CSS
 4. CSS auto-loads when template is assigned
 
 ### Add Template-Specific Styles
 1. Navigate to `src/scss/templates/<template-name>/`
 2. Edit `_index.scss` (import partials as needed)
-3. Changes reflect via BrowserSync in dev mode
+3. Changes reflect instantly via live reload in dev mode
 
 ### Modify Global Styles
 Edit files in `src/scss/` directories:
@@ -128,7 +154,8 @@ ddev start              # Start environment
 ddev wp <command>       # WP-CLI access
 ```
 
-Local URL: `https://opendrives.dev` (or `https://open.local` for BrowserSync)
+Local URL: `https://opendrives.dev`
+Dev server: `http://localhost:3000` (proxies to DDEV)
 
 ## Coding Conventions
 

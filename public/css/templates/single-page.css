@@ -1,58 +1,52 @@
 @layer templates.single-page {
-  .page-template-default {
-    /* Remove theme's default content max-width for the blocks page template */
-    /* Optional: keep inner content readable by default */
-    /* Wide alignment: centered, larger than content */
-    /* Full alignment: stretch edge to edge */
-    /* Helpful defaults for hero/cover blocks */
-    /* Make images not spill unexpectedly */
-  }
   .page-template-default .site-content {
-    padding: 2rem 0;
     min-height: 60dvh;
+    padding: 2rem 0;
   }
-  .page-template-default .site-content p,
-  .page-template-default .site-content ul,
-  .page-template-default .site-content ol,
-  .page-template-default .site-content blockquote {
+
+  .page-template-default .site-content p, .page-template-default .site-content ul, .page-template-default .site-content ol, .page-template-default .site-content blockquote {
     font-weight: 300;
   }
+
   .page-template-default .no-constrain {
     max-width: none;
     padding: 0;
   }
-  .page-template-default .entry-content,
-  .page-template-default .site-main {
-    /* Do not fix a width here on the full-width template */
-  }
+
   .page-template-default .alignwide {
-    max-width: 1200px; /* match your design */
+    width: 100%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
   .page-template-default .alignfull {
     width: 100%;
+    max-width: 100vw;
     margin-left: 50%;
     transform: translateX(-50%);
-    max-width: 100vw; /* ensure it truly spans viewport */
   }
+
   .page-template-default .wp-block-cover {
     min-height: 50vh;
   }
+
   .page-template-default .wp-block-image img {
-    height: auto;
     max-width: 100%;
+    height: auto;
     display: block;
   }
+
   .page-header {
     padding-bottom: 2rem;
   }
+
   .page-body {
     max-width: 55rem;
   }
+
   .page-body a {
     text-decoration: underline !important;
   }

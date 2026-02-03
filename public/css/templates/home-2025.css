@@ -2,405 +2,467 @@
   :where(.page-template-home-2025) {
     background: #fff;
   }
+
   :where(.page-template-home-2025) .hero {
     text-align: center;
     padding: 4rem 0;
     overflow: hidden;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .hero {
       padding: 8rem 0;
     }
   }
+
   :where(.page-template-home-2025) .hero__headline {
     padding-bottom: 2rem;
   }
+
   :where(.page-template-home-2025) .hero__copy {
-    font-weight: 400;
     text-wrap: pretty;
     max-width: 36rem;
     margin: 0 auto;
-    line-height: 1.75em;
     padding-bottom: 2rem;
+    font-weight: 400;
+    line-height: 1.75em;
   }
+
   :where(.page-template-home-2025) .hero__video {
     display: grid;
   }
+
   :where(.page-template-home-2025) .hero__video-poster {
-    grid-column: 1;
-    grid-row: 1;
     z-index: 2;
+    grid-area: 1 / 1;
+    place-items: center;
     max-width: 76%;
     margin: 0 auto;
     display: grid;
-    place-items: center;
   }
+
   :where(.page-template-home-2025) .hero__video-poster-link {
-    display: grid;
     place-items: center;
+    display: grid;
   }
+
   :where(.page-template-home-2025) .hero__video-poster-link:hover svg {
     scale: 1.1;
   }
+
   :where(.page-template-home-2025) .hero__video-poster img {
-    grid-column: 1;
-    grid-row: 1;
     z-index: 2;
+    grid-area: 1 / 1;
   }
+
   :where(.page-template-home-2025) .hero__video-poster svg {
-    transition: all 350ms ease;
-    grid-column: 1;
-    grid-row: 1;
     z-index: 3;
+    grid-area: 1 / 1;
     width: 3.25rem;
+    transition: all .35s;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .hero__video-poster svg {
       width: 5.25rem;
     }
   }
+
   :where(.page-template-home-2025) .hero__video-frame {
-    grid-column: 1;
-    grid-row: 1;
     z-index: 1;
+    grid-area: 1 / 1;
     max-width: 840px;
     margin: 0 auto;
     position: relative;
   }
+
   :where(.page-template-home-2025) .hero__rect-left {
+    grid-column: 1;
+    width: 2rem;
     position: absolute;
     top: 30%;
     left: 0;
-    width: 2rem;
-    grid-column: 1;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .hero__rect-left {
       width: 6rem;
     }
   }
+
   :where(.page-template-home-2025) .hero__blob {
     z-index: -1;
-    grid-column: 1;
-    grid-row: 1;
+    grid-area: 1 / 1;
     position: absolute;
     top: 0;
   }
+
   :where(.page-template-home-2025) .hero__blob img {
     transform: translate3d(12%, -25%, 0);
   }
+
   :where(.page-template-home-2025) .hero .modal__container {
-    overflow: visible;
     padding: 1rem;
+    overflow: visible;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .hero .modal__container {
       padding: 2rem;
     }
   }
+
   :where(.page-template-home-2025) .hero .modal__header {
     padding-bottom: 0;
   }
+
   :where(.page-template-home-2025) .hero .modal__close {
     position: absolute;
     top: 0;
     right: 0;
     transform: translate3d(50%, -50%, 0);
   }
+
   :where(.page-template-home-2025) .hero .video-player .embed {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
   }
+
   :where(.page-template-home-2025) .hero .video-player iframe {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
+
   :where(.page-template-home-2025) .about {
     padding: 4rem 0;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .about {
       padding: 8rem 0;
     }
   }
+
   :where(.page-template-home-2025) .about__headline {
-    padding-bottom: 2rem;
     text-align: center;
+    padding-bottom: 2rem;
   }
+
   :where(.page-template-home-2025) .about__copy {
-    font-weight: 400;
     text-wrap: pretty;
+    text-align: center;
     max-width: 52rem;
     margin: 0 auto;
-    line-height: 1.75em;
     padding-bottom: 4rem;
-    text-align: center;
+    font-weight: 400;
+    line-height: 1.75em;
   }
+
   :where(.page-template-home-2025) .about__editorial {
-    display: grid;
-    gap: 2rem 4rem;
     align-items: center;
+    gap: 2rem 4rem;
+    display: grid;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (width >= 768px) {
     :where(.page-template-home-2025) .about__editorial {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+
   :where(.page-template-home-2025) .about__editorial + .about__editorial {
     padding-top: 4rem;
   }
+
   :where(.page-template-home-2025) .about__editorial .copy {
     line-height: 1.75em;
   }
+
   :where(.page-template-home-2025) .about__editorial-1 .photo {
     position: relative;
   }
-  :where(.page-template-home-2025) .about__editorial-1 .photo::after {
-    display: block;
+
+  :where(.page-template-home-2025) .about__editorial-1 .photo:after {
     content: "";
-    position: absolute;
     z-index: -1;
-    top: -24px;
-    right: -12px;
+    background-color: #f9a009;
     width: 4rem;
     height: 5.5rem;
-    background-color: #f9a009;
+    display: block;
+    position: absolute;
+    top: -24px;
+    right: -12px;
   }
+
   :where(.page-template-home-2025) .about__editorial-2 .photo {
     position: relative;
   }
-  :where(.page-template-home-2025) .about__editorial-2 .photo::after {
-    display: block;
+
+  :where(.page-template-home-2025) .about__editorial-2 .photo:after {
     content: "";
-    position: absolute;
     z-index: -1;
-    bottom: -28px;
-    left: -32px;
+    background-color: #cd1055;
     width: 4rem;
     height: 5.5rem;
-    background-color: #cd1055;
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    left: -32px;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (width >= 768px) {
     :where(.page-template-home-2025) .about__editorial-2 .photo {
       order: -1;
     }
   }
+
   :where(.page-template-home-2025) .about__rect-right {
+    grid-column: 1;
+    width: 2rem;
     position: absolute;
     top: -5%;
     right: 0;
-    width: 2rem;
-    grid-column: 1;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .about__rect-right {
       width: 6rem;
     }
   }
+
   :where(.page-template-home-2025) .values {
     padding: 4rem 0;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .values {
       padding: 8rem 0;
     }
   }
+
   :where(.page-template-home-2025) .values__headline {
-    padding-bottom: 2rem;
     text-align: center;
     text-wrap: balance;
+    padding-bottom: 2rem;
   }
+
   :where(.page-template-home-2025) .values__copy {
-    font-weight: 400;
     text-wrap: pretty;
+    text-align: center;
     max-width: 52rem;
     margin: 0 auto;
+    font-weight: 400;
     line-height: 1.75em;
-    text-align: center;
   }
+
   :where(.page-template-home-2025) .values__slides {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     position: relative;
   }
+
   :where(.page-template-home-2025) .values .values-swiper {
+    padding: 0 2rem;
     position: relative;
     overflow: hidden;
-    padding: 0 2rem;
   }
+
   :where(.page-template-home-2025) .values .values-swiper.swiper-initialized .swiper-wrapper {
-    display: flex;
     align-items: stretch;
     margin: 4rem 0;
+    display: flex;
   }
+
   :where(.page-template-home-2025) .values .slide {
-    padding: 2rem;
+    cursor: grab;
+    border-radius: .25rem;
     width: 25rem;
     height: auto;
     min-height: 32rem;
-    border-radius: 0.25rem;
-    transition: all 0.3s ease;
-    cursor: grab;
+    padding: 2rem;
+    transition: all .3s;
     display: flex;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .values .slide {
       padding: 4rem;
     }
   }
+
   :where(.page-template-home-2025) .values .slide:active {
     cursor: grabbing;
   }
+
   :where(.page-template-home-2025) .values .slide__container {
-    display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: space-between;
     gap: 2rem;
-    flex: 1;
+    display: flex;
   }
+
   :where(.page-template-home-2025) .values .slide__headline {
     text-transform: uppercase;
+    color: #000;
     padding-bottom: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #000;
     line-height: 1.2;
   }
+
   :where(.page-template-home-2025) .values .slide__copy {
+    color: #000;
     font-size: 1rem;
     line-height: 1.6;
-    color: #000;
   }
-  :where(.page-template-home-2025) .values .swiper-button-next,
-  :where(.page-template-home-2025) .values .swiper-button-prev {
-    width: 3rem !important;
-    height: 3rem !important;
+
+  :where(.page-template-home-2025) .values .swiper-button-next, :where(.page-template-home-2025) .values .swiper-button-prev {
+    color: #000;
+    z-index: 10;
     background: #fff;
     border: 1px solid #000;
     border-radius: 50%;
-    color: #000;
-    transition: all 0.3s ease;
-    z-index: 10;
-    top: auto !important;
+    transition: all .3s;
     bottom: 0;
+    width: 3rem !important;
+    height: 3rem !important;
+    top: auto !important;
   }
-  :where(.page-template-home-2025) .values .swiper-button-next:hover,
-  :where(.page-template-home-2025) .values .swiper-button-prev:hover {
-    background: #000;
+
+  :where(.page-template-home-2025) .values .swiper-button-next:hover, :where(.page-template-home-2025) .values .swiper-button-prev:hover {
     color: #fff;
+    background: #000;
   }
-  :where(.page-template-home-2025) .values .swiper-button-next:hover svg path,
-  :where(.page-template-home-2025) .values .swiper-button-prev:hover svg path {
+
+  :where(.page-template-home-2025) .values .swiper-button-next:hover svg path, :where(.page-template-home-2025) .values .swiper-button-prev:hover svg path {
     fill: #fff;
   }
-  :where(.page-template-home-2025) .values .swiper-button-next::after,
-  :where(.page-template-home-2025) .values .swiper-button-prev::after {
+
+  :where(.page-template-home-2025) .values .swiper-button-next:after, :where(.page-template-home-2025) .values .swiper-button-prev:after {
     font-size: 1rem;
     font-weight: bold;
   }
+
   :where(.page-template-home-2025) .values .swiper-button-prev {
-    left: 50% !important;
     transform: translateX(-3.5rem);
+    left: 50% !important;
   }
+
   :where(.page-template-home-2025) .values .swiper-button-next {
-    right: 50% !important;
     transform: translateX(3.5rem);
+    right: 50% !important;
   }
+
   :where(.page-template-home-2025) .values__rect-left-top {
+    grid-column: 1;
+    width: 1.5rem;
     position: absolute;
     top: 5%;
     left: 0;
-    width: 1.5rem;
-    grid-column: 1;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .values__rect-left-top {
       width: 4rem;
     }
   }
+
   :where(.page-template-home-2025) .values__rect-left-bottom {
+    grid-column: 1;
+    width: 1.5rem;
     position: absolute;
     bottom: -4%;
     left: 0;
-    width: 1.5rem;
-    grid-column: 1;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .values__rect-left-bottom {
       width: 4rem;
     }
   }
+
   :where(.page-template-home-2025) .values__blob {
     z-index: -1;
-    grid-column: 1;
-    grid-row: 1;
+    grid-area: 1 / 1;
     position: absolute;
     top: -50%;
     right: 0;
   }
+
   :where(.page-template-home-2025) .customers {
     padding: 4rem 0;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .customers {
       padding: 8rem 0;
     }
   }
+
   :where(.page-template-home-2025) .customers__headline {
-    padding-bottom: 2rem;
     text-align: center;
+    padding-bottom: 2rem;
   }
+
   :where(.page-template-home-2025) .customers__copy {
-    font-weight: 400;
     text-wrap: pretty;
+    text-align: center;
     max-width: 52rem;
     margin: 0 auto;
+    font-weight: 400;
     line-height: 1.75em;
-    text-align: center;
   }
+
   :where(.page-template-home-2025) .customers__gallery {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
     gap: 3rem 2rem;
     padding-top: 4rem;
+    display: grid;
   }
+
   :where(.page-template-home-2025) .customers__gallery-item {
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
   }
+
   :where(.page-template-home-2025) .customers__rect-right {
+    grid-column: 1;
+    width: 2rem;
     position: absolute;
     bottom: 0%;
     right: 0;
-    width: 2rem;
-    grid-column: 1;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .customers__rect-right {
       width: 6rem;
     }
   }
+
   :where(.page-template-home-2025) .section-headline-2025 {
-    font-weight: 150;
-    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
-    letter-spacing: -0.02em;
-    line-height: 1.1em;
+    letter-spacing: -.02em;
     color: #141414;
     text-align: center;
+    font-size: clamp(2.16rem, 1.85rem + 1.54vw, 2.81rem);
+    font-weight: 150;
+    line-height: 1.1em;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-home-2025) .section-headline-2025 {
       font-size: clamp(3.11rem, 2.67rem + 2.22vw, 4.625em);
     }
   }
+
   :where(.page-template-home-2025) .divider {
     padding: 0 2rem;
     position: relative;
   }
+
   :where(.page-template-home-2025) .divider svg {
+    max-width: 100%;
     margin: 0 auto;
     display: block;
-    max-width: 100%;
   }
 }

@@ -1,196 +1,228 @@
 @layer templates.channels {
   :where(.page-template-channels) .hero h1 {
-    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 12px #000000bf;
   }
+
   :where(.page-template-channels) .hero .deck {
     max-width: 50rem;
     margin: 0 auto;
   }
+
   :where(.page-template-channels) .hero .deck p {
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 8px #000000bf;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (width >= 768px) {
     :where(.page-template-channels) .hero .photo img {
       height: clamp(28rem, 60vh, 44rem);
     }
   }
+
   :where(.page-template-channels) section.intro {
     text-align: center;
     background: #fff;
     padding-top: clamp(2.5rem, 10vh, 5rem);
     padding-bottom: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.intro {
       padding-top: clamp(5rem, 15vh, 7.5rem);
       padding-bottom: clamp(5rem, 15vh, 7.5rem);
     }
   }
+
   :where(.page-template-channels) section.intro .headline {
     padding-bottom: 1.5rem;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.intro .copy {
-      grid-column: 3/span 10;
+      grid-column: 3 / span 10;
     }
   }
+
   :where(.page-template-channels) section.portal-link {
-    background: #000;
     color: #fff;
+    background: #000;
     padding: 1.5rem 0;
   }
+
   :where(.page-template-channels) section.portal-link .container {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    display: flex;
   }
+
   :where(.page-template-channels) section.portal-link .container .headline {
-    width: 100%;
     text-align: center;
-    padding-bottom: 0.75rem;
+    width: 100%;
+    padding-bottom: .75rem;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.portal-link .container .headline {
       width: auto;
       padding-bottom: 0;
       padding-right: 1rem;
     }
   }
+
   :where(.page-template-channels) section.portal-link .container .headline h4 {
-    font-size: clamp(0.87rem, 0.74rem + 0.62vw, 1.13rem);
+    font-size: clamp(.87rem, .74rem + .62vw, 1.13rem);
   }
+
   :where(.page-template-channels) section.featured {
     background: #fff;
     padding-bottom: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.featured {
       padding-bottom: clamp(5rem, 15vh, 7.5rem);
     }
   }
+
   :where(.page-template-channels) section.featured .partner .logo {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     max-width: 12rem;
     margin: 0 auto;
   }
+
   :where(.page-template-channels) section.featured .partner .logo img {
+    object-fit: contain;
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
+
   :where(.page-template-channels) section.featured .partner .info {
     text-align: center;
   }
+
   :where(.page-template-channels) section.featured .partner .info h3 {
     color: #0a2d6b;
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(0.72rem, 0.62rem + 0.52vw, 0.94rem);
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(.72rem, .62rem + .52vw, .94rem);
   }
+
   :where(.page-template-channels) section.why {
     background: #f4f7f9;
     gap: 2rem;
     padding-top: clamp(2.5rem, 10vh, 5rem);
     padding-bottom: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.why {
       padding-top: clamp(5rem, 15vh, 7.5rem);
       padding-bottom: clamp(5rem, 15vh, 7.5rem);
     }
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (width >= 768px) {
     :where(.page-template-channels) section.why .info {
-      grid-column: 3/span 6;
+      grid-column: 3 / span 6;
     }
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.why .info {
-      grid-column: 2/span 5;
+      grid-column: 2 / span 5;
     }
   }
+
   :where(.page-template-channels) section.why .info .headline {
     padding-bottom: 1rem;
   }
+
   :where(.page-template-channels) section.why .info .cta {
     padding-top: 2rem;
   }
+
   :where(.page-template-channels) section.why .video {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (width >= 768px) {
     :where(.page-template-channels) section.why .video {
-      grid-column: 3/span 6;
+      grid-column: 3 / span 6;
     }
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.why .video {
-      grid-column: 8/span 6;
+      grid-column: 8 / span 6;
     }
   }
+
   :where(.page-template-channels) section.why .video iframe {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
+
   :where(.page-template-channels) .related-wrapper {
     padding-top: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) .related-wrapper {
       padding-top: clamp(5rem, 15vh, 7.5rem);
     }
   }
+
   :where(.page-template-channels) section.partners {
     background: #fff;
     padding-top: clamp(2.5rem, 10vh, 5rem);
     padding-bottom: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.partners {
       padding-top: clamp(5rem, 15vh, 7.5rem);
-      padding-bottom: clamp(5rem, 15vh, 7.5rem);
-    }
-  }
-  @media screen and (min-width: 992px) {
-    :where(.page-template-channels) section.partners {
       padding-bottom: 0;
     }
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (width >= 768px) {
     :where(.page-template-channels) section.partners .section-header {
-      grid-column: 3/span 6;
+      grid-column: 3 / span 6;
     }
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-channels) section.partners .section-header {
-      grid-column: 3/span 10;
+      grid-column: 3 / span 10;
     }
   }
+
   :where(.page-template-channels) section.partners .section-header .headline {
     padding-bottom: 1rem;
   }
+
   :where(.page-template-channels) section.partners .partners-grid {
     padding-top: 3rem;
   }
+
   :where(.page-template-channels) section.partners .partner {
     text-align: center;
   }
+
   :where(.page-template-channels) section.partners .partner .image {
     width: 8rem;
     height: 4rem;
   }
+
   :where(.page-template-channels) section.partners .partner .image img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 100%;
     height: 100%;
   }
+
   :where(.page-template-channels) section.partners .partner h4 {
     color: #0a2d6b;
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(0.66rem, 0.58rem + 0.48vw, 0.88rem);
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(.66rem, .58rem + .48vw, .88rem);
   }
 }

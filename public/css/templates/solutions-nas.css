@@ -3,134 +3,156 @@
     padding-top: clamp(2.5rem, 10vh, 5rem);
     padding-bottom: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) section.solutions-intro {
       padding-top: clamp(5rem, 15vh, 7.5rem);
       padding-bottom: clamp(5rem, 15vh, 7.5rem);
     }
-  }
-  @media screen and (min-width: 992px) {
+
     :where(.page-template-solutions-nas) section.solutions-intro .copy {
       line-height: 2rem;
     }
   }
+
   :where(.page-template-solutions-nas) section.solutions-intro .photo img {
     width: 100%;
   }
+
   :where(.page-template-solutions-nas) .related {
-    display: grid;
-    gap: 0 2rem;
     grid-template-columns: minmax(0, auto) repeat(4, minmax(auto, 1fr)) minmax(0, auto);
+    gap: 0 2rem;
     padding-top: clamp(1.25rem, 5vh, 2.5rem);
     padding-bottom: clamp(1.25rem, 5vh, 2.5rem);
+    display: grid;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) .related {
       padding-top: clamp(2.5rem, 7.5vh, 3.75rem);
       padding-bottom: clamp(2.5rem, 7.5vh, 3.75rem);
     }
   }
-  @media screen and (min-width: 480px) {
+
+  @media screen and (width >= 480px) {
     :where(.page-template-solutions-nas) .related {
       grid-template-columns: minmax(0, auto) repeat(8, minmax(auto, 1fr)) minmax(0, auto);
     }
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) .related {
       grid-template-columns: minmax(0, auto) repeat(12, minmax(0, 4.5rem)) minmax(0, auto);
       padding-bottom: 0;
     }
   }
-  @media screen and (min-width: 1280px) {
+
+  @media screen and (width >= 1280px) {
     :where(.page-template-solutions-nas) .related {
       padding-top: clamp(2.5rem, 10vh, 5rem);
     }
   }
-  @media screen and (min-width: 1280px) and (min-width: 992px) {
+
+  @media screen and (width >= 1280px) and (width >= 992px) {
     :where(.page-template-solutions-nas) .related {
       padding-top: clamp(5rem, 15vh, 7.5rem);
     }
   }
+
   :where(.page-template-solutions-nas) .related > * {
-    grid-column: 2/span 4;
+    grid-column: 2 / span 4;
   }
-  @media screen and (min-width: 480px) {
+
+  @media screen and (width >= 480px) {
     :where(.page-template-solutions-nas) .related > * {
-      grid-column: 2/span 8;
+      grid-column: 2 / span 8;
     }
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) .related > * {
-      grid-column: 2/span 12;
+      grid-column: 2 / span 12;
     }
   }
+
   :where(.page-template-solutions-nas) .related .section-header {
     padding-bottom: 2rem;
   }
+
   :where(.page-template-solutions-nas) .hero h1 {
-    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 12px #000000bf;
   }
+
   :where(.page-template-solutions-nas) .hero .deck {
     max-width: 50rem;
     margin: 0 auto;
   }
+
   :where(.page-template-solutions-nas) .hero .deck p {
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 8px #000000bf;
   }
+
   :where(.page-template-solutions-nas) .intro {
     background: #fff;
     align-items: center;
   }
-  @media screen and (min-width: 480px) {
+
+  @media screen and (width >= 480px) {
     :where(.page-template-solutions-nas) .intro > * {
-      grid-column: 3/span 6;
+      grid-column: 3 / span 6;
     }
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) .intro > * {
-      grid-column: 2/span 12;
+      grid-column: 2 / span 12;
     }
-  }
-  @media screen and (min-width: 992px) {
+
     :where(.page-template-solutions-nas) .intro .photo {
-      grid-column: 2/span 5;
+      grid-column: 2 / span 5;
     }
   }
+
   :where(.page-template-solutions-nas) .intro .photo img {
     width: 100%;
   }
+
   :where(.page-template-solutions-nas) .intro .info {
     padding-top: 2rem;
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) .intro .info {
+      grid-column: 7 / span 6;
       padding-top: 0;
-      grid-column: 7/span 6;
       transform: translateX(2rem);
     }
   }
+
   :where(.page-template-solutions-nas) .intro .info .headline {
     padding-bottom: 1rem;
   }
+
   :where(.page-template-solutions-nas) .features {
     background: linear-gradient(344.58deg, #430261 8.76%, #35018b 40.15%, #2039b5 71.06%, #6c9cb5 103.41%);
   }
+
   :where(.page-template-solutions-nas) section.workflow {
     background: #f4f7f9;
     gap: 1rem 2rem;
     padding-top: clamp(2.5rem, 10vh, 5rem);
     padding-bottom: clamp(2.5rem, 10vh, 5rem);
   }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (width >= 992px) {
     :where(.page-template-solutions-nas) section.workflow {
       padding-top: clamp(5rem, 15vh, 7.5rem);
       padding-bottom: clamp(5rem, 15vh, 7.5rem);
     }
-  }
-  @media screen and (min-width: 992px) {
+
     :where(.page-template-solutions-nas) section.workflow .copy {
+      grid-column: 3 / span 10;
       padding-top: 1rem;
-      grid-column: 3/span 10;
     }
   }
 }
