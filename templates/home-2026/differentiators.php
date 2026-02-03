@@ -24,7 +24,9 @@
                     <?php endif; ?>
 
                     <?php if ($item['description']) : ?>
-                        <p class="home-2026-diff__desc"><?php echo $item['description']; ?></p>
+                        <div class="home-2026-diff__copy | copy copy-3">
+                            <?php echo $item['description']; ?>
+                        </div>                        
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>

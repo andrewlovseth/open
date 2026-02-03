@@ -20,8 +20,9 @@
         }
 
         &__logos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 2rem;
             max-width: 1200px;
             margin-inline: auto;
@@ -30,24 +31,31 @@
             align-items: center;
 
             @include desktop-small {
-                grid-template-columns: repeat(5, 1fr);
                 gap: 2.5rem;
                 margin-block-start: 4rem;
-            }
-
-            @include desktop-medium {
-                grid-template-columns: repeat(6, 1fr);
             }
         }
 
         &__logo {
+            // Base: 3 columns (mobile)
+            flex: 0 1 calc((100% - 4rem) / 3);  // 3 items with 2 gaps
+            max-width: calc((100% - 4rem) / 3);
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0.5rem;
 
             @include desktop-small {
+                // 5 columns
+                flex-basis: calc((100% - 10rem) / 5);  // 5 items with 4 gaps (4 × 2.5rem)
+                max-width: calc((100% - 10rem) / 5);
                 padding: 1rem;
+            }
+
+            @include desktop-medium {
+                // 6 columns
+                flex-basis: calc((100% - 12.5rem) / 6);  // 6 items with 5 gaps (5 × 2.5rem)
+                max-width: calc((100% - 12.5rem) / 6);
             }
 
             img {
