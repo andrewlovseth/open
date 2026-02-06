@@ -42,9 +42,7 @@
             <?php
                 $file = get_field('file');
                 if ($file) {
-                    // Send a canonical header so Google knows to treat the PDF as the "real" version
-                    header("Link: <" . esc_url($file['url']) . ">; rel=\"canonical\"");
-                    header("HTTP/1.1 301 Moved Permanently");
+                    header("HTTP/1.1 302 Found");
                     header("Location: " . esc_url($file['url']));
                     exit();
                 }
