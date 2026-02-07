@@ -1,0 +1,18 @@
+@use "../../abstracts" as *;
+
+.error-404 {
+	text-align: center;
+	@include section-spacing();
+
+	.headline {
+		margin-block-end: 1.5rem;
+	}
+
+	.headline .section-title {
+		color: $blue-a11y;
+	}
+
+	.copy {
+		margin-block-end: 2rem;
+	}
+}

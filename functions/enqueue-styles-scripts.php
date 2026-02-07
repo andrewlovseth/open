@@ -16,9 +16,13 @@ function bearsmith_enqueue_styles_and_scripts() {
     // 2) Determine slug by convention
     $slug = null;
 
-    // Search results (must be checked FIRST to avoid page template conflicts)
-    if (is_search()) { 
-        $slug = 'search'; 
+    // 404 and search (must be checked FIRST to avoid page template conflicts)
+    if (is_404()) {
+        $slug = '404';
+    }
+
+    if (!$slug && is_search()) {
+        $slug = 'search';
     }
 
     // Post type archives
