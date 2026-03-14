@@ -115,33 +115,33 @@ const Modal = {
             return;
         }
 
-        // Don't show modal on the target page itself
-        const currentPath = window.location.pathname;
-        if (currentPath.includes("/solutions/corporate-creative/")) {
-            return;
-        }
+        // Don't show modal on specific pages (disabled for NAB 2026 — external landing page)
+        // const currentPath = window.location.pathname;
+        // if (currentPath.includes("/some-page/")) {
+        //     return;
+        // }
 
-        const showModalAtlasCC = localStorage.getItem("showModalAtlasCC");
+        const showModalNab2026 = localStorage.getItem("showModalNab2026");
 
-        if (sessionStorage.atlas_cc_pageCount) {
-            sessionStorage.atlas_cc_pageCount = Number(sessionStorage.atlas_cc_pageCount) + 1;
+        if (sessionStorage.nab2026_pageCount) {
+            sessionStorage.nab2026_pageCount = Number(sessionStorage.nab2026_pageCount) + 1;
         } else {
-            sessionStorage.atlas_cc_pageCount = 1;
+            sessionStorage.nab2026_pageCount = 1;
         }
 
-        if (sessionStorage.atlas_cc_pageCount == 1) {
-            if (showModalAtlasCC == null) {
-                localStorage.setItem("showModalAtlasCC", 1);
+        if (sessionStorage.nab2026_pageCount == 1) {
+            if (showModalNab2026 == null) {
+                localStorage.setItem("showModalNab2026", 1);
                 MicroModal.show("nab");
-            } else if (showModalAtlasCC >= 1 && showModalAtlasCC <= 5) {
-                var visit_count = parseInt(localStorage.getItem("showModalAtlasCC"));
+            } else if (showModalNab2026 >= 1 && showModalNab2026 <= 5) {
+                var visit_count = parseInt(localStorage.getItem("showModalNab2026"));
                 visit_count++;
-                localStorage.setItem("showModalAtlasCC", visit_count);
+                localStorage.setItem("showModalNab2026", visit_count);
                 MicroModal.show("nab");
             } else {
-                var visit_count = parseInt(localStorage.getItem("showModalAtlasCC"));
+                var visit_count = parseInt(localStorage.getItem("showModalNab2026"));
                 visit_count++;
-                localStorage.setItem("showModalAtlasCC", visit_count);
+                localStorage.setItem("showModalNab2026", visit_count);
             }
         }
 
