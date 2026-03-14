@@ -201,7 +201,21 @@ const Header = {
         });
     },
 
+    bannerOffset() {
+        const banner = document.querySelector("aside.banner");
+        if (!banner) return;
+
+        function update() {
+            const h = banner.offsetHeight;
+            document.documentElement.style.setProperty("--banner-height", h + "px");
+        }
+
+        update();
+        window.addEventListener("resize", update);
+    },
+
     init: function () {
+        this.bannerOffset();
         this.esc();
         this.desktopSubNavs();
         this.searchToggle();

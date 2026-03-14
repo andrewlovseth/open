@@ -22,7 +22,7 @@
 
         &.has-banner {
             @include desktop-small {
-                top: 68px;
+                top: var(--banner-height, 0px);
             }
         }
 
@@ -43,7 +43,7 @@
     body.nav-overlay-open {
         .site-header.has-banner {
             @include desktop-small {
-                transform: translateY(-68px);
+                transform: translateY(calc(var(--banner-height, 0px) * -1));
             }
         }
     }

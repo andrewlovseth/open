@@ -1,0 +1,128 @@
+@use "./abstracts" as *;
+
+.nab-banner-2026 {
+    position: relative;
+    background: #0a1e5e url(../../src/images/nab-banner-bg-2026.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+
+    .nab-banner-2026__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 1.5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+
+        @include desktop-small {
+            flex-direction: row;
+            gap: 1.25rem;
+            padding: 0.625rem 2rem;
+        }
+
+        @include desktop-medium {
+            gap: 1.5rem;
+        }
+    }
+
+    .nab-banner-2026__logo {
+        flex-shrink: 0;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 164px;
+            height: auto;
+        }
+    }
+
+    .nab-banner-2026__divider {
+        display: none;
+
+        @include desktop-small {
+            display: block;
+            width: 1px;
+            align-self: stretch;
+            background-color: rgba($white, 0.3);
+            flex-shrink: 0;
+        }
+    }
+
+    .nab-banner-2026__text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        text-align: center;
+        flex: 1;
+        min-width: 0;
+
+        @include desktop-small {
+            text-align: left;
+        }
+
+        @include desktop-medium {
+            flex-direction: row;
+            gap: 1.5rem;
+        }
+    }
+
+    .nab-banner-2026__details {
+        @include desktop-medium {
+            flex: 0 0 40%;
+        }
+
+        p {
+            color: $white;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+    }
+
+    .nab-banner-2026__booth {
+        color: #61B3FF;
+        font-weight: 700;
+    }
+
+    .nab-banner-2026__copy {
+        @include desktop-medium {
+            flex: 1;
+        }
+
+        p {
+            color: $white;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        strong {
+            color: $white;
+            font-weight: 700;
+        }
+    }
+
+    .nab-banner-2026__cta {
+        flex-shrink: 0;
+    }
+
+    .nab-banner-2026__btn {
+        display: inline-block;
+        background-color: #F36400;
+        color: #0a1e5e;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: darken(#F36400, 8%);
+            text-decoration: none;
+        }
+    }
+}
