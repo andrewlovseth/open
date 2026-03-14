@@ -1,0 +1,13 @@
+{
+  "name": "open",
+  "private": true,
+  "scripts": {
+    "dev": "bun run dev.ts",
+    "build": "bun run build.ts",
+    "clean": "rm -rf public/css public/main.js public/main.js.map"
+  },
+  "devDependencies": {
+    "lightningcss": "^1.28.0",
+    "sass": "^1.83.0"
+  }
+}

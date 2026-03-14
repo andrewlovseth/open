@@ -52,7 +52,6 @@ Thumbs.db
 *.mov
 *.wmv
 
-package.json
 package-lock.json
 
 # Claude Code local settings (user-specific)
