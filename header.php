@@ -95,6 +95,8 @@
 
 	<?php get_template_part('template-parts/header/nab-banner-2026'); ?>
 
+	<?php get_template_part('template-parts/header/nab-banner'); ?>
+
 	<?php get_template_part('template-parts/header/banner'); ?>
 
 	<header class="site-header<?php if($nab_banner == TRUE || $nab_banner_2026 == TRUE || $banner == TRUE): ?> has-banner<?php endif; ?>">
