@@ -115,33 +115,32 @@ const Modal = {
             return;
         }
 
-        // Don't show modal on specific pages (disabled for NAB 2026 — external landing page)
-        // const currentPath = window.location.pathname;
-        // if (currentPath.includes("/some-page/")) {
-        //     return;
-        // }
-
-        const showModalNab2026 = localStorage.getItem("showModalNab2026");
-
-        if (sessionStorage.nab2026_pageCount) {
-            sessionStorage.nab2026_pageCount = Number(sessionStorage.nab2026_pageCount) + 1;
-        } else {
-            sessionStorage.nab2026_pageCount = 1;
+        const currentPath = window.location.pathname;
+        if (currentPath.includes("/solutions/corporate-creative/")) {
+            return;
         }
 
-        if (sessionStorage.nab2026_pageCount == 1) {
-            if (showModalNab2026 == null) {
-                localStorage.setItem("showModalNab2026", 1);
+        const showModalAtlasCCPostNab = localStorage.getItem("showModalAtlasCCPostNab");
+
+        if (sessionStorage.atlas_cc_post_nab_pageCount) {
+            sessionStorage.atlas_cc_post_nab_pageCount = Number(sessionStorage.atlas_cc_post_nab_pageCount) + 1;
+        } else {
+            sessionStorage.atlas_cc_post_nab_pageCount = 1;
+        }
+
+        if (sessionStorage.atlas_cc_post_nab_pageCount == 1) {
+            if (showModalAtlasCCPostNab == null) {
+                localStorage.setItem("showModalAtlasCCPostNab", 1);
                 MicroModal.show("nab");
-            } else if (showModalNab2026 >= 1 && showModalNab2026 <= 5) {
-                var visit_count = parseInt(localStorage.getItem("showModalNab2026"));
+            } else if (showModalAtlasCCPostNab >= 1 && showModalAtlasCCPostNab <= 5) {
+                var visit_count = parseInt(localStorage.getItem("showModalAtlasCCPostNab"));
                 visit_count++;
-                localStorage.setItem("showModalNab2026", visit_count);
+                localStorage.setItem("showModalAtlasCCPostNab", visit_count);
                 MicroModal.show("nab");
             } else {
-                var visit_count = parseInt(localStorage.getItem("showModalNab2026"));
+                var visit_count = parseInt(localStorage.getItem("showModalAtlasCCPostNab"));
                 visit_count++;
-                localStorage.setItem("showModalNab2026", visit_count);
+                localStorage.setItem("showModalAtlasCCPostNab", visit_count);
             }
         }
 
